@@ -1,0 +1,13 @@
+<h1 style="margin-left: 3%; margin-right: 3%;">Mineral</h1>
+<div style="margin-left: 3%; margin-right: 3%; margin-top: 50px;">
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+</div>
