@@ -36,7 +36,7 @@ export class AgronegocioComponent implements OnInit{
   slides = [
     {img: "/assets/images/cafe.jpg",title: "Café",routeUrl: "cafe"},
     {img: "/assets/images/etanol.jpg",title: "Etanol",routeUrl: "cafe"},
-    {img: "/assets/images/milho.jpg",title: "Milho",routeUrl: "cafe"},
+    {img: "/assets/images/milho.jpg",title: "Milho",routeUrl: "milho"},
     {img: "/assets/images/soja.jpg",title: "Soja",routeUrl: "cafe"},
     {img: "/assets/images/sorgo.jpg",title: "Sorgo",routeUrl: "cafe"},
     {img: "/assets/images/trigo.jpg",title: "Trigo",routeUrl: "cafe"},
