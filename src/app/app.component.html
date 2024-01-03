@@ -1,0 +1,23 @@
+<div id="container" [ngClass]="{ sidebarActive: sidebarActive }">
+    <app-sidebar></app-sidebar>
+    <div id="contentContainer">
+        <app-header 
+            (toggleSidebar)="sidebarActive = !sidebarActive" 
+            [sidebarActive]="sidebarActive">
+        </app-header>
+        <router-outlet id="content"></router-outlet>
+    </div>
+</div>
+
+<!--
+<div id="container" [ngClass]="{ sidebarActive: sidebarActive }">
+    <app-sidebar></app-sidebar>
+    <div id="contentContainer">
+        <app-header 
+        (toggleSidebar)="sidebarActive = !sidebarActive"
+        [sidebarActive]="sidebarActive"
+        ></app-header>
+        <router-outlet id="content"></router-outlet>
+    </div>
+</div>
+-->

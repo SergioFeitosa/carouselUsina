@@ -1,0 +1,37 @@
+<!--<mat-toolbar class="header mat-elevation-z4">
+    <span>
+        <a routerLink="/">
+            <img class="logo" src="assets\images\agrokelvy2.png" alt="logo">
+        </a>
+    </span>
+    <span class="title-group">
+        <a routerLink="{{ routeUrl }}">
+            <i class="material-icons">
+                {{ icon }}
+            </i>
+            {{ title }}
+        </a>
+
+    </span>
+</mat-toolbar>
+-->
+
+<div id="header">
+    <div id="logo">
+        <img
+            [src]="
+            sidebarActive
+            ? 'assets/images/cross.svg' 
+            : 'assets/images/menu.svg'
+           "
+            (click)= "toggleSidebar.emit()"
+        />
+        AgroKelvy
+    </div>
+    <div id="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Logout</a>
+    </div>
+</div>
