@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './template/header/header.component';
 import { SidebarComponent } from './template/sidebar/sidebar.component';
+import { environment } from './../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -20,4 +21,8 @@ import { SidebarComponent } from './template/sidebar/sidebar.component';
 export class AppComponent {
   title = 'carousel';
   sidebarActive = false;
+
+  constructor() {
+    console.log(environment.production); // Logs false for development environment
+  }
 }

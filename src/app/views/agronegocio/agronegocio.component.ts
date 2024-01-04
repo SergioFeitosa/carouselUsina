@@ -34,13 +34,13 @@ export class AgronegocioComponent implements OnInit{
   }
   
   slides = [
-    {img: "/assets/images/cafe.jpg",title: "Café",routeUrl: "cafe"},
-    {img: "/assets/images/etanol.jpg",title: "Etanol",routeUrl: "cafe"},
-    {img: "/assets/images/milho.jpg",title: "Milho",routeUrl: "milho"},
-    {img: "/assets/images/soja.jpg",title: "Soja",routeUrl: "cafe"},
-    {img: "/assets/images/sorgo.jpg",title: "Sorgo",routeUrl: "cafe"},
-    {img: "/assets/images/trigo.jpg",title: "Trigo",routeUrl: "cafe"},
-    {img: "/assets/images/agrokelvy.jpg",title: "Agro Kelvy",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/cafe.jpg",title: "Café",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/etanol.jpg",title: "Etanol",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/milho.jpg",title: "Milho",routeUrl: "milho"},
+    {img: "/carousel/browser/assets/images/soja.jpg",title: "Soja",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/sorgo.jpg",title: "Sorgo",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/trigo.jpg",title: "Trigo",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/agrokelvy.jpg",title: "Agro Kelvy",routeUrl: "cafe"},
   ]
 
   slideConfig = {
