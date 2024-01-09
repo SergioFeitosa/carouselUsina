@@ -1,83 +1,127 @@
 <div id="sidebar">
     <div id="menu">
-        <a routerLink="">
-            <i class="material-icons">
+        <button mat-button routerLink="" id="title">
+            <i class="material-icons" id="iconSpace">
                 home
             </i>
             Home
-        </a>
-        <a routerLink="agronegocio">
-            <i class="material-icons">
+        </button>
+
+        <button mat-button [matMenuTriggerFor]="menu1" id="title" routerLink="agronegocio">
+            <i class="material-icons" id="iconSpace">
                 storefront
             </i>
             Agro Negócio
-        </a>
-        <a routerLink="cafe">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="material-icons">
-                coffee
-            </i>
-            Café
-        </a>
-        <a routerLink="milho">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="material-icons">
-                grain
-            </i>
-            Milho
-        </a>
-        <a routerLink="mineral">
-            <i class="material-icons">
+        </button>
+        <mat-menu #menu1="matMenu">
+            <button mat-menu-item routerLink="algodao" id="subItem">
+                <i class="material-icons">
+                    grain
+                </i>
+                <span id="textSubItem">Algodão</span>
+                
+            </button>
+            <button mat-menu-item routerLink="cafe" id="subItem">
+                <i class="material-icons">
+                    coffee
+                </i>
+                <span id="textSubItem">Café</span>
+            </button>
+            <button mat-menu-item routerLink="canadeacucar" id="subItem">
+                <i class="material-icons">
+                    grass
+                </i>
+                <span id="textSubItemGrande">Cana de Açucar</span>
+                
+            </button>
+            <button mat-menu-item routerLink="etanol"  id="subItem">
+                <i class="material-icons">
+                    grass
+                </i>
+                <span id="textSubItem">Etanol</span>
+                
+            </button>
+            <button mat-menu-item routerLink="milho"  id="subItem">
+                <i class="material-icons">
+                    grain
+                </i>
+                <span id="textSubItem">Milho</span>
+                
+            </button>
+            <button mat-menu-item routerLink="soja"  id="subItem">
+                <i class="material-icons">
+                    grain
+                </i>
+                <span id="textSubItem">Soja</span>
+                
+            </button>
+            <button mat-menu-item routerLink="sorgo"  id="subItem">
+                <i class="material-icons">
+                    grain
+                </i>
+                <span id="textSubItem">Sorgo</span>
+                
+            </button>
+            <button mat-menu-item routerLink="trigo"  id="subItem">
+                <i class="material-icons">
+                    workspaces
+                </i>
+                <span id="textSubItem">Trigo</span>
+                
+            </button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="menu2" id="title" routerLink="mineral">
+            <i class="material-icons" id="iconSpace">
                 hub
             </i>
             Minerais
-        </a>
-        <a routerLink="ferro">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="material-icons">
-                iron
-            </i>
-            Ferro
-        </a>
-        <a routerLink="grafite">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="material-icons">
-                iron
-            </i>
-            Grafite
-        </a>
-        <a routerLink="cobre">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="material-icons">
-                new_releases
-            </i>
-            Cobre
-        </a>
-        <a routerLink="pedra">
-            <i class="material-icons">
+        </button>
+        <mat-menu #menu2="matMenu">
+            <button mat-menu-item routerLink="ferro" id="subItem">
+                <i class="material-icons">
+                    iron
+                </i>
+                Ferro
+            </button>
+            <button mat-menu-item routerLink="grafite" id="subItem">
+                <i class="material-icons">
+                    iron
+                </i>
+                Grafite
+            </button>
+            <button mat-menu-item routerLink="cobre" id="subItem">
+                <i class="material-icons">
+                    new_releases
+                </i>
+                Cobre
+            </button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="menu3" id="title" routerLink="pedra">
+            <i class="material-icons" id="iconSpace">
                 landslide
             </i>
             Pedras
-        </a>
-        <a routerLink="diamante">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="material-icons">
-                diamond
-            </i>
-            Diamante
-        </a>
-        <a routerLink="esmeralda">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="material-icons">
-                diamond
-            </i>
-            Esmeralda
-        </a>
-        <a routerLink="quemsomos">
-            <i class="material-icons">
+        </button>
+        <mat-menu #menu3="matMenu">
+            <button mat-menu-item routerLink="diamante"  id="subItem">
+                <i class="material-icons">
+                    diamond
+                </i>
+                Diamante
+            </button>
+            <button mat-menu-item routerLink="esmeralda" id="subItem">
+                <i class="material-icons">
+                    diamond
+                </i>
+                Esmeralda
+            </button>
+        </mat-menu>
+
+        <button mat-button routerLink="quemsomos" id="title">
+            <i class="material-icons" id="iconSpace">
                 group
             </i>
             Quem somos
-        </a>
+        </button>
     </div>
 </div>

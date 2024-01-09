@@ -16,6 +16,12 @@ import { ContatoComponent } from './views/contato/contato.component';
 import { CompraComponent } from './views/compra/compra.component';
 import { VendaComponent } from './views/venda/venda.component';
 import { TransporteComponent } from './views/transporte/transporte.component';
+import { EtanolComponent } from './views/etanol/etanol.component';
+import { TrigoComponent } from './views/trigo/trigo.component';
+import { SorgoComponent } from './views/sorgo/sorgo.component';
+import { CanadeacucarComponent } from './views/canadeacucar/canadeacucar.component';
+import { SojaComponent } from './views/soja/soja.component';
+import { AlgodaoComponent } from './views/algodao/algodao.component';
 
 export const routes: Routes = [
     {
@@ -27,12 +33,36 @@ export const routes: Routes = [
         component: AgronegocioComponent
     },
     {
+        path: "algodao",
+        component: AlgodaoComponent
+    },
+    {
         path: "cafe",
         component: CafeComponent
     },
     {
+        path: "canadeacucar",
+        component: CanadeacucarComponent
+    },
+    {
+        path: "etanol",
+        component: EtanolComponent
+    },
+    {
         path: "milho",
         component: MilhoComponent
+    },
+    {
+        path: "soja",
+        component: SojaComponent
+    },
+    {
+        path: "sorgo",
+        component: SorgoComponent
+    },
+    {
+        path: "trigo",
+        component: TrigoComponent
     },
     {
         path: "mineral",

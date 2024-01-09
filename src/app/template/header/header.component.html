@@ -22,12 +22,12 @@
         alt="menu"
         [src]="
         sidebarActive
-        ? '/carousel/browser/assets/images/cross.svg'            
-        : '/carousel/browser/assets/images/menu.svg'
+        ? '/carousel/browser/assets/images/icons/left-arrow.svg'            
+        : '/carousel/browser/assets/images/icons/menu.svg'
        "
         (click)= "toggleSidebar.emit()"
         />
-        AgroKelvy -- Commodities Internacionais
+        <span id="title">AgroKelvy -- Commodities Internacionais</span>
     </div>
     <div id="menu">
         <a routerLink="">

@@ -33,13 +33,9 @@ export class MineralComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/cafe.jpg",title: "Café",routeUrl: "cafe"},
-    {img: "/carousel/browser/assets/images/etanol.jpg",title: "Etanol",routeUrl: "etanol"},
-    {img: "/carousel/browser/assets/images/milho.jpg",title: "Milho",routeUrl: "milho"},
-    {img: "/carousel/browser/assets/images/soja.jpg",title: "Soja",routeUrl: "soja"},
-    {img: "/carousel/browser/assets/images/sorgo.jpg",title: "Sorgo",routeUrl: "sorgo"},
-    {img: "/carousel/browser/assets/images/trigo.jpg",title: "Trigo",routeUrl: "trigo"},
-    {img: "/carousel/browser/assets/images/agrokelvy.jpg",title: "Agro Kelvy",routeUrl: "agrokelvy"},
+    {img: "/carousel/browser/assets/images/cobre.jpg",title: "Cobre",routeUrl: "cobre"},
+    {img: "/carousel/browser/assets/images/ferro.jpg",title: "Ferro",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/grafita.jpg",title: "Grafite",routeUrl: "grafite"},
   ]
 
   slideConfig = {

@@ -33,13 +33,8 @@ export class PedraComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/cafe.jpg",title: "Café",routeUrl: "cafe"},
-    {img: "/carousel/browser/assets/images/etanol.jpg",title: "Etanol",routeUrl: "etanol"},
-    {img: "/carousel/browser/assets/images/milho.jpg",title: "Milho",routeUrl: "milho"},
-    {img: "/carousel/browser/assets/images/soja.jpg",title: "Soja",routeUrl: "soja"},
-    {img: "/carousel/browser/assets/images/sorgo.jpg",title: "Sorgo",routeUrl: "sorgo"},
-    {img: "/carousel/browser/assets/images/trigo.jpg",title: "Trigo",routeUrl: "trigo"},
-    {img: "/carousel/browser/assets/images/agrokelvy.jpg",title: "Agro Kelvy",routeUrl: "agrokelvy"},
+    {img: "/carousel/browser/assets/images/diamante.jpg",title: "Diamante",routeUrl: "diamante"},
+    {img: "/carousel/browser/assets/images/esmeralda.jpg",title: "Esmeralda",routeUrl: "esmeralda"},
   ]
 
   slideConfig = {

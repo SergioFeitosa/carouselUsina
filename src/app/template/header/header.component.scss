@@ -6,7 +6,7 @@
     box-sizing: border-box;
     justify-content: space-between;
     box-shadow: 0px 4px 4px #ccc;
-    
+    background-color: #719c71;
 
     #logo {
         font-size: 24px;
@@ -35,7 +35,11 @@
             }
         }
     }
-
+    
+    #title {
+        max-width: max-content;
+        align-self: center;
+    }
 
 }
 

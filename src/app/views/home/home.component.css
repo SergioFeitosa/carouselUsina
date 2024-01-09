@@ -16,3 +16,9 @@
     font-size: 1.1rem;
     padding-left: 10px;
 }
+
+.divLine {
+    width:90%;
+    word-wrap:break-word;
+    background-color: #dff7df;
+}

@@ -34,13 +34,15 @@ export class AgronegocioComponent implements OnInit{
   }
   
   slides = [
+    {img: "/carousel/browser/assets/images/algodao.jpg",title: "Algodão",routeUrl: "algodao"},
     {img: "/carousel/browser/assets/images/cafe.jpg",title: "Café",routeUrl: "cafe"},
-    {img: "/carousel/browser/assets/images/etanol.jpg",title: "Etanol",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/canadeacucar.jpg",title: "Cana de Açucar",routeUrl: "canadeacucar"},
+    {img: "/carousel/browser/assets/images/etanol.jpg",title: "Etanol",routeUrl: "etanol"},
     {img: "/carousel/browser/assets/images/milho.jpg",title: "Milho",routeUrl: "milho"},
-    {img: "/carousel/browser/assets/images/soja.jpg",title: "Soja",routeUrl: "cafe"},
-    {img: "/carousel/browser/assets/images/sorgo.jpg",title: "Sorgo",routeUrl: "cafe"},
-    {img: "/carousel/browser/assets/images/trigo.jpg",title: "Trigo",routeUrl: "cafe"},
-    {img: "/carousel/browser/assets/images/agrokelvy.jpg",title: "Agro Kelvy",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/soja.jpg",title: "Soja",routeUrl: "soja"},
+    {img: "/carousel/browser/assets/images/sorgo.jpg",title: "Sorgo",routeUrl: "sorgo"},
+    {img: "/carousel/browser/assets/images/trigo.jpg",title: "Trigo",routeUrl: "trigo"},
+    
   ]
 
   slideConfig = {

@@ -4,6 +4,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './template/header/header.component';
 import { SidebarComponent } from './template/sidebar/sidebar.component';
 import { environment } from './../environments/environment';
+import { MenuComponent } from './template/menu/menu.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { environment } from './../environments/environment';
     RouterOutlet,
     RouterModule,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    MenuComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
