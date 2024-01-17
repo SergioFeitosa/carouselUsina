@@ -17,7 +17,7 @@ export class TransporteComponent implements OnInit{
     this.headerService.headerData = {
       title: 'transporte',
       icon: 'home',
-      routeUrl: ''
+      routeUrl: '',
     }    
   }
 

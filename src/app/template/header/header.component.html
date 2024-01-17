@@ -1,34 +1,30 @@
-<!--<mat-toolbar class="header mat-elevation-z4">
-    <span>
-        <a routerLink="/">
-            <img class="logo" src="assets\images\agrokelvy2.png" alt="logo">
-        </a>
-    </span>
-    <span class="title-group">
-        <a routerLink="{{ routeUrl }}">
-            <i class="material-icons">
-                {{ icon }}
-            </i>
-            {{ title }}
-        </a>
-
-    </span>
-</mat-toolbar>
--->
-
 <div id="header">
     <div id="logo">
-        <img
-        alt="menu"
-        [src]="
+        <img alt="menu" [src]="
         sidebarActive
-        ? '/carousel/browser/assets/images/icons/left-arrow.svg'            
-        : '/carousel/browser/assets/images/icons/menu.svg'
-       "
-        (click)= "toggleSidebar.emit()"
-        />
-        <span id="title">AgroKelvy -- Commodities Internacionais</span>
+        ? '/assets/images/icons/left-arrow.svg'            
+        : '/assets/images/icons/menu.svg'
+       " (click)="toggleSidebar.emit()" />
     </div>
+
+    <div id="menu">
+        @if (this.languageChineseActive) {
+        {{ 'chines' }}
+        }
+        @else if (this.languageEspanholActive) {
+        {{ 'espanhol' }}
+        }
+        @else if (this.languageInglesActive) {
+        {{ 'ingles' }}
+        }
+        @else if (this.languagePortuguesActive) {
+        {{ 'portugues' }}
+        } @else {
+        teste
+        }
+
+    </div>
+
     <div id="menu">
         <a routerLink="">
             Home
@@ -43,4 +39,17 @@
             Logout
         </a>
     </div>
-</div>
+    <div id="menu">
+        <a href (click)="this.toogleChinesLanguage()">
+            <span class="fi fi-ch"></span>
+        </a>
+        <a href (click)="this.toogleEspanholLanguage()">
+            <span class="fi fi-es"></span>
+        </a>
+        <a href (click)="this.toogleInglesLanguage()">
+            <span class="fi fi-us"></span>
+        </a>
+        <a href (click)="this.tooglePortuguesLanguage()">
+            <span class="fi fi-br"></span>
+        </a>
+    </div>

@@ -26,7 +26,7 @@ export class PedraComponent implements OnInit{
     this.headerService.headerData = {
       title: 'Pedra',
       icon: 'landslide',
-      routeUrl: ''
+      routeUrl: '',
     }    
   }
   ngOnInit(): void {

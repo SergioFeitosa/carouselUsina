@@ -17,7 +17,7 @@ export class CompraComponent implements OnInit{
     this.headerService.headerData = {
       title: 'Compra',
       icon: 'home',
-      routeUrl: ''
+      routeUrl: '',
     }    
   }
 

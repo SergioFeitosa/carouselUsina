@@ -17,7 +17,7 @@ export class ContatoComponent implements OnInit{
     this.headerService.headerData = {
       title: 'Milho',
       icon: 'home',
-      routeUrl: ''
+      routeUrl: '',
     }    
   }
 

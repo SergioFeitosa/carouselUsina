@@ -17,7 +17,7 @@ export class QuemsomosComponent implements OnInit{
     this.headerService.headerData = {
       title: 'Quems somos',
       icon: 'group',
-      routeUrl: ''
+      routeUrl: '',
     }    
   }
 

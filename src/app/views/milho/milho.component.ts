@@ -17,7 +17,7 @@ export class MilhoComponent implements OnInit{
     this.headerService.headerData = {
       title: 'Milho',
       icon: 'home',
-      routeUrl: ''
+      routeUrl: '',
     }    
   }
 

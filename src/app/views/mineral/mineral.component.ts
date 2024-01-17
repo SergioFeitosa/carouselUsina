@@ -26,7 +26,7 @@ export class MineralComponent implements OnInit{
     this.headerService.headerData = {
       title: 'Mineral',
       icon: 'hub',
-      routeUrl: ''
+      routeUrl: '',
     }    
   }
   ngOnInit(): void {

@@ -17,7 +17,7 @@ export class VendaComponent implements OnInit{
     this.headerService.headerData = {
       title: 'Venda',
       icon: 'home',
-      routeUrl: ''
+      routeUrl: '',
     }    
   }
 

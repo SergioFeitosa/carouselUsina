@@ -27,7 +27,7 @@ export class AgronegocioComponent implements OnInit{
     this.headerService.headerData = {
       title: 'Agro Negócio',
       icon: 'home',
-      routeUrl: ''
+      routeUrl: '',
     }    
   }
   ngOnInit(): void {
