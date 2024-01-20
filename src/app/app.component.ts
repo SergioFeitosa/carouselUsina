@@ -4,7 +4,8 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './template/header/header.component';
 import { SidebarComponent } from './template/sidebar/sidebar.component';
 import { MenuComponent } from './template/menu/menu.component';
-import { environment } from '../environments/environment.development';
+import { HeaderLanguageService } from './template/header/header.language.service';
+import { HeaderService } from './template/header/header.service';
 
 @Component({
   selector: 'app-root',
@@ -19,79 +20,26 @@ import { environment } from '../environments/environment.development';
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  providers: [
+    HeaderService,
+  ]
 })
 
 export class AppComponent {
   title = 'carousel';
   sidebarActive = false;
-  languageChineseActive = false;
-  languageEspanholActive = false;
-  languageInglesActive = false;
-  languagePortuguesActive = false;
 
-  toogleChineseLanguage = false
-  toogleSpanishLanguage = false
-  toogleEnglishLanguage = false
-  tooglePortugueseLanguage = false
+  message=""
 
-  message = "";
-
-  constructor() { }
-
-  ngOnInit(): void {
-    this.chooseLanguage()
+  constructor(
+    headerLanguageService: HeaderLanguageService
+  ) { 
+    this.message = headerLanguageService.getData$.name;
+    console.log('passei '+ this.message)
   }
 
-  chooseLanguage() {
 
-    this.languageChineseActive = true
-
-    if (this.toogleChineseLanguage) {
-      this.languageChineseActive = true
-
-    } else
-      if (this.toogleSpanishLanguage) {
-        this.languageChineseActive = false
-        this.languageEspanholActive = true
-        this.languageInglesActive = false
-        this.languagePortuguesActive = false
-      } else
-        if (this.toogleEnglishLanguage) {
-          this.languageChineseActive = false
-          this.languageEspanholActive = false
-          this.languageInglesActive = true
-          this.languagePortuguesActive = false
-        } else
-          if (this.tooglePortugueseLanguage) {
-            this.languageChineseActive = false
-            this.languageEspanholActive = false
-            this.languageInglesActive = false
-            this.languagePortuguesActive = true
-          };
-
-  }
-
-  receiveChineseMessage($event: string) {
-    this.message = $event;
-    this.toogleChineseLanguage = (this.message == "true");
-    this.chooseLanguage()
-  }
-  receiveSpanishMessage($event: string) {
-    this.message = $event;
-    this.toogleSpanishLanguage = (this.message == "true");
-    this.chooseLanguage()
-  }
-  receiveEnglishMessage($event: string) {
-    this.message = $event;
-    this.toogleEnglishLanguage = (this.message == "true");
-    this.chooseLanguage()
-  }
-  receivePortugueseMessage($event: string) {
-    this.message = $event;
-    this.tooglePortugueseLanguage = (this.message == "true");
-    this.chooseLanguage()
-  }
-
+  
 }
 
 

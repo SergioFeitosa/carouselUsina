@@ -8,20 +8,7 @@
     </div>
 
     <div id="menu">
-        @if (this.languageChineseActive) {
-        {{ 'chines' }}
-        }
-        @else if (this.languageEspanholActive) {
-        {{ 'espanhol' }}
-        }
-        @else if (this.languageInglesActive) {
-        {{ 'ingles' }}
-        }
-        @else if (this.languagePortuguesActive) {
-        {{ 'portugues' }}
-        } @else {
-        teste
-        }
+        {{ this.name }}
 
     </div>
 
@@ -40,16 +27,8 @@
         </a>
     </div>
     <div id="menu">
-        <a href (click)="this.toogleChinesLanguage()">
-            <span class="fi fi-ch"></span>
-        </a>
-        <a href (click)="this.toogleEspanholLanguage()">
-            <span class="fi fi-es"></span>
-        </a>
-        <a href (click)="this.toogleInglesLanguage()">
-            <span class="fi fi-us"></span>
-        </a>
-        <a href (click)="this.tooglePortuguesLanguage()">
-            <span class="fi fi-br"></span>
-        </a>
+        <img class="fi fi-ch" alt="button" [src]="'/assets/images/bandeira-china.jpg'" (click)="toogleChineseLanguage()">
+        <img class="fi fi-es" alt="button" [src]="'/assets/images/bandeira-espanha.png'" (click)="toogleSpanishLanguage()">
+        <img class="fi fi-us" alt="button" [src]="'/assets/images/bandeira-estados_unidos.png'" (click)="toogleEnglishLanguage()">
+        <img class="fi fi-br" alt="button" [src]="'/assets/images/bandeira-brasil.png'" (click)="tooglePortugueseLanguage()">
     </div>

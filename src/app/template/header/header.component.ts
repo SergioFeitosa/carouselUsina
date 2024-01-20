@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HeaderService } from './header.service';
 import { CommonModule } from '@angular/common';
 import { environment } from '../../../environments/environment.development';
+import { HeaderLanguageService } from './header.language.service';
 
 @Component({
   selector: 'app-header',
@@ -14,30 +15,50 @@ import { environment } from '../../../environments/environment.development';
     CommonModule,
   ],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
+  providers: [
+    HeaderService,
+    HeaderLanguageService
+  ]
 })
 export class HeaderComponent implements OnInit {
 
+  languageChinesActive: boolean = false;
+  languageEspanholActive: boolean = false;
+  languageInglesActive: boolean = false;
+  languagePortuguesActive: boolean = false;
+
   @Input() sidebarActive:boolean = false;
   @Output() toggleSidebar = new EventEmitter();
-  @Input() languageChineseActive:boolean = false;
-  @Output() toogleChineseLanguage = new EventEmitter();
-  @Input() languageEspanholActive:boolean = false;
-  @Output() toogleSpanishLanguage = new EventEmitter();
-  @Input() languageInglesActive:boolean = false;
-  @Output() toogleEnglishLanguage = new EventEmitter();
-  @Input() languagePortuguesActive:boolean = false;
-  @Output() tooglePortugueseLanguage = new EventEmitter();
+  //@Input() languageChinesActive:boolean = false;
+  //@Output() toogleChineseLanguage = new EventEmitter();
+  //@Input() languageEspanholActive:boolean = false;
+  //@Output() toogleSpanishLanguage = new EventEmitter();
+  //@Input() languageInglesActive:boolean = false;
+  //@Output() toogleEnglishLanguage = new EventEmitter();
+  //@Input() languagePortuguesActive:boolean = false;
+  //@Output() tooglePortugueseLanguage = new EventEmitter();
+
+  public data: any = {};
+  public name: string = '';
+  public age: number = 0;
   
   constructor(
     private headerService: HeaderService,
-    ) { 
+    private headerLanguageService: HeaderLanguageService,
+    ) {     
+      this.headerLanguageService.headerLanguageData = {
+        language: 'ingles',
+      } 
+      
+    }
+
+  ngOnInit(): void { this.headerLanguageService.getDataLanguage().subscribe((data) => { 
+    this.data = data;
+         }
+       );
+    }
   
-  }
-
-  ngOnInit(): void {
-  }
-
   get title(): string {
     return this.headerService.headerData.title
   }
@@ -50,18 +71,31 @@ export class HeaderComponent implements OnInit {
     return this.headerService.headerData.routeUrl
   }
 
-  toogleChinesLanguage() {
-    this.toogleChineseLanguage.emit("true");
+  get language(): string {
+    return this.headerLanguageService.headerLanguageData.language
   }
-  toogleEspanholLanguage() {
-    this.toogleSpanishLanguage.emit("true");
+
+
+  toogleChineseLanguage() {
+      this.headerLanguageService.setDataLanguage({ name: '国际大宗商品', age: 30 });
+      this.headerLanguageService.getDataLanguage().subscribe((data) => {this.name = data.name})
   }
-  toogleInglesLanguage() {
-    this.toogleEnglishLanguage.emit("true");
+
+  toogleSpanishLanguage() {
+    this.headerLanguageService.setDataLanguage({ name: 'Materias primas internacionales', age: 30 });
+    this.headerLanguageService.getDataLanguage().subscribe((data) => {this.name = data.name})
   }
-  tooglePortuguesLanguage() {
-    this.tooglePortugueseLanguage.emit("true");
+
+  toogleEnglishLanguage() {
+    this.headerLanguageService.setDataLanguage({ name: 'International Commodities', age: 30 });
+    this.headerLanguageService.getDataLanguage().subscribe((data) => {this.name = data.name})
   }
+
+  tooglePortugueseLanguage() {
+    this.headerLanguageService.setDataLanguage({ name: 'Commodities Internacional', age: 30 });
+    this.headerLanguageService.getDataLanguage().subscribe((data) => {this.name = data.name})
+}
+
 }
 
 
