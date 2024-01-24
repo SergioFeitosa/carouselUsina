@@ -4,11 +4,14 @@ import { ForDirective } from '../../directives/for.directive';
 import { HeaderService } from '../../template/header/header.service';
 import { HeaderLanguageService } from '../../template/header/header.language.service';
 import { ActivatedRoute } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatCardModule, ForDirective],
+  imports: [MatCardModule,
+     ForDirective,
+     CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   providers: [
@@ -33,6 +36,10 @@ export class HomeComponent {
 
   texto: string = "";
   message: string = "";
+  idiomaChinese = false
+  idiomaEnglish = false
+  idiomaSpanish = false
+  idiomaPortuguese = false
 
   constructor(
     private activateRoute: ActivatedRoute,
@@ -52,30 +59,39 @@ export class HomeComponent {
     const idioma = String(this.activateRoute.snapshot.paramMap.get('idioma'))
 
     this.texto = idioma
-
+    this.idiomaChinese = false
+    this.idiomaEnglish = false
+    this.idiomaSpanish = false
+    this.idiomaPortuguese = false
+  
     if (this.texto == 'null') {
       this.headerLanguageService.setDataLanguage({ name: 'International Commodities', age: 30, language: 'english' });
-      this.texto = 'english'
+      this.texto = 'International Commodities'
+      this.idiomaEnglish = true
     }
 
     if (idioma === 'chinese') {
-      this.texto = 'chinese'
+      this.texto = '国际商品'
       this.headerLanguageService.setDataLanguage({ name: 'International Commodities', age: 30, language: 'chinese' });
+      this.idiomaChinese = true
     }
 
     if (idioma === 'english') {
-      this.texto = 'english'
+      this.texto = 'International Commodities'
       this.headerLanguageService.setDataLanguage({ name: 'International Commodities', age: 30, language: 'english' });
+      this.idiomaEnglish = true
     }
 
     if (idioma === 'spanish') {
-      this.texto = 'spanish'
+      this.texto = 'Materias primas internacionales'
       this.headerLanguageService.setDataLanguage({ name: 'Materias primas internacionales', age: 30, language: 'spanish' });
+      this.idiomaSpanish = true
     }
 
     if (idioma === 'portuguese') {
-      this.texto = 'portuguese'
+      this.texto = 'Commodities Internacional'
       this.headerLanguageService.setDataLanguage({ name: 'Commodities Internacional ', age: 30, language: 'portuguese' });
+      this.idiomaPortuguese = true
     }
   }
 }

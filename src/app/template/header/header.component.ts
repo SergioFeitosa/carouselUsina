@@ -83,7 +83,7 @@ export class HeaderComponent implements OnInit {
     this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
     this.idiomaAnterior = this.data.language
 
-    this.headerLanguageService.setDataLanguage({ name: '国际大宗商品', age: 0, language: 'chinese' });
+    this.headerLanguageService.setDataLanguage({ name: '国际商品', age: 0, language: 'chinese' });
     this.home = '家'
     this.service = '服务'
     this.contact = '接触'

@@ -1,12 +1,55 @@
-<h1 id="h1Home">{{ 'idioma home ' + this.texto }}</h1>
+<h1 id="h1Home">{{ this.texto }}</h1>
 <div id="divHome">
     <img src="/assets/images/agrokelvy4.png" alt="agrokelvy" width="200" height="200" >
-    <div id="divText">
-
-        As commodities são produtos básicos que são comercializados em larga escala. As principais commodities negociadas no mundo incluem:
-    </div>
     <br>
-    <div class="divLine">
+    <div class="container" *ngIf="this.idiomaChinese">    
+        <br>
+        <h4 id="divText">大宗商品是大规模交易的基础产品。全球贸易的主要商品包括：</h4>
+        <b>石油:</b> 它是世界上交易量最大的商品。石油用于生产汽油、柴油、煤油和其他石油产品。石油价格受供需、国际政治和自然灾害等多种因素影响。<br>
+        <b>金子:</b> 黄金是一种有价值的商品，用于珠宝、电子产品和投资。黄金价格受到多种因素的影响，例如通货膨胀、国际政治和珠宝需求。<br>
+        <b>大豆:</b> 大豆是一种农产品，用于生产豆油、动物饲料和生物燃料。大豆价格受供需、天气、政府政策等多种因素影响。<br>
+        <b>玉米:</b> 玉米是一种农产品，用于生产动物饲料、生物燃料和人类食品。玉米价格受供需、天气和政府政策等多种因素影响。<br>
+        <b>咖啡:</b> 咖啡是一种农产品，用于生产烘焙和研磨咖啡、速溶咖啡和其他饮料。咖啡的价格受供需、天气和政府政策等多种因素影响。<br>
+        <b>糖:</b> 糖是一种用于生产食品和饮料的农产品。食糖价格受供需、天气和政府政策等多种因素影响。<br>
+        <b>棉布:</b> 棉花是一种农产品，用于生产服装、织物和其他产品。棉花价格受供需、天气和政府政策等多种因素影响。<br>
+        <b>铜:</b> 铜是一种金属商品，用于电子、建筑和其他应用。铜价受供需、国际政治、全球经济等多种因素影响。<br>
+        <b>银:</b> 白银是一种金属商品，用于珠宝、电子产品和其他应用。白银价格受供需、国际政治和全球经济等多种因素影响。<br>
+        <b>小麦:</b> 小麦是一种农产品，用于生产人类食品和动物饲料。小麦价格受供需、天气和政府政策等多种因素影响。<br>
+    </div>
+
+    <div class="container" *ngIf="this.idiomaEnglish">
+        <br>
+        <h4  id="divText">Commodities are basic products that are traded on a large scale. The main commodities traded around the world include:</h4>
+        <b>Petroleum:</b> It is the most traded commodity in the world. Petroleum is used to produce gasoline, diesel, kerosene and other petroleum products. The price of oil is influenced by several factors, such as supply and demand, international politics and natural disasters.<br>
+        <b>Gold:</b> Gold is a valuable commodity that is used in jewelry, electronics and investments. The price of gold is influenced by several factors, such as inflation, international politics and demand for jewelry.<br>
+        <b>Soy:</b> Soybeans are an agricultural commodity that is used to produce soybean oil, animal feed and biofuel. The price of soybeans is influenced by several factors, such as supply and demand, weather and government policies.<br>
+        <b>Corn:</b> Corn is an agricultural commodity that is used to produce animal feed, biofuel and food for humans. The price of corn is influenced by several factors, such as supply and demand, weather and government policies.<br>
+        <b>Coffee:</b> Coffee is an agricultural commodity that is used to produce roasted and ground coffee, instant coffee, and other beverages. The price of coffee is influenced by several factors, such as supply and demand, weather and government policies.<br>
+        <b>Sugar:</b> Sugar is an agricultural commodity that is used to produce food and beverages. The price of sugar is influenced by several factors, such as supply and demand, weather and government policies.<br>
+        <b>Cotton:</b> Cotton is an agricultural commodity that is used to produce clothing, fabrics and other products. The price of cotton is influenced by several factors, such as supply and demand, weather and government policies.<br>
+        <b>Copper:</b> Copper is a metallic commodity that is used in electronics, construction and other applications. The price of copper is influenced by several factors, such as supply and demand, international politics and the global economy.<br>
+        <b>Silver:</b> Silver is a metallic commodity that is used in jewelry, electronics, and other applications. The price of silver is influenced by several factors, such as supply and demand, international politics and the global economy.<br>
+        <b>Wheat:</b> Wheat is an agricultural commodity that is used to produce human food and animal feed. The price of wheat is influenced by several factors, such as supply and demand, weather and government policies.<br>
+    </div>
+
+    <div class="container" *ngIf="this.idiomaSpanish">    
+        <br>
+        <h4 id="divText">Las materias primas son productos básicos que se comercializan a gran escala. Los principales productos básicos comercializados en todo el mundo incluyen:</h4>
+        <b>Petróleo:</b> Es el producto básico más comercializado en el mundo. El petróleo se utiliza para producir gasolina, diésel, queroseno y otros productos derivados del petróleo. El precio del petróleo está influenciado por varios factores, como la oferta y la demanda, la política internacional y los desastres naturales.<br>
+        <b>oro:</b> El oro es un bien valioso que se utiliza en joyería, electrónica e inversiones. El precio del oro está influenciado por varios factores, como la inflación, la política internacional y la demanda de joyas.<br>
+        <b>Soja:</b> La soja es un producto agrícola que se utiliza para producir aceite de soja, piensos para animales y biocombustibles. El precio de la soja está influenciado por varios factores, como la oferta y la demanda, el clima y las políticas gubernamentales.<br>
+        <b>Maíz:</b> El maíz es un producto agrícola que se utiliza para producir piensos para animales, biocombustibles y alimentos para humanos. El precio del maíz está influenciado por varios factores, como la oferta y la demanda, el clima y las políticas gubernamentales.<br>
+        <b>Café:</b> El café es un producto agrícola que se utiliza para producir café tostado y molido, café instantáneo y otras bebidas. El precio del café está influenciado por varios factores, como la oferta y la demanda, el clima y las políticas gubernamentales.<br>
+        <b>Azúcar:</b> El azúcar es un producto agrícola que se utiliza para producir alimentos y bebidas. El precio del azúcar está influenciado por varios factores, como la oferta y la demanda, el clima y las políticas gubernamentales.<br>
+        <b>Algodón:</b> El algodón es un producto agrícola que se utiliza para producir ropa, telas y otros productos. El precio del algodón está influenciado por varios factores, como la oferta y la demanda, el clima y las políticas gubernamentales.<br>
+        <b>Cobre:</b> El cobre es un producto metálico que se utiliza en electrónica, construcción y otras aplicaciones. El precio del cobre está influenciado por varios factores, como la oferta y la demanda, la política internacional y la economía global.<br>
+        <b>Plata:</b> La plata es un producto metálico que se utiliza en joyería, electrónica y otras aplicaciones. El precio de la plata está influenciado por varios factores, como la oferta y la demanda, la política internacional y la economía global.<br>
+        <b>Trigo:</b> El trigo es un producto agrícola que se utiliza para producir alimentos para humanos y animales. El precio del trigo está influenciado por varios factores, como la oferta y la demanda, el clima y las políticas gubernamentales.<br>
+    </div>
+
+    <div class="container" *ngIf="this.idiomaPortuguese">
+        <br>
+        <h4  id="divText">As commodities são produtos básicos que são comercializados em larga escala. As principais commodities negociadas no mundo incluem:</h4>
         <b>Petróleo:</b> É a commodity mais negociada do mundo. O petróleo é usado para produzir gasolina, diesel, querosene e outros produtos petrolíferos. O preço do petróleo é influenciado por vários fatores, como a oferta e a demanda, a política internacional e os desastres naturais.<br>
         <b>Ouro:</b> O ouro é uma commodity valiosa que é usada em joias, eletrônicos e investimentos. O preço do ouro é influenciado por vários fatores, como a inflação, a política internacional e a demanda por joias.<br>
         <b>Soja:</b> A soja é uma commodity agrícola que é usada para produzir óleo de soja, ração animal e biocombustível. O preço da soja é influenciado por vários fatores, como a oferta e a demanda, o clima e as políticas governamentais.<br>
