@@ -8,27 +8,27 @@
     </div>
 
     <div id="menu">
-        {{ this.name }}
+        {{ this.data.name }}
 
     </div>
 
     <div id="menu">
         <a routerLink="">
-            Home
+            {{ this.home }}
         </a>
         <a routerLink="servico">
-            Serviços
+            {{ this.service }}
         </a>
         <a routerLink="contato">
-            Contatos
+            {{ this.contact }}
         </a>
         <a routerLink="">
-            Logout
+            {{ this.logout }}
         </a>
     </div>
     <div id="menu">
-        <img class="fi fi-ch" alt="button" [src]="'/assets/images/bandeira-china.jpg'" (click)="toogleChineseLanguage()">
-        <img class="fi fi-es" alt="button" [src]="'/assets/images/bandeira-espanha.png'" (click)="toogleSpanishLanguage()">
-        <img class="fi fi-us" alt="button" [src]="'/assets/images/bandeira-estados_unidos.png'" (click)="toogleEnglishLanguage()">
-        <img class="fi fi-br" alt="button" [src]="'/assets/images/bandeira-brasil.png'" (click)="tooglePortugueseLanguage()">
+        <img class="fi fi-ch" alt="button" [src]="'/assets/images/bandeira-china.jpg'"          (click)="toogleChineseLanguageSend()">
+        <img class="fi fi-us" alt="button" [src]="'/assets/images/bandeira-estados_unidos.png'" (click)="toogleEnglishLanguageSend()">
+        <img class="fi fi-br" alt="button" [src]="'/assets/images/bandeira-brasil.png'"         (click)="tooglePortugueseLanguageSend()">
+        <img class="fi fi-es" alt="button" [src]="'/assets/images/bandeira-espanha.png'"        (click)="toogleSpanishLanguageSend()">
     </div>

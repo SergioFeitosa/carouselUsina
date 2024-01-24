@@ -1,13 +1,25 @@
 <div id="container" [ngClass]="{ 
         sidebarActive: sidebarActive, 
+        idiomaActive: idiomaActive,
          }">
     <app-sidebar></app-sidebar>
     <div id="contentContainer">
         <app-header 
-            (toggleSidebar)="sidebarActive = !sidebarActive"
-            [sidebarActive]="sidebarActive"
+        (toggleSidebar)="sidebarActive = !sidebarActive"
+        (toogleChineseLanguage)="languageChineseActive = !languageChineseActive"
+        (toogleEnglishLanguage)="languageEnglishActive = !languageEnglishActive"
+        (toogleSpanishLanguage)="languageSpanishActive = !languageSpanishActive"
+        (tooglePortugueseLanguage)="languagePortugueseActive = !languagePortugueseActive"
+                    
+        [sidebarActive]="sidebarActive"
+        [idiomaActive]="idiomaActive"
+        [languageChineseActive]=true
+        [languageEnglishActive]="languageEnglishActive"
+        [languageSpanishActive]="languageSpanishActive"
+        [languagePortugueseActive]="languagePortugueseActive"
             >
         </app-header>
         <router-outlet id="content"></router-outlet>
     </div>
 </div>
+

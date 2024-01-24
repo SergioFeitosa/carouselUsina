@@ -1,26 +1,28 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, ReplaySubject } from 'rxjs';
+import { BehaviorSubject, Observable, ReplaySubject, Subject } from 'rxjs';
 import { HeaderLanguageData } from './header.language.data.model';
 
 @Injectable({
   providedIn: 'root'
 })
 
+
+
 export class HeaderLanguageService {
 
   constructor() { }
 
-  private data$: BehaviorSubject<any> = new BehaviorSubject<any>({}); 
+  private data$: BehaviorSubject<any> = new BehaviorSubject<any>({});
 
-  public getDataLanguage(): Observable<any> { 
+  public getDataLanguage(): Observable<any> {
     return this.data$.asObservable();
-   } 
-    
-    public setDataLanguage(data: any): void { 
+  }
+
+  public setDataLanguage(data: any): void {
     this.data$.next(data);
-       }
-   
-  
+  }
+
+
   private dataSubject: ReplaySubject<string> = new ReplaySubject<string>
 
   setData(data: string): void {
@@ -34,7 +36,7 @@ export class HeaderLanguageService {
 
 
   private _headerLanguageData = new BehaviorSubject<HeaderLanguageData>({
-    language: "ingles",
+    language: "english",
   })
 
   get headerLanguageData(): HeaderLanguageData {
@@ -46,4 +48,31 @@ export class HeaderLanguageService {
   }
 
 
+  private dataX$: Subject<any> = new Subject<any>();
+
+  next(datax:any):void {
+    this.data$.next(datax);
+  }
+
+  select(): Observable<any> {
+    return this.dataX$.asObservable();
+  }
+
 }
+/*
+@Injectable()
+export class MyService{
+
+  private data$: Subject<any> = new Subject<any>();
+
+  next(data:any):void {
+    this.data$.next(data);
+  }
+
+  select(): Observable<any> {
+    this.data$.asObservable();
+  }
+
+}
+
+*/

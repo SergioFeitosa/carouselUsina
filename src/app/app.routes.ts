@@ -26,7 +26,11 @@ import { AlgodaoComponent } from './views/algodao/algodao.component';
 export const routes: Routes = [
     {
         path: "",
-        component: HomeComponent
+        component: HomeComponent,        
+    },
+    {
+        path: "home/:idioma",
+        component: HomeComponent,        
     },
     {
         path: "agronegocio",
