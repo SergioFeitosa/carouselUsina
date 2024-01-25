@@ -47,6 +47,11 @@ export class HeaderComponent implements OnInit {
   public contact: string = 'Contact us';
   public logout: string = 'Logout';
 
+  public urlEntrada: string = '';
+  public urlRaiz: string = '';
+  public urlComplemento: string = '';
+  public words: any = [];
+
   public idiomaAnterior = ''
 
 
@@ -95,7 +100,7 @@ export class HeaderComponent implements OnInit {
     else {
       this.router.navigate(['']);
     }
-  }
+}
 
   toogleSpanishLanguageSend() {
 
@@ -109,12 +114,12 @@ export class HeaderComponent implements OnInit {
     this.logout = 'Cerrar'
     this.toogleSpanishLanguage.emit()
     if (this.idiomaAnterior == 'english' || this.idiomaAnterior == 'spanish') {
-      this.router.navigate(['home/spanish']);
+        this.router.navigate(['home/spanish']);
+      }
+      else {
+        this.router.navigate(['']);
+      }
     }
-    else {
-      this.router.navigate(['']);
-    }
-  }
 
   toogleEnglishLanguageSend() {
 
@@ -148,5 +153,44 @@ export class HeaderComponent implements OnInit {
 
 }
 
+/*
+    this.urlEntrada = this.router.url.substring(1)
+    console.log('url entrada ===> ' + this.urlEntrada)
+
+    this.words = this.urlEntrada.split('/');
+    this.urlRaiz = this.words[0]
+    this.urlComplemento = this.words[1]
+    console.log('url raiz ===> ' + this.urlRaiz)
+    console.log('url complemento ===> ' + this.urlComplemento)
+
+
+    this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
+    this.idiomaAnterior = this.data.language
+
+    this.urlEntrada = this.router.url.substring(1)
+    console.log('url entrada ===> ' + this.urlEntrada)
+
+    this.words = this.urlEntrada.split('/');
+    this.urlRaiz = this.words[0]
+    this.urlComplemento = this.words[1]
+    console.log('url raiz ===> ' + this.urlRaiz)
+    console.log('url complemento ===> ' + this.urlComplemento)
+
+    this.urlEntrada = this.router.url.substring(1)
+    console.log('url entrada ===> ' + this.urlEntrada)
+
+    const words = this.urlEntrada.split('/');
+    this.urlRaiz = words[0]
+    this.urlComplemento = words[1]
+
+
+    if (this.idiomaAnterior == 'english' || this.idiomaAnterior == 'chinese') {
+      this.router.navigate([this.urlEntrada]);
+    }
+    else {
+      this.router.navigate([this.urlRaiz]);
+    }
+
+*/
 
 

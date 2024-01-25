@@ -1,10 +1,11 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { MatCardModule } from '@angular/material/card'
 import { HeaderService } from '../../template/header/header.service';
 import { ForDirective } from '../../directives/for.directive';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CommonModule } from '@angular/common';
+import { HeaderLanguageService } from '../../template/header/header.language.service';
 
 @Component({
   selector: 'app-agronegocio',
@@ -23,7 +24,34 @@ import { CommonModule } from '@angular/common';
 })
 export class AgronegocioComponent implements OnInit{
   
-  constructor(private headerService: HeaderService) { 
+  @Input('idiomaActive') idiomaActive: string = '';
+
+  public data: any = {};
+  public name: string = '';
+  public age: number = 0;
+  public language: string = '';
+
+  languageChineseActive: boolean = false;
+  languageEnglishActive: boolean = false;
+  languagePortugueseActive: boolean = false;
+  languageSpanishActive: boolean = false;
+
+  texto: string = "";
+  message: string = "";
+  idiomaChinese = false
+  idiomaEnglish = false
+  idiomaSpanish = false
+  idiomaPortuguese = false
+
+  title = ''
+  
+  constructor(
+    private router: Router,
+
+    private activateRoute: ActivatedRoute,
+    private headerService: HeaderService,
+    private headerLanguageService: HeaderLanguageService,
+    ) { 
     this.headerService.headerData = {
       title: 'Agro Negócio',
       icon: 'home',
@@ -31,6 +59,57 @@ export class AgronegocioComponent implements OnInit{
     }    
   }
   ngOnInit(): void {
+
+
+    const idioma = String(this.activateRoute.snapshot.paramMap.get('idioma'))
+
+    console.log('Entrada ' + idioma)  
+
+    console.log(this.router.url);
+
+    
+    this.texto = idioma
+    this.idiomaChinese = false
+    this.idiomaEnglish = false
+    this.idiomaSpanish = false
+    this.idiomaPortuguese = false
+  
+    this.title = "Cottonxxxxx"
+
+    if (this.texto == 'null') {
+      this.headerLanguageService.setDataLanguage({ name: 'Agribusiness', age: 30, language: 'english' });
+      this.texto = 'Agribusiness'
+      this.idiomaEnglish = true
+      this.title = "Cotton"
+    }
+
+    if (idioma === 'chinese') {
+      this.texto = '农业综合企业'
+      this.headerLanguageService.setDataLanguage({ name: '农业综合企业', age: 30, language: 'chinese' });
+      this.idiomaChinese = true
+      this.title = "Cotton"
+    }
+
+    if (idioma === 'english') {
+      this.texto = 'Agribusiness'
+      this.headerLanguageService.setDataLanguage({ name: 'Agribusiness', age: 30, language: 'english' });
+      this.idiomaEnglish = true
+      this.title = "Cotton"
+    }
+
+    if (idioma === 'spanish') {
+      this.texto = 'Agronegocios'
+      this.headerLanguageService.setDataLanguage({ name: 'Agronegocios', age: 30, language: 'spanish' });
+      this.idiomaSpanish = true
+      this.title = "Cotton"
+    }
+
+    if (idioma === 'portuguese') {
+      this.texto = 'Agronegócio'
+      this.headerLanguageService.setDataLanguage({ name: 'Agronegócio', age: 30, language: 'portuguese' });
+      this.idiomaPortuguese = true
+      this.title = "Cotton"
+    }
   }
   
   slides = [

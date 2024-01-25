@@ -37,6 +37,10 @@ export const routes: Routes = [
         component: AgronegocioComponent
     },
     {
+        path: "agronegocio/:idioma",
+        component: AgronegocioComponent
+    },
+    {
         path: "algodao",
         component: AlgodaoComponent
     },
