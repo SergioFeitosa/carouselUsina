@@ -1,0 +1,27 @@
+<h1 id="h1Home">农业综合企业</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div class="textFont"> 
+        农业综合企业，也称为农业综合企业，是一个涉及农业、畜牧业和工业等多个部门相互连接的食品生产链的经济部门。它包括与农业、商业和服务业（林业）森林管理以及植物采掘主义相关的经济活动。<br>
+        农业综合企业是全球社会非常重要的经济部门，因为它涉及一个食品生产链，除了消费其产品的商业之外，还连接农业、畜牧业和工业等多个部门。在这个领域，技术的运用非常密集，不仅限于农村领域，也存在于工业领域，生产种子、化肥、农药和其他农业投入品的工业。<br>
+        在巴西，农业综合企业是最赚钱的活动之一。根据 IBGE（巴西地理与统计研究所）的数据，该行业占 GDP（国内生产总值）的 23%。根据农业、​​畜牧业和供应部 (MAPA) 的数据，在过去 25 年里，种植面积增长了 53%，产量增长了 260%，生产率提高了 135%。<br>
+        巴西农业综合企业价值最高的产品是：皮棉、大米、豆类、玉米、大豆复合物（谷物、麸皮和油）、咖啡、糖、橙子、肉类、纤维素和纸张。全国肉类生产按畜群规模排序，分布在马托格罗索州、南马托格罗索州、圣保罗、戈亚尼亚、巴拉那州、朗多尼亚州和南里奥格兰德州。<br>
+        然而，农业综合企业也对环境构成威胁，特别是由于采用集约化生产系统。
+    </div>    
+    <br>
+    <hr class="rounded">
+
+
+</div>
+

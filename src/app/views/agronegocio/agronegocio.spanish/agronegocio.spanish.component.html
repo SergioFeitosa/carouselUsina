@@ -1,0 +1,29 @@
+
+<h1 id="h1Home">Agronegocio</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div class="textFont"> 
+        El agronegocio, también conocido como agronegocio, es un sector económico que involucra una cadena de producción de alimentos que interconecta varios sectores, como la agricultura, la ganadería y la industria. Comprende actividades económicas vinculadas a la agricultura, el manejo forestal para el comercio y los servicios (silvicultura) y el extractivismo vegetal.<br>
+        El agronegocio es un sector económico muy importante para la sociedad global, ya que involucra una cadena de producción de alimentos que interconecta varios sectores, como la agricultura, la ganadería y la industria, además del comercio que consume sus productos. En este sector, el uso de tecnología es intenso, no restringido al ámbito rural, sino que también está presente en el ámbito industrial, con industrias productoras de semillas, fertilizantes, pesticidas y otros insumos agrícolas.<br>
+        En Brasil, la agroindustria es una de las actividades más rentables. El sector representa el 23% del PIB (Producto Interno Bruto), según el IBGE (Instituto Brasileño de Geografía y Estadística). En los últimos 25 años, según el Ministerio de Agricultura, Ganadería y Abastecimiento (MAPA), la superficie plantada creció un 53% y la producción un 260% y la productividad aumentó un 135%.<br>
+        Los productos de mayor valor en la agroindustria brasileña son: fibra de algodón, arroz, frijol, maíz, complejo de soja (grano, salvado y aceite), café, azúcar, naranjas, carne, celulosa y papel. La producción nacional de carne ocurre, por orden de tamaño de rebaño, en Mato Grosso, Mato Grosso do Sul, São Paulo, Goiânia, Paraná, Rondônia y Rio Grande do Sul.<br>
+        Sin embargo, la agroindustria también representa un peligro para el medio ambiente, especialmente debido a la adopción de un sistema de producción intensivo.
+    </div>
+    <br>
+    <hr class="rounded">
+
+
+</div>
+
+

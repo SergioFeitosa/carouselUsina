@@ -1,28 +1,28 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { MatCardModule } from '@angular/material/card'
-import { HeaderService } from '../../template/header/header.service';
-import { ForDirective } from '../../directives/for.directive';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CommonModule } from '@angular/common';
-import { HeaderLanguageService } from '../../template/header/header.language.service';
+import { ForDirective } from '../../../directives/for.directive';
+import { HeaderService } from '../../../template/header/header.service';
+import { HeaderLanguageService } from '../../../template/header/header.language.service';
 
 @Component({
-  selector: 'app-agronegocio',
+  selector: 'app-algodao.chinese',
   standalone: true,
   imports: [
     MatCardModule, 
     ForDirective, 
-    AgronegocioComponent,
-    RouterModule,
+    AlgodaoChineseComponent,
+   RouterModule,
     SlickCarouselModule,
     CommonModule
   ],
-  templateUrl: './agronegocio.component.html',
-  styleUrl: './agronegocio.component.css',
+  templateUrl: './algodao.chinese.component.html',
+  styleUrl: './algodao.chinese.component.css',
   
 })
-export class AgronegocioComponent implements OnInit{
+export class AlgodaoChineseComponent implements OnInit{
   
   @Input('idiomaActive') idiomaActive: string = '';
 
@@ -53,7 +53,7 @@ export class AgronegocioComponent implements OnInit{
     private headerLanguageService: HeaderLanguageService,
     ) { 
     this.headerService.headerData = {
-      title: 'Agro Negócio',
+      title: 'Algodao',
       icon: 'home',
       routeUrl: '',
     }    
@@ -76,47 +76,15 @@ export class AgronegocioComponent implements OnInit{
   
     this.title = "Cottonxxxxx"
 
-    if (this.texto == 'null') {
       this.headerLanguageService.setDataLanguage({ name: 'Agribusiness', age: 30, language: 'english' });
       this.texto = 'Agribusiness'
       this.idiomaEnglish = true
       this.title = "Cotton"
-      this.router.navigate(['agronegocio/chinese']);
-      
-    }
-
-    if (idioma === 'chinese') {
-      this.texto = '农业综合企业'
-      this.headerLanguageService.setDataLanguage({ name: '农业综合企业', age: 30, language: 'chinese' });
-      this.idiomaChinese = true
-      this.title = "Cotton"
-      this.router.navigate(['agronegocio/chinese']);
-    }
-
-    if (idioma === 'english') {
-      this.texto = 'Agribusiness'
-      this.headerLanguageService.setDataLanguage({ name: 'Agribusiness', age: 30, language: 'english' });
-      this.idiomaEnglish = true
-      this.title = "Cotton"
-    }
-
-    if (idioma === 'spanish') {
-      this.texto = 'Agronegocios'
-      this.headerLanguageService.setDataLanguage({ name: 'Agronegocios', age: 30, language: 'spanish' });
-      this.idiomaSpanish = true
-      this.title = "Cotton"
-    }
-
-    if (idioma === 'portuguese') {
-      this.texto = 'Agronegócio'
-      this.headerLanguageService.setDataLanguage({ name: 'Agronegócio', age: 30, language: 'portuguese' });
-      this.idiomaPortuguese = true
-      this.title = "Cotton"
-    }
+      this.router.navigate(['algodao/chinese']);
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/algodao.jpg",title: "Algodão",routeUrl: "algodao"},
+    {img: "/carousel/browser/assets/images/algodao.jpg",title: "SSSSSS",routeUrl: "CCCCCCCCCC"},
     {img: "/carousel/browser/assets/images/cafe.jpg",title: "Café",routeUrl: "cafe"},
     {img: "/carousel/browser/assets/images/canadeacucar.jpg",title: "Cana de Açucar",routeUrl: "canadeacucar"},
     {img: "/carousel/browser/assets/images/etanol.jpg",title: "Etanol",routeUrl: "etanol"},

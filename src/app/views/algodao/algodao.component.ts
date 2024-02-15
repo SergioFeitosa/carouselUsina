@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @Component({
-  selector: 'app-cafe',
+  selector: 'app-algodao',
   standalone: true,
   imports: [CommonModule, SlickCarouselModule, RouterModule],
   templateUrl: './algodao.component.html',

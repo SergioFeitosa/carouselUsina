@@ -85,8 +85,15 @@ export class HeaderComponent implements OnInit {
 
   toogleChineseLanguageSend() {
 
+    console.log('idioma anterior ch ==> ' + this.data.language)
+    console.log('url anterior ch ==> ' + this.router.url)
+
+
     this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
     this.idiomaAnterior = this.data.language
+
+    console.log('idioma anterior ch ==> ' + this.data.language)
+
 
     this.headerLanguageService.setDataLanguage({ name: '国际商品', age: 0, language: 'chinese' });
     this.home = '家'
@@ -94,34 +101,36 @@ export class HeaderComponent implements OnInit {
     this.contact = '接触'
     this.logout = '登出'
     this.toogleChineseLanguage.emit()
-    if (this.idiomaAnterior == 'english' || this.idiomaAnterior == 'chinese') {
+
+
+    this.urlEntrada = this.router.url.substring(1)
+    console.log('url entrada ===> ' + this.urlEntrada)
+
+    this.words = this.urlEntrada.split('/');
+    this.urlRaiz = this.words[0]
+    this.urlComplemento = this.words[1]
+    console.log('url raiz ===> ' + this.urlRaiz)
+    console.log('url complemento ===> ' + this.urlComplemento)
+
+
+    if (this.urlRaiz == 'agronegocio') {
+      this.router.navigate(['agronegocio/chinese']);
+    } else if (this.urlRaiz == 'algodao') {
+      this.router.navigate(['algodao/chinese']);
+    } else {
       this.router.navigate(['home/chinese']);
     }
-    else {
-      this.router.navigate(['']);
-    }
-}
 
-  toogleSpanishLanguageSend() {
+  }
+
+  toogleEnglishLanguageSend() {
+
+    console.log('idioma anterior en ==> ' + this.data.language)
+    console.log('url anterior en ==> ' + this.router.url)
+
 
     this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
     this.idiomaAnterior = this.data.language
-
-    this.headerLanguageService.setDataLanguage({ name: 'Materias primas internacionales', age: 0, language: 'spanish' });
-    this.home = 'Hogar'
-    this.service = 'Servicio'
-    this.contact = 'Contacto'
-    this.logout = 'Cerrar'
-    this.toogleSpanishLanguage.emit()
-    if (this.idiomaAnterior == 'english' || this.idiomaAnterior == 'spanish') {
-        this.router.navigate(['home/spanish']);
-      }
-      else {
-        this.router.navigate(['']);
-      }
-    }
-
-  toogleEnglishLanguageSend() {
 
     this.headerLanguageService.setDataLanguage({ name: 'International Commodities', age: 30, language: 'english' });
     this.home = 'Home'
@@ -129,7 +138,22 @@ export class HeaderComponent implements OnInit {
     this.contact = 'Contact us'
     this.logout = 'Logout'
     this.toogleEnglishLanguage.emit()
-    this.router.navigate(['']);
+
+    this.urlEntrada = this.router.url.substring(1)
+    console.log('url entrada xx ===> ' + this.urlEntrada)
+
+    this.words = this.urlEntrada.split('/');
+    this.urlRaiz = this.words[0]
+    this.urlComplemento = this.words[1]
+    console.log('url raiz ===> ' + this.urlRaiz)
+    console.log('url complemento ===> ' + this.urlComplemento)
+    if (this.urlRaiz == 'agronegocio') {
+      this.router.navigate(['agronegocio/english']);
+    } else if (this.urlRaiz == 'algodao') {
+      this.router.navigate(['algodao/english']);
+    } else {
+      this.router.navigate(['home/english']);
+    }
   }
 
   tooglePortugueseLanguageSend() {
@@ -143,13 +167,54 @@ export class HeaderComponent implements OnInit {
     this.contact = 'Contato'
     this.logout = 'Sair'
     this.tooglePortugueseLanguage.emit()
-    if (this.idiomaAnterior == 'english' || this.idiomaAnterior == 'portuguese') {
+
+    this.urlEntrada = this.router.url.substring(1)
+    console.log('url entrada xx ===> ' + this.urlEntrada)
+
+    this.words = this.urlEntrada.split('/');
+    this.urlRaiz = this.words[0]
+    this.urlComplemento = this.words[1]
+    console.log('url raiz ===> ' + this.urlRaiz)
+    console.log('url complemento ===> ' + this.urlComplemento)
+    if (this.urlRaiz == 'agronegocio') {
+      this.router.navigate(['agronegocio/portuguese']);
+    } else if (this.urlRaiz == 'algodao') {
+      this.router.navigate(['algodao/portuguese']);
+    } else {
       this.router.navigate(['home/portuguese']);
     }
-    else {
-      this.router.navigate(['']);
-    }
   }
+
+  toogleSpanishLanguageSend() {
+
+    this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
+    this.idiomaAnterior = this.data.language
+
+    this.headerLanguageService.setDataLanguage({ name: 'Materias primas internacionales', age: 0, language: 'spanish' });
+    this.home = 'Hogar'
+    this.service = 'Servicio'
+    this.contact = 'Contacto'
+    this.logout = 'Cerrar'
+    this.toogleSpanishLanguage.emit()
+
+    this.urlEntrada = this.router.url.substring(1)
+    console.log('url entrada xx ===> ' + this.urlEntrada)
+
+    this.words = this.urlEntrada.split('/');
+    this.urlRaiz = this.words[0]
+    this.urlComplemento = this.words[1]
+    console.log('url raiz ===> ' + this.urlRaiz)
+    console.log('url complemento ===> ' + this.urlComplemento)
+    if (this.urlRaiz == 'agronegocio') {
+      this.router.navigate(['agronegocio/spanish']);
+    } else if (this.urlRaiz == 'algodao') {
+      this.router.navigate(['algodao/spanish']);
+    } else {
+      this.router.navigate(['home/spanish']);
+    }
+
+  }
+
 
 }
 

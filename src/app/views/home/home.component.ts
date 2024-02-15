@@ -79,7 +79,7 @@ export class HomeComponent {
 
     if (idioma === 'chinese') {
       this.texto = '国际商品'
-      this.headerLanguageService.setDataLanguage({ name: 'International Commodities', age: 30, language: 'chinese' });
+      this.headerLanguageService.setDataLanguage({ name: '国际商品', age: 30, language: 'chinese' });
       this.idiomaChinese = true
     }
 

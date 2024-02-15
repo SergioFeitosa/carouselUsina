@@ -22,6 +22,18 @@ import { SorgoComponent } from './views/sorgo/sorgo.component';
 import { CanadeacucarComponent } from './views/canadeacucar/canadeacucar.component';
 import { SojaComponent } from './views/soja/soja.component';
 import { AlgodaoComponent } from './views/algodao/algodao.component';
+import { HomeChineseComponent } from './views/home/home.chinese/home.chinese.component';
+import { HomeSpanishComponent } from './views/home/home.spanish/home.spanish.component';
+import { HomeEnglishComponent } from './views/home/home.english/home.english.component';
+import { HomePortugueseComponent } from './views/home/home.portuguese/home.portuguese.component';
+import { AgronegocioEnglishComponent } from './views/agronegocio/agronegocio.english/agronegocio.english.component';
+import { AgronegocioPortugueseComponent } from './views/agronegocio/agronegocio.portuguese/agronegocio.portuguese.component';
+import { AgronegocioSpanishComponent } from './views/agronegocio/agronegocio.spanish/agronegocio.spanish.component';
+import { AgronegocioChineseComponent } from './views/agronegocio/agronegocio.chinese/agronegocio.chinese.component';
+import { AlgodaoChineseComponent } from './views/algodao/algodao.chinese/algodao.chinese.component';
+import { AlgodaoEnglishComponent } from './views/algodao/algodao.english/algodao.english.component';
+import { AlgodaoPortugueseComponent } from './views/algodao/algodao.portuguese/algodao.portuguese.component';
+import { AlgodaoSpanishComponent } from './views/algodao/algodao.spanish/algodao.spanish.component';
 
 export const routes: Routes = [
     {
@@ -29,20 +41,60 @@ export const routes: Routes = [
         component: HomeComponent,        
     },
     {
-        path: "home/:idioma",
-        component: HomeComponent,        
+        path: "home/chinese",
+        component: HomeChineseComponent,        
+    },
+    {
+        path: "home/english",
+        component: HomeEnglishComponent,        
+    },
+    {
+        path: "home/portuguese",
+        component: HomePortugueseComponent,        
+    },
+    {
+        path: "home/spanish",
+        component: HomeSpanishComponent,        
     },
     {
         path: "agronegocio",
         component: AgronegocioComponent
     },
     {
-        path: "agronegocio/:idioma",
-        component: AgronegocioComponent
+        path: "agronegocio/chinese",
+        component: AgronegocioChineseComponent
+    },
+    {
+        path: "agronegocio/english",
+        component: AgronegocioEnglishComponent
+    },
+    {
+        path: "agronegocio/portuguese",
+        component: AgronegocioPortugueseComponent
+    },
+    {
+        path: "agronegocio/spanish",
+        component: AgronegocioSpanishComponent
     },
     {
         path: "algodao",
         component: AlgodaoComponent
+    },
+    {
+        path: "algodao/chinese",
+        component: AlgodaoChineseComponent
+    },
+    {
+        path: "algodao/english",
+        component: AlgodaoEnglishComponent
+    },
+    {
+        path: "algodao/portuguese",
+        component: AlgodaoPortugueseComponent
+    },
+    {
+        path: "algodao/spanish",
+        component: AlgodaoSpanishComponent
     },
     {
         path: "cafe",

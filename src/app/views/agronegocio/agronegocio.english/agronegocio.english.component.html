@@ -1,0 +1,26 @@
+<h1 id="h1Home">Agribusiness</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div class="textFont"> 
+        Agribusiness, also known as agribusiness, is an economic sector that involves a food production chain that interconnects several sectors, such as agriculture, livestock and industry. It comprises economic activities linked to agriculture, forest management for commerce and services (forestry) and plant extractivism.<br>
+        Agribusiness is a very important economic sector for global society, as it involves a food production chain that interconnects several sectors, such as agriculture, livestock and industry, in addition to the commerce that consumes its products. In this sector, the use of technology is intense, not restricted to the rural field, but is also present in the industrial field, with industries producing seeds, fertilizers, pesticides and other agricultural inputs.<br>
+        In Brazil, agribusiness is one of the most profitable activities. The sector represents 23% of GDP (Gross Domestic Product), according to IBGE (Brazilian Institute of Geography and Statistics). In the last 25 years, according to the Ministry of Agriculture, Livestock and Supply (MAPA), the planted area grew by 53% and production by 260% and productivity increased by 135%.<br>
+        The highest value products in Brazilian agribusiness are: cotton lint, rice, beans, corn, soy complex (grain, bran and oil), coffee, sugar, oranges, meat, cellulose and paper. National meat production occurs, in order of herd size, in Mato Grosso, Mato Grosso do Sul, São Paulo, Goiânia, Paraná, Rondônia and Rio Grande do Sul.<br>
+        However, agribusiness also represents a danger to the environment, especially due to the adoption of an intensive production system.</div>    <br>
+    <hr class="rounded">
+
+
+</div>
+
+
