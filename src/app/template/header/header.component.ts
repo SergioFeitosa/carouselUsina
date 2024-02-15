@@ -115,8 +115,68 @@ export class HeaderComponent implements OnInit {
 
     if (this.urlRaiz == 'agronegocio') {
       this.router.navigate(['agronegocio/chinese']);
+    } else if (this.urlRaiz == 'acucar') {
+      this.router.navigate(['acucar/chinese']);
     } else if (this.urlRaiz == 'algodao') {
       this.router.navigate(['algodao/chinese']);
+    } else if (this.urlRaiz == 'cafe') {
+      this.router.navigate(['cafe/chinese']);
+    } else if (this.urlRaiz == 'canadeacucar') {
+      this.router.navigate(['canadeacucar/chinese']);
+    } else if (this.urlRaiz == 'etanol') {
+      this.router.navigate(['etanol/chinese']);
+    } else if (this.urlRaiz == 'feijaopreto') {
+      this.router.navigate(['feijaopreto/chinese']);
+    } else if (this.urlRaiz == 'frango') {
+      this.router.navigate(['frango/chinese']);
+    } else if (this.urlRaiz == 'milho') {
+      this.router.navigate(['milho/chinese']);
+    } else if (this.urlRaiz == 'soja') {
+      this.router.navigate(['soja/chinese']);
+    } else if (this.urlRaiz == 'sorgo') {
+      this.router.navigate(['sorgo/chinese']);
+    } else if (this.urlRaiz == 'trigo') {
+      this.router.navigate(['trigo/chinese']);
+
+    } else if (this.urlRaiz == 'frango') {
+      this.router.navigate(['frango/chinese']);
+    } else if (this.urlRaiz == 'asafrango') {
+      this.router.navigate(['asafrango/chinese']);
+    } else if (this.urlRaiz == 'coracaofrango') {
+      this.router.navigate(['coracaofrango/chinese']);
+    } else if (this.urlRaiz == 'coxafrango') {
+      this.router.navigate(['coxafrango/chinese']);
+    } else if (this.urlRaiz == 'drumetfrango') {
+      this.router.navigate(['drumetfrango/chinese']);
+    } else if (this.urlRaiz == 'figadofrango') {
+      this.router.navigate(['figadofrango/chinese']);
+    } else if (this.urlRaiz == 'moelafrango') {
+      this.router.navigate(['moelafrango/chinese']);
+    } else if (this.urlRaiz == 'pefrango') {
+      this.router.navigate(['pefrango/chinese']);
+    } else if (this.urlRaiz == 'peitofrango') {
+      this.router.navigate(['peitofrango/chinese']);
+    } else if (this.urlRaiz == 'sobrecoxafrango') {
+      this.router.navigate(['sobrecoxafrango/chinese']);
+
+    } else if (this.urlRaiz == 'mineral') {
+      this.router.navigate(['mineral/chinese']);
+    } else if (this.urlRaiz == 'cobre') {
+      this.router.navigate(['cobre/chinese']);
+    } else if (this.urlRaiz == 'ferro') {
+      this.router.navigate(['ferro/chinese']);
+    } else if (this.urlRaiz == 'grafite') {
+      this.router.navigate(['grafite/chinese']);
+    } else if (this.urlRaiz == 'pedra') {
+      this.router.navigate(['pedra/chinese']);
+    } else if (this.urlRaiz == 'diamante') {
+      this.router.navigate(['diamante/chinese']);
+    } else if (this.urlRaiz == 'esmeralda') {
+      this.router.navigate(['esmeralda/chinese']);
+    } else if (this.urlRaiz == 'contato') {
+      this.router.navigate(['contato/chinese']);
+    } else if (this.urlRaiz == 'quemsomos') {
+      this.router.navigate(['quemsomos/chinese']);
     } else {
       this.router.navigate(['home/chinese']);
     }
@@ -149,8 +209,68 @@ export class HeaderComponent implements OnInit {
     console.log('url complemento ===> ' + this.urlComplemento)
     if (this.urlRaiz == 'agronegocio') {
       this.router.navigate(['agronegocio/english']);
+    } else if (this.urlRaiz == 'acucar') {
+      this.router.navigate(['acucar/english']);
     } else if (this.urlRaiz == 'algodao') {
       this.router.navigate(['algodao/english']);
+    } else if (this.urlRaiz == 'cafe') {
+      this.router.navigate(['cafe/english']);
+    } else if (this.urlRaiz == 'canadeacucar') {
+      this.router.navigate(['canadeacucar/english']);
+    } else if (this.urlRaiz == 'etanol') {
+      this.router.navigate(['etanol/english']);
+    } else if (this.urlRaiz == 'feijaopreto') {
+      this.router.navigate(['feijaopreto/english']);
+    } else if (this.urlRaiz == 'frango') {
+      this.router.navigate(['frango/english']);
+    } else if (this.urlRaiz == 'milho') {
+      this.router.navigate(['milho/english']);
+    } else if (this.urlRaiz == 'soja') {
+      this.router.navigate(['soja/english']);
+    } else if (this.urlRaiz == 'sorgo') {
+      this.router.navigate(['sorgo/english']);
+    } else if (this.urlRaiz == 'trigo') {
+      this.router.navigate(['trigo/english']);
+
+    } else if (this.urlRaiz == 'frango') {
+      this.router.navigate(['frango/english']);
+    } else if (this.urlRaiz == 'asafrango') {
+      this.router.navigate(['asafrango/english']);
+    } else if (this.urlRaiz == 'coracaofrango') {
+      this.router.navigate(['coracaofrango/english']);
+    } else if (this.urlRaiz == 'coxafrango') {
+      this.router.navigate(['coxafrango/english']);
+    } else if (this.urlRaiz == 'drumetfrango') {
+      this.router.navigate(['drumetfrango/english']);
+    } else if (this.urlRaiz == 'figadofrango') {
+      this.router.navigate(['figadofrango/english']);
+    } else if (this.urlRaiz == 'moelafrango') {
+      this.router.navigate(['moelafrango/english']);
+    } else if (this.urlRaiz == 'pefrango') {
+      this.router.navigate(['pefrango/english']);
+    } else if (this.urlRaiz == 'peitofrango') {
+      this.router.navigate(['peitofrango/english']);
+    } else if (this.urlRaiz == 'sobrecoxafrango') {
+      this.router.navigate(['sobrecoxafrango/english']);
+
+    } else if (this.urlRaiz == 'mineral') {
+      this.router.navigate(['mineral/english']);
+    } else if (this.urlRaiz == 'cobre') {
+      this.router.navigate(['cobre/english']);
+    } else if (this.urlRaiz == 'ferro') {
+      this.router.navigate(['ferro/english']);
+    } else if (this.urlRaiz == 'grafite') {
+      this.router.navigate(['grafite/english']);
+    } else if (this.urlRaiz == 'pedra') {
+      this.router.navigate(['pedra/english']);
+    } else if (this.urlRaiz == 'diamante') {
+      this.router.navigate(['diamante/english']);
+    } else if (this.urlRaiz == 'esmeralda') {
+      this.router.navigate(['esmeralda/english']);
+    } else if (this.urlRaiz == 'contato') {
+      this.router.navigate(['contato/english']);
+    } else if (this.urlRaiz == 'quemsomos') {
+      this.router.navigate(['quemsomos/english']);
     } else {
       this.router.navigate(['home/english']);
     }
@@ -178,8 +298,69 @@ export class HeaderComponent implements OnInit {
     console.log('url complemento ===> ' + this.urlComplemento)
     if (this.urlRaiz == 'agronegocio') {
       this.router.navigate(['agronegocio/portuguese']);
+    } else if (this.urlRaiz == 'acucar') {
+      this.router.navigate(['acucar/portuguese']);
     } else if (this.urlRaiz == 'algodao') {
       this.router.navigate(['algodao/portuguese']);
+    } else if (this.urlRaiz == 'cafe') {
+      this.router.navigate(['cafe/portuguese']);
+    } else if (this.urlRaiz == 'canadeacucar') {
+      this.router.navigate(['canadeacucar/portuguese']);
+    } else if (this.urlRaiz == 'etanol') {
+      this.router.navigate(['etanol/portuguese']);
+    } else if (this.urlRaiz == 'feijaopreto') {
+      this.router.navigate(['feijaopreto/portuguese']);
+    } else if (this.urlRaiz == 'frango') {
+      this.router.navigate(['frango/portuguese']);
+    } else if (this.urlRaiz == 'milho') {
+      this.router.navigate(['milho/portuguese']);
+    } else if (this.urlRaiz == 'soja') {
+      this.router.navigate(['soja/portuguese']);
+    } else if (this.urlRaiz == 'sorgo') {
+      this.router.navigate(['sorgo/portuguese']);
+    } else if (this.urlRaiz == 'trigo') {
+      this.router.navigate(['trigo/portuguese']);
+
+    } else if (this.urlRaiz == 'frango') {
+      this.router.navigate(['frango/portuguese']);
+    } else if (this.urlRaiz == 'asafrango') {
+      this.router.navigate(['asafrango/portuguese']);
+    } else if (this.urlRaiz == 'coracaofrango') {
+      this.router.navigate(['coracaofrango/portuguese']);
+    } else if (this.urlRaiz == 'coxafrango') {
+      this.router.navigate(['coxafrango/portuguese']);
+    } else if (this.urlRaiz == 'drumetfrango') {
+      this.router.navigate(['drumetfrango/portuguese']);
+    } else if (this.urlRaiz == 'figadofrango') {
+      this.router.navigate(['figadofrango/portuguese']);
+    } else if (this.urlRaiz == 'moelafrango') {
+      this.router.navigate(['moelafrango/portuguese']);
+    } else if (this.urlRaiz == 'pefrango') {
+      this.router.navigate(['pefrango/portuguese']);
+    } else if (this.urlRaiz == 'peitofrango') {
+      this.router.navigate(['peitofrango/portuguese']);
+    } else if (this.urlRaiz == 'sobrecoxafrango') {
+      this.router.navigate(['sobrecoxafrango/portuguese']);
+
+
+    } else if (this.urlRaiz == 'mineral') {
+      this.router.navigate(['mineral/portuguese']);
+    } else if (this.urlRaiz == 'cobre') {
+      this.router.navigate(['cobre/portuguese']);
+    } else if (this.urlRaiz == 'ferro') {
+      this.router.navigate(['ferro/portuguese']);
+    } else if (this.urlRaiz == 'grafite') {
+      this.router.navigate(['grafite/portuguese']);
+    } else if (this.urlRaiz == 'pedra') {
+      this.router.navigate(['pedra/portuguese']);
+    } else if (this.urlRaiz == 'diamante') {
+      this.router.navigate(['diamante/portuguese']);
+    } else if (this.urlRaiz == 'esmeralda') {
+      this.router.navigate(['esmeralda/portuguese']);
+    } else if (this.urlRaiz == 'contato') {
+      this.router.navigate(['contato/portuguese']);
+    } else if (this.urlRaiz == 'quemsomos') {
+      this.router.navigate(['quemsomos/portuguese']);
     } else {
       this.router.navigate(['home/portuguese']);
     }
@@ -207,8 +388,68 @@ export class HeaderComponent implements OnInit {
     console.log('url complemento ===> ' + this.urlComplemento)
     if (this.urlRaiz == 'agronegocio') {
       this.router.navigate(['agronegocio/spanish']);
+    } else if (this.urlRaiz == 'acucar') {
+      this.router.navigate(['acucar/spanish']);
     } else if (this.urlRaiz == 'algodao') {
       this.router.navigate(['algodao/spanish']);
+    } else if (this.urlRaiz == 'cafe') {
+      this.router.navigate(['cafe/spanish']);
+    } else if (this.urlRaiz == 'canadeacucar') {
+      this.router.navigate(['canadeacucar/spanish']);
+    } else if (this.urlRaiz == 'etanol') {
+      this.router.navigate(['etanol/spanish']);
+    } else if (this.urlRaiz == 'feijaopreto') {
+      this.router.navigate(['feijaopreto/spanish']);
+    } else if (this.urlRaiz == 'frango') {
+      this.router.navigate(['frango/spanish']);
+    } else if (this.urlRaiz == 'milho') {
+      this.router.navigate(['milho/spanish']);
+    } else if (this.urlRaiz == 'soja') {
+      this.router.navigate(['soja/spanish']);
+    } else if (this.urlRaiz == 'sorgo') {
+      this.router.navigate(['sorgo/spanish']);
+    } else if (this.urlRaiz == 'trigo') {
+      this.router.navigate(['trigo/spanish']);
+
+    } else if (this.urlRaiz == 'frango') {
+      this.router.navigate(['frango/spanish']);
+    } else if (this.urlRaiz == 'asafrango') {
+      this.router.navigate(['asafrango/spanish']);
+    } else if (this.urlRaiz == 'coracaofrango') {
+      this.router.navigate(['coracaofrango/spanish']);
+    } else if (this.urlRaiz == 'coxafrango') {
+      this.router.navigate(['coxafrango/spanish']);
+    } else if (this.urlRaiz == 'drumetfrango') {
+      this.router.navigate(['drumetfrango/spanish']);
+    } else if (this.urlRaiz == 'figadofrango') {
+      this.router.navigate(['figadofrango/spanish']);
+    } else if (this.urlRaiz == 'moelafrango') {
+      this.router.navigate(['moelafrango/spanish']);
+    } else if (this.urlRaiz == 'pefrango') {
+      this.router.navigate(['pefrango/spanish']);
+    } else if (this.urlRaiz == 'peitofrango') {
+      this.router.navigate(['peitofrango/spanish']);
+    } else if (this.urlRaiz == 'sobrecoxafrango') {
+      this.router.navigate(['sobrecoxafrango/spanish']);
+
+    } else if (this.urlRaiz == 'mineral') {
+      this.router.navigate(['mineral/spanish']);
+    } else if (this.urlRaiz == 'cobre') {
+      this.router.navigate(['cobre/spanish']);
+    } else if (this.urlRaiz == 'ferro') {
+      this.router.navigate(['ferro/spanish']);
+    } else if (this.urlRaiz == 'grafite') {
+      this.router.navigate(['grafite/spanish']);
+    } else if (this.urlRaiz == 'pedra') {
+      this.router.navigate(['pedra/spanish']);
+    } else if (this.urlRaiz == 'diamante') {
+      this.router.navigate(['diamante/spanish']);
+    } else if (this.urlRaiz == 'esmeralda') {
+      this.router.navigate(['esmeralda/spanish']);
+    } else if (this.urlRaiz == 'contato') {
+      this.router.navigate(['contato/spanish']);
+    } else if (this.urlRaiz == 'quemsomos') {
+      this.router.navigate(['quemsomos/spanish']);
     } else {
       this.router.navigate(['home/spanish']);
     }

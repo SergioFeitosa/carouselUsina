@@ -1,0 +1,28 @@
+<h1 id="h1Home">石頭</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div  class="textFont">
+        寶石是稀有且價值極高的結晶礦物，以其美麗、純度、顏色、透明度、光澤、硬度和光折射率而聞名。 它們是由數百萬年發生的地質過程形成的。 鑽石、紅寶石、藍寶石和祖母綠是世界上最有價值和最受歡迎的寶石。<br>
+
+        寶石的品質取決於其顏色、淨度、切工和克拉2。 寶石的開採可以在地下或露天礦井中進行2。 除了具有不同的商業價值外，根據其化學成分和稀有性，寶石還具有流行文化賦予的神秘和精神意義。<br>
+
+        寶石有多種用途，最常見的是製作珠寶和貴重藝術品。 然而，它們也用於精密儀器零件或磨料製造。 目前，寶石已經在電爐中以從石廢料中獲得的熔融材料為原料在高溫下製造。<br>
+
+        需要強調的是，每種寶石都有自己的特殊性、自己的成分和意義。 例如，瑪瑙與繁榮、友誼、保護、正義和活力聯繫在一起。 黃水晶與繁榮、自尊和職業成功有關。 珊瑚與活力和情緒平衡有關。<br>
+
+        因此，寶石不僅美麗、有價值，而且具有豐富的意義和象徵意義。    </div>
+    <br>
+    <hr class="rounded">
+
+</div>

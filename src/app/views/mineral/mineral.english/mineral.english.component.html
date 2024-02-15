@@ -1,0 +1,26 @@
+<h1 id="h1Home">Mineral</h1>
+<div id="divCarousel">
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div  class="textFont">
+        Minerals are homogeneous solid substances, generally of inorganic origin, formed by one or more chemical elements, commonly found in nature. They have a well-defined and differentiated molecular structure, which results in distinct properties. The main characteristics of minerals are: solid and crystalline structure, defined chemical composition, and ordered atomic arrangement.<br>
+
+        Minerals can be formed by atoms of just one chemical element or by different elements. Atoms arrange themselves and form combinations with determined proportions and defined geometric shapes. They form in nature by crystallization, recrystallization or even chemical reactions. The occurrence of these substances is influenced by temperature, pressure and chemical environment conditions.<br>
+
+        Minerals are classified into metallic and non-metallic. Metallic minerals are those that have characteristics such as electrical and heat conductivity. Examples are iron, aluminum and gold. Non-metallic minerals are the others, that is, those that do not have the typical properties of metallic elements. Examples are limestone, basalt and salts.<br>
+
+        Minerals are important for national economies and global economic dynamics, serving as raw materials for industry and being traded as commodities on the international market. Despite this, its unrestricted exploitation can cause environmental problems, such as soil degradation, pollution, deforestation and even serious environmental accidents.<br>    </div>
+    <br>
+    <hr class="rounded">
+
+</div>

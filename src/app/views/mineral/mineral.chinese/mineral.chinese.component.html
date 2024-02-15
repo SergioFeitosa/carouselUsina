@@ -1,0 +1,26 @@
+<h1 id="h1Home">礦物</h1>
+<div id="divCarousel">
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div  class="textFont">
+        礦物質是均質固體物質，通常為無機來源，由自然界中常見的一種或多種化學元素形成。 它們具有明確且差異化的分子結構，從而產生獨特的特性。 礦物的主要特徵是：固體和晶體結構、明確的化學成分和有序的原子排列。<br>
+
+        礦物質可以只由一種化學元素的原子形成，也可以由不同元素的原子形成。 原子按照確定的比例和定義的幾何形狀自行排列並形成組合。 它們在自然界中透過結晶、重結晶甚至化學反應形成。 這些物質的出現受溫度、壓力和化學環境條件的影響。<br>
+
+        礦物分為金屬礦物和非金屬礦物。 金屬礦物是一種具有導電性和導熱性等特性的礦物。 例如鐵、鋁和金。 非金屬礦物是指其他礦物，即不具有金屬元素典型性質的礦物。 例如石灰石、玄武岩和鹽。<br>
+
+        礦產對於國民經濟和全球經濟動態非常重要，可作為工業原料並在國際市場上作為商品進行交易。 儘管如此，其無限制的開採仍會造成土壤退化、污染、森林砍伐甚至嚴重環境事故等環境問題。<br>    </div>
+    <br>
+    <hr class="rounded">
+
+</div>

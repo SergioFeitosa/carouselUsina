@@ -1,0 +1,26 @@
+<h1 id="h1Home">Mineral</h1>
+<div id="divCarousel">
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div  class="textFont">
+        Los minerales son sustancias sólidas homogéneas, generalmente de origen inorgánico, formadas por uno o más elementos químicos, comúnmente encontrados en la naturaleza. Tienen una estructura molecular bien definida y diferenciada, lo que da como resultado propiedades distintas. Las principales características de los minerales son: estructura sólida y cristalina, composición química definida y disposición atómica ordenada.<br>
+
+        Los minerales pueden estar formados por átomos de un solo elemento químico o por elementos diferentes. Los átomos se ordenan y forman combinaciones con proporciones determinadas y formas geométricas definidas. Se forman en la naturaleza por cristalización, recristalización o incluso reacciones químicas. La aparición de estas sustancias está influenciada por la temperatura, la presión y las condiciones químicas del entorno.<br>
+
+        Los minerales se clasifican en metálicos y no metálicos. Los minerales metálicos son aquellos que tienen características como conductividad eléctrica y térmica. Algunos ejemplos son el hierro, el aluminio y el oro. Los minerales no metálicos son los demás, es decir, aquellos que no presentan las propiedades típicas de los elementos metálicos. Algunos ejemplos son la piedra caliza, el basalto y las sales.<br>
+
+        Los minerales son importantes para las economías nacionales y la dinámica económica mundial, ya que sirven como materia prima para la industria y se comercializan como productos básicos en el mercado internacional. A pesar de ello, su explotación irrestricta puede causar problemas ambientales, como degradación del suelo, contaminación, deforestación e incluso graves accidentes ambientales.<br>    </div>
+    <br>
+    <hr class="rounded">
+
+</div>

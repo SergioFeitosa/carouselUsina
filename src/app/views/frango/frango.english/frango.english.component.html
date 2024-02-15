@@ -1,0 +1,55 @@
+<h1 id="h1Home">Chicken</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div class="textFont"> 
+        Chicken Presentation: Versatility and Flavor at Your Table
+        Chicken (Gallus gallus domesticus) is a domestic bird appreciated around the world for its tasty, versatile and nutritious meat. Its creation offers several cutting options to meet your culinary needs.
+       
+        Chicken Cuts:
+       
+        Brisket: Lean, protein-rich cut, ideal for grilling, roasting or frying.
+        Drumstick: Cut with more fat and flavor, perfect for roasting, stewing or braising.
+        Thigh: Tasty and juicy cut, ideal for roasting, frying or making moqueca.
+        Wing: Popular cut for frying, roasting or grilling, and can be seasoned in different ways.
+        Drumet: Part of the wing with more meat, ideal for roasting, frying or making snacks.
+        Gizzard: Organ with a crunchy texture, ideal for stews, braises or moquecas.
+        Liver: Viscera rich in iron and vitamins, ideal for stews, pâtés or fillings.
+        Heart: Viscera with a firm texture and intense flavor, perfect for stir-fries, kebabs or roasts.
+        Benefits of Chicken:
+       
+        Nutrition: Meat rich in proteins, vitamins and minerals, low in saturated fat.
+        Versatility: Various cuts to suit your culinary needs and preferences.
+        Taste: Tasty meat that can be seasoned in different ways.
+        Price: Affordable and cost-effective meat.
+        Sustainability: Farming with less environmental impact compared to other meats.
+        Tips for Preparing Chicken:
+       
+        Hygiene: Wash your hands and utensils well before handling the chicken.
+        Cooking: Cook chicken until completely cooked to avoid illness.
+        Seasonings: Explore different seasonings to vary the flavor of the chicken.
+        Creativity: Try new recipes and chicken cuts to diversify your menu.
+        Conclusion:
+       
+        Chicken is an excellent option for a nutritious, tasty and affordable diet. With its different cuts and culinary possibilities, chicken is a versatile ingredient that can please all palates.
+       
+        For more information:
+       
+        Brazilian Animal Protein Association (ABPA): [[Invalid URL removed]]([Invalid URL removed])
+        Ministry of Agriculture, Livestock and Supply (MAPA): https://www.gov.br/agricultura/pt-br    </div>    
+    <br>
+    <hr class="rounded">
+
+
+</div>
+

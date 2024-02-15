@@ -1,0 +1,28 @@
+<h1 id="h1Home">Services</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div  class="textFont">
+        Commodity buying and selling services involve the negotiation of basic raw materials, such as metals, energy, agricultural products, among others. These transactions are carried out through futures contracts and options on the Stock Exchange.<br>
+
+        The companies that offer these services have teams of brokers with extensive experience in intermediation in the commodities markets, operating both in the domestic and export markets. They offer access to the main Futures Exchanges and the best tools and strategies for managing the price risk of agricultural marketing.<br>
+       
+        Furthermore, these companies provide daily information, from market opening to closing, with all updates for more assertive decision making. They monitor market conditions and activate purchase and sale triggers according to profitability goals stipulated by the client.<br>
+       
+        The benefits of Commodity Trading include leverage of up to 500:1, choosing from a wide range of commodities such as energy, metals and agricultural products, and the ability to enter and exit trades whenever you wish. Additionally, it is possible to trade in any direction you believe the markets will go.<br>
+       
+        However, it is important to note that commodity trading is only recommended for experienced investors as the risks are high. Therefore, it is advisable to seek advice from a financial advisor before investing in commodities.<br>    </div>
+    <br>
+    <hr class="rounded">
+
+</div>

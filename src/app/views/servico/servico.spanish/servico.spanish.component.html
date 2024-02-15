@@ -1,0 +1,28 @@
+<h1 id="h1Home">Servicios</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div  class="textFont">
+        Los servicios de compra y venta de commodities involucran la negociación de materias primas básicas, como metales, energía, productos agrícolas, entre otros. Estas transacciones se realizan a través de contratos de futuros y opciones en la Bolsa de Valores.<br>
+
+        Las empresas que ofrecen estos servicios cuentan con equipos de brokers con amplia experiencia en intermediación en los mercados de commodities, operando tanto en el mercado nacional como en el de exportación. Ofrecen acceso a las principales Bolsas de Futuros y las mejores herramientas y estrategias para la gestión del riesgo de precio de la comercialización agrícola.<br>
+       
+        Además, estas empresas brindan información diaria, desde la apertura hasta el cierre del mercado, con todas las actualizaciones para una toma de decisiones más asertiva. Monitorean las condiciones del mercado y activan triggers de compra y venta según objetivos de rentabilidad estipulados por el cliente.<br>
+       
+        Los beneficios del comercio de productos básicos incluyen un apalancamiento de hasta 500:1, la posibilidad de elegir entre una amplia gama de productos básicos como energía, metales y productos agrícolas, y la capacidad de entrar y salir de operaciones cuando lo desee. Además, es posible operar en cualquier dirección que crea que tomarán los mercados.<br>
+       
+        Sin embargo, es importante tener en cuenta que el comercio de materias primas sólo se recomienda a inversores experimentados, ya que los riesgos son altos. Por lo tanto, es recomendable buscar el asesoramiento de un asesor financiero antes de invertir en materias primas.<br>    </div>
+    <br>
+    <hr class="rounded">
+
+</div>

@@ -1,0 +1,29 @@
+<h1 id="h1Home">Pedras</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div  class="textFont">
+        As pedras preciosas são minerais cristalinos raros e de importante valor, que se distinguem pela sua beleza, pureza, cor, transparência, brilho, dureza e índice de refração da luz. Elas são formadas por processos geológicos que ocorrem ao longo de milhões de anos2. Diamantes, rubis, safiras e esmeraldas são algumas das pedras mais valiosas e desejadas no mundo.<br>
+
+        A qualidade de uma pedra preciosa é determinada por sua cor, clareza, corte e quilates2. A extração de pedras preciosas pode ser feita em minas subterrâneas ou a céu aberto2. Além de ter diferentes valores comerciais, de acordo com a sua composição química e raridade, as pedras preciosas também possuem significados místicos e espirituais que são atribuídos pela cultura popular.<br>
+
+        As pedras preciosas podem ter diversas utilizações, sendo mais comum na confecção de joias e objetos valiosos de arte. No entanto, também são utilizadas em peças para instrumentos de precisão ou ainda na fabricação de abrasivos. Atualmente, já são fabricadas pedras preciosas em fornos elétricos a elevadas temperaturas, tendo como matéria-prima o material fundido que se obtém de resíduos das pedras.<br>
+
+        É importante ressaltar que cada pedra preciosa tem a sua própria particularidade, seus próprios componentes e significados. Por exemplo, a ágata é associada à prosperidade, amizade, proteção, justiça e vitalidade. O citrino é associado à prosperidade, autoestima e sucesso profissional. E o coral é associado à vitalidade e ao equilíbrio emocional.<br>
+
+        Portanto, as pedras preciosas são não apenas belas e valiosas, mas também carregam consigo uma riqueza de significados e simbolismos.
+    </div>
+    <br>
+    <hr class="rounded">
+
+</div>

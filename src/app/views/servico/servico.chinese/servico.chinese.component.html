@@ -1,0 +1,28 @@
+<h1 id="h1Home">服務</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div  class="textFont">
+        商品買賣服務涉及金屬、能源、農產品等基礎原料的協商。 這些交易是透過證券交易所的期貨合約和選擇權進行的。<br>
+
+        提供這些服務的公司擁有在商品市場中介方面擁有豐富經驗的經紀人團隊，在國內和出口市場開展業務。 他們提供進入主要期貨交易所的機會以及管理農產品行銷價格風險的最佳工具和策略。<br>
+       
+        此外，這些公司還提供從開盤到收盤的每日信息，以及所有更新信息，以便做出更果斷的決策。 他們監控市場狀況並根據客戶規定的獲利目標啟動購買和銷售觸發器。<br>
+       
+        商品交易的優勢包括高達 500:1 的槓桿，從能源、金屬和農產品等多種商品中進行選擇，以及隨時進入和退出交易的能力。 此外，您可以按照您認為市場走向的任何方向進行交易。<br>
+       
+        但要注意的是，大宗商品交易僅建議經驗豐富的投資者，因為風險較高。 因此，建議在投資商品之前尋求財務顧問的建議。<br>    </div>
+    <br>
+    <hr class="rounded">
+
+</div>

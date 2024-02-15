@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AlgodaoEnglishComponent } from './algodao.english.component';
+import { ContatoChineseComponent } from './contato.chinese.component';
 
-describe('AlgodaoEnglishComponent', () => {
-  let component: AlgodaoEnglishComponent;
-  let fixture: ComponentFixture<AlgodaoEnglishComponent>;
+describe('ContatoChineseComponent', () => {
+  let component: ContatoChineseComponent;
+  let fixture: ComponentFixture<ContatoChineseComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AlgodaoEnglishComponent]
+      imports: [ContatoChineseComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AlgodaoEnglishComponent);
+    fixture = TestBed.createComponent(ContatoChineseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

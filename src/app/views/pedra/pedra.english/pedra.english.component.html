@@ -1,0 +1,28 @@
+<h1 id="h1Home">Stones</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div  class="textFont">
+        Precious stones are rare and highly valuable crystalline minerals that are distinguished by their beauty, purity, color, transparency, shine, hardness and light refraction index. They are formed by geological processes that occur over millions of years2. Diamonds, rubies, sapphires and emeralds are some of the most valuable and desired stones in the world.<br>
+
+        The quality of a gemstone is determined by its color, clarity, cut and carats2. The extraction of precious stones can be done in underground or open pit mines2. In addition to having different commercial values, according to their chemical composition and rarity, precious stones also have mystical and spiritual meanings that are attributed by popular culture.<br>
+
+        Precious stones can have a variety of uses, being most common in making jewelry and valuable art objects. However, they are also used in parts for precision instruments or in the manufacture of abrasives. Currently, precious stones are already manufactured in electric furnaces at high temperatures, using molten material obtained from stone waste as raw material.<br>
+
+        It is important to emphasize that each gemstone has its own particularity, its own components and meanings. For example, agate is associated with prosperity, friendship, protection, justice and vitality. Citrine is associated with prosperity, self-esteem and professional success. And coral is associated with vitality and emotional balance.<br>
+
+        Therefore, gemstones are not only beautiful and valuable, but they also carry with them a wealth of meanings and symbolism.    </div>
+    <br>
+    <hr class="rounded">
+
+</div>
