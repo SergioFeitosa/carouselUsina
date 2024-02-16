@@ -84,15 +84,15 @@ export class FrangoEnglishComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/asafrango.jpg",title: "asafrango",routeUrl: "asafrango/english"},
-    {img: "/carousel/browser/assets/images/coracaofrango.jpg",title: "coracaofrango",routeUrl: "coracaofrango/english"},
-    {img: "/carousel/browser/assets/images/coxafrango.jpg",title: "coxafrango",routeUrl: "coxafrango/english"},
-    {img: "/carousel/browser/assets/images/drumetfrango.jpg",title: "drumetfrango",routeUrl: "drumetfrango/english"},
-    {img: "/carousel/browser/assets/images/figadofrango.jpg",title: "figadofrango",routeUrl: "figadofrango/english"},
-    {img: "/carousel/browser/assets/images/moelafrango.jpg",title: "moelafrango",routeUrl: "moelafrango/english"},
-    {img: "/carousel/browser/assets/images/pefrango.jpg",title: "pefrango",routeUrl: "pefrango/english"},
-    {img: "/carousel/browser/assets/images/peitofrango.jpg",title: "peitofrango",routeUrl: "peitofrango/english"},
-    {img: "/carousel/browser/assets/images/sobrecoxafrango.jpg",title: "sobrecoxafrango",routeUrl: "sobrecoxafrango/english"},
+    {img: "/carousel/browser/assets/images/asinha-frango.png",title: "Chicken Wings",routeUrl: "asafrango/english"},
+    {img: "/carousel/browser/assets/images/coracao-frango.jpg",title: "Chicken Heart",routeUrl: "coracaofrango/english"},
+    {img: "/carousel/browser/assets/images/coxa-frango.jpg",title: "Chicken thigh ",routeUrl: "coxafrango/english"},
+    {img: "/carousel/browser/assets/images/drumet-frango.jpg",title: "Chicken Drumet",routeUrl: "drumetfrango/english"},
+    {img: "/carousel/browser/assets/images/figado-frango.jpg",title: "Chicken Liver",routeUrl: "figadofrango/english"},
+    {img: "/carousel/browser/assets/images/moela-frango.jpg",title: "Chicken gizzard",routeUrl: "moelafrango/english"},
+    {img: "/carousel/browser/assets/images/pe-frango.jpg",title: "Chicken feet",routeUrl: "pefrango/english"},
+    {img: "/carousel/browser/assets/images/peito-frango.jpg",title: "Chicken breast",routeUrl: "peitofrango/english"},
+    {img: "/carousel/browser/assets/images/sobrecoxa-frango.jpg",title: "Chicken upperleg",routeUrl: "sobrecoxafrango/english"},
     
   ]
 

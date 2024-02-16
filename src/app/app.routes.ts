@@ -129,6 +129,50 @@ import { FrangoSpanishComponent } from './views/frango/frango.spanish/frango.spa
 import { FrangoPortugueseComponent } from './views/frango/frango.portuguese/frango.portuguese.component';
 import { FrangoEnglishComponent } from './views/frango/frango.english/frango.english.component';
 import { FrangoChineseComponent } from './views/frango/frango.chinese/frango.chinese.component';
+import { AsafrangoComponent } from './views/asafrango/asafrango.component';
+import { AsafrangoSpanishComponent } from './views/asafrango/asafrango.spanish/asafrango.spanish.component';
+import { AsafrangoPortugueseComponent } from './views/asafrango/asafrango.portuguese/asafrango.portuguese.component';
+import { AsafrangoEnglishComponent } from './views/asafrango/asafrango.english/asafrango.english.component';
+import { AsafrangoChineseComponent } from './views/asafrango/asafrango.chinese/asafrango.chinese.component';
+import { CoracaofrangoComponent } from './views/coracaofrango/coracaofrango.component';
+import { CoracaofrangoChineseComponent } from './views/coracaofrango/coracaofrango.chinese/coracaofrango.chinese.component';
+import { CoracaofrangoEnglishComponent } from './views/coracaofrango/coracaofrango.english/coracaofrango.english.component';
+import { CoracaofrangoPortugueseComponent } from './views/coracaofrango/coracaofrango.portuguese/coracaofrango.portuguese.component';
+import { CoracaofrangoSpanishComponent } from './views/coracaofrango/coracaofrango.spanish/coracaofrango.spanish.component';
+import { CoxafrangoComponent } from './views/coxafrango/coxafrango.component';
+import { CoxafrangoChineseComponent } from './views/coxafrango/coxafrango.chinese/coxafrango.chinese.component';
+import { CoxafrangoEnglishComponent } from './views/coxafrango/coxafrango.english/coxafrango.english.component';
+import { CoxafrangoPortugueseComponent } from './views/coxafrango/coxafrango.portuguese/coxafrango.portuguese.component';
+import { DrumetfrangoSpanishComponent } from './views/drumetfrango/drumetfrango.spanish/drumetfrango.spanish.component';
+import { DrumetfrangoComponent } from './views/drumetfrango/drumetfrango.component';
+import { DrumetfrangoChineseComponent } from './views/drumetfrango/drumetfrango.chinese/drumetfrango.chinese.component';
+import { DrumetfrangoEnglishComponent } from './views/drumetfrango/drumetfrango.english/drumetfrango.english.component';
+import { DrumetfrangoPortugueseComponent } from './views/drumetfrango/drumetfrango.portuguese/drumetfrango.portuguese.component';
+import { FigadofrangoComponent } from './views/figadofrango/figadofrango.component';
+import { FigadofrangoChineseComponent } from './views/figadofrango/figadofrango.chinese/figadofrango.chinese.component';
+import { FigadofrangoEnglishComponent } from './views/figadofrango/figadofrango.english/figadofrango.english.component';
+import { FigadofrangoPortugueseComponent } from './views/figadofrango/figadofrango.portuguese/figadofrango.portuguese.component';
+import { FigadofrangoSpanishComponent } from './views/figadofrango/figadofrango.spanish/figadofrango.spanish.component';
+import { MoelafrangoComponent } from './views/moelafrango/moelafrango.component';
+import { MoelafrangoChineseComponent } from './views/moelafrango/moelafrango.chinese/moelafrango.chinese.component';
+import { MoelafrangoEnglishComponent } from './views/moelafrango/moelafrango.english/moelafrango.english.component';
+import { MoelafrangoPortugueseComponent } from './views/moelafrango/moelafrango.portuguese/moelafrango.portuguese.component';
+import { MoelafrangoSpanishComponent } from './views/moelafrango/moelafrango.spanish/moelafrango.spanish.component';
+import { PefrangoComponent } from './views/pefrango/pefrango.component';
+import { PefrangoChineseComponent } from './views/pefrango/pefrango.chinese/pefrango.chinese.component';
+import { PefrangoEnglishComponent } from './views/pefrango/pefrango.english/pefrango.english.component';
+import { PefrangoPortugueseComponent } from './views/pefrango/pefrango.portuguese/pefrango.portuguese.component';
+import { PefrangoSpanishComponent } from './views/pefrango/pefrango.spanish/pefrango.spanish.component';
+import { PeitofrangoComponent } from './views/peitofrango/peitofrango.component';
+import { PeitofrangoChineseComponent } from './views/peitofrango/peitofrango.chinese/peitofrango.chinese.component';
+import { PeitofrangoEnglishComponent } from './views/peitofrango/peitofrango.english/peitofrango.english.component';
+import { PeitofrangoPortugueseComponent } from './views/peitofrango/peitofrango.portuguese/peitofrango.portuguese.component';
+import { PeitofrangoSpanishComponent } from './views/peitofrango/peitofrango.spanish/peitofrango.spanish.component';
+import { SobrecoxafrangoComponent } from './views/sobrecoxafrango/sobrecoxafrango.component';
+import { SobrecoxafrangoChineseComponent } from './views/sobrecoxafrango/sobrecoxafrango.chinese/sobrecoxafrango.chinese.component';
+import { SobrecoxafrangoEnglishComponent } from './views/sobrecoxafrango/sobrecoxafrango.english/sobrecoxafrango.english.component';
+import { SobrecoxafrangoPortugueseComponent } from './views/sobrecoxafrango/sobrecoxafrango.portuguese/sobrecoxafrango.portuguese.component';
+import { SobrecoxafrangoSpanishComponent } from './views/sobrecoxafrango/sobrecoxafrango.spanish/sobrecoxafrango.spanish.component';
 
 export const routes: Routes = [
     {
@@ -311,6 +355,188 @@ export const routes: Routes = [
         path: "frango/spanish",
         component: FrangoSpanishComponent
     },
+    {
+        path: "asafrango",
+        component: AsafrangoComponent
+    },
+    {
+        path: "asafrango/chinese",
+        component: AsafrangoChineseComponent
+    },
+    {
+        path: "asafrango/english",
+        component: AsafrangoEnglishComponent
+    },
+    {
+        path: "asafrango/portuguese",
+        component: AsafrangoPortugueseComponent
+    },
+    {
+        path: "asafrango/spanish",
+        component: AsafrangoSpanishComponent
+    },
+    {
+        path: "coracaofrango",
+        component: CoracaofrangoComponent
+    },
+    {
+        path: "coracaofrango/chinese",
+        component: CoracaofrangoChineseComponent
+    },
+    {
+        path: "coracaofrango/english",
+        component: CoracaofrangoEnglishComponent
+    },
+    {
+        path: "coracaofrango/portuguese",
+        component: CoracaofrangoPortugueseComponent
+    },
+    {
+        path: "coracaofrango/spanish",
+        component: CoracaofrangoSpanishComponent
+    },
+    {
+        path: "coxafrango",
+        component: CoxafrangoComponent
+    },
+    {
+        path: "coxafrango/chinese",
+        component: CoxafrangoChineseComponent
+    },
+    {
+        path: "coxafrango/english",
+        component: CoxafrangoEnglishComponent
+    },
+    {
+        path: "coxafrango/portuguese",
+        component: CoxafrangoPortugueseComponent
+    },
+    {
+        path: "coxafrango/spanish",
+        component: DrumetfrangoSpanishComponent
+    },
+    {
+        path: "drumetfrango",
+        component: DrumetfrangoComponent
+    },
+    {
+        path: "drumetfrango/chinese",
+        component: DrumetfrangoChineseComponent
+    },
+    {
+        path: "drumetfrango/english",
+        component: DrumetfrangoEnglishComponent
+    },
+    {
+        path: "drumetfrango/portuguese",
+        component: DrumetfrangoPortugueseComponent
+    },
+    {
+        path: "drumetfrango/spanish",
+        component: DrumetfrangoSpanishComponent
+    },
+    {
+        path: "figadofrango",
+        component: FigadofrangoComponent
+    },
+    {
+        path: "figadofrango/chinese",
+        component: FigadofrangoChineseComponent
+    },
+    {
+        path: "figadofrango/english",
+        component: FigadofrangoEnglishComponent
+    },
+    {
+        path: "figadofrango/portuguese",
+        component: FigadofrangoPortugueseComponent
+    },
+    {
+        path: "figadofrango/spanish",
+        component: FigadofrangoSpanishComponent
+    },
+    {
+        path: "moelafrango",
+        component: MoelafrangoComponent
+    },
+    {
+        path: "moelafrango/chinese",
+        component: MoelafrangoChineseComponent
+    },
+    {
+        path: "moelafrango/english",
+        component: MoelafrangoEnglishComponent
+    },
+    {
+        path: "moelafrango/portuguese",
+        component: MoelafrangoPortugueseComponent
+    },
+    {
+        path: "moelafrango/spanish",
+        component: MoelafrangoSpanishComponent
+    },
+    {
+        path: "pefrango",
+        component: PefrangoComponent
+    },
+    {
+        path: "pefrango/chinese",
+        component: PefrangoChineseComponent
+    },
+    {
+        path: "pefrango/english",
+        component: PefrangoEnglishComponent
+    },
+    {
+        path: "pefrango/portuguese",
+        component: PefrangoPortugueseComponent
+    },
+    {
+        path: "pefrango/spanish",
+        component: PefrangoSpanishComponent
+    },
+
+    {
+        path: "peitofrango",
+        component: PeitofrangoComponent
+    },
+    {
+        path: "peitofrango/chinese",
+        component: PeitofrangoChineseComponent
+    },
+    {
+        path: "peitofrango/english",
+        component: PeitofrangoEnglishComponent
+    },
+    {
+        path: "peitofrango/portuguese",
+        component: PeitofrangoPortugueseComponent
+    },
+    {
+        path: "peitofrango/spanish",
+        component: PeitofrangoSpanishComponent
+    },
+    {
+        path: "sobrecoxafrango",
+        component: SobrecoxafrangoComponent
+    },
+    {
+        path: "sobrecoxafrango/chinese",
+        component: SobrecoxafrangoChineseComponent
+    },
+    {
+        path: "sobrecoxafrango/english",
+        component: SobrecoxafrangoEnglishComponent
+    },
+    {
+        path: "sobrecoxafrango/portuguese",
+        component: SobrecoxafrangoPortugueseComponent
+    },
+    {
+        path: "sobrecoxafrango/spanish",
+        component: SobrecoxafrangoSpanishComponent
+    },
+
     {
         path: "milho",
         component: MilhoComponent

@@ -1,10 +1,19 @@
-<h1 id="h1Home">Frango</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/feijaopreto.jpg"  width="200" height="200" >
-    <br>
-    <br>
-    <div  class="textFont">
 
+<h1 id="h1Home">Frango</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div class="textFont"> 
         Apresentação do Frango: Versatilidade e Sabor à Sua Mesa
         O frango (Gallus gallus domesticus) é uma ave doméstica apreciada no mundo todo por sua carne saborosa, versátil e nutritiva. Sua criação oferece diversas opções de cortes para atender às suas necessidades culinárias.
         
@@ -39,7 +48,10 @@
         
         Associação Brasileira de Proteína Animal (ABPA): [[URL inválido removido]]([URL inválido removido])
         Ministério da Agricultura, Pecuária e Abastecimento (MAPA): https://www.gov.br/agricultura/pt-br   
-        </div>
-        <br>
+    </div>    
+    <br>
     <hr class="rounded">
+
+
 </div>
+

@@ -86,14 +86,16 @@ export class AgronegocioSpanishComponent {
   }
 
   slides = [
-    { img: "/carousel/browser/assets/images/algodao.jpg", title: "SSSSSS", routeUrl: "CCCCCCCCCC" },
-    { img: "/carousel/browser/assets/images/cafe.jpg", title: "Café", routeUrl: "cafe" },
-    { img: "/carousel/browser/assets/images/canadeacucar.jpg", title: "Cana de Açucar", routeUrl: "canadeacucar" },
-    { img: "/carousel/browser/assets/images/etanol.jpg", title: "Etanol", routeUrl: "etanol" },
-    { img: "/carousel/browser/assets/images/milho.jpg", title: "Milho", routeUrl: "milho" },
-    { img: "/carousel/browser/assets/images/soja.jpg", title: "Soja", routeUrl: "soja" },
-    { img: "/carousel/browser/assets/images/sorgo.jpg", title: "Sorgo", routeUrl: "sorgo" },
-    { img: "/carousel/browser/assets/images/trigo.jpg", title: "Trigo", routeUrl: "trigo" },
+    {img: "/carousel/browser/assets/images/acucar.jpg",title: "Azúcar",routeUrl: "acucar/english"},
+    {img: "/carousel/browser/assets/images/algodao.jpg",title: "Algodón",routeUrl: "algodao/english"},
+    {img: "/carousel/browser/assets/images/cafe.jpg",title: "Café",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/canadeacucar.jpg",title: "Caña de azúcar",routeUrl: "canadeacucar"},
+    {img: "/carousel/browser/assets/images/etanol.jpg",title: "Etanol",routeUrl: "etanol"},
+    {img: "/carousel/browser/assets/images/feijaopreto.jpg",title: "Frijol negro",routeUrl: "feijaopreto"},
+    {img: "/carousel/browser/assets/images/milho.jpg",title: "Maíz",routeUrl: "milho"},
+    {img: "/carousel/browser/assets/images/soja.jpg",title: "Soja",routeUrl: "soja"},
+    {img: "/carousel/browser/assets/images/sorgo.jpg",title: "Sorgo",routeUrl: "sorgo"},
+    {img: "/carousel/browser/assets/images/trigo.jpg",title: "Trigo",routeUrl: "trigo"},
 
   ]
 

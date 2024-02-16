@@ -85,15 +85,8 @@ export class HeaderComponent implements OnInit {
 
   toogleChineseLanguageSend() {
 
-    console.log('idioma anterior ch ==> ' + this.data.language)
-    console.log('url anterior ch ==> ' + this.router.url)
-
-
     this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
     this.idiomaAnterior = this.data.language
-
-    console.log('idioma anterior ch ==> ' + this.data.language)
-
 
     this.headerLanguageService.setDataLanguage({ name: '国际商品', age: 0, language: 'chinese' });
     this.home = '家'
@@ -102,16 +95,11 @@ export class HeaderComponent implements OnInit {
     this.logout = '登出'
     this.toogleChineseLanguage.emit()
 
-
     this.urlEntrada = this.router.url.substring(1)
-    console.log('url entrada ===> ' + this.urlEntrada)
 
     this.words = this.urlEntrada.split('/');
     this.urlRaiz = this.words[0]
     this.urlComplemento = this.words[1]
-    console.log('url raiz ===> ' + this.urlRaiz)
-    console.log('url complemento ===> ' + this.urlComplemento)
-
 
     if (this.urlRaiz == 'agronegocio') {
       this.router.navigate(['agronegocio/chinese']);
@@ -185,10 +173,6 @@ export class HeaderComponent implements OnInit {
 
   toogleEnglishLanguageSend() {
 
-    console.log('idioma anterior en ==> ' + this.data.language)
-    console.log('url anterior en ==> ' + this.router.url)
-
-
     this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
     this.idiomaAnterior = this.data.language
 
@@ -200,13 +184,11 @@ export class HeaderComponent implements OnInit {
     this.toogleEnglishLanguage.emit()
 
     this.urlEntrada = this.router.url.substring(1)
-    console.log('url entrada xx ===> ' + this.urlEntrada)
 
     this.words = this.urlEntrada.split('/');
     this.urlRaiz = this.words[0]
     this.urlComplemento = this.words[1]
-    console.log('url raiz ===> ' + this.urlRaiz)
-    console.log('url complemento ===> ' + this.urlComplemento)
+
     if (this.urlRaiz == 'agronegocio') {
       this.router.navigate(['agronegocio/english']);
     } else if (this.urlRaiz == 'acucar') {
@@ -289,13 +271,11 @@ export class HeaderComponent implements OnInit {
     this.tooglePortugueseLanguage.emit()
 
     this.urlEntrada = this.router.url.substring(1)
-    console.log('url entrada xx ===> ' + this.urlEntrada)
 
     this.words = this.urlEntrada.split('/');
     this.urlRaiz = this.words[0]
     this.urlComplemento = this.words[1]
-    console.log('url raiz ===> ' + this.urlRaiz)
-    console.log('url complemento ===> ' + this.urlComplemento)
+
     if (this.urlRaiz == 'agronegocio') {
       this.router.navigate(['agronegocio/portuguese']);
     } else if (this.urlRaiz == 'acucar') {
@@ -310,8 +290,6 @@ export class HeaderComponent implements OnInit {
       this.router.navigate(['etanol/portuguese']);
     } else if (this.urlRaiz == 'feijaopreto') {
       this.router.navigate(['feijaopreto/portuguese']);
-    } else if (this.urlRaiz == 'frango') {
-      this.router.navigate(['frango/portuguese']);
     } else if (this.urlRaiz == 'milho') {
       this.router.navigate(['milho/portuguese']);
     } else if (this.urlRaiz == 'soja') {
@@ -379,13 +357,11 @@ export class HeaderComponent implements OnInit {
     this.toogleSpanishLanguage.emit()
 
     this.urlEntrada = this.router.url.substring(1)
-    console.log('url entrada xx ===> ' + this.urlEntrada)
 
     this.words = this.urlEntrada.split('/');
     this.urlRaiz = this.words[0]
     this.urlComplemento = this.words[1]
-    console.log('url raiz ===> ' + this.urlRaiz)
-    console.log('url complemento ===> ' + this.urlComplemento)
+
     if (this.urlRaiz == 'agronegocio') {
       this.router.navigate(['agronegocio/spanish']);
     } else if (this.urlRaiz == 'acucar') {

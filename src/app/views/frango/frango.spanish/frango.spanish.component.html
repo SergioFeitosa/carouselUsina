@@ -1,9 +1,19 @@
+
 <h1 id="h1Home">Pollo</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/feijaopreto.jpg"  width="200" height="200" >
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
+    <div class="textFont"> 
         Presentación del Pollo: Versatilidad y Sabor en Tu Mesa
         El pollo (Gallus gallus domesticus) es un ave doméstica apreciada en todo el mundo por su carne sabrosa, versátil y nutritiva. Su creación ofrece varias opciones de corte para satisfacer tus necesidades culinarias.
         
@@ -37,6 +47,10 @@
         Para más informaciones:
         
         Asociación Brasileña de Proteína Animal (ABPA): [[URL no válida eliminada]]([URL no válida eliminada])
-        Ministerio de Agricultura, Ganadería y Abastecimiento (MAPA): https://www.gov.br/agricultura/pt-br </div>    <br>
+        Ministerio de Agricultura, Ganadería y Abastecimiento (MAPA): https://www.gov.br/agricultura/pt-br     </div>    
+    <br>
     <hr class="rounded">
+
+
 </div>
+
