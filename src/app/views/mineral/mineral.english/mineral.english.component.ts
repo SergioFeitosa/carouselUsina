@@ -33,9 +33,9 @@ export class MineralEnglishComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/cobre.jpg",title: "Cobre",routeUrl: "cobre"},
-    {img: "/carousel/browser/assets/images/ferro.jpg",title: "Ferro",routeUrl: "cafe"},
-    {img: "/carousel/browser/assets/images/grafita.jpg",title: "Grafite",routeUrl: "grafite"},
+    {img: "/carousel/browser/assets/images/cobre.jpg",title: "Copper",routeUrl: "cobre"},
+    {img: "/carousel/browser/assets/images/ferro.jpg",title: "Iron",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/grafita.jpg",title: "Graphite",routeUrl: "grafite"},
   ]
 
   slideConfig = {

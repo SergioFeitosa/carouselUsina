@@ -64,11 +64,6 @@ export class AgronegocioSpanishComponent {
 
     const idioma = String(this.activateRoute.snapshot.paramMap.get('idioma'))
 
-    console.log('Entrada ' + idioma)
-
-    console.log(this.router.url);
-
-
     this.texto = idioma
     this.idiomaChinese = false
     this.idiomaEnglish = false

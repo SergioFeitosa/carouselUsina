@@ -85,6 +85,11 @@ export class HeaderComponent implements OnInit {
 
   toogleChineseLanguageSend() {
 
+    this.languageChineseActive = true
+    this.languageEnglishActive = false
+    this.languagePortugueseActive = false
+    this.languageSpanishActive = false
+
     this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
     this.idiomaAnterior = this.data.language
 
@@ -94,12 +99,18 @@ export class HeaderComponent implements OnInit {
     this.contact = '接触'
     this.logout = '登出'
     this.toogleChineseLanguage.emit()
-
     this.urlEntrada = this.router.url.substring(1)
 
     this.words = this.urlEntrada.split('/');
     this.urlRaiz = this.words[0]
     this.urlComplemento = this.words[1]
+
+    console.log('toogleChineseLanguage x' + this.languageChineseActive)
+    console.log('toogleEnglishLanguage x' + this.languageEnglishActive)
+    console.log('tooglePortugueseLanguage x' + this.languagePortugueseActive)
+    console.log('toogleSpanishLanguage x' + this.languageSpanishActive)
+
+
 
     if (this.urlRaiz == 'agronegocio') {
       this.router.navigate(['agronegocio/chinese']);
@@ -172,6 +183,18 @@ export class HeaderComponent implements OnInit {
   }
 
   toogleEnglishLanguageSend() {
+
+    this.languageChineseActive = false
+    this.languageEnglishActive = true
+    this.languagePortugueseActive = false
+    this.languageSpanishActive = false
+
+    console.log('toogleChineseLanguage x' + this.languageChineseActive)
+    console.log('toogleEnglishLanguage x' + this.languageEnglishActive)
+    console.log('tooglePortugueseLanguage x' + this.languagePortugueseActive)
+    console.log('toogleSpanishLanguage x' + this.languageSpanishActive)
+
+
 
     this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
     this.idiomaAnterior = this.data.language
@@ -260,6 +283,16 @@ export class HeaderComponent implements OnInit {
 
   tooglePortugueseLanguageSend() {
 
+    this.languageChineseActive = false
+    this.languageEnglishActive = false
+    this.languagePortugueseActive = true
+    this.languageSpanishActive = false
+
+    console.log('toogleChineseLanguage x' + this.languageChineseActive)
+    console.log('toogleEnglishLanguage x' + this.languageEnglishActive)
+    console.log('tooglePortugueseLanguage x' + this.languagePortugueseActive)
+    console.log('toogleSpanishLanguage x' + this.languageSpanishActive)
+
     this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
     this.idiomaAnterior = this.data.language
 
@@ -346,6 +379,11 @@ export class HeaderComponent implements OnInit {
 
   toogleSpanishLanguageSend() {
 
+    this.languageChineseActive = false
+    this.languageEnglishActive = false
+    this.languagePortugueseActive = false
+    this.languageSpanishActive = true
+
     this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
     this.idiomaAnterior = this.data.language
 
@@ -361,6 +399,11 @@ export class HeaderComponent implements OnInit {
     this.words = this.urlEntrada.split('/');
     this.urlRaiz = this.words[0]
     this.urlComplemento = this.words[1]
+
+    console.log('toogleChineseLanguage x' + this.languageChineseActive)
+    console.log('toogleEnglishLanguage x' + this.languageEnglishActive)
+    console.log('tooglePortugueseLanguage x' + this.languagePortugueseActive)
+    console.log('toogleSpanishLanguage x' + this.languageSpanishActive)
 
     if (this.urlRaiz == 'agronegocio') {
       this.router.navigate(['agronegocio/spanish']);

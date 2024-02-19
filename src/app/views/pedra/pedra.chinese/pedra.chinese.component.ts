@@ -32,8 +32,8 @@ export class PedraChineseComponent {
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/diamante.jpg",title: "Diamante",routeUrl: "diamante"},
-    {img: "/carousel/browser/assets/images/esmeralda.jpg",title: "Esmeralda",routeUrl: "esmeralda"},
+    {img: "/carousel/browser/assets/images/diamante.jpg",title: "鑽石",routeUrl: "diamante"},
+    {img: "/carousel/browser/assets/images/esmeralda.jpg",title: "翠",routeUrl: "esmeralda"},
   ]
 
   slideConfig = {

@@ -33,9 +33,9 @@ export class MineralChineseComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/cobre.jpg",title: "Cobre",routeUrl: "cobre"},
-    {img: "/carousel/browser/assets/images/ferro.jpg",title: "Ferro",routeUrl: "cafe"},
-    {img: "/carousel/browser/assets/images/grafita.jpg",title: "Grafite",routeUrl: "grafite"},
+    {img: "/carousel/browser/assets/images/cobre.jpg",title: "銅",routeUrl: "cobre"},
+    {img: "/carousel/browser/assets/images/ferro.jpg",title: "鐵",routeUrl: "cafe"},
+    {img: "/carousel/browser/assets/images/grafita.jpg",title: "石墨",routeUrl: "grafite"},
   ]
 
   slideConfig = {

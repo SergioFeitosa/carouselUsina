@@ -34,8 +34,8 @@ export class ServicoSpanishComponent implements OnInit{
   
   slides = [
     {img: "/carousel/browser/assets/images/compra.png",title: "Compras",routeUrl: "compra"},
-    {img: "/carousel/browser/assets/images/venda.jpg",title: "Vendas",routeUrl: "venda"},
-    {img: "/carousel/browser/assets/images/transporte.jpg",title: "Transportes",routeUrl: "transporte"},
+    {img: "/carousel/browser/assets/images/venda.jpg",title: "Ventas",routeUrl: "venda"},
+    {img: "/carousel/browser/assets/images/transporte.jpg",title: "Transporte",routeUrl: "transporte"},
   ]
 
   slideConfig = {

@@ -1,23 +1,21 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { MatMenuModule } from '@angular/material/menu';
-import { HeaderService } from '../header/header.service';
-import { HeaderLanguageService } from '../header/header.language.service';
-import { UserStoreService } from '../../core/user.store.service';
-import { Router, RouterModule } from '@angular/router';
+import { Component, Input } from '@angular/core';
+import { HeaderService } from '../../header/header.service';
+import { HeaderLanguageService } from '../../header/header.language.service';
+import { UserStoreService } from '../../../core/user.store.service';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
+
+
 @Component({
-  selector: 'app-sidebar',
+  selector: 'app-sidebarportuguese',
   standalone: true,
   imports: [
     RouterModule,
-    MatButtonModule, 
-    MatMenuModule,
     CommonModule,
   ],
-  templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss',
+  templateUrl: './sidebar.portuguese.component.html',
+  styleUrl: './sidebar.portuguese.component.scss',
   providers: [
     HeaderService,
     HeaderLanguageService,
@@ -25,15 +23,17 @@ import { CommonModule } from '@angular/common';
   ]
 
 })
-export class SidebarComponent {
+export class SidebarPortugueseComponent {
+
 
   @Input() idiomaActive: string = '';
 
   @Input() sidebarActive: boolean = false;
   @Input() languageChineseActive: boolean = false;
+  @Input() languageEnglishActive: boolean = false;
+  @Input() languagePortugueseActive: boolean = true;
   @Input() languageSpanishActive: boolean = false;
-  @Input() languageEnglishActive: boolean = true;
-  @Input() languagePortugueseActive: boolean = false;
+
 
   public data: any = {};
   public name: string = '';
@@ -78,7 +78,7 @@ export class SidebarComponent {
       console.log('toogleChineseLanguage' + this.languageChineseActive)
       console.log('toogleEnglishLanguage' + this.languageEnglishActive)
       console.log('tooglePortugueseLanguage' + this.languagePortugueseActive)
-      console.log('toogleSpanishLanguage' + this.languageSpanishActive)
+      console.log('tooglePortugueseLanguage' + this.languagePortugueseActive)
 
       console.log('name ' + this.headerLanguageService.headerLanguageData.language)
     }
