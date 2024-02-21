@@ -51,11 +51,6 @@ export class AppComponent {
   toggleSidebar = false;
   sidebarActive = false;
 
-  toogleChineseLanguage = false
-  toogleEnglishLanguage = false
-  toogleSpanishLanguage = false
-  tooglePortugueseLanguage = false
-
   languageChineseActive = false
   languageEnglishActive = false
   languageSpanishActive = false

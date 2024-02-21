@@ -81,7 +81,7 @@ export class AgronegocioSpanishComponent {
   }
 
   slides = [
-    {img: "/carousel/browser/assets/images/acucar.jpg",title: "Azúcar",routeUrl: "acucar/english"},
+    {img: "/carousel/browser/assets/images/acucar2.jpg",title: "Azúcar",routeUrl: "acucar/english"},
     {img: "/carousel/browser/assets/images/algodao.jpg",title: "Algodón",routeUrl: "algodao/english"},
     {img: "/carousel/browser/assets/images/cafe.jpg",title: "Café",routeUrl: "cafe"},
     {img: "/carousel/browser/assets/images/canadeacucar.jpg",title: "Caña de azúcar",routeUrl: "canadeacucar"},

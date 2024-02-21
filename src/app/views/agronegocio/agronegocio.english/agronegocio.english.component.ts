@@ -79,7 +79,7 @@ export class AgronegocioEnglishComponent implements OnInit {
   }
 
   slides = [
-    {img: "/carousel/browser/assets/images/acucar.jpg",title: "Sugar",routeUrl: "acucar/english"},
+    {img: "/carousel/browser/assets/images/acucar2.jpg",title: "Sugar",routeUrl: "acucar/english"},
     {img: "/carousel/browser/assets/images/algodao.jpg",title: "Cotton",routeUrl: "algodao/english"},
     {img: "/carousel/browser/assets/images/cafe.jpg",title: "Coffee",routeUrl: "cafe"},
     {img: "/carousel/browser/assets/images/canadeacucar.jpg",title: "Sugar cane",routeUrl: "canadeacucar"},

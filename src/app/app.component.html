@@ -2,7 +2,18 @@
         sidebarActive: sidebarActive, 
         idiomaActive: idiomaActive,
          }">
-    <app-sidebar></app-sidebar>
+    <app-sidebar
+    
+    [languageChineseActive]="languageChineseActive"
+    [languageEnglishActive]="languageEnglishActive"
+    [languageSpanishActive]="languageSpanishActive"
+    [languagePortugueseActive]="languagePortugueseActive"
+
+    [idiomaActive]="idiomaActive"
+    (toogleIdiomaActive)="idiomaActive"
+    
+
+    ></app-sidebar>
     <div id="contentContainer">
         <app-header 
         (toggleSidebar)="sidebarActive = !sidebarActive"
@@ -10,10 +21,11 @@
         (toogleEnglishLanguage)="languageEnglishActive = !languageEnglishActive"
         (toogleSpanishLanguage)="languageSpanishActive = !languageSpanishActive"
         (tooglePortugueseLanguage)="languagePortugueseActive = !languagePortugueseActive"
+        (toogleIdiomaActive)="idiomaActive"
                     
         [sidebarActive]="sidebarActive"
         [idiomaActive]="idiomaActive"
-        [languageChineseActive]=true
+        [languageChineseActive]="languageChineseActive"
         [languageEnglishActive]="languageEnglishActive"
         [languageSpanishActive]="languageSpanishActive"
         [languagePortugueseActive]="languagePortugueseActive"

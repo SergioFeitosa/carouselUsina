@@ -31,9 +31,11 @@ export class SidebarComponent {
 
   @Input() sidebarActive: boolean = false;
   @Input() languageChineseActive: boolean = false;
+  @Input() languageEnglishActive: boolean = false;
+  @Input() languagePortugueseActive: boolean = true;
   @Input() languageSpanishActive: boolean = false;
-  @Input() languageEnglishActive: boolean = true;
-  @Input() languagePortugueseActive: boolean = false;
+
+
 
   public data: any = {};
   public name: string = '';
@@ -52,7 +54,7 @@ export class SidebarComponent {
 
   public idiomaAnterior = ''
 
-  public toogleChineseLanguageRecebido: boolean = false; 
+  public toogleChineseLanguageRecebido: boolean = true; 
 
   constructor(
     private router: Router,
@@ -64,7 +66,6 @@ export class SidebarComponent {
   ngOnInit(): void {
     this.headerLanguageService.getDataLanguage().subscribe((data) => {
       this.data = data;
-      console.log('idioma sidebar ==> ' + this.idiomaActive)
 
       this.urlEntrada = this.router.url.substring(1)
 
@@ -72,18 +73,11 @@ export class SidebarComponent {
       this.urlRaiz = this.words[0]
       this.urlComplemento = this.words[1]
 
-      console.log('urlRouter ==> ' + this.router.url)
-      console.log('urlEntrada ==> ' + this.urlEntrada)
-      console.log('urlComplemento ==> ' + this.urlComplemento)
-      console.log('toogleChineseLanguage' + this.languageChineseActive)
-      console.log('toogleEnglishLanguage' + this.languageEnglishActive)
-      console.log('tooglePortugueseLanguage' + this.languagePortugueseActive)
-      console.log('toogleSpanishLanguage' + this.languageSpanishActive)
-
-      console.log('name ' + this.headerLanguageService.headerLanguageData.language)
     }
     );
     this.headerLanguageService.setDataLanguage({ name: 'International Commodities', age: 0, language: this.idiomaActive });
+
+    this.languageEnglishActive = !this.languageEnglishActive
   }
 
   get title(): string {
@@ -101,4 +95,5 @@ export class SidebarComponent {
   get idioma(): string {
     return this.headerLanguageService.headerLanguageData.language
   }
+
 }

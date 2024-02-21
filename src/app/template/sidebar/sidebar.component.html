@@ -1,106 +1,89 @@
 <div id="sidebar">
     <div id="menu">
 
-        <div *ngIf="this.idioma == 'english'" class= "figure">
+        <div *ngIf="this.languageChineseActive" class= "figure">
+            <div class="figureSombra"> </div>
             <!-- Menu chines -->
             <button mat-button routerLink="home/english" id="title">
                 <i class="material-icons" id="iconSpace">
                     home
                 </i>
-                Home CH {{ this.idioma }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languageEnglishActive }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languagePortugueseActive }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languageSpanishActive }}
+                家
             </button>
             <button mat-button [matMenuTriggerFor]="menu1" id="title" routerLink="agronegocio/english">
                 <i class="material-icons" id="iconSpace">
                     storefront
                 </i>
-                Agro Negócio
+                農業綜合企業
             </button>
             <mat-menu #menu1="matMenu">
                 <button mat-menu-item routerLink="acucar/english" id="subItem">
                     <i class="material-icons">
                         grass
                     </i>
-                    <span id="textSubItemGrande">Açucar</span>
+                    <span id="textSubItemGrande">糖</span>
 
                 </button>
                 <button mat-menu-item routerLink="algodao/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Algodão</span>
+                    <span id="textSubItem">棉布</span>
 
                 </button>
                 <button mat-menu-item routerLink="cafe/english" id="subItem">
                     <i class="material-icons">
                         coffee
                     </i>
-                    <span id="textSubItem">Café</span>
+                    <span id="textSubItem">咖啡</span>
                 </button>
                 <button mat-menu-item routerLink="canadeacucar/english" id="subItem">
                     <i class="material-icons">
                         grass
                     </i>
-                    <span id="textSubItemGrande">Cana de Açucar</span>
+                    <span id="textSubItemGrande">甘蔗</span>
 
                 </button>
                 <button mat-menu-item routerLink="etanol/english" id="subItem">
                     <i class="material-icons">
                         grass
                     </i>
-                    <span id="textSubItem">Etanol</span>
+                    <span id="textSubItem">乙醇</span>
 
                 </button>
                 <button mat-menu-item routerLink="feijaopreto/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Feijão Preto</span>
+                    <span id="textSubItem">黑豆</span>
 
                 </button>
                 <button mat-menu-item routerLink="milho/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Milho</span>
+                    <span id="textSubItem">玉米</span>
 
                 </button>
                 <button mat-menu-item routerLink="soja/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Soja</span>
+                    <span id="textSubItem">大豆</span>
 
                 </button>
                 <button mat-menu-item routerLink="sorgo/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Sorgo</span>
+                    <span id="textSubItem">高粱</span>
 
                 </button>
                 <button mat-menu-item routerLink="trigo/english" id="subItem">
                     <i class="material-icons">
                         workspaces
                     </i>
-                    <span id="textSubItem">Trigo</span>
+                    <span id="textSubItem">小麥</span>
 
                 </button>
             </mat-menu>
@@ -108,108 +91,108 @@
                 <i class="material-icons" id="iconSpace">
                     storefront
                 </i>
-                Frango
+                <span>雞</span>
             </button>
             <mat-menu #menu2="matMenu">
                 <button mat-menu-item routerLink="asafrango/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Asa de Frango
+                    雞翅
                 </button>
                 <button mat-menu-item routerLink="coracaofrango/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Coração
+                    雞心
                 </button>
                 <button mat-menu-item routerLink="coxafrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Coxa frango
+                    雞腿肉
                 </button>
                 <button mat-menu-item routerLink="drumetfrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Drumet frango
+                    雞鼓
                 </button>
                 <button mat-menu-item routerLink="figadofrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Figado frango
+                    雞肝
                 </button>
                 <button mat-menu-item routerLink="moelafrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Moela frango
+                    雞肫
                 </button>
                 <button mat-menu-item routerLink="pefrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Pé frango
+                    雞爪
                 </button>
                 <button mat-menu-item routerLink="peitofrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Peito frango
+                    雞胸肉
                 </button>
                 <button mat-menu-item routerLink="sobrecoxafrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Sobre coxa
+                    雞上腿
                 </button>
             </mat-menu>
             <button mat-button [matMenuTriggerFor]="menu3" id="title" routerLink="mineral/english">
                 <i class="material-icons" id="iconSpace">
                     hub
                 </i>
-                Minerais
+                <span>礦物質&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             </button>
             <mat-menu #menu3="matMenu">
                 <button mat-menu-item routerLink="ferro/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Ferro
+                    鐵
                 </button>
                 <button mat-menu-item routerLink="grafite/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Grafite
+                    石墨
                 </button>
                 <button mat-menu-item routerLink="cobre/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Cobre
+                    銅
                 </button>
             </mat-menu>
             <button mat-button [matMenuTriggerFor]="menu4" id="title" routerLink="pedra/english">
                 <i class="material-icons" id="iconSpace">
                     landslide
                 </i>
-                Pedras
+                石頭
             </button>
             <mat-menu #menu4="matMenu">
                 <button mat-menu-item routerLink="diamante/english" id="subItem">
                     <i class="material-icons">
                         diamond
                     </i>
-                    Diamante
+                    鑽石
                 </button>
                 <button mat-menu-item routerLink="esmeralda/english" id="subItem">
                     <i class="material-icons">
                         diamond
                     </i>
-                    Esmeralda
+                    翠
                 </button>
             </mat-menu>
 
@@ -217,7 +200,7 @@
                 <i class="material-icons" id="iconSpace">
                     group
                 </i>
-                Quem somos
+                我們是誰
             </button>
         </div>
     </div>
@@ -225,113 +208,88 @@
     <!-- Menu Ingles -->
 
     <div id="menu">
-        <div *ngIf="!this.languageChineseActive && this.languageEnglishActive && !this.languagePortugueseActive && !this.languageSpanishActive" class= "figure">
+        <div *ngIf="this.languageEnglishActive" class= "figure">
             <div class="figureSombra"> </div>
             <button mat-button routerLink="home/english" id="title">
                 <i class="material-icons" id="iconSpace">
                     home
                 </i>
-                Home En {{ this.languageEnglishActive }}
+                Home
             </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languageChineseActive }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languageEnglishActive }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languagePortugueseActive }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languageSpanishActive }}
-            </button>
-
             <button mat-button [matMenuTriggerFor]="menu1" id="title" routerLink="agronegocio/english">
                 <i class="material-icons" id="iconSpace">
                     storefront
                 </i>
-                Agro Negócio
+                Agribusiness
             </button>
             <mat-menu #menu1="matMenu">
                 <button mat-menu-item routerLink="acucar/english" id="subItem">
                     <i class="material-icons">
                         grass
                     </i>
-                    <span id="textSubItemGrande">Açucar</span>
+                    <span id="textSubItemGrande">Sugar</span>
 
                 </button>
                 <button mat-menu-item routerLink="algodao/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Algodão</span>
+                    <span id="textSubItem">Cotton</span>
 
                 </button>
                 <button mat-menu-item routerLink="cafe/english" id="subItem">
                     <i class="material-icons">
                         coffee
                     </i>
-                    <span id="textSubItem">Café</span>
+                    <span id="textSubItem">Coffee</span>
                 </button>
                 <button mat-menu-item routerLink="canadeacucar/english" id="subItem">
                     <i class="material-icons">
                         grass
                     </i>
-                    <span id="textSubItemGrande">Cana de Açucar</span>
+                    <span id="textSubItemGrande">Sugar Cane</span>
 
                 </button>
                 <button mat-menu-item routerLink="etanol/english" id="subItem">
                     <i class="material-icons">
                         grass
                     </i>
-                    <span id="textSubItem">Etanol</span>
+                    <span id="textSubItem">Ethanol</span>
 
                 </button>
                 <button mat-menu-item routerLink="feijaopreto/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Feijão Preto</span>
+                    <span id="textSubItem">Black Bean</span>
 
                 </button>
                 <button mat-menu-item routerLink="milho/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Milho</span>
+                    <span id="textSubItem">Corn</span>
 
                 </button>
                 <button mat-menu-item routerLink="soja/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Soja</span>
+                    <span id="textSubItem">Soy</span>
 
                 </button>
                 <button mat-menu-item routerLink="sorgo/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Sorgo</span>
+                    <span id="textSubItem">Sorghum</span>
 
                 </button>
                 <button mat-menu-item routerLink="trigo/english" id="subItem">
                     <i class="material-icons">
                         workspaces
                     </i>
-                    <span id="textSubItem">Trigo</span>
+                    <span id="textSubItem">Wheat</span>
 
                 </button>
             </mat-menu>
@@ -340,108 +298,110 @@
                 <i class="material-icons" id="iconSpace">
                     storefront
                 </i>
-                Frango
+                Chicken
             </button>
             <mat-menu #menu2="matMenu">
                 <button mat-menu-item routerLink="asafrango/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Asa de Frango
+                    Chicken wings
                 </button>
                 <button mat-menu-item routerLink="coracaofrango/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Coração
+                    Chicken heart
                 </button>
                 <button mat-menu-item routerLink="coxafrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Coxa frango
+                    Chicken thighs
                 </button>
                 <button mat-menu-item routerLink="drumetfrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Drumet frango
+                    <span style="font-size: smaller;"> Chicken Drumet</span>
                 </button>
                 <button mat-menu-item routerLink="figadofrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Figado frango
+                    Chicken liver
                 </button>
                 <button mat-menu-item routerLink="moelafrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Moela frango
+                    <span style="font-size: smaller;"> Chicken gizzard</span>
+                    
                 </button>
                 <button mat-menu-item routerLink="pefrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Pé frango
+                    Chicken feets
                 </button>
                 <button mat-menu-item routerLink="peitofrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Peito frango
+                    Chicken breast
                 </button>
                 <button mat-menu-item routerLink="sobrecoxafrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Sobre coxa
+                    <span style="font-size: smaller;"> Chicken upperleg</span>
+                    
                 </button>
             </mat-menu>
             <button mat-button [matMenuTriggerFor]="menu3" id="title" routerLink="mineral/english">
                 <i class="material-icons" id="iconSpace">
                     hub
                 </i>
-                Minerais
+                Minerals
             </button>
             <mat-menu #menu3="matMenu">
                 <button mat-menu-item routerLink="ferro/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Ferro
+                    Iron
                 </button>
                 <button mat-menu-item routerLink="grafite/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Grafite
+                    Graphite
                 </button>
                 <button mat-menu-item routerLink="cobre/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Cobre
+                    Copper
                 </button>
             </mat-menu>
             <button mat-button [matMenuTriggerFor]="menu4" id="title" routerLink="pedra/english">
                 <i class="material-icons" id="iconSpace">
                     landslide
                 </i>
-                Pedras
+                Stones
             </button>
             <mat-menu #menu4="matMenu">
                 <button mat-menu-item routerLink="diamante/english" id="subItem">
                     <i class="material-icons">
                         diamond
                     </i>
-                    Diamante
+                    Diamond
                 </button>
                 <button mat-menu-item routerLink="esmeralda/english" id="subItem">
                     <i class="material-icons">
                         diamond
                     </i>
-                    Esmeralda
+                    Emerald
                 </button>
             </mat-menu>
 
@@ -449,7 +409,7 @@
                 <i class="material-icons" id="iconSpace">
                     group
                 </i>
-                Quem somos
+                Who we are
             </button>
         </div>
     </div>
@@ -457,36 +417,13 @@
     <!-- Menu Portugues -->
 
     <div id="menu">
-        <div *ngIf="this.languageChineseActive && this.languageEnglishActive && this.languagePortugueseActive && !this.languageSpanishActive" class= "figure">
+        <div *ngIf="this.languagePortugueseActive" class= "figure">
+            <div class="figureSombra"> </div>
             <button mat-button routerLink="home/english" id="title">
                 <i class="material-icons" id="iconSpace">
                     home
                 </i>
-                Home Pt
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languageChineseActive }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languageEnglishActive }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languagePortugueseActive }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languageSpanishActive }}
+                Home
             </button>
             <button mat-button [matMenuTriggerFor]="menu1" id="title" routerLink="agronegocio/english">
                 <i class="material-icons" id="iconSpace">
@@ -688,55 +625,32 @@
 
     <div id="menu">
         <div *ngIf="this.languageSpanishActive" class= "figure">
+            <div class="figureSombra"> </div>
             <button mat-button routerLink="home/english" id="title">
                 <i class="material-icons" id="iconSpace">
                     home
                 </i>
-                Home Es
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languageChineseActive }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languageEnglishActive }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languagePortugueseActive }}
-            </button>
-            <button mat-button routerLink="home/english" id="title">
-                <i class="material-icons" id="iconSpace">
-                    home
-                </i>
-                Home CH {{ this.languageSpanishActive }}
+                Hogar
             </button>
             <button mat-button [matMenuTriggerFor]="menu1" id="title" routerLink="agronegocio/english">
                 <i class="material-icons" id="iconSpace">
                     storefront
                 </i>
-                Agro Negócio
+                Agronegocios
             </button>
             <mat-menu #menu1="matMenu">
                 <button mat-menu-item routerLink="acucar/english" id="subItem">
                     <i class="material-icons">
                         grass
                     </i>
-                    <span id="textSubItemGrande">Açucar</span>
+                    <span id="textSubItemGrande">Azúcar</span>
 
                 </button>
                 <button mat-menu-item routerLink="algodao/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Algodão</span>
+                    <span id="textSubItem">Algodón</span>
 
                 </button>
                 <button mat-menu-item routerLink="cafe/english" id="subItem">
@@ -749,7 +663,7 @@
                     <i class="material-icons">
                         grass
                     </i>
-                    <span id="textSubItemGrande">Cana de Açucar</span>
+                    <span id="textSubItemGrande" style="font-size: smaller;">Caña de azúcar</span>
 
                 </button>
                 <button mat-menu-item routerLink="etanol/english" id="subItem">
@@ -763,14 +677,14 @@
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Feijão Preto</span>
+                    <span id="textSubItem">Frijol negro</span>
 
                 </button>
                 <button mat-menu-item routerLink="milho/english" id="subItem">
                     <i class="material-icons">
                         grain
                     </i>
-                    <span id="textSubItem">Milho</span>
+                    <span id="textSubItem">Maíz</span>
 
                 </button>
                 <button mat-menu-item routerLink="soja/english" id="subItem">
@@ -800,82 +714,83 @@
                 <i class="material-icons" id="iconSpace">
                     storefront
                 </i>
-                Frango
+                Pollo
             </button>
             <mat-menu #menu2="matMenu">
                 <button mat-menu-item routerLink="asafrango/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Asa de Frango
+                    Alita de pollo
                 </button>
                 <button mat-menu-item routerLink="coracaofrango/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Coração
+                    <span style="font-size: smaller;">Corazón de pollo</span>                    
+                    
                 </button>
                 <button mat-menu-item routerLink="coxafrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Coxa frango
+                    Muslo De Pollo
                 </button>
                 <button mat-menu-item routerLink="drumetfrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Drumet frango
+                    Muslo De Pollo
                 </button>
                 <button mat-menu-item routerLink="figadofrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Figado frango
+                    <span style="font-size: smaller;">Higado de pollo</span>
                 </button>
                 <button mat-menu-item routerLink="moelafrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Moela frango
+                    <span style="font-size: smaller;">Molleja de pollo</span>
                 </button>
                 <button mat-menu-item routerLink="pefrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Pé frango
+                    Patas de pollo
                 </button>
                 <button mat-menu-item routerLink="peitofrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Peito frango
+                    <span style="font-size: smaller;">Pechuga de pollo</span>                    
                 </button>
                 <button mat-menu-item routerLink="sobrecoxafrango/english" id="subItem">
                     <i class="material-icons">
                         new_releases
                     </i>
-                    Sobre coxa
+                    Muslo de pollo
                 </button>
             </mat-menu>
             <button mat-button [matMenuTriggerFor]="menu3" id="title" routerLink="mineral/english">
                 <i class="material-icons" id="iconSpace">
                     hub
                 </i>
-                Minerais
+                Minerales
             </button>
             <mat-menu #menu3="matMenu">
                 <button mat-menu-item routerLink="ferro/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Ferro
+                    Hierro
                 </button>
                 <button mat-menu-item routerLink="grafite/english" id="subItem">
                     <i class="material-icons">
                         iron
                     </i>
-                    Grafite
+                    Grafito
                 </button>
                 <button mat-menu-item routerLink="cobre/english" id="subItem">
                     <i class="material-icons">
@@ -888,7 +803,7 @@
                 <i class="material-icons" id="iconSpace">
                     landslide
                 </i>
-                Pedras
+                Piedras
             </button>
             <mat-menu #menu4="matMenu">
                 <button mat-menu-item routerLink="diamante/english" id="subItem">
@@ -909,7 +824,7 @@
                 <i class="material-icons" id="iconSpace">
                     group
                 </i>
-                Quem somos
+                Quienes somos
             </button>
         </div>
     </div>

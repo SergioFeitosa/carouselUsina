@@ -34,7 +34,7 @@ export class HomeComponent {
   public language: string = '';
 
   languageChineseActive: boolean = false;
-  languageEnglishActive: boolean = false;
+  languageEnglishActive: boolean = true;
   languagePortugueseActive: boolean = false;
   languageSpanishActive: boolean = false;
 
@@ -67,38 +67,43 @@ export class HomeComponent {
     const idioma = String(this.activateRoute.snapshot.paramMap.get('idioma'))
     this.texto = idioma
     this.idiomaChinese = false
-    this.idiomaEnglish = false
+    this.idiomaEnglish = true
     this.idiomaSpanish = false
     this.idiomaPortuguese = false
 
     if (this.texto == 'null') {
-      this.headerLanguageService.setDataLanguage({ name: 'International Commodities', age: 30, language: 'english' });
       this.texto = 'International Commodities'
+      this.headerLanguageService.setDataLanguage({ name: 'International Commodities', age: 30, language: 'english' });
       this.idiomaEnglish = true
-    }
+      this.languageEnglishActive = true
+        }
 
     if (idioma === 'chinese') {
       this.texto = '国际商品'
       this.headerLanguageService.setDataLanguage({ name: '国际商品', age: 30, language: 'chinese' });
       this.idiomaChinese = true
+      this.languageChineseActive = true
     }
 
     if (idioma === 'english') {
       this.texto = 'International Commodities'
       this.headerLanguageService.setDataLanguage({ name: 'International Commodities', age: 30, language: 'english' });
       this.idiomaEnglish = true
+      this.languageEnglishActive = true
     }
 
     if (idioma === 'spanish') {
       this.texto = 'Materias primas internacionales'
       this.headerLanguageService.setDataLanguage({ name: 'Materias primas internacionales', age: 30, language: 'spanish' });
       this.idiomaSpanish = true
+      this.languageSpanishActive = true
     }
 
     if (idioma === 'portuguese') {
       this.texto = 'Commodities Internacional'
       this.headerLanguageService.setDataLanguage({ name: 'Commodities Internacional ', age: 30, language: 'portuguese' });
       this.idiomaPortuguese = true
+      this.languagePortugueseActive = true
     }
   }
 }
