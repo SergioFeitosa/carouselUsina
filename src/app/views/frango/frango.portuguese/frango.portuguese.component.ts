@@ -79,15 +79,15 @@ export class FrangoPortugueseComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/asinha-frango.png",title: "Asa de frango",routeUrl: "asafrango/english"},
-    {img: "/carousel/browser/assets/images/coracao-frango.jpg",title: "Coração de frango",routeUrl: "coracaofrango/english"},
-    {img: "/carousel/browser/assets/images/coxa-frango.jpg",title: "Coxa de frango",routeUrl: "coxafrango/english"},
-    {img: "/carousel/browser/assets/images/drumet-frango.jpg",title: "Drumet de frango",routeUrl: "drumetfrango/english"},
-    {img: "/carousel/browser/assets/images/figado-frango.jpg",title: "Fígado de frango",routeUrl: "figadofrango/english"},
-    {img: "/carousel/browser/assets/images/moela-frango.jpg",title: "Moela de frango",routeUrl: "moelafrango/english"},
-    {img: "/carousel/browser/assets/images/pe-frango.jpg",title: "Pé de frango",routeUrl: "pefrango/english"},
-    {img: "/carousel/browser/assets/images/peito-frango.jpg",title: "Peito de frango",routeUrl: "peitofrango/english"},
-    {img: "/carousel/browser/assets/images/sobrecoxa-frango.jpg",title: "Sobrecoxa de frango",routeUrl: "sobrecoxafrango/english"},
+    {img: "/carousel/browser/assets/images/asinha-frango.png",title: "Asa de frango",routeUrl: "asafrango/portuguese"},
+    {img: "/carousel/browser/assets/images/coracao-frango.jpg",title: "Coração de frango",routeUrl: "coracaofrango/portuguese"},
+    {img: "/carousel/browser/assets/images/coxa-frango.jpg",title: "Coxa de frango",routeUrl: "coxafrango/portuguese"},
+    {img: "/carousel/browser/assets/images/drumet-frango.jpg",title: "Drumet de frango",routeUrl: "drumetfrango/portuguese"},
+    {img: "/carousel/browser/assets/images/figado-frango.jpg",title: "Fígado de frango",routeUrl: "figadofrango/portuguese"},
+    {img: "/carousel/browser/assets/images/moela-frango.jpg",title: "Moela de frango",routeUrl: "moelafrango/portuguese"},
+    {img: "/carousel/browser/assets/images/pe-frango.jpg",title: "Pé de frango",routeUrl: "pefrango/portuguese"},
+    {img: "/carousel/browser/assets/images/peito-frango.jpg",title: "Peito de frango",routeUrl: "peitofrango/portuguese"},
+    {img: "/carousel/browser/assets/images/sobrecoxa-frango.jpg",title: "Sobrecoxa de frango",routeUrl: "sobrecoxafrango/portuguese"},
     
   ]
 

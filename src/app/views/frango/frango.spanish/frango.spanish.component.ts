@@ -79,15 +79,15 @@ export class FrangoSpanishComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/asinha-frango.png",title: "Alitas de pollo",routeUrl: "asafrango/english"},
-    {img: "/carousel/browser/assets/images/coracao-frango.jpg",title: "Corazón de pollo",routeUrl: "coracaofrango/english"},
-    {img: "/carousel/browser/assets/images/coxa-frango.jpg",title: "Muslo de pollo",routeUrl: "coxafrango/english"},
-    {img: "/carousel/browser/assets/images/drumet-frango.jpg",title: "Muslo De Pollo",routeUrl: "drumetfrango/english"},
-    {img: "/carousel/browser/assets/images/figado-frango.jpg",title: "Higado de pollo",routeUrl: "figadofrango/english"},
-    {img: "/carousel/browser/assets/images/moela-frango.jpg",title: "Molleja de pollo",routeUrl: "moelafrango/english"},
-    {img: "/carousel/browser/assets/images/pe-frango.jpg",title: "Patas de pollo",routeUrl: "pefrango/english"},
-    {img: "/carousel/browser/assets/images/peito-frango.jpg",title: "Pechuga de pollo",routeUrl: "peitofrango/english"},
-    {img: "/carousel/browser/assets/images/sobrecoxa-frango.jpg",title: "muslo de pollo",routeUrl: "sobrecoxafrango/english"},
+    {img: "/carousel/browser/assets/images/asinha-frango.png",title: "Alitas de pollo",routeUrl: "asafrango/spanish"},
+    {img: "/carousel/browser/assets/images/coracao-frango.jpg",title: "Corazón de pollo",routeUrl: "coracaofrango/spanish"},
+    {img: "/carousel/browser/assets/images/coxa-frango.jpg",title: "Muslo de pollo",routeUrl: "coxafrango/spanish"},
+    {img: "/carousel/browser/assets/images/drumet-frango.jpg",title: "Muslo De Pollo",routeUrl: "drumetfrango/spanish"},
+    {img: "/carousel/browser/assets/images/figado-frango.jpg",title: "Higado de pollo",routeUrl: "figadofrango/spanish"},
+    {img: "/carousel/browser/assets/images/moela-frango.jpg",title: "Molleja de pollo",routeUrl: "moelafrango/spanish"},
+    {img: "/carousel/browser/assets/images/pe-frango.jpg",title: "Patas de pollo",routeUrl: "pefrango/spanish"},
+    {img: "/carousel/browser/assets/images/peito-frango.jpg",title: "Pechuga de pollo",routeUrl: "peitofrango/spanish"},
+    {img: "/carousel/browser/assets/images/sobrecoxa-frango.jpg",title: "muslo de pollo",routeUrl: "sobrecoxafrango/spanish"},
     
   ]
 

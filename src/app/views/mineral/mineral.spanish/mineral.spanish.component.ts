@@ -33,9 +33,10 @@ export class MineralSpanishComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/cobre.jpg",title: "Cobre",routeUrl: "cobre"},
-    {img: "/carousel/browser/assets/images/ferro.jpg",title: "Hierro",routeUrl: "cafe"},
-    {img: "/carousel/browser/assets/images/grafita.jpg",title: "Grafito",routeUrl: "grafite"},
+    {img: "/carousel/browser/assets/images/cobre.jpg",title: "Cobre",routeUrl: "cobre/spanish"},
+    {img: "/carousel/browser/assets/images/ferro.jpg",title: "Hierro",routeUrl: "ferro/spanish"},
+    {img: "/carousel/browser/assets/images/grafita.jpg",title: "Grafito",routeUrl: "grafite/spanish"},
+    {img: "/carousel/browser/assets/images/ouro.jpg",title: "Oro",routeUrl: "ouro/spanish"},
   ]
 
   slideConfig = {

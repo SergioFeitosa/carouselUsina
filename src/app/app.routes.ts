@@ -173,6 +173,11 @@ import { SobrecoxafrangoChineseComponent } from './views/sobrecoxafrango/sobreco
 import { SobrecoxafrangoEnglishComponent } from './views/sobrecoxafrango/sobrecoxafrango.english/sobrecoxafrango.english.component';
 import { SobrecoxafrangoPortugueseComponent } from './views/sobrecoxafrango/sobrecoxafrango.portuguese/sobrecoxafrango.portuguese.component';
 import { SobrecoxafrangoSpanishComponent } from './views/sobrecoxafrango/sobrecoxafrango.spanish/sobrecoxafrango.spanish.component';
+import { OuroSpanishComponent } from './views/ouro/ouro.spanish/ouro.spanish.component';
+import { OuroPortugueseComponent } from './views/ouro/ouro.portuguese/ouro.portuguese.component';
+import { OuroEnglishComponent } from './views/ouro/ouro.english/ouro.english.component';
+import { OuroChineseComponent } from './views/ouro/ouro.chinese/ouro.chinese.component';
+import { OuroComponent } from './views/ouro/ouro.component';
 
 export const routes: Routes = [
     {
@@ -696,6 +701,26 @@ export const routes: Routes = [
     {
         path: "grafite/spanish",
         component: GrafiteSpanishComponent
+    },
+    {
+        path: "ouro",
+        component: OuroComponent
+    },
+    {
+        path: "ouro/chinese",
+        component: OuroChineseComponent
+    },
+    {
+        path: "ouro/english",
+        component: OuroEnglishComponent
+    },
+    {
+        path: "ouro/portuguese",
+        component: OuroPortugueseComponent
+    },
+    {
+        path: "ouro/spanish",
+        component: OuroSpanishComponent
     },
     {
         path: "pedra",
