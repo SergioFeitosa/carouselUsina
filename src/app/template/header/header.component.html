@@ -26,7 +26,10 @@
                     {{ this.home }} &nbsp;&nbsp;&nbsp;
                 </a>
                 <a routerLink="servico/chinese">
-                    {{ this.service }}
+                    {{ this.service }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="contato/chinese">
+                    {{ this.contact }}
                 </a>
             </div>
             <div *ngIf="this.service == 'Service'">
@@ -34,15 +37,22 @@
                     {{ this.home }} &nbsp;&nbsp;&nbsp;
                 </a>
                 <a routerLink="servico/english">
-                    {{ this.service }}
+                    {{ this.service }} &nbsp;&nbsp;&nbsp;
                 </a>
+                <a routerLink="contato/english">
+                    {{ this.contact }}
+                </a>
+
             </div>
             <div *ngIf="this.service == 'Serviços'">
                 <a routerLink="home/portuguese">
                     {{ this.home }} &nbsp;&nbsp;&nbsp;
                 </a>
                 <a routerLink="servico/portuguese">
-                    {{ this.service }}
+                    {{ this.service }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="contato/portuguese">
+                    {{ this.contact }}
                 </a>
             </div>
             <div *ngIf="this.service == 'Servicio'">
@@ -50,12 +60,12 @@
                     {{ this.home }} &nbsp;&nbsp;&nbsp;
                 </a>
                 <a routerLink="servico/spanish">
-                    {{ this.service }}
+                    {{ this.service }} &nbsp;&nbsp;&nbsp;
                 </a>
-            </div>
-            <a routerLink="contato">
-                {{ this.contact }}
-            </a>
+                <a routerLink="contato/spanish">
+                    {{ this.contact }}
+                </a>
+                </div>
             <a routerLink="">
                 {{ this.logout }}
             </a>
@@ -67,39 +77,48 @@
         <div class="vertical-menu">
             <div *ngIf="this.service == '服务'">
                 <a routerLink="home/chinese">
-                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                    {{ this.home }}
                 </a>
                 <a routerLink="servico/chinese">
                     {{ this.service }}
                 </a>
+                <a routerLink="contato/chinese">
+                    {{ this.contact }}
+                </a>
             </div>
             <div *ngIf="this.service == 'Service'">
                 <a routerLink="home/english">
-                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                    {{ this.home }}
                 </a>
                 <a routerLink="servico/english">
                     {{ this.service }}
                 </a>
+                <a routerLink="contato/english">
+                    {{ this.contact }}
+                </a>
             </div>
             <div *ngIf="this.service == 'Serviços'">
                 <a routerLink="home/portuguese">
-                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                    {{ this.home }}
                 </a>
                 <a routerLink="servico/portuguese">
                     {{ this.service }}
                 </a>
-            </div>
+                <a routerLink="contato/portuguese">
+                    {{ this.contact }}
+                </a>
+                </div>
             <div *ngIf="this.service == 'Servicio'">
                 <a routerLink="home/spanish">
-                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                    {{ this.home }}
                 </a>
                 <a routerLink="servico/spanish">
                     {{ this.service }}
                 </a>
+                <a routerLink="contato/spanish">
+                    {{ this.contact }}
+                </a>
             </div>
-            <a routerLink="contato">
-                {{ this.contact }}
-            </a>
             <a routerLink="">
                 {{ this.logout }}
             </a>
