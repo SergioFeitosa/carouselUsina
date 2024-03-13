@@ -22,3 +22,37 @@
     word-wrap:break-word;
     background-color: #dff7df;
 }
+
+.complementoLogo {
+    background: #ffffff;
+    padding-right: 100px;
+}
+
+.complemento {
+    background: #ffffff;
+    padding-right: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    img {
+        width: 200px;
+        height: 200px;
+      }    
+  }
+
+  @media screen and (min-width: 870px) {
+
+    img {
+        width: 10%;
+        height: 10%;
+      }    
+  }  
+  
+  @media screen and (min-width: 360px) {
+
+    img {
+        width: 5%;
+        height: 5%;
+      }    
+  }
