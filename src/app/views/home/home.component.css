@@ -33,26 +33,24 @@
     padding-right: 50px;
 }
 
-@media screen and (min-width: 1024px) {
-
-    img {
-        width: 200px;
-        height: 200px;
-      }    
+@media screen and (min-width: 1680px) {
+  img {
+      width: 200px;
+      height: 200px;
+    }
   }
 
-  @media screen and (min-width: 870px) {
-
-    img {
-        width: 10%;
-        height: 10%;
-      }    
-  }  
-  
-  @media screen and (min-width: 360px) {
-
-    img {
-        width: 5%;
-        height: 5%;
-      }    
+@media screen and ((min-width: 870px) and (max-width: 1679px)) {
+  img {
+    width: 10%;
+    height: 10%;
   }
+}
+
+@media screen and ((min-width: 360px) and (max-width: 869px)) {
+  img {
+    width: 5%;
+    height: 5%;
+  }
+}
+

@@ -1,3 +1,4 @@
+
 <div id="header">
     <div id="logo">
         <img alt="menu" [src]="
@@ -7,58 +8,113 @@
        " (click)="toggleSidebar.emit()" />
     </div>
 
-    <div id="menu">
+    <div class="menuhorizontal">
         {{ this.data.name }}
 
     </div>
 
-    <div id="menu">
-        <div *ngIf="this.service == '服务'">
-            <a routerLink="home/chinese">
-                {{ this.home }} &nbsp;&nbsp;&nbsp;
-            </a>
-            <a routerLink="servico/chinese">
-                {{ this.service }}
-            </a>
-        </div>
-        <div *ngIf="this.service == 'Service'">
-            <a routerLink="home/english">
-                {{ this.home }} &nbsp;&nbsp;&nbsp;
-            </a>
-            <a routerLink="servico/english">
-                {{ this.service }}
-            </a>
-        </div>
-        <div *ngIf="this.service == 'Serviços'">
-            <a routerLink="home/portuguese">
-                {{ this.home }} &nbsp;&nbsp;&nbsp;
-            </a>
-            <a routerLink="servico/portuguese">
-                {{ this.service }}
-            </a>
-        </div>
-        <div *ngIf="this.service == 'Servicio'">
-            <a routerLink="home/spanish">
-                {{ this.home }} &nbsp;&nbsp;&nbsp;
-            </a>
-            <a routerLink="servico/spanish">
-                {{ this.service }}
-            </a>
-        </div>
-        <a routerLink="contato">
-            {{ this.contact }}
-        </a>
-        <a routerLink="">
-            {{ this.logout }}
-        </a>
+    <div class="menuvertical">
+        {{ this.data.name }}
+
     </div>
+
+    <div class="menuhorizontal">
+
+        <div id="menu">
+            <div *ngIf="this.service == '服务'">
+                <a routerLink="home/chinese">
+                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="servico/chinese">
+                    {{ this.service }}
+                </a>
+            </div>
+            <div *ngIf="this.service == 'Service'">
+                <a routerLink="home/english">
+                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="servico/english">
+                    {{ this.service }}
+                </a>
+            </div>
+            <div *ngIf="this.service == 'Serviços'">
+                <a routerLink="home/portuguese">
+                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="servico/portuguese">
+                    {{ this.service }}
+                </a>
+            </div>
+            <div *ngIf="this.service == 'Servicio'">
+                <a routerLink="home/spanish">
+                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="servico/spanish">
+                    {{ this.service }}
+                </a>
+            </div>
+            <a routerLink="contato">
+                {{ this.contact }}
+            </a>
+            <a routerLink="">
+                {{ this.logout }}
+            </a>
+        </div>
+    </div>
+
+    <div class="menuvertical">
+
+        <div class="vertical-menu">
+            <div *ngIf="this.service == '服务'">
+                <a routerLink="home/chinese">
+                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="servico/chinese">
+                    {{ this.service }}
+                </a>
+            </div>
+            <div *ngIf="this.service == 'Service'">
+                <a routerLink="home/english">
+                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="servico/english">
+                    {{ this.service }}
+                </a>
+            </div>
+            <div *ngIf="this.service == 'Serviços'">
+                <a routerLink="home/portuguese">
+                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="servico/portuguese">
+                    {{ this.service }}
+                </a>
+            </div>
+            <div *ngIf="this.service == 'Servicio'">
+                <a routerLink="home/spanish">
+                    {{ this.home }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="servico/spanish">
+                    {{ this.service }}
+                </a>
+            </div>
+            <a routerLink="contato">
+                {{ this.contact }}
+            </a>
+            <a routerLink="">
+                {{ this.logout }}
+            </a>
+
+        </div>
+
+    </div>
+
     <div id="menu">
-        <img class="fi fi-ch" alt="button" [src]="'/carousel/browser/assets/images/bandeira-china.jpg'"
+        <img class="fi fi-ch" alt="Chines" [src]="'/carousel/browser/assets/images/bandeira-china.jpg'"
             (click)="toogleChineseLanguageSend()">
-        <img class="fi fi-us" alt="button" [src]="'/carousel/browser/assets/images/bandeira-estados_unidos.png'"
+        <img class="fi fi-us" alt="Ingles" [src]="'/carousel/browser/assets/images/bandeira-estados_unidos.png'"
             (click)="toogleEnglishLanguageSend()">
-        <img class="fi fi-br" alt="button" [src]="'/carousel/browser/assets/images/bandeira-brasil.png'"
+        <img class="fi fi-br" alt="Portugues" [src]="'/carousel/browser/assets/images/bandeira-brasil.png'"
             (click)="tooglePortugueseLanguageSend()">
-        <img class="fi fi-es" alt="button" [src]="'/carousel/browser/assets/images/bandeira-espanha.png'"
+        <img class="fi fi-es" alt="Espanha" [src]="'/carousel/browser/assets/images/bandeira-espanha.png'"
             (click)="toogleSpanishLanguageSend()">
     </div>

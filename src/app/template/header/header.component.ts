@@ -45,7 +45,7 @@ export class HeaderComponent implements OnInit {
 
   public home: string = 'Home';
   public service: string = 'Service';
-  public contact: string = 'Contact us';
+  public contact: string = 'Contact';
   public logout: string = 'Logout';
 
   public urlEntrada: string = '';
