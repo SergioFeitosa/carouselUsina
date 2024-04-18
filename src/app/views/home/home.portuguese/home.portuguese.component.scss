@@ -1,20 +1,28 @@
 .complementoLogo {
     background: #ffffff;
-    padding-right: 100px;
+    padding-right: 10%;
 }
 .complemento {
     background: #ffffff;
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1865px) {
     img {
       width: 200px;
       height: 200px;
     }
   }
   
-  @media screen and ((min-width: 870px) and (max-width: 1599px)) {
+  @media screen and ((min-width: 1273px) and (max-width: 1864px)) {
+  
+    img {
+      width: 11%;
+      height: 11%;
+    }
+  }
+
+  @media screen and ((min-width: 870px) and (max-width: 1272px)) {
   
     img {
       width: 10%;
@@ -25,7 +33,7 @@
   @media screen and ((min-width: 360px) and (max-width: 869px)) {
   
     img {
-      width: 5%;
-      height: 5%;
+      width: 8%;
+      height: 8%;
     }
   }
