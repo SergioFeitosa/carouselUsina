@@ -9,12 +9,12 @@
 
 @media screen and (min-width: 1865px) {
     img {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
     }
   }
   
-  @media screen and ((min-width: 1273px) and (max-width: 1864px)) {
+  @media screen and ((min-width: 1458px) and (max-width: 1898px)) {
   
     img {
       width: 11%;
@@ -22,7 +22,7 @@
     }
   }
 
-  @media screen and ((min-width: 870px) and (max-width: 1272px)) {
+  @media screen and ((min-width: 1029px) and (max-width: 1457px)) {
   
     img {
       width: 10%;
@@ -30,7 +30,7 @@
     }
   }
   
-  @media screen and ((min-width: 360px) and (max-width: 869px)) {
+  @media screen and ((min-width: 360px) and (max-width: 1028px)) {
   
     img {
       width: 8%;
