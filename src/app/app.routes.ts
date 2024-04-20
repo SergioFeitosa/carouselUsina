@@ -178,11 +178,31 @@ import { OuroPortugueseComponent } from './views/ouro/ouro.portuguese/ouro.portu
 import { OuroEnglishComponent } from './views/ouro/ouro.english/ouro.english.component';
 import { OuroChineseComponent } from './views/ouro/ouro.chinese/ouro.chinese.component';
 import { OuroComponent } from './views/ouro/ouro.component';
+import { Acucaric45PortugueseComponent } from './views/acucaric45/acucaric45.portuguese/acucaric45.portuguese.component';
+import { Acucaric45ChineseComponent } from './views/acucaric45/acucaric45.chinese/acucaric45.chinese.component';
+import { Acucaric45EnglishComponent } from './views/acucaric45/acucaric45.english/acucaric45.english.component';
+import { Acucaric45SpanishComponent } from './views/acucaric45/acucaric45.spanish/acucaric45.spanish.component';
+import { AcucaricVHPSpanishComponent } from './views/acucaricVHP/acucaricVHP.spanish/acucaricVHP.spanish.component';
+import { Acucaric600SpanishComponent } from './views/acucaric600/acucaric600.spanish/acucaric600.spanish.component';
+import { Acucaric100SpanishComponent } from './views/acucaric100/acucaric100.spanish/acucaric100.spanish.component';
+import { Acucaric30SpanishComponent } from './views/acucaric30/acucaric30.spanish/acucaric30.spanish.component';
+import { AcucaricVHPPortugueseComponent } from './views/acucaricVHP/acucaricVHP.portuguese/acucaricVHP.portuguese.component';
+import { Acucaric600PortugueseComponent } from './views/acucaric600/acucaric600.portuguese/acucaric600.portuguese.component';
+import { Acucaric100PortugueseComponent } from './views/acucaric100/acucaric100.portuguese/acucaric100.portuguese.component';
+import { Acucaric30PortugueseComponent } from './views/acucaric30/acucaric30.portuguese/acucaric30.portuguese.component';
+import { AcucaricVHPEnglishComponent } from './views/acucaricVHP/acucaricVHP.english/acucaricVHP.english.component';
+import { Acucaric600EnglishComponent } from './views/acucaric600/acucaric600.english/acucaric600.english.component';
+import { Acucaric100EnglishComponent } from './views/acucaric100/acucaric100.english/acucaric100.english.component';
+import { Acucaric30EnglishComponent } from './views/acucaric30/acucaric30.english/acucaric30.english.component';
+import { AcucaricVHPChineseComponent } from './views/acucaricVHP/acucaricVHP.chinese/acucaricVHP.chinese.component';
+import { Acucaric600ChineseComponent } from './views/acucaric600/acucaric600.chinese/acucaric600.chinese.component';
+import { Acucaric100ChineseComponent } from './views/acucaric100/acucaric100.chinese/acucaric100.chinese.component';
+import { Acucaric30ChineseComponent } from './views/acucaric30/acucaric30.chinese/acucaric30.chinese.component';
 
 export const routes: Routes = [
     {
         path: "",
-        component: HomeComponent,        
+        component: HomeEnglishComponent,        
     },
     {
         path: "home/chinese",
@@ -229,16 +249,96 @@ export const routes: Routes = [
         component: AcucarChineseComponent
     },
     {
+        path: "acucaric30/chinese",
+        component: Acucaric30ChineseComponent
+    },
+    {
+        path: "acucaric45/chinese",
+        component: Acucaric45ChineseComponent
+    },
+    {
+        path: "acucaric100/chinese",
+        component: Acucaric100ChineseComponent
+    },
+    {
+        path: "acucaric600/chinese",
+        component: Acucaric600ChineseComponent
+    },
+    {
+        path: "acucaricVHP/chinese",
+        component: AcucaricVHPChineseComponent
+    },
+    {
         path: "acucar/english",
         component: AcucarEnglishComponent
+    },
+    {
+        path: "acucaric30/english",
+        component: Acucaric30EnglishComponent
+    },
+    {
+        path: "acucaric45/english",
+        component: Acucaric45EnglishComponent
+    },
+    {
+        path: "acucaric100/english",
+        component: Acucaric100EnglishComponent
+    },
+    {
+        path: "acucaric600/english",
+        component: Acucaric600EnglishComponent
+    },
+    {
+        path: "acucaricVHP/english",
+        component: AcucaricVHPEnglishComponent
     },
     {
         path: "acucar/portuguese",
         component: AcucarPortugueseComponent
     },
     {
+        path: "acucaric30/portuguese",
+        component: Acucaric30PortugueseComponent
+    },
+    {
+        path: "acucaric45/portuguese",
+        component: Acucaric45PortugueseComponent
+    },
+    {
+        path: "acucaric100/portuguese",
+        component: Acucaric100PortugueseComponent
+    },
+    {
+        path: "acucaric600/portuguese",
+        component: Acucaric600PortugueseComponent
+    },
+    {
+        path: "acucaricVHP/portuguese",
+        component: AcucaricVHPPortugueseComponent
+    },
+    {
         path: "acucar/spanish",
         component: AcucarSpanishComponent
+    },
+    {
+        path: "acucaric30/spanish",
+        component: Acucaric30SpanishComponent
+    },
+    {
+        path: "acucaric45/spanish",
+        component: Acucaric45SpanishComponent
+    },
+    {
+        path: "acucaric100/spanish",
+        component: Acucaric100SpanishComponent
+    },
+    {
+        path: "acucaric600/spanish",
+        component: Acucaric600SpanishComponent
+    },
+    {
+        path: "acucaricVHP/spanish",
+        component: AcucaricVHPSpanishComponent
     },
     {
         path: "algodao",

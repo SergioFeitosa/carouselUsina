@@ -134,6 +134,16 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['agronegocio/chinese']);
       } else if (this.urlRaiz == 'acucar') {
         this.router.navigate(['acucar/chinese']);
+      } else if (this.urlRaiz == 'acucaric30') {
+        this.router.navigate(['acucaric30/chinese']);
+      } else if (this.urlRaiz == 'acucaric45') {
+        this.router.navigate(['acucaric45/chinese']);
+      } else if (this.urlRaiz == 'acucaric100') {
+        this.router.navigate(['acucaric100/chinese']);
+      } else if (this.urlRaiz == 'acucaric600') {
+        this.router.navigate(['acucaric600/chinese']);
+      } else if (this.urlRaiz == 'acucaricVHP') {
+        this.router.navigate(['acucaricVHP/chinese']);
       } else if (this.urlRaiz == 'algodao') {
         this.router.navigate(['algodao/chinese']);
       } else if (this.urlRaiz == 'cafe') {
@@ -241,6 +251,16 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['agronegocio/english']);
       } else if (this.urlRaiz == 'acucar') {
         this.router.navigate(['acucar/english']);
+      } else if (this.urlRaiz == 'acucaric30') {
+        this.router.navigate(['acucaric30/english']);
+      } else if (this.urlRaiz == 'acucaric45') {
+        this.router.navigate(['acucaric45/english']);
+      } else if (this.urlRaiz == 'acucaric100') {
+        this.router.navigate(['acucaric100/english']);
+      } else if (this.urlRaiz == 'acucaric600') {
+        this.router.navigate(['acucaric600/english']);
+      } else if (this.urlRaiz == 'acucaricVHP') {
+        this.router.navigate(['acucaricVHP/english']);
       } else if (this.urlRaiz == 'algodao') {
         this.router.navigate(['algodao/english']);
       } else if (this.urlRaiz == 'cafe') {
@@ -353,6 +373,16 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['agronegocio/portuguese']);
         } else if (this.urlRaiz == 'acucar') {
           this.router.navigate(['acucar/portuguese']);
+        } else if (this.urlRaiz == 'acucaric30') {
+          this.router.navigate(['acucaric30/portuguese']);
+        } else if (this.urlRaiz == 'acucaric45') {
+          this.router.navigate(['acucaric45/portuguese']);
+        } else if (this.urlRaiz == 'acucaric100') {
+          this.router.navigate(['acucaric100/portuguese']);
+        } else if (this.urlRaiz == 'acucaric600') {
+          this.router.navigate(['acucaric600/portuguese']);
+        } else if (this.urlRaiz == 'acucaricVHP') {
+          this.router.navigate(['acucaricVHP/portuguese']);
         } else if (this.urlRaiz == 'algodao') {
           this.router.navigate(['algodao/portuguese']);
         } else if (this.urlRaiz == 'cafe') {
@@ -464,6 +494,16 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['agronegocio/spanish']);
         } else if (this.urlRaiz == 'acucar') {
           this.router.navigate(['acucar/spanish']);
+        } else if (this.urlRaiz == 'acucaric30') {
+          this.router.navigate(['acucaric30/spanish']);
+        } else if (this.urlRaiz == 'acucaric45') {
+          this.router.navigate(['acucaric45/spanish']);
+        } else if (this.urlRaiz == 'acucaric100') {
+          this.router.navigate(['acucaric100/spanish']);
+        } else if (this.urlRaiz == 'acucaric600') {
+          this.router.navigate(['acucaric600/spanish']);
+        } else if (this.urlRaiz == 'acucaricVHP') {
+          this.router.navigate(['acucaricVHP/spanish']);
         } else if (this.urlRaiz == 'algodao') {
           this.router.navigate(['algodao/spanish']);
         } else if (this.urlRaiz == 'cafe') {

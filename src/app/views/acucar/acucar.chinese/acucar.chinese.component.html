@@ -1,44 +1,62 @@
-<h1 id="h1Home">糖</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/acucar2.jpg"  width="200" height="200" >
-    <br>
-    <br>
-    <div  class="textFont">
-        糖
 
-        糖是一種簡單碳水化合物，主要從甘蔗和甜菜中獲取。 它是多種食譜中的重要成分，用於使食物和飲料變甜。
+<h1 id="h1Home">糖</h1>
+<div id="divCarousel">
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
+    <br>
+    <br>
+    <div class="textFont">
+        <p>什么是糖？</p>
+        <p style="margin-left: 4em;" >糖是一种简单碳水化合物，主要从甘蔗和甜菜中获取。 它是多种食谱中的重要成分，用于使食物和饮料变甜。</p>
        
-        糖的種類：
+        <p>糖的类型：</p>
+        <p style="margin-left: 4em;" >
+            冰糖：这是最常见的类型，具有大而干燥的晶体。<br>
+            精制糖：经过精制过程，去除杂质，使晶体更白更细。<br>
+            糖粉：将精制糖磨成细粉。<br>
+            红糖：是一种加工程度较低的糖，具有湿润的晶体和更浓郁的味道。<br>
+            德梅拉拉糖：是一种红糖，晶体较大，味道较温和。</p>
+
+        <p>营销用糖类型的缩写：</p>
+        <p style="margin-left: 4em;" >
+            <b>糖 IC 45 - IC 30 - IC100 - IC 150。VHP- IC600 - 1200</b></p>
+
+        <p>糖的好处：</p>
+        <p style="margin-left: 4em;" >
+        能量：糖为身体提供快速能量，对身体和精神活动都很重要。<br>
+        风味：使食物和饮料变甜，使其更美味、更有吸引力。<br>
+        保存：有助于保存食物，例如果酱中的水果。<br>
+        质地：在食谱中，糖有助于蛋糕、馅饼和其他糖果的质地和奶油味。</p>
+
+        <p>消费注意事项：</p>
+        <p style="margin-left: 4em;" >过量摄入糖分会导致多种健康问题，如肥胖、糖尿病、心脏病和蛀牙。 适量摄入糖分并保持均衡饮食非常重要。</p>
        
-        冰糖：這是最常見的類型，具有大而乾燥的晶體。
-        精製糖：經過精製過程，去除雜質，使晶體更白更細。
-        糖粉：將精緻糖磨成細粉。
-        紅糖：這是一種加工程度較低的糖，具有濕潤的晶體和更濃鬱的味道。
-        德梅拉拉糖：它是一種紅糖，晶體較大，味道較溫和。
-        糖的好處：
+        <p>糖的替代品：</p>
+        <p style="margin-left: 4em;" >为了减少糖的消耗，有几种替代方法，例如：<br>
+            天然甜味剂：甜叶菊、木糖醇、赤藓糖醇。<br>
+            水果：香蕉、苹果、葡萄。<br>
+            蜂蜜：具有有益特性的天然甜味剂。</p>
+
+        <p>结论：</p>
        
-        能量：糖為身體提供快速能量，對身體和精神活動都很重要。
-        風味：使食物和飲料變甜，使其更美味、更有吸引力。
-        保存：有助於保存食物，例如醬中的水果。
-        質地：在食譜中，糖有助於蛋糕、餡餅和其他糖果的質地和奶油味。
-        食用注意事項：
+        <p style="margin-left: 4em;" >糖是一种用途广泛的成分，有很多好处，但适量食用很重要。 选择糖的替代品和均衡饮食对于保持身体健康很重要。</p>
        
-        攝取過量糖分會導致多種健康問題，如肥胖、糖尿病、心臟病和蛀牙。 適量、均衡飲食攝取糖分很重要。
+        <p>了解更多信息：</p>
        
-        糖的替代品：
-       
-        為了減少糖的消耗，有幾種替代方案，例如：
-       
-        天然甜味劑：甜菊糖、木糖醇、赤藻醣醇。
-        水果：香蕉、蘋果、葡萄。
-        蜂蜜：具有有益特性的天然甜味劑。
-        結論：
-       
-        糖是一種用途廣泛的成分，有很多好處，但適量食用很重要。 選擇糖的替代品和均衡飲食對於保持身體健康很重要。
-       
-        了解更多：
-       
-        巴西甘蔗工業協會 (ABIA)：https://www.abia.org.br/
-        衛生署：https://www.gov.br/saude/pt-br </div>    <br>
+        <p style="margin-left: 4em;" >
+            巴西甘蔗工业协会 (ABIA)：https://www.abia.org.br/<br>
+            卫生部：https://www.gov.br/saude/pt-br</p>
+    </div>
+    <br>
     <hr class="rounded">
+
+
 </div>
