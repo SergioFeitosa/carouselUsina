@@ -1,16 +1,49 @@
+
 <h1 id="h1Home">Milho</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/milho.jpg"  width="200" height="200" >
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        O milho é um dos cereais mais utilizados e nutritivos em todo o mundo. Acredita-se que ele seja originário da América pré-colombiana. O milho é rico em carboidratos, proteínas, vitaminas (principalmente B1 e E) e sais minerais. A casca do milho é uma rica fonte de fibras, que são importantes para a manutenção do ritmo intestinal.<br>
-        Embora o milho seja um ingrediente presente em vários pratos brasileiros, como a canjica e a pamonha, seu consumo na mesa dos brasileiros, seja direta ou indiretamente, é muito baixo. Segundo a Embrapa, apenas 5% de todo o milho produzido no Brasil é consumido diretamente pelo homem. 
-        A grande parte (65%) é utilizada na alimentação de animais.<br>
-        O milho é um cereal que ocupa um lugar de destaque na agricultura e na indústria em todo o mundo. Sua versatilidade e ampla gama de aplicações o tornam um componente vital na alimentação humana, bem como na produção de ração animal, na fabricação de bioplásticos, combustíveis e uma infinidade de produtos industriais.<br>
-        Os maiores produtores mundiais do milho são os Estados Unidos. O Brasil é o terceiro maior produtor mundial. Assim, ao lado da soja, o milho representa cerca de 80% de toda a produção de grãos do Brasil. Os maiores produtores são os estados do Paraná, Rio Grande do Sul, Minas Gerais, Goiás e São Paulo.<br>
-    </div>
+    <div class="textFont"> 
+
+        <p style="margin-left: 2em;" ><b>Milho Doce: Um Sabor de Verão em Cada Grão</b>
+        
+        <p style="margin-left: 3em;" >O milho doce, também conhecido como milho verde, é uma variedade popular apreciada por seu sabor adocicado e textura suculenta.
+        Seus grãos são macios e cremosos, perfeitos para serem consumidos frescos, cozidos ou assados.
+        O milho doce é rico em vitaminas, minerais e fibras, tornando-o um complemento nutritivo para qualquer refeição.
+        É um ingrediente versátil na culinária, utilizado em pratos como saladas, sopas, tortas e até mesmo sorvetes.
+        
+        <p><b>Milho Pipoca: Explodindo de Sabor e Alegria</b>
+        
+        <p style="margin-left: 3em;" >O milho pipoca, a estrela dos cinemas e festas, encanta com seus estouros mágicos e sabor irresistível.
+        Seus grãos duros se transformam em flocos macios e crocantes quando aquecidos, proporcionando uma experiência sensorial única.
+        O milho pipoca é uma fonte de fibras e antioxidantes, além de ser um lanche leve e com poucas calorias.
+        Saboreá-lo puro, com manteiga, sal ou outros temperos, é um prazer que agrada a todos os paladares.
+        
+        <p><b>Milho Branco: Versatilidade para o Dia a Dia</b>
+        
+        <p style="margin-left: 3em;" >O milho branco, um ingrediente básico em diversas culturas, é conhecido por sua versatilidade culinária.
+        Seus grãos brancos e macios são utilizados em uma variedade de pratos, desde farinhas e biscoitos até pães e tortillas.
+        O milho branco também é moído para produzir canjica, um alimento popular na culinária brasileira.
+        Rico em amido, o milho branco é um espessante natural usado em molhos, sopas e pudins.
+        
+        <p><b>Milho Roxo: Uma Explosão de Cor e Nutrição</b>
+        
+        <p style="margin-left: 3em;" >O milho roxo, um superalimento com propriedades antioxidantes excepcionais, se destaca por sua cor vibrante e sabor único.
+        Seus grãos ricos em antocianinas, pigmentos naturais, conferem ao milho roxo um poder antioxidante superior ao de outros tipos de milho.
+        O milho roxo é utilizado em diversos pratos, como saladas, tortas e até mesmo bebidas, como sucos e chás.
+        Além de seu valor nutricional, o milho roxo contribui para uma alimentação colorida e esteticamente agradável.
+    </div>    
     <br>
     <hr class="rounded">
-
 </div>
+

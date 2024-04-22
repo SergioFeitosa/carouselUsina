@@ -1,15 +1,49 @@
+
 <h1 id="h1Home">玉米</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/milho.jpg"  width="200" height="200" >
+<div id="divCarousel">
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        玉米是世界上使用最多且營養豐富的穀物之一。 據信它起源於前哥倫布時期的美洲。 玉米富含碳水化合物、蛋白質、維生素（主要是B1和E）和礦物質。 玉米皮是豐富的纖維來源，對於維持腸道節律非常重要。<br>
-        儘管玉米是玉米粥和帕莫尼亞等多種巴西菜餚中的成分，但在巴西餐桌上的直接或間接消費量非常低。 據 Embrapa 稱，巴西生產的玉米中只有 5% 直接被人類食用。
-        大部分（65%）用作動物飼料。<br>
-        玉米是一種穀物，在全世界農業和工業中佔有重要地位。 其多功能性和廣泛的應用使其成為人類營養以及動物飼料生產、生物塑料、燃料和多種工業產品製造中的重要組成部分。<br>
-        世界上最大的玉米生產國是美國。 巴西是世界第三大生產國。 因此，玉米與大豆一起約佔巴西糧食總產量的 80% 左右。 最大的生產國是巴拉那州、南里奧格蘭德州、米納斯吉拉斯州、戈亞斯州和聖保羅州。<br>    </div>
+    <div class="textFont">
+        <p style="margin-left: 2em;" ><b>甜玉米：每一粒都是夏天的味道</b>
+        
+            <p style="margin-left: 3em;" >甜玉米，也稱為青玉米，是一種受歡迎的品種，因其甜甜的味道和多汁的質地而受到人們的喜愛。
+            它的穀物柔軟、滑膩，非常適合新鮮、煮或烤。
+            甜玉米富含維生素、礦物質和纖維，使其成為任何餐點的營養補充。
+            它是一種多功能的烹飪原料，可用於沙拉、湯、餡餅甚至冰淇淋等菜餚。
+           
+            <p style="margin-left: 2em;" ><b>爆米花玉米：味道和歡樂爆炸</b>
+           
+            <p style="margin-left: 3em;" >爆米花是電影院和派對上的明星，以其神奇的爆裂聲和難以抗拒的味道而令人著迷。
+            其堅硬的顆粒在加熱時會轉變為柔軟鬆脆的薄片，提供獨特的感官體驗。
+            爆米花是纖維和抗氧化劑的來源，也是一種清淡、低熱量的零食。
+            品嚐純正的奶油、鹽或其他調味料，是一種滿足所有口味的享受。
+           
+            <p style="margin-left: 2em;" ><b>白玉米：日常生活的多功能性</b>
+           
+            <p style="margin-left: 3em;" >白玉米是許多文化中的基本成分，以其烹飪多功能性而聞名。
+            其柔軟的白色穀物可用於製作各種菜餚，從麵粉、餅乾到麵包和玉米餅。
+            白玉米也被磨碎來生產玉米粥，這是巴西美食中很受歡迎的食物。
+            白玉米富含澱粉，是一種天然增稠劑，用於醬汁、湯和布丁。
+           
+            <p style="margin-left: 2em;" ><b>紫玉米：顏色和營養的爆炸</b>
+           
+            <p style="margin-left: 3em;" >紫玉米是一種具有卓越抗氧化特性的超級食品，以其鮮豔的顏色和獨特的風味而脫穎而出。
+            其穀物富含花青素（天然色素），使紫玉米比其他類型的玉米具有更高的抗氧化能力。
+            紫玉米用於各種菜餚，如沙拉、餡餅，甚至飲料，如果汁和茶。
+            除了營養價值外，紫玉米還有助於形成豐富多彩且美觀的飲食。
+    </div>
     <br>
     <hr class="rounded">
+
 
 </div>

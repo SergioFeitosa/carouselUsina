@@ -158,6 +158,8 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['frango/chinese']);
       } else if (this.urlRaiz == 'milho') {
         this.router.navigate(['milho/chinese']);
+      } else if (this.urlRaiz == 'milhopopcorn') {
+        this.router.navigate(['milhopopcorn/chinese']);
       } else if (this.urlRaiz == 'soja') {
         this.router.navigate(['soja/chinese']);
       } else if (this.urlRaiz == 'sorgo') {
@@ -275,6 +277,8 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['frango/english']);
       } else if (this.urlRaiz == 'milho') {
         this.router.navigate(['milho/english']);
+      } else if (this.urlRaiz == 'milhopopcorn') {
+        this.router.navigate(['milhopopcorn/english']);
       } else if (this.urlRaiz == 'soja') {
         this.router.navigate(['soja/english']);
       } else if (this.urlRaiz == 'sorgo') {
@@ -395,7 +399,9 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['feijaopreto/portuguese']);
         } else if (this.urlRaiz == 'milho') {
           this.router.navigate(['milho/portuguese']);
-        } else if (this.urlRaiz == 'soja') {
+        } else if (this.urlRaiz == 'milhopopcorn') {
+          this.router.navigate(['milhopopcorn/portuguese']);
+          } else if (this.urlRaiz == 'soja') {
           this.router.navigate(['soja/portuguese']);
         } else if (this.urlRaiz == 'sorgo') {
           this.router.navigate(['sorgo/portuguese']);
@@ -518,7 +524,9 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['frango/spanish']);
         } else if (this.urlRaiz == 'milho') {
           this.router.navigate(['milho/spanish']);
-        } else if (this.urlRaiz == 'soja') {
+        } else if (this.urlRaiz == 'milhopopcorn') {
+          this.router.navigate(['milhopopcorn/spanish']);
+          } else if (this.urlRaiz == 'soja') {
           this.router.navigate(['soja/spanish']);
         } else if (this.urlRaiz == 'sorgo') {
           this.router.navigate(['sorgo/spanish']);

@@ -1,15 +1,47 @@
 <h1 id="h1Home">Corn</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/milho.jpg"  width="200" height="200" >
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        Corn is one of the most used and nutritious cereals in the world. It is believed to originate from pre-Columbian America. Corn is rich in carbohydrates, proteins, vitamins (mainly B1 and E) and minerals. Corn husks are a rich source of fiber, which is important for maintaining intestinal rhythm.<br>
-        Although corn is an ingredient present in several Brazilian dishes, such as hominy and pamonha, its consumption on Brazilian tables, whether directly or indirectly, is very low. According to Embrapa, only 5% of all corn produced in Brazil is consumed directly by man.
-        The majority (65%) is used as animal feed.<br>
-        Corn is a cereal that occupies a prominent place in agriculture and industry throughout the world. Its versatility and wide range of applications make it a vital component in human nutrition, as well as in the production of animal feed, in the manufacture of bioplastics, fuels and a multitude of industrial products.<br>
-        The world's largest corn producers are the United States. Brazil is the third largest producer in the world. Thus, alongside soybeans, corn represents around 80% of all grain production in Brazil. The largest producers are the states of Paraná, Rio Grande do Sul, Minas Gerais, Goiás and São Paulo.<br>    </div>
+    <div class="textFont"> 
+        <p style="margin-left: 2em;" ><b>Sweet Corn: A Taste of Summer in Every Grain</b>
+        
+            <p style="margin-left: 3em;" >Sweet corn, also known as green corn, is a popular variety appreciated for its sweet flavor and juicy texture.
+            Its grains are soft and creamy, perfect for eating fresh, boiled or roasted.
+            Sweet corn is rich in vitamins, minerals and fiber, making it a nutritious addition to any meal.
+            It is a versatile ingredient in cooking, used in dishes such as salads, soups, pies and even ice cream.
+           
+            <p style="margin-left: 2em;" ><b>Popcorn Corn: Exploding with Flavor and Joy</b>
+           
+            <p style="margin-left: 3em;" >Popcorn, the star of cinemas and parties, enchants with its magical pops and irresistible flavor.
+            Its hard grains transform into soft and crunchy flakes when heated, providing a unique sensory experience.
+            Popcorn corn is a source of fiber and antioxidants, as well as being a light, low-calorie snack.
+            Savoring it pure, with butter, salt or other seasonings, is a pleasure that pleases all palates.
+           
+            <p style="margin-left: 2em;" ><b>White Corn: Versatility for Everyday Life</b>
+           
+            <p style="margin-left: 3em;" >White corn, a basic ingredient in many cultures, is known for its culinary versatility.
+            Its soft, white grains are used in a variety of dishes, from flours and cookies to breads and tortillas.
+            White corn is also ground to produce hominy, a popular food in Brazilian cuisine.
+            Rich in starch, white corn is a natural thickener used in sauces, soups and puddings.
+           
+            <p style="margin-left: 2em;" ><b>Purple Corn: An Explosion of Color and Nutrition</b>
+           
+            <p style="margin-left: 3em;" >Purple corn, a superfood with exceptional antioxidant properties, stands out for its vibrant color and unique flavor.
+            Its grains rich in anthocyanins, natural pigments, give purple corn a higher antioxidant power than other types of corn.
+            Purple corn is used in various dishes, such as salads, pies and even drinks, such as juices and teas.
+            In addition to its nutritional value, purple corn contributes to a colorful and aesthetically pleasing diet.
+    </div>    
     <br>
     <hr class="rounded">
-
 </div>
+

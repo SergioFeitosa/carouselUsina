@@ -1,15 +1,50 @@
+
 <h1 id="h1Home">Maíz</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/milho.jpg"  width="200" height="200" >
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        El maíz es uno de los cereales más utilizados y nutritivos del mundo. Se cree que es originario de la América precolombina. El maíz es rico en carbohidratos, proteínas, vitaminas (principalmente B1 y E) y minerales. Las hojas de maíz son una rica fuente de fibra, que es importante para mantener el ritmo intestinal.<br>
-        Si bien el maíz es un ingrediente presente en varios platos brasileños, como el maíz molido y la pamonha, su consumo en las mesas brasileñas, ya sea directa o indirectamente, es muy bajo. Según Embrapa, sólo el 5% de todo el maíz producido en Brasil es consumido directamente por el hombre.
-        La mayoría (65%) se utiliza como alimento para animales.<br>
-        El maíz es un cereal que ocupa un lugar destacado en la agricultura y la industria en todo el mundo. Su versatilidad y amplio abanico de aplicaciones lo convierten en un componente vital en la nutrición humana, así como en la producción de piensos para animales, en la fabricación de bioplásticos, combustibles y multitud de productos industriales.<br>
-        Los mayores productores de maíz del mundo son Estados Unidos. Brasil es el tercer productor mundial. Así, junto con la soja, el maíz representa alrededor del 80% de toda la producción de cereales en Brasil. Los mayores productores son los estados de Paraná, Rio Grande do Sul, Minas Gerais, Goiás y São Paulo.<br>    </div>
+    <div class="textFont"> 
+        <p style="margin-left: 2em;" ><b>Maíz dulce: el sabor del verano en cada grano</b>
+        
+            <p style="margin-left: 3em;" >El maíz dulce, también conocido como maíz verde, es una variedad popular apreciada por su sabor dulce y textura jugosa.
+            Sus granos son suaves y cremosos, perfectos para comer frescos, hervidos o asados.
+            El maíz dulce es rico en vitaminas, minerales y fibra, lo que lo convierte en un complemento nutritivo para cualquier comida.
+            Es un ingrediente versátil en la cocina, utilizado en platos como ensaladas, sopas, tartas e incluso helados.
+           
+        <p style="margin-left: 2em;" ><b>Palomitas de maíz: explosivas de sabor y alegría</b>
+           
+            <p style="margin-left: 3em;" >Las palomitas de maíz, la estrella de los cines y las fiestas, encantan con sus pops mágicos y su sabor irresistible.
+            Sus granos duros se transforman en hojuelas suaves y crujientes cuando se calientan, brindando una experiencia sensorial única.
+            Las palomitas de maíz son fuente de fibra y antioxidantes, además de ser un snack ligero y bajo en calorías.
+            Saborearlo puro, con mantequilla, sal u otros condimentos, es un placer que agrada a todos los paladares.
+           
+            <p style="margin-left: 2em;" ><b>Maíz Blanco: Versatilidad para el Día a Día</b>
+           
+            <p style="margin-left: 3em;" >El maíz blanco, ingrediente básico en muchas culturas, es conocido por su versatilidad culinaria.
+            Sus granos suaves y blancos se utilizan en una variedad de platos, desde harinas y galletas hasta panes y tortillas.
+            El maíz blanco también se muele para producir maíz molido, un alimento popular en la cocina brasileña.
+            Rico en almidón, el maíz blanco es un espesante natural utilizado en salsas, sopas y pudines.
+           
+            <p style="margin-left: 2em;" ><b>Maíz morado: una explosión de color y nutrición</b>
+           
+            <p style="margin-left: 3em;" >El maíz morado, un superalimento con excepcionales propiedades antioxidantes, destaca por su color vibrante y sabor único.
+            Sus granos ricos en antocianinas, pigmentos naturales, le confieren al maíz morado un poder antioxidante mayor que otros tipos de maíz.
+            El maíz morado se utiliza en diversos platos, como ensaladas, tartas e incluso bebidas, como jugos y tés.
+            Además de su valor nutricional, el maíz morado contribuye a una dieta colorida y estéticamente agradable.
+    </div>    
     <br>
     <hr class="rounded">
 
+
 </div>
+

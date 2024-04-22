@@ -16,3 +16,7 @@
     font-size: 1.1rem;
     padding-left: 10px;
 }
+hr.rounded {
+    border-top: 8px solid #dff7df;
+    border-radius: 5px;
+  }

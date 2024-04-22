@@ -79,11 +79,11 @@ export class AcucarEnglishComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/acucaric30.jpg",title: "acucaric30",routeUrl: "acucaric30/english"},
-    {img: "/carousel/browser/assets/images/acucaric45.jpg",title: "acucaric45",routeUrl: "acucaric45/english"},
-    {img: "/carousel/browser/assets/images/acucaric100.jpg",title: "acucaric100",routeUrl: "acucaric100/english"},
-    {img: "/carousel/browser/assets/images/acucaric600.jpg",title: "acucaric600",routeUrl: "acucaric600/english"},
-    {img: "/carousel/browser/assets/images/acucaricVHP.jpg",title: "acucaricVHP",routeUrl: "acucaricVHP/english"},
+    {img: "/carousel/browser/assets/images/acucaric30.jpg",title: "Sugar IC 30",routeUrl: "acucaric30/english"},
+    {img: "/carousel/browser/assets/images/acucaric45.jpg",title: "Sugar IC 45",routeUrl: "acucaric45/english"},
+    {img: "/carousel/browser/assets/images/acucaric100.jpg",title: "Sugar IC 100-150",routeUrl: "acucaric100/english"},
+    {img: "/carousel/browser/assets/images/acucaric600.jpg",title: "Sugar IC 600-1200",routeUrl: "acucaric600/english"},
+    {img: "/carousel/browser/assets/images/acucaricVHP.jpg",title: "Sugar IC VHP",routeUrl: "acucaricVHP/english"},
   ]
 
   slideConfig = {

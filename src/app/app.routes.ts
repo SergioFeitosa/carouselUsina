@@ -198,6 +198,10 @@ import { AcucaricVHPChineseComponent } from './views/acucaricVHP/acucaricVHP.chi
 import { Acucaric600ChineseComponent } from './views/acucaric600/acucaric600.chinese/acucaric600.chinese.component';
 import { Acucaric100ChineseComponent } from './views/acucaric100/acucaric100.chinese/acucaric100.chinese.component';
 import { Acucaric30ChineseComponent } from './views/acucaric30/acucaric30.chinese/acucaric30.chinese.component';
+import { MilhopopcornChineseComponent } from './views/milhopopcorn/milhopopcorn.chinese/milhopopcorn.chinese.component';
+import { MilhopopcornEnglishComponent } from './views/milhopopcorn/milhopopcorn.english/milhopopcorn.english.component';
+import { MilhopopcornPortugueseComponent } from './views/milhopopcorn/milhopopcorn.portuguese/milhopopcorn.portuguese.component';
+import { MilhopopcornSpanishComponent } from './views/milhopopcorn/milhopopcorn.spanish/milhopopcorn.spanish.component';
 
 export const routes: Routes = [
     {
@@ -651,16 +655,32 @@ export const routes: Routes = [
         component: MilhoChineseComponent
     },
     {
+        path: "milhopopcorn/chinese",
+        component: MilhopopcornChineseComponent
+    },
+    {
         path: "milho/english",
         component: MilhoEnglishComponent
+    },
+    {
+        path: "milhopopcorn/english",
+        component: MilhopopcornEnglishComponent
     },
     {
         path: "milho/portuguese",
         component: MilhoPortugueseComponent
     },
     {
+        path: "milhopopcorn/portuguese",
+        component: MilhopopcornPortugueseComponent
+    },
+    {
         path: "milho/spanish",
         component: MilhoSpanishComponent
+    },
+    {
+        path: "milhopopcorn/spanish",
+        component: MilhopopcornSpanishComponent
     },
     {
         path: "soja",

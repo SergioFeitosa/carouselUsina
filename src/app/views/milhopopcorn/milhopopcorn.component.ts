@@ -4,13 +4,17 @@ import { RouterModule } from '@angular/router';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @Component({
-  selector: 'app-milho',
+  selector: 'app-milhopopcorn',
   standalone: true,
   imports: [CommonModule, SlickCarouselModule, RouterModule],
-  templateUrl: './milho.component.html',
-  styleUrl: './milho.component.css'
+  templateUrl: './milhopopcorn.component.html',
+  styleUrl: './milhopopcorn.component.css'
 
 })
-export class MilhoComponent {
+export class MilhopopcornComponent {
   
 }
+
+
+
+

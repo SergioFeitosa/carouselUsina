@@ -80,11 +80,11 @@ export class AcucarChineseComponent implements OnInit{
   
   slides = [
 
-    {img: "/carousel/browser/assets/images/acucaric30.jpg",title: "acucaric30",routeUrl: "acucaric30/chinese"},
-    {img: "/carousel/browser/assets/images/acucaric45.jpg",title: "acucaric45",routeUrl: "acucaric45/chinese"},
-    {img: "/carousel/browser/assets/images/acucaric100.jpg",title: "acucaric100",routeUrl: "acucaric100/chinese"},
-    {img: "/carousel/browser/assets/images/acucaric600.jpg",title: "acucaric600",routeUrl: "acucaric600/chinese"},
-    {img: "/carousel/browser/assets/images/acucaricVHP.jpg",title: "acucaricVHP",routeUrl: "acucaricVHP/chinese"},
+    {img: "/carousel/browser/assets/images/acucaric30.jpg",title: "糖 IC 30",routeUrl: "acucaric30/chinese"},
+    {img: "/carousel/browser/assets/images/acucaric45.jpg",title: "糖 IC 45",routeUrl: "acucaric45/chinese"},
+    {img: "/carousel/browser/assets/images/acucaric100.jpg",title: "糖 IC 100-150",routeUrl: "acucaric100/chinese"},
+    {img: "/carousel/browser/assets/images/acucaric600.jpg",title: "糖 IC 600-1200",routeUrl: "acucaric600/chinese"},
+    {img: "/carousel/browser/assets/images/acucaricVHP.jpg",title: "糖 IC VHP",routeUrl: "acucaricVHP/chinese"},
 
   ]
 
