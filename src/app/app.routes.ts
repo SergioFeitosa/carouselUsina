@@ -202,6 +202,26 @@ import { MilhopopcornChineseComponent } from './views/milhopopcorn/milhopopcorn.
 import { MilhopopcornEnglishComponent } from './views/milhopopcorn/milhopopcorn.english/milhopopcorn.english.component';
 import { MilhopopcornPortugueseComponent } from './views/milhopopcorn/milhopopcorn.portuguese/milhopopcorn.portuguese.component';
 import { MilhopopcornSpanishComponent } from './views/milhopopcorn/milhopopcorn.spanish/milhopopcorn.spanish.component';
+import { MilhobranChineseComponent } from './views/milhobran/milhobran.chinese/milhobran.chinese.component';
+import { MilhoflourChineseComponent } from './views/milhoflour/milhoflour.chinese/milhoflour.chinese.component';
+import { MilhoflourbrancaChineseComponent } from './views/milhoflourbranca/milhoflourbranca.chinese/milhoflourbranca.chinese.component';
+import { MilhoforageChineseComponent } from './views/milhoforage/milhoforage.chinese/milhoforage.chinese.component';
+import { MilhonomgmoChineseComponent } from './views/milhonomgmo/milhonomgmo.chinese/milhonomgmo.chinese.component';
+import { MilhoflourbrancaSpanishComponent } from './views/milhoflourbranca/milhoflourbranca.spanish/milhoflourbranca.spanish.component';
+import { MilhoflourSpanishComponent } from './views/milhoflour/milhoflour.spanish/milhoflour.spanish.component';
+import { MilhoforageSpanishComponent } from './views/milhoforage/milhoforage.spanish/milhoforage.spanish.component';
+import { MilhonomgmoSpanishComponent } from './views/milhonomgmo/milhonomgmo.spanish/milhonomgmo.spanish.component';
+import { MilhobranPortugueseComponent } from './views/milhobran/milhobran.portuguese/milhobran.portuguese.component';
+import { MilhoflourPortugueseComponent } from './views/milhoflour/milhoflour.portuguese/milhoflour.portuguese.component';
+import { MilhoflourbrancaPortugueseComponent } from './views/milhoflourbranca/milhoflourbranca.portuguese/milhoflourbranca.portuguese.component';
+import { MilhoforagePortugueseComponent } from './views/milhoforage/milhoforage.portuguese/milhoforage.portuguese.component';
+import { MilhonomgmoPortugueseComponent } from './views/milhonomgmo/milhonomgmo.portuguese/milhonomgmo.portuguese.component';
+import { MilhobranEnglishComponent } from './views/milhobran/milhobran.english/milhobran.english.component';
+import { MilhoflourEnglishComponent } from './views/milhoflour/milhoflour.english/milhoflour.english.component';
+import { MilhoflourbrancaEnglishComponent } from './views/milhoflourbranca/milhoflourbranca.english/milhoflourbranca.english.component';
+import { MilhoforageEnglishComponent } from './views/milhoforage/milhoforage.english/milhoforage.english.component';
+import { MilhonomgmoEnglishComponent } from './views/milhonomgmo/milhonomgmo.english/milhonomgmo.english.component';
+import { MilhobranSpanishComponent } from './views/milhobran/milhobran.spanish/milhobran.spanish.component';
 
 export const routes: Routes = [
     {
@@ -655,12 +675,52 @@ export const routes: Routes = [
         component: MilhoChineseComponent
     },
     {
+        path: "milhobran/chinese",
+        component: MilhobranChineseComponent
+    },
+    {
+        path: "milhoflour/chinese",
+        component: MilhoflourChineseComponent
+    },
+    {
+        path: "milhoflourbranca/chinese",
+        component: MilhoflourbrancaChineseComponent
+    },
+    {
+        path: "milhoforage/chinese",
+        component: MilhoforageChineseComponent
+    },
+    {
+        path: "milhonomgmo/chinese",
+        component: MilhonomgmoChineseComponent
+    },
+    {
         path: "milhopopcorn/chinese",
         component: MilhopopcornChineseComponent
     },
     {
         path: "milho/english",
         component: MilhoEnglishComponent
+    },
+    {
+        path: "milhobran/english",
+        component: MilhobranEnglishComponent
+    },
+    {
+        path: "milhoflour/english",
+        component: MilhoflourEnglishComponent
+    },
+    {
+        path: "milhoflourbranca/english",
+        component: MilhoflourbrancaEnglishComponent
+    },
+    {
+        path: "milhoforage/english",
+        component: MilhoforageEnglishComponent
+    },
+    {
+        path: "milhonomgmo/english",
+        component: MilhonomgmoEnglishComponent
     },
     {
         path: "milhopopcorn/english",
@@ -671,12 +731,52 @@ export const routes: Routes = [
         component: MilhoPortugueseComponent
     },
     {
+        path: "milhobran/portuguese",
+        component: MilhobranPortugueseComponent
+    },
+    {
+        path: "milhoflour/portuguese",
+        component: MilhoflourPortugueseComponent
+    },
+    {
+        path: "milhoflourbranca/portuguese",
+        component: MilhoflourbrancaPortugueseComponent
+    },
+    {
+        path: "milhoforage/portuguese",
+        component: MilhoforagePortugueseComponent
+    },
+    {
+        path: "milhonomgmo/portuguese",
+        component: MilhonomgmoPortugueseComponent
+    },
+    {
         path: "milhopopcorn/portuguese",
         component: MilhopopcornPortugueseComponent
     },
     {
         path: "milho/spanish",
         component: MilhoSpanishComponent
+    },
+    {
+        path: "milhobran/spanish",
+        component: MilhobranSpanishComponent
+    },
+    {
+        path: "milhoflour/spanish",
+        component: MilhoflourSpanishComponent
+    },
+    {
+        path: "milhoflourbranca/spanish",
+        component: MilhoflourbrancaSpanishComponent
+    },
+    {
+        path: "milhoforage/spanish",
+        component: MilhoforageSpanishComponent
+    },
+    {
+        path: "milhonomgmo/spanish",
+        component: MilhonomgmoSpanishComponent
     },
     {
         path: "milhopopcorn/spanish",

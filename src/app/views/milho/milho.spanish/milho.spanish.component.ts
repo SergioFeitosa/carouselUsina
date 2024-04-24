@@ -79,11 +79,12 @@ export class MilhoSpanishComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/milhopopcorn.jpg",title: "Azúcar IC 30",routeUrl: "milhopopcorn/spanish"},
-    {img: "/carousel/browser/assets/images/acucaric45.jpg",title: "Azúcar IC 45",routeUrl: "acucaric45/spanish"},
-    {img: "/carousel/browser/assets/images/acucaric100.jpg",title: "Azúcar IC 100-150",routeUrl: "acucaric100/spanish"},
-    {img: "/carousel/browser/assets/images/acucaric600.jpg",title: "Azúcar IC 600-1200",routeUrl: "acucaric600/spanish"},
-    {img: "/carousel/browser/assets/images/acucaricVHP.jpg",title: "Azúcar IC VHP",routeUrl: "acucaricVHP/spanish"},
+    {img: "/carousel/browser/assets/images/milhobran.jpg",title: "Salvado de maíz",routeUrl: "milhobran/spanish"},
+    {img: "/carousel/browser/assets/images/milhoflour.jpg",title: "Harina de maíz",routeUrl: "milhoflour/spanish"},
+    {img: "/carousel/browser/assets/images/milhoflourbranca.jpg",title: "Harina de Maíz Blanca",routeUrl: "milhoflourbranca/spanish"},
+    {img: "/carousel/browser/assets/images/milhoforage.jpg",title: "Forraje de maíz",routeUrl: "milhoforage/spanish"},
+    {img: "/carousel/browser/assets/images/milhonomgmo.jpg",title: "Maíz no Transgénico",routeUrl: "milhonomgmo/spanish"},
+    {img: "/carousel/browser/assets/images/milhopopcorn.jpg",title: "Palomitas de Maíz",routeUrl: "milhopopcorn/spanish"},
 
   ]
 

@@ -79,11 +79,12 @@ export class MilhoEnglishComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/milhopopcorn.jpg",title: "Sugar IC 30",routeUrl: "milhopopcorn/english"},
-    {img: "/carousel/browser/assets/images/acucaric45.jpg",title: "Sugar IC 45",routeUrl: "acucaric45/english"},
-    {img: "/carousel/browser/assets/images/acucaric100.jpg",title: "Sugar IC 100-150",routeUrl: "acucaric100/english"},
-    {img: "/carousel/browser/assets/images/acucaric600.jpg",title: "Sugar IC 600-1200",routeUrl: "acucaric600/english"},
-    {img: "/carousel/browser/assets/images/acucaricVHP.jpg",title: "Sugar IC VHP",routeUrl: "acucaricVHP/english"},
+    {img: "/carousel/browser/assets/images/milhobran.jpg",title: "Corn Bran",routeUrl: "milhobran/english"},
+    {img: "/carousel/browser/assets/images/milhoflour.jpg",title: "Corn Flour",routeUrl: "milhoflour/english"},
+    {img: "/carousel/browser/assets/images/milhoflourbranca.jpg",title: "Corn flour white",routeUrl: "milhoflourbranca/english"},
+    {img: "/carousel/browser/assets/images/milhoforage.jpg",title: "Corn Forage",routeUrl: "milhoforage/english"},
+    {img: "/carousel/browser/assets/images/milhonomgmo.jpg",title: "Corn NOM GMO",routeUrl: "milhonomgmo/english"},
+    {img: "/carousel/browser/assets/images/milhopopcorn.jpg",title: "Pop Corn",routeUrl: "milhopopcorn/english"},
   ]
 
   slideConfig = {

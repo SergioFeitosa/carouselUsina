@@ -158,6 +158,16 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['frango/chinese']);
       } else if (this.urlRaiz == 'milho') {
         this.router.navigate(['milho/chinese']);
+      } else if (this.urlRaiz == 'milhobran') {
+        this.router.navigate(['milhobran/chinese']);
+      } else if (this.urlRaiz == 'milhoflour') {
+        this.router.navigate(['milhoflour/chinese']);
+      } else if (this.urlRaiz == 'milhoflourbranca') {
+        this.router.navigate(['milhoflourbranca/chinese']);
+      } else if (this.urlRaiz == 'milhoforage') {
+        this.router.navigate(['milhoforage/chinese']);
+      } else if (this.urlRaiz == 'milhonomgmo') {
+        this.router.navigate(['milhonomgmo/chinese']);
       } else if (this.urlRaiz == 'milhopopcorn') {
         this.router.navigate(['milhopopcorn/chinese']);
       } else if (this.urlRaiz == 'soja') {
@@ -277,6 +287,16 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['frango/english']);
       } else if (this.urlRaiz == 'milho') {
         this.router.navigate(['milho/english']);
+      } else if (this.urlRaiz == 'milhobran') {
+        this.router.navigate(['milhobran/english']);
+      } else if (this.urlRaiz == 'milhoflour') {
+        this.router.navigate(['milhoflour/english']);
+      } else if (this.urlRaiz == 'milhoflourbranca') {
+        this.router.navigate(['milhoflourbranca/english']);
+      } else if (this.urlRaiz == 'milhoforage') {
+        this.router.navigate(['milhoforage/english']);
+      } else if (this.urlRaiz == 'milhonomgmo') {
+        this.router.navigate(['milhonomgmo/english']);
       } else if (this.urlRaiz == 'milhopopcorn') {
         this.router.navigate(['milhopopcorn/english']);
       } else if (this.urlRaiz == 'soja') {
@@ -399,9 +419,19 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['feijaopreto/portuguese']);
         } else if (this.urlRaiz == 'milho') {
           this.router.navigate(['milho/portuguese']);
+        } else if (this.urlRaiz == 'milhobran') {
+          this.router.navigate(['milhobran/portuguese']);
+        } else if (this.urlRaiz == 'milhoflour') {
+          this.router.navigate(['milhoflour/portuguese']);
+        } else if (this.urlRaiz == 'milhoflourbranca') {
+          this.router.navigate(['milhoflourbranca/portuguese']);
+        } else if (this.urlRaiz == 'milhoforage') {
+          this.router.navigate(['milhoforage/portuguese']);
+        } else if (this.urlRaiz == 'milhonomgmo') {
+          this.router.navigate(['milhonomgmo/portuguese']);
         } else if (this.urlRaiz == 'milhopopcorn') {
           this.router.navigate(['milhopopcorn/portuguese']);
-          } else if (this.urlRaiz == 'soja') {
+        } else if (this.urlRaiz == 'soja') {
           this.router.navigate(['soja/portuguese']);
         } else if (this.urlRaiz == 'sorgo') {
           this.router.navigate(['sorgo/portuguese']);
@@ -524,9 +554,19 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['frango/spanish']);
         } else if (this.urlRaiz == 'milho') {
           this.router.navigate(['milho/spanish']);
+        } else if (this.urlRaiz == 'milhobran') {
+          this.router.navigate(['milhobran/spanish']);
+        } else if (this.urlRaiz == 'milhoflour') {
+          this.router.navigate(['milhoflour/spanish']);
+        } else if (this.urlRaiz == 'milhoflourbranca') {
+          this.router.navigate(['milhoflourbranca/spanish']);
+        } else if (this.urlRaiz == 'milhoforage') {
+          this.router.navigate(['milhoforage/spanish']);
+        } else if (this.urlRaiz == 'milhonomgmo') {
+          this.router.navigate(['milhonomgmo/spanish']);
         } else if (this.urlRaiz == 'milhopopcorn') {
           this.router.navigate(['milhopopcorn/spanish']);
-          } else if (this.urlRaiz == 'soja') {
+        } else if (this.urlRaiz == 'soja') {
           this.router.navigate(['soja/spanish']);
         } else if (this.urlRaiz == 'sorgo') {
           this.router.navigate(['sorgo/spanish']);
