@@ -79,12 +79,12 @@ export class MilhoSpanishComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/milhobran.jpg",title: "Salvado de maíz",routeUrl: "milhobran/spanish"},
-    {img: "/carousel/browser/assets/images/milhoflour.jpg",title: "Harina de maíz",routeUrl: "milhoflour/spanish"},
-    {img: "/carousel/browser/assets/images/milhoflourbranca.jpg",title: "Harina de Maíz Blanca",routeUrl: "milhoflourbranca/spanish"},
-    {img: "/carousel/browser/assets/images/milhoforage.jpg",title: "Forraje de maíz",routeUrl: "milhoforage/spanish"},
-    {img: "/carousel/browser/assets/images/milhonomgmo.jpg",title: "Maíz no Transgénico",routeUrl: "milhonomgmo/spanish"},
-    {img: "/carousel/browser/assets/images/milhopopcorn.jpg",title: "Palomitas de Maíz",routeUrl: "milhopopcorn/spanish"},
+    {img: "/carousel/browser/assets/images/milhobrania.jpg",title: "Salvado de maíz",routeUrl: "milhobran/spanish"},
+    {img: "/carousel/browser/assets/images/milhoflouria.jpg",title: "Harina de maíz",routeUrl: "milhoflour/spanish"},
+    {img: "/carousel/browser/assets/images/milhoflourbrancaia.jpg",title: "Harina de Maíz Blanca",routeUrl: "milhoflourbranca/spanish"},
+    {img: "/carousel/browser/assets/images/milhoforageia.jpg",title: "Forraje de maíz",routeUrl: "milhoforage/spanish"},
+    {img: "/carousel/browser/assets/images/milhonomgmoia.jpg",title: "Maíz no Transgénico",routeUrl: "milhonomgmo/spanish"},
+    {img: "/carousel/browser/assets/images/milhopopcornia.jpg",title: "Palomitas de Maíz",routeUrl: "milhopopcorn/spanish"},
 
   ]
 

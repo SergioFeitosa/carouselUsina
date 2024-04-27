@@ -1,13 +1,34 @@
 <h1 id="h1Home">Soy</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/soja.jpg"  width="200" height="200" >
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        Soybeans (Glycine max) are a legume native to East Asia but are now widely cultivated and consumed throughout the world. Soy is one of the best-known seeds in the world and is essential for the production system. In Brazil, soybeans represent 56% of the area planted with grains in the country.<br>
-        Soy is made up of proteins, fibers, monosaccharides, oligosaccharides, oils, calcium, phosphorus, iron, sodium, potassium, magnesium, copper, carbohydrates, lipids, vitamins B and E, omega 3 and 6. It is a good source of protein and , unlike many other protein-rich foods, is low in saturated fat and contains no cholesterol.<br>
-        In Brazil, the grain was very important in 1901, from then on, on that date, cultivation began at the Campinas Agricultural Station and the seed began to be distributed to producers in São Paulo. In 2021, Brazil led the ranking as the largest producer and exporter of the grain, with a production of 135.409 million tons.<br>
-        The largest soybean producers in Brazil are Mato Grosso, Paraná, Rio Grande do Sul and Goiás. It is estimated that production will increase from 135.409 million tons to 140.75 million tons, keeping the country as the largest producer in the world. grain in the world.<br>    </div>
+    <div class="textFont"> 
+
+        <p style="margin-left: 2em;">There are more than 2 thousand types of soy registered with the Ministry of Agriculture, but we can classify them into three large distinct groups:
+
+        <p style="margin-left: 2em;"><b>Conventional Soy:</b>
+        <p style="margin-left: 4em;">These seeds are produced in a traditional way, without the use of Genetically Modified Organisms (GMOs). They are non-transgenic cultivars and do not have specific resistance to herbicides.
+        <p style="margin-left: 2em;"><b>RR Soya (Roundup Ready):</b>
+        <p style="margin-left: 4em;">RR soybean cultivars are transgenic and tolerant to the herbicide Glyphosate. This means that these plants can resist the application of this herbicide, making it easier to control weeds in crops.
+        <p style="margin-left: 2em;"><b>Intact Soybeans:</b>
+        <p style="margin-left: 4em;">These seeds are produced with more advanced technology. In addition to being transgenic and resistant to Glyphosate, they also have protection against pests, such as caterpillars. This makes Intacta soybeans an interesting choice for producers looking for greater protection against insects.
+        
+        <p style="margin-left: 2em;">In addition, soybean cultivars can present different types of growth, such as determinate, indeterminate and semi-determinate. Most Brazilian cultivars have determinate growth, which means that the plant grows little after the beginning of flowering and no longer branches.
+        
+        <p style="margin-left: 2em;">Remember that choosing the correct cultivar is fundamental to the success of soybean farming. The producer must consider the characteristics of the farm, research the properties of each variety and invest in certified materials to obtain the best results.
+                
+    </div>    
     <br>
     <hr class="rounded">
 </div>
+

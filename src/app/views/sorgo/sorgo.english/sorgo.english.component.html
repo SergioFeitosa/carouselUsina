@@ -1,29 +1,59 @@
 <h1 id="h1Home">Sorghum</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/sorgo.jpg"  width="200" height="200" >
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        What is sorghum?
+    <div class="textFont"> 
 
-        Sorghum (Sorghum bicolor) is a hot climate cereal, belonging to the grass family, and originating in Africa. It is a robust plant and tolerant of adverse conditions, such as drought, heat and poor soils, making it an ideal option for regions with arid and semi-arid climates.
-       
-        Characteristics and Benefits of Sorghum:
-       
-        Versatility: Sorghum can be used for various purposes, such as:
-        Human food: grains for direct consumption, flour, flakes, brown sugar, drinks and other products.
-        Animal feed: whole grains, silage, hay and ground grains as a dietary supplement.
-        Biofuels: production of ethanol and biodiesel.
-        Industry: production of paper, cellulose, bioplastics and other products.
-        Nutrition: Sorghum is rich in nutrients such as proteins, fiber, vitamins and minerals. Contains significant levels of iron, zinc and antioxidants, important for human health.
-        Resilience: Its rusticity allows cultivation in areas with low fertility, irregular precipitation and high temperatures, making it an advantageous alternative in regions with climatic challenges.
-        Sustainability: Sorghum has a short growth cycle, lower water demand and efficient nutrient management, making it a sustainable crop with less environmental impact.
-        Sorghum Applications:
-       
-        Food security: Sorghum contributes to food and nutritional security, especially in regions with high climate and food vulnerability.
-        Production diversification: Sorghum cultivation diversifies agricultural production, reducing risks and increasing the resilience of agricultural systems.
-        Income for farmers: Sorghum production can generate income for family farmers, especially in less favored areas.
-        Environmental sustainability: Sorghum contributes to environmental sustainability, with less use of natural resources and fewer greenhouse gas emissions.    </div>
+        <p style="margin-left: 2em;"><b>Sorghum: A versatile and resilient crop</b>
+
+            <p style="margin-left: 3em;"> Sorghum is a grass native to Africa that has become an important crop around the world. It is a versatile plant that can be used for a variety of purposes, including food and feed, biofuel production, and materials manufacturing. Sorghum is a resilient crop that can tolerate stressful conditions such as drought and heat. It is an important crop for food security and sustainability.
+           
+            <p style="margin-left: 2em;"><b>Types of sorghum</b>
+           
+            <p style="margin-left: 3em;">Grain sorghum is grown for its grains, which are used for human and animal feed.<br>
+            Sweet sorghum: Sweet sorghum is grown for its high sugar content, which is used to produce ethanol and other biofuels.<br>
+            Broom: Broom sorghum is grown for its long panicles, which are used to make brooms and other products.<br>
+            Forage: Forage sorghum is grown for fodder, which is used to feed livestock.<br>
+           
+            <p style="margin-left: 3em;">There are four main types of sorghum: grain, sweet, broom and forage. Each type of sorghum is grown for a different purpose. Grain sorghum is the most common type of sorghum and is used for human and animal food. Sweet sorghum is used to produce biofuels, broom sorghum is used to make brooms and other products, and forage sorghum is used to feed livestock.
+           
+            <p style="margin-left: 2em;"><b>Importance of sorghum</b>
+           
+            <p style="margin-left: 3em;">Food security: Sorghum is an important source of food for millions of people around the world. It is a nutrient-rich crop that can provide energy and protein.<br>
+            Sustainability: Sorghum is a resilient crop that can tolerate stressful conditions such as drought and heat. It is an important crop for food security and sustainability.<br>
+            Biofuels: Sweet sorghum is an important source of biofuels. Sorghum ethanol is a renewable and sustainable fuel that can help reduce our dependence on fossil fuels.<br>
+            Materials: Sorghum can be used to make a variety of materials, including paper, plastic, and textiles.<br>
+           
+            <p style="margin-left: 3em;">Sorghum is an important crop for many reasons. It is an important source of food security, it is a sustainable crop, it is an important source of biofuels and it can be used to manufacture a variety of materials. Sorghum is a versatile and valuable crop that has an important role to play in the future of agriculture.
+           
+            <p style="margin-left: 2em;"><b>Sorghum production in Brazil</b>
+           
+            <p style="margin-left: 3em;">Brazil is the third largest producer of sorghum in the world, after the United States and China.<br>
+            In 2023, sorghum production in Brazil was 31.3 million tons.<br>
+            Sorghum is cultivated in all regions of Brazil, but the main producers are the states of the Central-West and Northeast.<br>
+            Sorghum is mainly used for animal feed in Brazil, but is also used for the production of biofuels and in the food industry.<br>
+           
+            <p style="margin-left: 3em;">Brazil is an important producer and consumer of sorghum. The crop is grown in all regions of the country, but the main producers are the states of the Central-West and Northeast. Sorghum is mainly used for animal feed in Brazil, but is also used for the production of biofuels and in the food industry.
+           
+            <p style="margin-left: 2em;"><b>The future of sorghum</b>
+           
+            <p style="margin-left: 3em;">Sorghum is a crop with a promising future.
+            The demand for sorghum is expected to increase in the coming years, due to the growth of the world population and the growing demand for food, biofuels and materials.
+            Sorghum is a resilient crop that can tolerate climate change, making it an important crop for future food security.
+            Researchers are working to develop new sorghum varieties that are more productive, disease resistant and stress tolerant.
+           
+            <p style="margin-left: 3em;">Sorghum has a promising future. Demand for sorghum is expected to increase in the coming years, making it an important crop for food security and sustainability.
+    </div>    
     <br>
     <hr class="rounded">
 </div>

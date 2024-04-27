@@ -14,7 +14,3 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 export class SojaComponent {
   
 }
- 
-
-
-

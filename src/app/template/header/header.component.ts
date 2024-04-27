@@ -172,9 +172,23 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['milhopopcorn/chinese']);
       } else if (this.urlRaiz == 'soja') {
         this.router.navigate(['soja/chinese']);
+      } else if (this.urlRaiz == 'sojaconvencional') {
+        this.router.navigate(['sojaconvencional/chinese']);
+      } else if (this.urlRaiz == 'sojarr') {
+        this.router.navigate(['sojarr/chinese']);
+      } else if (this.urlRaiz == 'sojaintacta') {
+        this.router.navigate(['sojaintacta/chinese']);
       } else if (this.urlRaiz == 'sorgo') {
         this.router.navigate(['sorgo/chinese']);
-      } else if (this.urlRaiz == 'trigo') {
+      } else if (this.urlRaiz == 'sorgoforrageiro') {
+        this.router.navigate(['sorgoforrageiro/chinese']);
+      } else if (this.urlRaiz == 'sorgogranifero') {
+        this.router.navigate(['sorgogranifero/chinese']);
+      } else if (this.urlRaiz == 'sorgosacarino') {
+        this.router.navigate(['sorgosacarino/chinese']);
+      } else if (this.urlRaiz == 'sorgovassoura') {
+        this.router.navigate(['sorgovassoura/chinese']);
+    } else if (this.urlRaiz == 'trigo') {
         this.router.navigate(['trigo/chinese']);
 
       } else if (this.urlRaiz == 'frango') {
@@ -301,8 +315,22 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['milhopopcorn/english']);
       } else if (this.urlRaiz == 'soja') {
         this.router.navigate(['soja/english']);
-      } else if (this.urlRaiz == 'sorgo') {
+      } else if (this.urlRaiz == 'sojaconvencional') {
+        this.router.navigate(['sojaconvencional/english']);
+      } else if (this.urlRaiz == 'sojarr') {
+        this.router.navigate(['sojarr/english']);
+      } else if (this.urlRaiz == 'sojaintacta') {
+        this.router.navigate(['sojaintacta/english']);
+    } else if (this.urlRaiz == 'sorgo') {
         this.router.navigate(['sorgo/english']);
+      } else if (this.urlRaiz == 'sorgoforrageiro') {
+        this.router.navigate(['sorgoforrageiro/english']);
+      } else if (this.urlRaiz == 'sorgogranifero') {
+        this.router.navigate(['sorgogranifero/english']);
+      } else if (this.urlRaiz == 'sorgosacarino') {
+        this.router.navigate(['sorgosacarino/english']);
+      } else if (this.urlRaiz == 'sorgovassoura') {
+        this.router.navigate(['sorgovassoura/english']);
       } else if (this.urlRaiz == 'trigo') {
         this.router.navigate(['trigo/english']);
 
@@ -433,8 +461,22 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['milhopopcorn/portuguese']);
         } else if (this.urlRaiz == 'soja') {
           this.router.navigate(['soja/portuguese']);
+        } else if (this.urlRaiz == 'sojaconvencional') {
+          this.router.navigate(['sojaconvencional/portuguese']);
+        } else if (this.urlRaiz == 'sojarr') {
+          this.router.navigate(['sojarr/portuguese']);
+        } else if (this.urlRaiz == 'sojaintacta') {
+          this.router.navigate(['sojaintacta/portuguese']);
         } else if (this.urlRaiz == 'sorgo') {
           this.router.navigate(['sorgo/portuguese']);
+        } else if (this.urlRaiz == 'sorgoforrageiro') {
+          this.router.navigate(['sorgoforrageiro/portuguese']);
+        } else if (this.urlRaiz == 'sorgogranifero') {
+          this.router.navigate(['sorgogranifero/portuguese']);
+        } else if (this.urlRaiz == 'sorgosacarino') {
+          this.router.navigate(['sorgosacarino/portuguese']);
+        } else if (this.urlRaiz == 'sorgovassoura') {
+          this.router.navigate(['sorgovassoura/portuguese']);
         } else if (this.urlRaiz == 'trigo') {
           this.router.navigate(['trigo/portuguese']);
 
@@ -568,8 +610,22 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['milhopopcorn/spanish']);
         } else if (this.urlRaiz == 'soja') {
           this.router.navigate(['soja/spanish']);
+        } else if (this.urlRaiz == 'sojaconvencional') {
+          this.router.navigate(['sojaconvencional/spanish']);
+        } else if (this.urlRaiz == 'sojarr') {
+          this.router.navigate(['sojarr/spanish']);
+        } else if (this.urlRaiz == 'sojaintacta') {
+          this.router.navigate(['sojaintacta/spanish']);
         } else if (this.urlRaiz == 'sorgo') {
           this.router.navigate(['sorgo/spanish']);
+        } else if (this.urlRaiz == 'sorgoforrageiro') {
+          this.router.navigate(['sorgoforrageiro/spanish']);
+        } else if (this.urlRaiz == 'sorgogranifero') {
+          this.router.navigate(['sorgogranifero/spanish']);
+        } else if (this.urlRaiz == 'sorgosacarino') {
+          this.router.navigate(['sorgosacarino/spanish']);
+        } else if (this.urlRaiz == 'sorgovassoura') {
+          this.router.navigate(['sorgovassoura/spanish']);
         } else if (this.urlRaiz == 'trigo') {
           this.router.navigate(['trigo/spanish']);
 

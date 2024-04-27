@@ -1,13 +1,35 @@
+
 <h1 id="h1Home">大豆</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/soja.jpg"  width="200" height="200" >
+<div id="divCarousel">
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        大豆 (Glycine max) 是一種原產於東亞的豆類植物，但現在在世界各地廣泛種植和消費。 大豆是世界上最著名的種子之一，對於生產系統至關重要。 在巴西，大豆佔該國穀物種植面積的 56%。<br>
-        大豆由蛋白質、纖維、單醣、寡醣、油、鈣、磷、鐵、鈉、鉀、鎂、銅、碳水化合物、脂質、維生素B 和E、Omega3 和6 組成。它是蛋白質的良好來源而且，與許多其他富含蛋白質的食物不同，它的飽和脂肪含量低且不含膽固醇。<br>
-        1901年，穀物在巴西非常重要，從那天起，坎皮納斯農業站開始種植，種子開始分發給聖保羅的生產者。 2021年，巴西產量達13,540.9萬噸，位居全球第一大糧食生產國和出口國。<br>
-        巴西最大的大豆生產國是馬托格羅索州、巴拉那州、南里奧格蘭德州和戈亞斯州，預計產量將從13540.9萬噸增至14075萬噸，繼續保持全球第一大大豆生產國地位。 .<br>    </div>
+    <div class="textFont">
+
+        <p style="margin-left: 2em;">在農業部註冊的大豆有 2000 多種，但我們可以將它們分為三大類：
+
+            <p style="margin-left: 2em;"><b>傳統大豆：</b>
+            <p style="margin-left: 4em;">這些種子以傳統方式生產，未使用基因改造生物 (GMO)。它們是非基因改造品種，對除草劑沒有特異性抗性。
+            <p style="margin-left: 2em;"><b>RR 大豆（抗農達）：</b>
+            <p style="margin-left: 4em;">RR 大豆品種是基因改造品種，對除草劑嘉磷塞具有耐受性。這意味著這些植物可以抵抗這種除草劑的使用，從而更容易控制農作物中的雜草。
+            <p style="margin-left: 2em;"><b>完整的大豆：</b>
+            <p style="margin-left: 4em;">這些種子採用更先進的技術生產。除了基因改造和對草甘膦具有抗性之外，它們還具有針對毛毛蟲等害蟲的保護作用。這使得 Intacta 大豆成為尋求更好防蟲保護的生產商的有趣選擇。
+           
+            <p style="margin-left: 2em;">此外，大豆品種可以呈現不同類型的生長，例如有限性、無限性和半有限性。大多數巴西品種具有確定性生長，這意味著植物在開花後生長很少，並且不再分枝。
+           
+            <p style="margin-left: 2em;">請記住，選擇正確的品種是大豆種植成功的基礎。生產者必須考慮農場的特點，研究每個品種的特性並投資經過認證的材料，以獲得最佳效果。
+    </div>
     <br>
     <hr class="rounded">
+
+
 </div>

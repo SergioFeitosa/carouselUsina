@@ -1,14 +1,38 @@
+
 <h1 id="h1Home">Soja</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/soja.jpg"  width="200" height="200" >
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        A soja (Glycine max) é uma leguminosa nativa do leste da Ásia, mas agora é amplamente cultivada e consumida em todo o mundo. A soja é uma das sementes mais conhecidas no mundo e é essencial para o sistema produtivo. No Brasil, a soja representa 56% da área plantada com grãos no país.<br>
-        A soja é composta por proteínas, fibras, monossacarídeos, oligossacarídeos, óleos, cálcio, fósforo, ferro, sódio, potássio, magnésio, cobre, carboidratos, lipídios, vitaminas B e E, ômega 3 e 6. É uma boa fonte de proteína e, diferentemente de muitos outros alimentos ricos em proteínas, é baixa em gorduras saturadas e não contém colesterol.<br>
-        No Brasil, o grão teve muita importância em 1901, a partir de então, nessa data, começaram os cultivos na Estação Agropecuária de Campinas e a semente passou a ser distribuída para os produtores paulistas. Em 2021, o Brasil liderou o ranking como o maior produtor e exportador do grão, com uma produção de 135,409 milhões de toneladas.<br>
-        Os maiores produtores de soja no Brasil são Mato Grosso, Paraná, Rio Grande do Sul e Goiás. Estima-se que a produção aumente de 135,409 milhões de toneladas para 140,75 milhões de toneladas, mantendo o país com o posto de maior produtor do grão no mundo.<br>
-    </div>
+    <div class="textFont"> 
+
+        <p>Existem mais de 2 mil tipos de soja registrados no Ministério da Agricultura, mas podemos classificá-los em três grandes grupos distintos:
+
+            <p><b>Soja Convencional:</b> 
+            <p style="margin-left: 4em;">Essas sementes são produzidas de forma tradicional, sem o uso de Organismos Geneticamente Modificados (OGMs). São cultivares não transgênicas e não possuem resistência específica a herbicidas.
+            <p><b>Soja RR (Roundup Ready):</b> 
+            <p style="margin-left: 4em;">As cultivares de soja RR são transgênicas e tolerantes ao herbicida Glifosato. Isso significa que essas plantas podem resistir à aplicação desse herbicida, facilitando o controle de ervas daninhas na lavoura.
+            <p><b>Soja Intacta:</b> 
+            <p style="margin-left: 4em;">Essas sementes são produzidas com tecnologia mais avançada. Além de serem transgênicas e resistentes ao Glifosato, também possuem proteção contra pragas, como lagartas. Isso torna a soja Intacta uma escolha interessante para produtores que buscam maior proteção contra insetos.
+            
+            <p>Além disso, as cultivares de soja podem apresentar diferentes tipos de crescimento, como determinado, indeterminado e semideterminado. A maioria das cultivares brasileiras possui crescimento determinado, o que significa que a planta cresce pouco após o início do florescimento e não mais ramifica.
+            
+            <p>Lembrando que a escolha do cultivar correto é fundamental para o sucesso da lavoura de soja. O produtor deve considerar as características da fazenda, pesquisar as propriedades de cada variedade e investir em materiais certificados para obter os melhores resultados
+    
+    
+
+
+    </div>    
     <br>
     <hr class="rounded">
 </div>
+

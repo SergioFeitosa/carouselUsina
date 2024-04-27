@@ -1,13 +1,36 @@
-<h1 id="h1Home">Soja</h1>
-<div id="divHome">
-    <img src="/carousel/browser/assets/images/soja.jpg"  width="200" height="200" >
+
+<h1 id="h1Home">Soya</h1>
+<div id="divCarousel" >
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <figure>
+                <img src="{{ slide.img }}" alt="" class="img-style">
+                <figcaption>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                </figcaption>
+            </figure>
+        </div>
+    </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        La soja (Glycine max) es una leguminosa originaria del este de Asia, pero ahora se cultiva y consume ampliamente en todo el mundo. La soja es una de las semillas más conocidas del mundo y es fundamental para el sistema de producción. En Brasil, la soja representa el 56% del área plantada con granos en el país.<br>
-        La soja está compuesta por proteínas, fibras, monosacáridos, oligosacáridos, aceites, calcio, fósforo, hierro, sodio, potasio, magnesio, cobre, carbohidratos, lípidos, vitaminas B y E, omega 3 y 6. Es una buena fuente de proteínas. y, a diferencia de muchos otros alimentos ricos en proteínas, es bajo en grasas saturadas y no contiene colesterol.<br>
-        En Brasil, el grano fue muy importante en 1901, a partir de entonces, en esa fecha, se inició el cultivo en la Estación Agrícola de Campinas y la semilla comenzó a distribuirse a los productores de São Paulo. En 2021, Brasil lideró el ranking como mayor productor y exportador del grano, con una producción de 135.409 millones de toneladas.<br>
-        Los mayores productores de soja de Brasil son Mato Grosso, Paraná, Rio Grande do Sul y Goiás. Se estima que la producción aumentará de 135.409 millones de toneladas a 140,75 millones de toneladas, manteniendo al país como el mayor productor de granos del mundo. .<br>    </div>
+    <div class="textFont"> 
+
+        <p style="margin-left: 2em;">Existen más de 2 mil tipos de soja registrados en el Ministerio de Agricultura, pero podemos clasificarlos en tres grandes grupos distintos:
+
+            <p style="margin-left: 2em;"><b>Soya convencional:</b>
+            <p style="margin-left: 4em;">Estas semillas se producen de forma tradicional, sin el uso de Organismos Genéticamente Modificados (OGM). Son cultivares no transgénicos y no tienen resistencia específica a los herbicidas.
+            <p style="margin-left: 2em;"><b>Soja RR (lista para Roundup):</b>
+            <p style="margin-left: 4em;">Los cultivares de soja RR son transgénicos y tolerantes al herbicida glifosato. Esto significa que estas plantas pueden resistir la aplicación de este herbicida, facilitando el control de malezas en los cultivos.
+            <p style="margin-left: 2em;"><b>Soja intacta:</b>
+            <p style="margin-left: 4em;">Estas semillas se producen con tecnología más avanzada. Además de ser transgénicos y resistentes al Glifosato, también tienen protección contra plagas, como las orugas. Esto convierte a la soja Intacta en una opción interesante para los productores que buscan una mayor protección contra los insectos.
+           
+            <p style="margin-left: 2em;">Además, los cultivares de soja pueden presentar diferentes tipos de crecimiento, como determinado, indeterminado y semideterminado. La mayoría de los cultivares brasileños tienen un crecimiento determinado, lo que significa que la planta crece poco después del inicio de la floración y ya no se ramifica.
+           
+            <p style="margin-left: 2em;">Recuerde que elegir el cultivar correcto es fundamental para el éxito del cultivo de soja. El productor debe considerar las características de la finca, investigar las propiedades de cada variedad e invertir en materiales certificados para obtener los mejores resultados.
+    </div>    
     <br>
     <hr class="rounded">
+
+
 </div>
+

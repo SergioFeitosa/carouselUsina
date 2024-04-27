@@ -79,12 +79,12 @@ export class MilhoPortugueseComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/milhobran.jpg",title: "Farelo de Milho",routeUrl: "milhobran/portuguese"},
-    {img: "/carousel/browser/assets/images/milhoflour.jpg",title: "Farinha de milho",routeUrl: "milhoflour/portuguese"},
-    {img: "/carousel/browser/assets/images/milhoflourbranca.jpg",title: "Farinha branca de milho",routeUrl: "milhoflourbranca/portuguese"},
-    {img: "/carousel/browser/assets/images/milhoforage.jpg",title: "Forragem de milho",routeUrl: "milhoforage/portuguese"},
-    {img: "/carousel/browser/assets/images/milhonomgmo.jpg",title: "Milho não transgênico",routeUrl: "milhonomgmo/portuguese"},
-    {img: "/carousel/browser/assets/images/milhopopcorn.jpg",title: "Milho de Pipoca",routeUrl: "milhopopcorn/portuguese"},
+    {img: "/carousel/browser/assets/images/milhobrania.jpg",title: "Farelo de Milho",routeUrl: "milhobran/portuguese"},
+    {img: "/carousel/browser/assets/images/milhoflouria.jpg",title: "Farinha de milho",routeUrl: "milhoflour/portuguese"},
+    {img: "/carousel/browser/assets/images/milhoflourbrancaia.jpg",title: "Farinha branca de milho",routeUrl: "milhoflourbranca/portuguese"},
+    {img: "/carousel/browser/assets/images/milhoforageia.jpg",title: "Forragem de milho",routeUrl: "milhoforage/portuguese"},
+    {img: "/carousel/browser/assets/images/milhonomgmoia.jpg",title: "Milho não transgênico",routeUrl: "milhonomgmo/portuguese"},
+    {img: "/carousel/browser/assets/images/milhopopcornia.jpg",title: "Milho de Pipoca",routeUrl: "milhopopcorn/portuguese"},
     
   ]
 

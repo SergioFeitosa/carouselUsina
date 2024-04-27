@@ -222,6 +222,34 @@ import { MilhoflourbrancaEnglishComponent } from './views/milhoflourbranca/milho
 import { MilhoforageEnglishComponent } from './views/milhoforage/milhoforage.english/milhoforage.english.component';
 import { MilhonomgmoEnglishComponent } from './views/milhonomgmo/milhonomgmo.english/milhonomgmo.english.component';
 import { MilhobranSpanishComponent } from './views/milhobran/milhobran.spanish/milhobran.spanish.component';
+import { SorgoforrageiroChineseComponent } from './views/sorgoforrageiro/sorgoforrageiro.chinese/sorgoforrageiro.chinese.component';
+import { SorgoforrageiroSpanishComponent } from './views/sorgoforrageiro/sorgoforrageiro.spanish/sorgoforrageiro.spanish.component';
+import { SorgoforrageiroPortugueseComponent } from './views/sorgoforrageiro/sorgoforrageiro.portuguese/sorgoforrageiro.portuguese.component';
+import { SorgoforrageiroEnglishComponent } from './views/sorgoforrageiro/sorgoforrageiro.english/sorgoforrageiro.english.component';
+import { SorgograniferoSpanishComponent } from './views/sorgogranifero/sorgogranifero.spanish/sorgogranifero.spanish.component';
+import { SorgograniferoPortugueseComponent } from './views/sorgogranifero/sorgogranifero.portuguese/sorgogranifero.portuguese.component';
+import { SorgograniferoChineseComponent } from './views/sorgogranifero/sorgogranifero.chinese/sorgogranifero.chinese.component';
+import { SorgograniferoEnglishComponent } from './views/sorgogranifero/sorgogranifero.english/sorgogranifero.english.component';
+import { SorgovassouraChineseComponent } from './views/sorgovassoura/sorgovassoura.chinese/sorgovassoura.chinese.component';
+import { SorgosacarinoChineseComponent } from './views/sorgosacarino/sorgosacarino.chinese/sorgosacarino.chinese.component';
+import { SorgosacarinoSpanishComponent } from './views/sorgosacarino/sorgosacarino.spanish/sorgosacarino.spanish.component';
+import { SorgosacarinoPortugueseComponent } from './views/sorgosacarino/sorgosacarino.portuguese/sorgosacarino.portuguese.component';
+import { SorgosacarinoEnglishComponent } from './views/sorgosacarino/sorgosacarino.english/sorgosacarino.english.component';
+import { SorgovassouraSpanishComponent } from './views/sorgovassoura/sorgovassoura.spanish/sorgovassoura.spanish.component';
+import { SorgovassouraPortugueseComponent } from './views/sorgovassoura/sorgovassoura.portuguese/sorgovassoura.portuguese.component';
+import { SorgovassouraEnglishComponent } from './views/sorgovassoura/sorgovassoura.english/sorgovassoura.english.component';
+import { SojaConvencionalSpanishComponent } from './views/sojaconvencional/sojaconvencional.spanish/sojaconvencional.spanish.component';
+import { SojaConvencionalChineseComponent } from './views/sojaconvencional/sojaconvencional.chinese/sojaconvencional.chinese.component';
+import { SojaConvencionalPortugueseComponent } from './views/sojaconvencional/sojaconvencional.portuguese/sojaconvencional.portuguese.component';
+import { SojaConvencionalEnglishComponent } from './views/sojaconvencional/sojaconvencional.english/sojaconvencional.english.component';
+import { SojaIntactaSpanishComponent } from './views/sojaintacta/sojaintacta.spanish/sojaintacta.spanish.component';
+import { SojaIntactaPortugueseComponent } from './views/sojaintacta/sojaintacta.portuguese/sojaintacta.portuguese.component';
+import { SojaIntactaEnglishComponent } from './views/sojaintacta/sojaintacta.english/sojaintacta.english.component';
+import { SojaIntactaChineseComponent } from './views/sojaintacta/sojaintacta.chinese/sojaintacta.chinese.component';
+import { SojaRRSpanishComponent } from './views/sojarr/sojarr.spanish/sojarr.spanish.component';
+import { SojaRRPortugueseComponent } from './views/sojarr/sojarr.portuguese/sojarr.portuguese.component';
+import { SojaRREnglishComponent } from './views/sojarr/sojarr.english/sojarr.english.component';
+import { SojaRRChineseComponent } from './views/sojarr/sojarr.chinese/sojarr.chinese.component';
 
 export const routes: Routes = [
     {
@@ -803,6 +831,54 @@ export const routes: Routes = [
         component: SojaSpanishComponent
     },
     {
+        path: "sojaconvencional/chinese",
+        component: SojaConvencionalChineseComponent
+    },
+    {
+        path: "sojaconvencional/english",
+        component: SojaConvencionalEnglishComponent
+    },
+    {
+        path: "sojaconvencional/portuguese",
+        component: SojaConvencionalPortugueseComponent
+    },
+    {
+        path: "sojaconvencional/spanish",
+        component: SojaConvencionalSpanishComponent
+    },
+    {
+        path: "sojarr/chinese",
+        component: SojaRRChineseComponent
+    },
+    {
+        path: "sojarr/english",
+        component: SojaRREnglishComponent
+    },
+    {
+        path: "sojarr/portuguese",
+        component: SojaRRPortugueseComponent
+    },
+    {
+        path: "sojarr/spanish",
+        component: SojaRRSpanishComponent
+    },
+    {
+        path: "sojaintacta/chinese",
+        component: SojaIntactaChineseComponent
+    },
+    {
+        path: "sojaintacta/english",
+        component: SojaIntactaEnglishComponent
+    },
+    {
+        path: "sojaintacta/portuguese",
+        component: SojaIntactaPortugueseComponent
+    },
+    {
+        path: "sojaintacta/spanish",
+        component: SojaIntactaSpanishComponent
+    },
+    {
         path: "sorgo",
         component: SorgoComponent
     },
@@ -823,6 +899,69 @@ export const routes: Routes = [
         component: SorgoSpanishComponent
     },
     {
+        path: "sorgoforrageiro/chinese",
+        component: SorgoforrageiroChineseComponent
+    },
+    {
+        path: "sorgoforrageiro/english",
+        component: SorgoforrageiroEnglishComponent
+    },
+    {
+        path: "sorgoforrageiro/portuguese",
+        component: SorgoforrageiroPortugueseComponent
+    },
+    {
+        path: "sorgoforrageiro/spanish",
+        component: SorgoforrageiroSpanishComponent
+    },
+    {
+        path: "sorgogranifero/chinese",
+        component: SorgograniferoChineseComponent
+    },
+    {
+        path: "sorgogranifero/english",
+        component: SorgograniferoEnglishComponent
+    },
+    {
+        path: "sorgogranifero/portuguese",
+        component: SorgograniferoPortugueseComponent
+    },
+    {
+        path: "sorgogranifero/spanish",
+        component: SorgograniferoSpanishComponent
+    },
+    {
+        path: "sorgosacarino/chinese",
+        component: SorgosacarinoChineseComponent
+    },
+    {
+        path: "sorgosacarino/english",
+        component: SorgosacarinoEnglishComponent
+    },
+    {
+        path: "sorgosacarino/portuguese",
+        component: SorgosacarinoPortugueseComponent
+    },
+    {
+        path: "sorgosacarino/spanish",
+        component: SorgosacarinoSpanishComponent
+    },
+    {
+        path: "sorgovassoura/chinese",
+        component: SorgovassouraChineseComponent
+    },
+    {
+        path: "sorgovassoura/english",
+        component: SorgovassouraEnglishComponent
+    },
+    {
+        path: "sorgovassoura/portuguese",
+        component: SorgovassouraPortugueseComponent
+    },
+    {
+        path: "sorgovassoura/spanish",
+        component: SorgovassouraSpanishComponent
+    },    {
         path: "trigo",
         component: TrigoComponent
     },

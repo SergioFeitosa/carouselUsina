@@ -80,12 +80,12 @@ export class MilhoChineseComponent implements OnInit{
   
   slides = [
 
-    {img: "/carousel/browser/assets/images/milhobran.jpg",title: "玉米麩皮",routeUrl: "milhobran/chinese"},
-    {img: "/carousel/browser/assets/images/milhoflour.jpg",title: "玉米粉",routeUrl: "milhoflour/chinese"},
-    {img: "/carousel/browser/assets/images/milhoflourbranca.jpg",title: "玉米粉 白",routeUrl: "milhoflourbranca/chinese"},
-    {img: "/carousel/browser/assets/images/milhoforage.jpg",title: "玉米飼料",routeUrl: "milhoforage/chinese"},
-    {img: "/carousel/browser/assets/images/milhonomgmo.jpg",title: "非基因改造玉米",routeUrl: "milhonomgmo/chinese"},
-    {img: "/carousel/browser/assets/images/milhopopcorn.jpg",title: "玉米 爆米花",routeUrl: "milhopopcorn/chinese"},
+    {img: "/carousel/browser/assets/images/milhobrania.jpg",title: "玉米麩皮",routeUrl: "milhobran/chinese"},
+    {img: "/carousel/browser/assets/images/milhoflouria.jpg",title: "玉米粉",routeUrl: "milhoflour/chinese"},
+    {img: "/carousel/browser/assets/images/milhoflourbrancaia.jpg",title: "玉米粉 白",routeUrl: "milhoflourbranca/chinese"},
+    {img: "/carousel/browser/assets/images/milhoforageia.jpg",title: "玉米飼料",routeUrl: "milhoforage/chinese"},
+    {img: "/carousel/browser/assets/images/milhonomgmoia.jpg",title: "非基因改造玉米",routeUrl: "milhonomgmo/chinese"},
+    {img: "/carousel/browser/assets/images/milhopopcornia.jpg",title: "玉米 爆米花",routeUrl: "milhopopcorn/chinese"},
 
   ]
 

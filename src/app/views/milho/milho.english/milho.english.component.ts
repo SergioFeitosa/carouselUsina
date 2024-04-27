@@ -79,12 +79,12 @@ export class MilhoEnglishComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/milhobran.jpg",title: "Corn Bran",routeUrl: "milhobran/english"},
-    {img: "/carousel/browser/assets/images/milhoflour.jpg",title: "Corn Flour",routeUrl: "milhoflour/english"},
-    {img: "/carousel/browser/assets/images/milhoflourbranca.jpg",title: "Corn flour white",routeUrl: "milhoflourbranca/english"},
-    {img: "/carousel/browser/assets/images/milhoforage.jpg",title: "Corn Forage",routeUrl: "milhoforage/english"},
-    {img: "/carousel/browser/assets/images/milhonomgmo.jpg",title: "Corn NOM GMO",routeUrl: "milhonomgmo/english"},
-    {img: "/carousel/browser/assets/images/milhopopcorn.jpg",title: "Pop Corn",routeUrl: "milhopopcorn/english"},
+    {img: "/carousel/browser/assets/images/milhobrania.jpg",title: "Corn Bran",routeUrl: "milhobran/english"},
+    {img: "/carousel/browser/assets/images/milhoflouria.jpg",title: "Corn Flour",routeUrl: "milhoflour/english"},
+    {img: "/carousel/browser/assets/images/milhoflourbrancaia.jpg",title: "Corn flour white",routeUrl: "milhoflourbranca/english"},
+    {img: "/carousel/browser/assets/images/milhoforageia.jpg",title: "Corn Forage",routeUrl: "milhoforage/english"},
+    {img: "/carousel/browser/assets/images/milhonomgmoia.jpg",title: "Corn NOM GMO",routeUrl: "milhonomgmo/english"},
+    {img: "/carousel/browser/assets/images/milhopopcornia.jpg",title: "Pop Corn",routeUrl: "milhopopcorn/english"},
   ]
 
   slideConfig = {
