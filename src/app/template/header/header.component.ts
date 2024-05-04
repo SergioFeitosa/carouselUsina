@@ -160,6 +160,8 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['milho/chinese']);
       } else if (this.urlRaiz == 'milhobran') {
         this.router.navigate(['milhobran/chinese']);
+      } else if (this.urlRaiz == 'milhocanjica') {
+        this.router.navigate(['milhocanjica/chinese']);
       } else if (this.urlRaiz == 'milhoflour') {
         this.router.navigate(['milhoflour/chinese']);
       } else if (this.urlRaiz == 'milhoflourbranca') {
@@ -303,6 +305,8 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['milho/english']);
       } else if (this.urlRaiz == 'milhobran') {
         this.router.navigate(['milhobran/english']);
+      } else if (this.urlRaiz == 'milhocanjica') {
+        this.router.navigate(['milhocanjica/english']);
       } else if (this.urlRaiz == 'milhoflour') {
         this.router.navigate(['milhoflour/english']);
       } else if (this.urlRaiz == 'milhoflourbranca') {
@@ -449,6 +453,8 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['milho/portuguese']);
         } else if (this.urlRaiz == 'milhobran') {
           this.router.navigate(['milhobran/portuguese']);
+        } else if (this.urlRaiz == 'milhocanjica') {
+          this.router.navigate(['milhocanjica/portuguese']);
         } else if (this.urlRaiz == 'milhoflour') {
           this.router.navigate(['milhoflour/portuguese']);
         } else if (this.urlRaiz == 'milhoflourbranca') {
@@ -598,6 +604,8 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['milho/spanish']);
         } else if (this.urlRaiz == 'milhobran') {
           this.router.navigate(['milhobran/spanish']);
+        } else if (this.urlRaiz == 'milhocanjica') {
+          this.router.navigate(['milhocanjica/spanish']);
         } else if (this.urlRaiz == 'milhoflour') {
           this.router.navigate(['milhoflour/spanish']);
         } else if (this.urlRaiz == 'milhoflourbranca') {

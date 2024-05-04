@@ -85,6 +85,7 @@ export class MilhoSpanishComponent implements OnInit{
     {img: "/carousel/browser/assets/images/milhoforageia.jpg",title: "Forraje de maíz",routeUrl: "milhoforage/spanish"},
     {img: "/carousel/browser/assets/images/milhonomgmoia.jpg",title: "Maíz no Transgénico",routeUrl: "milhonomgmo/spanish"},
     {img: "/carousel/browser/assets/images/milhopopcornia.jpg",title: "Palomitas de Maíz",routeUrl: "milhopopcorn/spanish"},
+    {img: "/carousel/browser/assets/images/milhocanjica.jpg",title: "Maíz blanco - Canjica",routeUrl: "milhocanjica/spanish"},
 
   ]
 

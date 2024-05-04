@@ -86,6 +86,7 @@ export class MilhoChineseComponent implements OnInit{
     {img: "/carousel/browser/assets/images/milhoforageia.jpg",title: "玉米飼料",routeUrl: "milhoforage/chinese"},
     {img: "/carousel/browser/assets/images/milhonomgmoia.jpg",title: "非基因改造玉米",routeUrl: "milhonomgmo/chinese"},
     {img: "/carousel/browser/assets/images/milhopopcornia.jpg",title: "玉米 爆米花",routeUrl: "milhopopcorn/chinese"},
+    {img: "/carousel/browser/assets/images/milhocanjica.jpg",title: "白玉米 - Canjica",routeUrl: "milhocanjica/chinese"},
 
   ]
 

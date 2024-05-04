@@ -203,6 +203,7 @@ import { MilhopopcornEnglishComponent } from './views/milhopopcorn/milhopopcorn.
 import { MilhopopcornPortugueseComponent } from './views/milhopopcorn/milhopopcorn.portuguese/milhopopcorn.portuguese.component';
 import { MilhopopcornSpanishComponent } from './views/milhopopcorn/milhopopcorn.spanish/milhopopcorn.spanish.component';
 import { MilhobranChineseComponent } from './views/milhobran/milhobran.chinese/milhobran.chinese.component';
+import { MilhocanjicaChineseComponent } from './views/milhocanjica/milhocanjica.chinese/milhocanjica.chinese.component';
 import { MilhoflourChineseComponent } from './views/milhoflour/milhoflour.chinese/milhoflour.chinese.component';
 import { MilhoflourbrancaChineseComponent } from './views/milhoflourbranca/milhoflourbranca.chinese/milhoflourbranca.chinese.component';
 import { MilhoforageChineseComponent } from './views/milhoforage/milhoforage.chinese/milhoforage.chinese.component';
@@ -212,16 +213,19 @@ import { MilhoflourSpanishComponent } from './views/milhoflour/milhoflour.spanis
 import { MilhoforageSpanishComponent } from './views/milhoforage/milhoforage.spanish/milhoforage.spanish.component';
 import { MilhonomgmoSpanishComponent } from './views/milhonomgmo/milhonomgmo.spanish/milhonomgmo.spanish.component';
 import { MilhobranPortugueseComponent } from './views/milhobran/milhobran.portuguese/milhobran.portuguese.component';
+import { MilhocanjicaPortugueseComponent } from './views/milhocanjica/milhocanjica.portuguese/milhocanjica.portuguese.component';
 import { MilhoflourPortugueseComponent } from './views/milhoflour/milhoflour.portuguese/milhoflour.portuguese.component';
 import { MilhoflourbrancaPortugueseComponent } from './views/milhoflourbranca/milhoflourbranca.portuguese/milhoflourbranca.portuguese.component';
 import { MilhoforagePortugueseComponent } from './views/milhoforage/milhoforage.portuguese/milhoforage.portuguese.component';
 import { MilhonomgmoPortugueseComponent } from './views/milhonomgmo/milhonomgmo.portuguese/milhonomgmo.portuguese.component';
 import { MilhobranEnglishComponent } from './views/milhobran/milhobran.english/milhobran.english.component';
+import { MilhocanjicaEnglishComponent } from './views/milhocanjica/milhocanjica.english/milhocanjica.english.component';
 import { MilhoflourEnglishComponent } from './views/milhoflour/milhoflour.english/milhoflour.english.component';
 import { MilhoflourbrancaEnglishComponent } from './views/milhoflourbranca/milhoflourbranca.english/milhoflourbranca.english.component';
 import { MilhoforageEnglishComponent } from './views/milhoforage/milhoforage.english/milhoforage.english.component';
 import { MilhonomgmoEnglishComponent } from './views/milhonomgmo/milhonomgmo.english/milhonomgmo.english.component';
 import { MilhobranSpanishComponent } from './views/milhobran/milhobran.spanish/milhobran.spanish.component';
+import { MilhocanjicaSpanishComponent } from './views/milhocanjica/milhocanjica.spanish/milhocanjica.spanish.component';
 import { SorgoforrageiroChineseComponent } from './views/sorgoforrageiro/sorgoforrageiro.chinese/sorgoforrageiro.chinese.component';
 import { SorgoforrageiroSpanishComponent } from './views/sorgoforrageiro/sorgoforrageiro.spanish/sorgoforrageiro.spanish.component';
 import { SorgoforrageiroPortugueseComponent } from './views/sorgoforrageiro/sorgoforrageiro.portuguese/sorgoforrageiro.portuguese.component';
@@ -707,6 +711,10 @@ export const routes: Routes = [
         component: MilhobranChineseComponent
     },
     {
+        path: "milhocanjica/chinese",
+        component: MilhocanjicaChineseComponent
+    },
+    {
         path: "milhoflour/chinese",
         component: MilhoflourChineseComponent
     },
@@ -735,6 +743,10 @@ export const routes: Routes = [
         component: MilhobranEnglishComponent
     },
     {
+        path: "milhocanjica/english",
+        component: MilhocanjicaEnglishComponent
+    },
+    {
         path: "milhoflour/english",
         component: MilhoflourEnglishComponent
     },
@@ -759,8 +771,8 @@ export const routes: Routes = [
         component: MilhoPortugueseComponent
     },
     {
-        path: "milhobran/portuguese",
-        component: MilhobranPortugueseComponent
+        path: "milhocanjica/portuguese",
+        component: MilhocanjicaPortugueseComponent
     },
     {
         path: "milhoflour/portuguese",
@@ -789,6 +801,10 @@ export const routes: Routes = [
     {
         path: "milhobran/spanish",
         component: MilhobranSpanishComponent
+    },
+    {
+        path: "milhocanjica/spanish",
+        component: MilhocanjicaSpanishComponent
     },
     {
         path: "milhoflour/spanish",

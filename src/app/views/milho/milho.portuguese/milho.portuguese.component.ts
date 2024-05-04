@@ -85,6 +85,7 @@ export class MilhoPortugueseComponent implements OnInit{
     {img: "/carousel/browser/assets/images/milhoforageia.jpg",title: "Forragem de milho",routeUrl: "milhoforage/portuguese"},
     {img: "/carousel/browser/assets/images/milhonomgmoia.jpg",title: "Milho não transgênico",routeUrl: "milhonomgmo/portuguese"},
     {img: "/carousel/browser/assets/images/milhopopcornia.jpg",title: "Milho de Pipoca",routeUrl: "milhopopcorn/portuguese"},
+    {img: "/carousel/browser/assets/images/milhocanjica.jpg",title: "Milho branco - Canjica",routeUrl: "milhocanjica/portuguese"},
     
   ]
 

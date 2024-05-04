@@ -85,6 +85,7 @@ export class MilhoEnglishComponent implements OnInit{
     {img: "/carousel/browser/assets/images/milhoforageia.jpg",title: "Corn Forage",routeUrl: "milhoforage/english"},
     {img: "/carousel/browser/assets/images/milhonomgmoia.jpg",title: "Corn NOM GMO",routeUrl: "milhonomgmo/english"},
     {img: "/carousel/browser/assets/images/milhopopcornia.jpg",title: "Pop Corn",routeUrl: "milhopopcorn/english"},
+    {img: "/carousel/browser/assets/images/milhocanjica.jpg",title: "White corn - Canjica",routeUrl: "milhocanjica/english"},
   ]
 
   slideConfig = {
