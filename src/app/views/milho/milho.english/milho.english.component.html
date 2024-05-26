@@ -1,9 +1,11 @@
 <h1 id="h1Home">Corn</h1>
-<div id="divCarousel" >
+<div id="divCarousel">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
@@ -12,30 +14,80 @@
     </ngx-slick-carousel>
     <br>
     <br>
-    <div class="textFont"> 
-        <p style="margin-left: 2em;"><u>A Journey Through the History of Corn</u>
-
-            <p style="margin-left: 3em;">
-            <b>Ancient origins:</b> Corn, also known as "maíz", was domesticated thousands of years ago in Mesoamerica, with archaeological evidence dating back to 8,700 BC<br>
-           
-            <b>Indigenous people:</b> Corn was an essential food for the Aztec, Mayan and Inca civilizations, serving as the basis of the diet and playing a crucial role in their cultures and rituals.<br>
-           
-            <b>Introduction to Europe:</b> In the 16th century, Spanish explorers brought corn to Europe, where it quickly became a popular food and adapted to different climates and soil conditions.<br>
-           
-            <b>Global food:</b> Today, corn is one of the most cultivated and consumed cereals in the world, with a fundamental role in global food security.<br>
-   
-            <p style="margin-left: 2em;"><u>Growing Corn: From Field to Table</u>
-   
-            <p style="margin-left: 3em;">
-            <b>Diverse varieties:</b> Corn comes in a wide variety of types, from classic yellow to colorful varieties such as red, blue and black, each with distinct characteristics and uses.<br>
-   
-            <b>Climate and soil:</b> Corn adapts to different climates, from tropical regions to temperate climates, and prefers fertile, well-drained soils.<br>
-   
-            <b>Planting and harvesting:</b> Corn planting generally occurs in spring or early summer, and harvesting takes place about three months later, when the kernels mature and reach their characteristic golden color.<br>
-   
-            <b>Growing techniques:</b> Corn growing techniques vary depending on the region and type of corn, but may include irrigation, fertilization, pest and disease control, and mechanical or manual harvesting.<br >
-    </div>    
-    <br>
-    <hr class="rounded">
 </div>
 
+<div class="textFont">
+
+    <p style="margin-left: 6em;"> <b> Corn: </b> The Vegetable Gold of Brazil
+    <p style="margin-left: 8em;">
+        Corn, an ancient and versatile cereal, stands out as one of the pillars of Brazilian agriculture. <br>
+        Cultivated in different regions of the country, corn has become one of Brazil's main agricultural products, with
+        great importance for the economy, culture and nutrition of the population.
+
+    <p style="margin-left: 6em;"> <b> Beyond Grains: </b>
+
+    <p style="margin-left: 8em;">
+        Corn goes beyond the simple golden grain. It is used in various industry segments, such as:
+
+    <p style="margin-left: 10em;">
+        <b> Human food: </b> Fresh grains, corn flour, cornmeal, corn oil, corn flakes, popcorn, starch
+        corn, etc. <br>
+        <b> Animal feed: </b> Source of energy and nutrients for raising cattle, pigs, poultry and other animals. <br>
+        <b> Biofuels: </b> Production of ethanol, a renewable and sustainable fuel for motor vehicles. <br>
+        <b> Industry: </b> Production of plastics, rubber, pharmaceuticals, cosmetics and other products. <br>
+
+    <p style="margin-left: 6em;">
+        <b>Importance for the Brazilian Economy:</b>
+
+    <p style="margin-left: 8em;">
+        Brazil is the largest producer and exporter of corn in the world, accounting for around a third of production
+        global. <br>
+        Corn production generates millions of direct and indirect jobs in the country, contributing significantly to the
+        socioeconomic development of producing regions. <br>
+
+    <p style="margin-left: 6em;"> <b> A Nutritious Cereal: </b>
+
+    <p style="margin-left: 8em;"> Corn is a food rich in nutrients, such as:
+
+    <p style="margin-left: 10em;">
+        <b> Carbohydrates: </b> Source of energy for the body. <br>
+        <b> Proteins: </b> Important for the development and repair of muscle tissues. <br>
+        <b> Fibers: </b> They help with digestion, regulate the intestine and promote satiety. <br>
+        <b> Vitamins: </b> Rich in B vitamins, such as B1, B2 and B5, important for energy metabolism,
+        nervous system and muscular function. <br>
+        <b> Minerals: </b> Source of iron, phosphorus, magnesium and potassium, essential minerals for the proper
+        functioning of the
+        body. <br>
+
+    <p style="margin-left: 6em;"> <b>Health Benefits:</b>
+
+    <p style="margin-left: 8em;"> Regular consumption of corn can bring several health benefits, such as: <br>
+
+    <p style="margin-left: 10em;"> <b> Prevent chronic diseases: </b> Helps in the prevention of chronic diseases such
+        as type 2 diabetes, heart disease and
+        some types of cancer. <br>
+        <b> Control cholesterol: </b> The fiber present in corn helps reduce LDL ("bad") cholesterol, reducing
+        risk of heart disease. <br>
+        <b>Improve digestion:</b>Fibers also help regulate the intestines and prevent constipation. <br>
+        <b> Strengthen the immune system: </b> Rich in vitamins and minerals, corn helps to strengthen the system
+        immunological, protecting the body against diseases. <br>
+        <b> Promote satiety: </b> The fibers and proteins in corn promote satiety, helping to control weight
+        body. <br> <br>
+
+
+    <p style="margin-left: 6em;"> <b> A Promising Future: </b>
+
+    <p style="margin-left: 8em;">Corn will continue to be a product of great importance for Brazil, with the potential
+        to grow even further
+        in the coming decades. <br>
+
+        Investments in research and development, technological innovation and sustainability are essential for
+        ensure the competitiveness of Brazilian corn in the global market and to meet the growing demand for this
+        nutritious and versatile cereal. <br>
+
+        Corn is true vegetable gold, which enriches Brazilians' tables, boosts the country's economy and
+        offers several health benefits.
+        <br>
+        <br>
+        <hr class="rounded">
+</div>

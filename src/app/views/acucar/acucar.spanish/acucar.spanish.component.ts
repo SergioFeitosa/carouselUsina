@@ -79,11 +79,10 @@ export class AcucarSpanishComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/acucaric30.jpg",title: "Azúcar IC 30",routeUrl: "acucaric30/spanish"},
-    {img: "/carousel/browser/assets/images/acucaric45.jpg",title: "Azúcar IC 45",routeUrl: "acucaric45/spanish"},
-    {img: "/carousel/browser/assets/images/acucaric100.jpg",title: "Azúcar IC 100-150",routeUrl: "acucaric100/spanish"},
-    {img: "/carousel/browser/assets/images/acucaric600.jpg",title: "Azúcar IC 600-1200",routeUrl: "acucaric600/spanish"},
-    {img: "/carousel/browser/assets/images/acucaricVHP.jpg",title: "Azúcar IC VHP",routeUrl: "acucaricVHP/spanish"},
+    {img: "/carousel/browser/assets/images/acucaric45.jpg",title: "Azúcar refinada: (ICUMSA 45)",routeUrl: "acucaric45/spanish"},
+    {img: "/carousel/browser/assets/images/acucaric100.jpg",title: "Azúcar cristal: (ICUMSA 150)",routeUrl: "acucaric100/spanish"},
+    {img: "/carousel/browser/assets/images/acucaric600.jpg",title: "Azúcar moreno: (ICUMSA 600-1200)",routeUrl: "acucaric600/spanish"},
+    {img: "/carousel/browser/assets/images/acucaricVHP.jpg",title: "Azúcar demerara: (ICUMSA VHP) ",routeUrl: "acucaricVHP/spanish"},
 
   ]
 

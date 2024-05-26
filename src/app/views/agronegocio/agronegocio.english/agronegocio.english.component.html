@@ -1,9 +1,11 @@
 <h1 id="h1Home">Agribusiness</h1>
-<div id="divCarousel" >
+<div id="divCarousel">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
@@ -12,15 +14,68 @@
     </ngx-slick-carousel>
     <br>
     <br>
-    <div class="textFont"> 
-        Agribusiness, also known as agribusiness, is an economic sector that involves a food production chain that interconnects several sectors, such as agriculture, livestock and industry. It comprises economic activities linked to agriculture, forest management for commerce and services (forestry) and plant extractivism.<br>
-        Agribusiness is a very important economic sector for global society, as it involves a food production chain that interconnects several sectors, such as agriculture, livestock and industry, in addition to the commerce that consumes its products. In this sector, the use of technology is intense, not restricted to the rural field, but is also present in the industrial field, with industries producing seeds, fertilizers, pesticides and other agricultural inputs.<br>
-        In Brazil, agribusiness is one of the most profitable activities. The sector represents 23% of GDP (Gross Domestic Product), according to IBGE (Brazilian Institute of Geography and Statistics). In the last 25 years, according to the Ministry of Agriculture, Livestock and Supply (MAPA), the planted area grew by 53% and production by 260% and productivity increased by 135%.<br>
-        The highest value products in Brazilian agribusiness are: cotton lint, rice, beans, corn, soy complex (grain, bran and oil), coffee, sugar, oranges, meat, cellulose and paper. National meat production occurs, in order of herd size, in Mato Grosso, Mato Grosso do Sul, São Paulo, Goiânia, Paraná, Rondônia and Rio Grande do Sul.<br>
-        However, agribusiness also represents a danger to the environment, especially due to the adoption of an intensive production system.</div>    <br>
-    <hr class="rounded">
-
-
 </div>
+<div class="textFont">
+    <p style="margin-left: 6em;"><b>What is Agribusiness?</b>
+
+    <p style="margin-left: 8em;">Agribusiness is a crucial sector of the global economy, encompassing all activities
+        related to the production, processing, distribution and marketing of agricultural and livestock products. More
+        More than just agriculture, agribusiness encompasses a complex chain of interconnected sectors, from research
+        and
+        development of agricultural inputs to logistics and food retail.
 
 
+    <p style="margin-left: 6em;"><b>Importance of Agribusiness in Brazil:</b>
+    <ul>
+        <p style="margin-left: 8em;">
+            <li><b>Sustenance of the Nation:</b> Brazil is one of the largest food producers and exporters in the world,
+                feeding millions of people across the planet. Brazilian agribusiness is responsible for around
+                30% of the national GDP and generates millions of direct and indirect jobs. </li>
+            <li><b>Technological Innovation:</b> The sector stands out for its constant technological innovation, with
+                investments
+                in research and development of new agricultural techniques, machinery and biotechnology, boosting the
+                productivity and sustainability. </li>
+            <li><b>Regional Development:</b> Agribusiness contributes significantly to development
+                regional, promoting economic and social growth in rural areas, especially in less populated
+                municipalities.
+                favored. </li>
+            <li><b>Food Security:</b> Agribusiness guarantees food security for the population, providing
+                quality food at affordable prices. </li>
+    </ul>
+
+    <p style="margin-left: 6em;"><b>Challenges and Opportunities:</b>
+
+    <ul>
+        <p style="margin-left: 8em;">
+            <li><b>Environmental Sustainability:</b> Agribusiness faces the challenge of reconciling increased
+                production
+                with environmental preservation, seeking sustainable agricultural practices that minimize environmental
+                impact.
+            </li>
+            <li><b>Climate Change:</b> Climate change represents a challenge for agribusiness, requiring
+                adaptation of agricultural practices and the development of more resistant plant varieties. </li>
+            <li><b>Demand for Healthy Food:</b> The growing demand for healthy and organic food opens
+                new opportunities for agribusiness to invest in market niches with high added value. </li>
+    </ul>
+
+    <p style="margin-left: 6em;"><b>The Future of Agribusiness: </b>
+
+        The future of agribusiness is promising, with prospects for continued growth. The global demand for food
+        should increase significantly in the coming decades, driving the need for agribusiness even further
+        efficient, sustainable and innovative.
+
+    <p style="margin-left: 6em;"><b>Investing in the Future: </b>
+
+        Investing in agribusiness means investing in the future of humanity. By supporting the development of a
+        sustainable and innovative agribusiness, we contribute to global food security, job creation and
+        environmental preservation.
+
+        Together, we can build a more prosperous and sustainable future for agribusiness and the world!
+
+        This text serves as a starting point for your presentation. You can adapt and complement it with
+        specific information about your business, region or area of ​​interest.
+
+        <br>
+        <br>
+        <hr class="rounded">
+</div>

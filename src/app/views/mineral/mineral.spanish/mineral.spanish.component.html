@@ -3,7 +3,9 @@
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
@@ -12,15 +14,89 @@
     </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        Los minerales son sustancias sólidas homogéneas, generalmente de origen inorgánico, formadas por uno o más elementos químicos, comúnmente encontrados en la naturaleza. Tienen una estructura molecular bien definida y diferenciada, lo que da como resultado propiedades distintas. Las principales características de los minerales son: estructura sólida y cristalina, composición química definida y disposición atómica ordenada.<br>
+</div>
+<div class="textFont">
+    <p style="margin-left: 6em;"> <b> Minerales: </b> Los tesoros escondidos de la Tierra <br>
 
-        Los minerales pueden estar formados por átomos de un solo elemento químico o por elementos diferentes. Los átomos se ordenan y forman combinaciones con proporciones determinadas y formas geométricas definidas. Se forman en la naturaleza por cristalización, recristalización o incluso reacciones químicas. La aparición de estas sustancias está influenciada por la temperatura, la presión y las condiciones químicas del entorno.<br>
+    <p style="margin-left: 8em;">
+        Los minerales, elementos sólidos naturales e inorgánicos con una estructura cristalina definida, son esenciales
+        para
+        Vida en la Tierra. <br>
+        Presentes en la corteza terrestre, son explorados y procesados ​​para diversos fines, tales como:
 
-        Los minerales se clasifican en metálicos y no metálicos. Los minerales metálicos son aquellos que tienen características como conductividad eléctrica y térmica. Algunos ejemplos son el hierro, el aluminio y el oro. Los minerales no metálicos son los demás, es decir, aquellos que no presentan las propiedades típicas de los elementos metálicos. Algunos ejemplos son la piedra caliza, el basalto y las sales.<br>
+    <p style="margin-left: 10em;">
+        <b> Construcción civil: </b> Áridos para hormigón, cemento, yeso, arcilla, arena y piedras ornamentales. <br>
+        <b> Metalurgia: </b> Hierro, aluminio, cobre, zinc, níquel, plomo, oro, plata y otros metales. <br>
+        <b> Producción de bienes de consumo: </b> Vidrio, cerámica, electrodomésticos, electrónica, vehículos y otros
+        productos. <br>
+        <b> Agricultura: </b> Fertilizantes, pesticidas y micronutrientes esenciales para el crecimiento de las plantas.
+        <br>
+        <b> Generación de energía: </b> Carbón, uranio y otros minerales utilizados en centrales eléctricas.
 
-        Los minerales son importantes para las economías nacionales y la dinámica económica mundial, ya que sirven como materia prima para la industria y se comercializan como productos básicos en el mercado internacional. A pesar de ello, su explotación irrestricta puede causar problemas ambientales, como degradación del suelo, contaminación, deforestación e incluso graves accidentes ambientales.<br>    </div>
-    <br>
-    <hr class="rounded">
+    <p style="margin-left: 6em;"> <b>Tipos de minerales:</b>
+
+    <p style="margin-left: 8em;">
+        Los minerales se pueden clasificar en dos grandes grupos:
+
+    <p style="margin-left: 10em;">
+        <b>Minerales metálicos: </b>Contienen metales en su composición, como hierro, aluminio, cobre, zinc, níquel,
+        Plomo,
+        oro y plata. <br>
+        <b>Minerales no metálicos: </b>No contienen metales en su composición, como cuarzo, caliza, yeso, sal gema,
+        arcilla y arena.
+
+    <p style="margin-left: 6em;"> <b>Exploración de minerales en Brasil:</b>
+
+    <p style="margin-left: 8em;">
+        Brasil tiene un vasto potencial minero en su territorio, con yacimientos de diferentes tipos de minerales. <br>
+        La exploración minera es una actividad importante para la economía brasileña, ya que genera ingresos, empleos y
+        inversiones
+        en el pais. <br>
+        Sin embargo, la exploración minera también puede tener impactos ambientales y sociales, tales como:
+
+    <p style="margin-left: 10em;">
+        <b> Deforestación: </b> La apertura de nuevas áreas para la exploración minera puede provocar deforestación y
+        pérdida de
+        biodiversidad. <br>
+        <b>Contaminación:</b>La exploración y procesamiento de minerales puede generar contaminación del aire, el agua y
+        el suelo.
+        <br>
+        <b> Degradación del suelo: </b> Las actividades mineras pueden provocar la degradación del suelo, volviéndolo
+        improductivo.
+        para la agricultura. <br>
+        <b>Conflictos sociales:</b>La exploración minera puede generar conflictos sociales entre empresas mineras y
+        comunidades locales. <br>
+
+    <p style="margin-left: 6em;"> <b> Minería Sostenible: </b>
+
+    <p style="margin-left: 8em;">
+        Es fundamental buscar prácticas mineras sustentables que minimicen los impactos ambientales y sociales de
+        actividad. <br>
+
+        Eso incluye:
+
+    <p style="margin-left: 10em;">
+        <b>Rigurosa planificación ambiental: </b>Realización de estudios de impacto ambiental y adopción de medidas para
+        mitigar
+        los impactos de la minería. <br>
+        <b> Recuperación de zonas degradadas: </b> Restauración de zonas degradadas por la actividad minera tras la
+        terminación
+        de exploración. <br>
+        <b> Diálogo con las comunidades locales: </b> Establecimiento de un diálogo transparente con las comunidades
+        locales
+        para
+        garantizar sus derechos y minimizar los impactos de la minería en sus vidas. <br>
+        <b> Inversiones en tecnología: </b> Inversión en tecnologías que minimicen el impacto ambiental de
+        minería,
+        como la reutilización del agua y el control de emisiones contaminantes. <br>
+
+    <p style="margin-left: 6em;">
+        Los minerales son recursos naturales finitos, por lo que es fundamental utilizarlos de forma responsable y
+        sostenible. <br>
+        Al invertir en prácticas mineras sostenibles, podemos garantizar que estos recursos sigan beneficiándose
+        generaciones presentes y futuras, sin comprometer el medio ambiente y el bienestar de las comunidades.
+        <br>
+        <br>
+        <hr class="rounded">
 
 </div>

@@ -1,10 +1,11 @@
-
 <h1 id="h1Home">Soja</h1>
-<div id="divCarousel" >
+<div id="divCarousel">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
@@ -13,26 +14,89 @@
     </ngx-slick-carousel>
     <br>
     <br>
-    <div class="textFont"> 
-
-        <p>Existem mais de 2 mil tipos de soja registrados no Ministério da Agricultura, mas podemos classificá-los em três grandes grupos distintos:
-
-            <p><b>Soja Convencional:</b> 
-            <p style="margin-left: 4em;">Essas sementes são produzidas de forma tradicional, sem o uso de Organismos Geneticamente Modificados (OGMs). São cultivares não transgênicas e não possuem resistência específica a herbicidas.
-            <p><b>Soja RR (Roundup Ready):</b> 
-            <p style="margin-left: 4em;">As cultivares de soja RR são transgênicas e tolerantes ao herbicida Glifosato. Isso significa que essas plantas podem resistir à aplicação desse herbicida, facilitando o controle de ervas daninhas na lavoura.
-            <p><b>Soja Intacta:</b> 
-            <p style="margin-left: 4em;">Essas sementes são produzidas com tecnologia mais avançada. Além de serem transgênicas e resistentes ao Glifosato, também possuem proteção contra pragas, como lagartas. Isso torna a soja Intacta uma escolha interessante para produtores que buscam maior proteção contra insetos.
-            
-            <p>Além disso, as cultivares de soja podem apresentar diferentes tipos de crescimento, como determinado, indeterminado e semideterminado. A maioria das cultivares brasileiras possui crescimento determinado, o que significa que a planta cresce pouco após o início do florescimento e não mais ramifica.
-            
-            <p>Lembrando que a escolha do cultivar correto é fundamental para o sucesso da lavoura de soja. O produtor deve considerar as características da fazenda, pesquisar as propriedades de cada variedade e investir em materiais certificados para obter os melhores resultados
-    
-    
-
-
-    </div>    
-    <br>
-    <hr class="rounded">
 </div>
+<div class="textFont">
+    <p style="margin-left: 6em;"> <b> Soja: </b> Um Grão Dourado que Nutre o Mundo <br>
+    <p style="margin-left: 8em;"> A soja, um grão dourado originário da Ásia, se tornou um dos principais produtos
+        agrícolas do Brasil e do mundo.
+        Cultivada em vastas áreas do país, a soja se destaca por sua alta produtividade, versatilidade e importância
+        para a economia, a alimentação e o meio ambiente.
 
+    <p style="margin-left: 6em;"> <b> Muito Mais que Grãos: </b>
+
+    <p style="margin-left: 8em;"> A soja vai além do simples grão dourado. Ela é utilizada em diversos segmentos da
+        indústria, como:
+
+    <p style="margin-left: 10em;"> <b> Alimentação humana: </b> Leite de soja, tofu, óleo de soja, proteína de soja,
+        lecitina de soja, etc. <br>
+        <b> Ração animal: </b> Fonte de proteínas e energia para a criação de gado, suínos, aves e outros animais. <br>
+        <b> Biocombustíveis: </b> Produção de biodiesel, um combustível renovável e sustentável para veículos
+        automotores. <br>
+        <b> Indústria: </b> Produção de plásticos, borracha, tintas, cosméticos e outros produtos. <br>
+
+
+    <p style="margin-left: 6em;"> <b> Importância para a Economia Brasileira: </b>
+
+    <p style="margin-left: 8em;"> O Brasil é o maior produtor e exportador de soja do mundo, respondendo por cerca de um
+        terço da produção global.
+        A produção de soja gera milhões de empregos diretos e indiretos no país, contribuindo significativamente para o
+        desenvolvimento socioeconômico das regiões produtoras.
+
+    <p style="margin-left: 6em;"> <b> Um Grão Nutritivo: </b>
+
+    <p style="margin-left: 8em;"> A soja é um alimento rico em nutrientes, como:
+
+    <p style="margin-left: 10em;"> <b> Proteínas: </b> Fonte de proteínas de alta qualidade, importante para o
+        desenvolvimento e reparo dos tecidos musculares. <br>
+        <b> Gorduras boas: </b> Rica em ácidos graxos insaturados, como ômega 3 e ômega 6, importantes para a saúde do
+        coração e do cérebro. <br>
+        <b> Fibras: </b> Auxiliam na digestão, regulam o intestino e promovem a saciedade. <br>
+        <b> Vitaminas: </b> Rica em vitaminas do complexo B, como B1, B2 e B6, importantes para o metabolismo
+        energético, o sistema nervoso e a função muscular. <br>
+        <b> Minerais: </b> Fonte de ferro, cálcio, fósforo, magnésio e potássio, minerais essenciais para o bom
+        funcionamento do organismo. <br>
+
+    <p style="margin-left: 6em;"> <b> Benefícios para a Saúde: </b>
+
+    <p style="margin-left: 8em;"> O consumo regular de soja pode trazer diversos benefícios para a saúde, como:
+
+    <p style="margin-left: 10em;"> <b> Prevenir doenças crônicas: </b> Auxilia na prevenção de doenças crônicas como
+        diabetes tipo 2, doenças cardíacas e alguns tipos de câncer. <br>
+        <b> Controlar o colesterol: </b> As gorduras boas presentes na soja ajudam a reduzir o colesterol LDL ("ruim"),
+        diminuindo o risco de doenças cardíacas. <br>
+        <b> Melhorar a digestão: </b> As fibras também auxiliam na regulação do intestino e previnem a constipação. <br>
+        <b> Fortalecer o sistema imunológico: </b> Rica em vitaminas e minerais, a soja ajuda a fortalecer o sistema
+        imunológico, protegendo o organismo contra doenças. <br>
+        <b> Promover a saciedade: </b> As fibras e proteínas da soja promovem a saciedade, auxiliando no controle do
+        peso corporal. <br>
+
+
+    <p style="margin-left: 6em;"> <b> Desafios e Sustentabilidade: </b>
+
+    <p style="margin-left: 8em;"> O cultivo da soja no Brasil enfrenta alguns desafios, como:
+
+    <p style="margin-left: 10em;"> <b> Desmatamento: </b>A expansão das áreas de cultivo da soja pode levar ao
+        desmatamento, com impactos negativos para o meio ambiente. <br>
+        <b> Uso de agrotóxicos: </b> O uso excessivo de agrotóxicos pode contaminar o solo e a água, além de prejudicar
+        a saúde humana e o meio ambiente. <br>
+        <b> Concentração de terras: </b> A produção de soja está concentrada em poucas mãos, o que pode levar à
+        desigualdade social e à concentração de renda. <br>
+
+
+    <p style="margin-left: 6em;"> <b> É fundamental buscar soluções para esses desafios, como: </b>
+
+    <p style="margin-left: 8em;"> <b> Adotar práticas agrícolas sustentáveis: </b> Agricultura de precisão, manejo
+        conservacionista do solo, rotação de culturas, etc. <br>
+        <b> Reduzir o uso de agrotóxicos: </b> Buscar alternativas biológicas de controle de pragas e doenças. <br>
+        <b> Promover a reforma agrária: </b> Distribuir terras de forma mais justa e equânime. <br>
+
+    <p style="margin-left: 6em;"> A soja é um grão com enorme potencial para nutrir o mundo e contribuir para o
+        desenvolvimento socioeconômico do Brasil. <br>
+
+        Ao investir em sustentabilidade, inovação tecnológica e responsabilidade social, podemos garantir que a produção
+        de soja continue a ser um motor de crescimento para o país, sem comprometer o meio ambiente e o bem-estar das
+        pessoas.
+        <br>
+        <br>
+        <hr class="rounded">
+</div>

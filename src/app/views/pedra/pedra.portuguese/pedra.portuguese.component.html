@@ -1,9 +1,11 @@
 <h1 id="h1Home">Pedras</h1>
-<div id="divCarousel" >
+<div id="divCarousel">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
@@ -12,18 +14,85 @@
     </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        As pedras preciosas são minerais cristalinos raros e de importante valor, que se distinguem pela sua beleza, pureza, cor, transparência, brilho, dureza e índice de refração da luz. Elas são formadas por processos geológicos que ocorrem ao longo de milhões de anos2. Diamantes, rubis, safiras e esmeraldas são algumas das pedras mais valiosas e desejadas no mundo.<br>
+</div>
+<div class="textFont">
+    <p style="margin-left: 6em;"> <b> Pedras Preciosas: </b> Jóias da Natureza que Encantam e Fascinam <br>
+    <p style="margin-left: 8em;">
+        As pedras preciosas, verdadeiras obras de arte da natureza, são apreciadas desde a antiguidade por sua beleza,
+        raridade, simbolismo e valor.
+        Mais do que simples adornos, elas carregam consigo histórias, crenças e significados, despertando a admiração e
+        o
+        fascínio de pessoas em todo o mundo.
 
-        A qualidade de uma pedra preciosa é determinada por sua cor, clareza, corte e quilates2. A extração de pedras preciosas pode ser feita em minas subterrâneas ou a céu aberto2. Além de ter diferentes valores comerciais, de acordo com a sua composição química e raridade, as pedras preciosas também possuem significados místicos e espirituais que são atribuídos pela cultura popular.<br>
+    <p style="margin-left: 6em;"> <b> Uma Variedade de Cores e Propriedades: </b>
 
-        As pedras preciosas podem ter diversas utilizações, sendo mais comum na confecção de joias e objetos valiosos de arte. No entanto, também são utilizadas em peças para instrumentos de precisão ou ainda na fabricação de abrasivos. Atualmente, já são fabricadas pedras preciosas em fornos elétricos a elevadas temperaturas, tendo como matéria-prima o material fundido que se obtém de resíduos das pedras.<br>
+    <p style="margin-left: 8em;">
+        Cada pedra preciosa possui características únicas, como cor, lapidação, dureza, brilho e índice de refração da
+        luz. <br>
+        Essa variedade cria um universo de possibilidades, com pedras para todos os gostos e estilos:
 
-        É importante ressaltar que cada pedra preciosa tem a sua própria particularidade, seus próprios componentes e significados. Por exemplo, a ágata é associada à prosperidade, amizade, proteção, justiça e vitalidade. O citrino é associado à prosperidade, autoestima e sucesso profissional. E o coral é associado à vitalidade e ao equilíbrio emocional.<br>
+    <p style="margin-left: 10em;">
+        <b> Diamante: </b> A mais dura das pedras preciosas, conhecida por seu brilho intenso e lapidação clássica em
+        forma de brilhante. <br>
+        <b> Safira: </b> Pedra azul real, associada à realeza, sabedoria e prosperidade. <br>
+        <b> Rubi: </b> Pedra vermelha vibrante, símbolo de amor, paixão e poder. <br>
+        <b> Esmeralda: </b> Pedra verde exuberante, conhecida por sua cor viva e inclusões únicas. <br>
+        <b> Ametista: </b> Pedra roxa profunda, associada à espiritualidade, proteção e intuição. <br>
+        <b> Topázio: </b> Encontrado em diversas cores, como amarelo, azul, rosa e laranja, conhecido por sua clareza e
+        brilho. <br>
+        <b> Turmalina: </b> Uma das pedras mais versáteis, com grande variedade de cores e propriedades, incluindo a
+        rara turmalina Paraíba. <br>
+        <b> Granada: </b> Pedra vermelha escura, símbolo de paixão, vitalidade e sucesso. <br>
+        <b> Aquamarine: </b> Pedra azul clara, associada à tranquilidade, paz e fidelidade. <br>
+        <b> Citrino: </b> Pedra amarela vibrante, conhecida por sua energia positiva e poder de atrair prosperidade.
+        <br>
 
-        Portanto, as pedras preciosas são não apenas belas e valiosas, mas também carregam consigo uma riqueza de significados e simbolismos.
-    </div>
-    <br>
-    <hr class="rounded">
+    <p style="margin-left: 6em;"> <b> Mais que Beleza: </b> <br>
+
+    <p style="margin-left: 8em;">
+        As pedras preciosas são mais do que objetos de beleza. <br>
+        Ao longo da história, elas foram utilizadas para diversos fins, como:
+
+    <p style="margin-left: 10em;">
+        <b> Amuletos e talismãs: </b> Acreditava-se que as pedras preciosas possuíam poderes de cura, proteção e sorte.
+        <br>
+        <b> Símbolos de status e riqueza: </b> As pedras preciosas eram utilizadas para adornar coroas, joias e outros
+        objetos de
+        valor, demonstrando poder e riqueza. <br>
+        <b> Moeda de troca: </b> Em algumas culturas, as pedras preciosas eram utilizadas como moeda de troca, devido ao
+        seu valor e raridade. <br>
+        <b> Objetos de arte e decoração: </b> As pedras preciosas eram esculpidas e lapidadas para criar obras de arte e
+        decorar objetos, como móveis e utensílios.
+
+    <p style="margin-left: 6em;"> <b> Um Mercado Global: </b> <br>
+
+    <p style="margin-left: 8em;">
+        O mercado de pedras preciosas é um dos mais importantes do mundo, movimentando bilhões de dólares anualmente.
+        <br>
+        As principais fontes de pedras preciosas estão localizadas em diversos países, como
+        Brasil, África do Sul, Colômbia, Sri Lanka e Austrália.
+
+    <p style="margin-left: 6em;"> <b> A Lapidação: Revelando a Beleza: </b>
+
+    <p style="margin-left: 8em;">
+        A lapidação é um processo artesanal que revela a beleza e o brilho das pedras preciosas. <br>
+        Através de técnicas precisas, os lapidadores transformam pedras brutas em joias
+        cintilantes, utilizando ferramentas como lupas, polidores e discos de diamante.
+
+    <p style="margin-left: 6em;"> <b> Cuidados e Conservação: </b>
+
+    <p style="margin-left: 8em;">
+        As pedras preciosas são bens valiosos que exigem cuidados especiais para manter sua beleza e brilho. <br>
+        É importante protegê-las de quedas, choques, produtos químicos e fontes de calor excessivo. <br>
+        A limpeza regular com água morna e sabão neutro é fundamental para preservar a qualidade
+        das pedras. <br>
+        As pedras preciosas são verdadeiras dádivas da natureza, que encantam e fascinam a
+        humanidade há séculos. <br>
+        Sua beleza, raridade, simbolismo e valor as tornam objetos de desejo e admiração,
+        eternizando momentos especiais e
+        complementando a nossa história com um toque de brilho e sofisticação.
+        <br>
+        <br>
+        <hr class="rounded">
 
 </div>

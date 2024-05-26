@@ -1,63 +1,73 @@
-
 <h1 id="h1Home">Azúcar</h1>
-<div id="divCarousel" >
+<div id="divCarousel">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
             </figure>
         </div>
     </ngx-slick-carousel>
-    <br>
-    <br>
-    <div class="textFont"> 
-        <p>¿Qué es el azúcar?</p>
-        <p style="margin-left: 4em;" >El azúcar es un carbohidrato simple, obtenido principalmente de la caña de azúcar y la remolacha azucarera. Es un ingrediente esencial en varias recetas y se utiliza para endulzar alimentos y bebidas.</p>
-       
-        <p>Tipos de Azúcar:</p>
-        <p style="margin-left: 4em;" >
-            Azúcar cristal: Es el tipo más común, con cristales grandes y secos.<br>
-            Azúcar refinada: Pasa por un proceso de refinamiento que elimina impurezas y deja los cristales más blancos y finos.<br>
-            Azúcar glas: Es azúcar refinada molida hasta obtener un polvo fino.<br>
-            Azúcar moreno: Es un azúcar menos procesado, con cristales húmedos y de sabor más intenso.<br>
-            Azúcar demerara: Es un tipo de azúcar moreno con cristales más grandes y de sabor más suave.</p>
-
-        <p>Siglas del tipo de azúcar para comercialización:</p>
-        <p style="margin-left: 4em;" >
-            <b>Azúcar IC 30 / IC 45 / IC 100-150 / IC 600-1200 / IC VHP</b></p>
-
-        <p>Beneficios del azúcar:</p>
-        <p style="margin-left: 4em;" >
-        Energía: El azúcar proporciona energía rápida al cuerpo, siendo importante para las actividades físicas y mentales.<br>
-        Sabor: Endulza alimentos y bebidas, haciéndolos más sabrosos y atractivos.<br>
-        Conservación: Ayuda a conservar alimentos, como frutas en mermeladas.<br>
-        Textura: En las recetas, el azúcar contribuye a la textura y cremosidad de pasteles, tartas y otros dulces.</p>
-
-        <p>Precauciones de consumo:</p>
-        <p style="margin-left: 4em;" >El consumo excesivo de azúcar puede causar varios problemas de salud, como obesidad, diabetes, enfermedades cardíacas y caries. Es importante consumir azúcar con moderación y dentro de una dieta equilibrada.</p>
-       
-        <p>Alternativas al azúcar:</p>
-        <p style="margin-left: 4em;" >Para reducir el consumo de azúcar, existen varias alternativas, como:<br>
-            Edulcorantes naturales: stevia, xilitol, eritritol.<br>
-            Frutas: plátano, manzana, uva.<br>
-            Miel: edulcorante natural con propiedades beneficiosas.</p>
-
-        <p>Conclusión:</p>
-       
-        <p style="margin-left: 4em;" >El azúcar es un ingrediente versátil con muchos beneficios, pero es importante consumirlo con moderación. Elegir alternativas al azúcar y una dieta equilibrada son importantes para mantener una buena salud.</p>
-       
-        <p>Para más información:</p>
-       
-        <p style="margin-left: 4em;" >
-            Asociación Brasileña de la Industria de la Caña de Azúcar (ABIA): https://www.abia.org.br/<br>
-            Ministerio de Salud: https://www.gov.br/saude/pt-br</p>
-    </div>    
-    <br>
-    <hr class="rounded">
-
-
 </div>
+<br>
+<div class="textFont">
+    <br>
+    <p style="margin-left: 6em;"> <b> ¿Qué es el azúcar? </b>
+    <p style="margin-left: 8em;">El azúcar es un carbohidrato simple, obtenido principalmente de la caña de azúcar y
+        remolacha azucarera. Es un ingrediente esencial en varias recetas y se utiliza para endulzar alimentos y
+        bebidas.
+    </p>
 
+    <p style="margin-left: 6em;"> <b> Tipos de azúcar: </b>
+    <p style="margin-left: 8em;">
+        <b>Azúcar refinada: (ICUMSA 45) </b> Pasa por un proceso de refinamiento que elimina impurezas y deja el
+        Cristales más blancos y finos. <br>
+        <b>Azúcar cristal: (ICUMSA 150) </b> Es el tipo más común, con cristales grandes y secos. <br>
+        <b>Azúcar moreno: (ICUMSA 600-1200) </b> Es un azúcar menos procesado, con cristales húmedos y de sabor más
+        sabroso.
+        intenso. <br>
+        <b>Azúcar demerara: (ICUMSA VHP) </b> Es un tipo de azúcar moreno con cristales más grandes y de sabor más
+        suave.
+    </p>
+
+    <p style="margin-left: 6em;"> <b> Beneficios del azúcar: </b>
+    <p style="margin-left: 8em;">
+        <b>Energía: </b> El azúcar proporciona energía rápida al cuerpo, siendo importante para las actividades físicas
+        y
+        mental. <br>
+        <b>Sabor: </b> Endulza alimentos y bebidas, haciéndolos más sabrosos y atractivos. <br>
+        <b>Conservación:</b> Ayuda a conservar alimentos, como la fruta en mermeladas. <br>
+        <b>Textura: </b> En las recetas, el azúcar contribuye a la textura y cremosidad de pasteles, tartas y otros
+        dulces.
+    </p>
+
+    <p style="margin-left: 6em;"> <b>Precauciones de consumo:</b>
+    <p style="margin-left: 8em;">El consumo excesivo de azúcar puede causar varios problemas de salud, como obesidad,
+        diabetes, enfermedades cardíacas y caries. Es importante consumir azúcar con moderación y dentro de una dieta.
+        equilibrado.</p>
+
+    <p style="margin-left: 6em;"> <b> Alternativas al azúcar: </b>
+    <p style="margin-left: 8em;">Para reducir el consumo de azúcar, existen varias alternativas, como: <br>
+        Edulcorantes naturales: stevia, xilitol, eritritol. <br>
+        Frutas: plátano, manzana, uva. <br>
+        Miel: edulcorante natural con propiedades beneficiosas. </p>
+
+    <p style="margin-left: 6em;"> <b> Conclusión: </b>
+
+    <p style="margin-left: 8em;">El azúcar es un ingrediente versátil con muchos beneficios, pero es importante
+        consumirlo
+        con moderación. Elegir alternativas al azúcar y una dieta equilibrada son importantes para mantener un buen
+        salud. </p>
+
+    <p style="margin-left: 6em;"> <b>Para más información:</b>
+
+    <p style="margin-left: 8em;">
+        Asociación Brasileña de la Industria de la Caña de Azúcar (ABIA): https://www.abia.org.br/ <br>
+        Ministerio de Salud: https://www.gov.br/saude/pt-br </p>
+</div>
+<br>
+<hr class="rounded">

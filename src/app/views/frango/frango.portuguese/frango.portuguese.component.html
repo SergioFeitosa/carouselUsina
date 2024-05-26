@@ -1,10 +1,11 @@
-
 <h1 id="h1Home">Frango</h1>
-<div id="divCarousel" >
+<div id="divCarousel">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
@@ -13,45 +14,57 @@
     </ngx-slick-carousel>
     <br>
     <br>
-    <div class="textFont"> 
-        Apresentação do Frango: Versatilidade e Sabor à Sua Mesa
-        O frango (Gallus gallus domesticus) é uma ave doméstica apreciada no mundo todo por sua carne saborosa, versátil e nutritiva. Sua criação oferece diversas opções de cortes para atender às suas necessidades culinárias.
-        
-        Cortes de Frango:
-        
-        Peito: Corte magro e rico em proteínas, ideal para grelhar, assar ou fritar.
-        Sobrecoxa: Corte com mais gordura e sabor, perfeito para assar, ensopar ou refogar.
-        Coxa: Corte saboroso e suculento, ideal para assar, fritar ou fazer moqueca.
-        Asa: Corte popular para fritar, assar ou grelhar, podendo ser temperado de diversas maneiras.
-        Drumet: Parte da asa com mais carne, ideal para assar, fritar ou fazer petiscos.
-        Moela: Órgão com textura crocante, ideal para ensopados, refogados ou moquecas.
-        Fígado: Víscera rica em ferro e vitaminas, ideal para refogados, patês ou recheios.
-        Coração: Víscera com textura firme e sabor intenso, perfeito para refogados, espetinhos ou assados.
-        Benefícios do Frango:
-        
-        Nutrição: Carne rica em proteínas, vitaminas e minerais, com baixo teor de gordura saturada.
-        Versatilidade: Diversos cortes para atender às suas necessidades culinárias e preferências.
-        Sabor: Carne saborosa que pode ser temperada de diversas maneiras.
-        Preço: Carne acessível e com bom custo-benefício.
-        Sustentabilidade: Criação com menor impacto ambiental em comparação com outras carnes.
-        Dicas para Preparar Frango:
-        
-        Higiene: Lave bem as mãos e os utensílios antes de manusear o frango.
-        Cocção: Cozinhe o frango até que esteja completamente cozido para evitar doenças.
-        Temperos: Explore diversos temperos para variar o sabor do frango.
-        Criatividade: Experimente novas receitas e cortes de frango para diversificar seu cardápio.
-        Conclusão:
-        
-        O frango é uma excelente opção para uma alimentação nutritiva, saborosa e acessível. Com seus diversos cortes e possibilidades culinárias, o frango é um ingrediente versátil que pode agradar a todos os paladares.
-        
-        Para mais informações:
-        
-        Associação Brasileira de Proteína Animal (ABPA): [[URL inválido removido]]([URL inválido removido])
-        Ministério da Agricultura, Pecuária e Abastecimento (MAPA): https://www.gov.br/agricultura/pt-br   
-    </div>    
-    <br>
-    <hr class="rounded">
-
-
 </div>
+<div class="textFont">
+    <p style="margin-left: 6em;"> <b> Apresentação do Frango: </b>
+    <p style="margin-left: 8em;">
+        Versatilidade e Sabor à Sua Mesa
+        O frango (Gallus gallus domesticus) é uma ave doméstica apreciada no mundo todo por sua carne saborosa,
+        versátil e nutritiva. Sua criação oferece diversas opções de cortes para atender às suas necessidades
+        culinárias.
 
+    <p style="margin-left: 6em;"> <b> Cortes de Frango: </b>
+
+    <p style="margin-left: 8em;">
+        <b> Peito: </b> Corte magro e rico em proteínas, ideal para grelhar, assar ou fritar. <br>
+        <b> Sobrecoxa: </b> Corte com mais gordura e sabor, perfeito para assar, ensopar ou refogar. <br>
+        <b> Coxa: </b> Corte saboroso e suculento, ideal para assar, fritar ou fazer moqueca. <br>
+        <b> Asa: </b> Corte popular para fritar, assar ou grelhar, podendo ser temperado de diversas maneiras. <br>
+        <b> Drumet: </b> Parte da asa com mais carne, ideal para assar, fritar ou fazer petiscos. <br>
+        <b> Moela: </b> Órgão com textura crocante, ideal para ensopados, refogados ou moquecas. <br>
+        <b> Fígado: </b> Víscera rica em ferro e vitaminas, ideal para refogados, patês ou recheios. <br>
+        <b> Coração: </b> Víscera com textura firme e sabor intenso, perfeito para refogados, espetinhos ou assados. <br>
+
+    <p style="margin-left: 6em;"> <b> Benefícios do Frango: </b>
+
+    <p style="margin-left: 8em;">
+        <b> Nutrição: </b> Carne rica em proteínas, vitaminas e minerais, com baixo teor de gordura saturada. <br>
+        <b> Versatilidade: </b> Diversos cortes para atender às suas necessidades culinárias e preferências. <br>
+        <b> Sabor: </b> Carne saborosa que pode ser temperada de diversas maneiras. <br>
+        <b> Preço: </b> Carne acessível e com bom custo-benefício. <br>
+        <b> Sustentabilidade: </b> Criação com menor impacto ambiental em comparação com outras carnes. <br>
+
+    <p style="margin-left: 6em;"> <b> Dicas para Preparar Frango: </b>
+
+    <p style="margin-left: 8em;">
+        <b> Higiene: </b> Lave bem as mãos e os utensílios antes de manusear o frango. <br>
+        <b> Cocção: </b> Cozinhe o frango até que esteja completamente cozido para evitar doenças. <br>
+        <b> Temperos: </b> Explore diversos temperos para variar o sabor do frango. <br>
+        <b> Criatividade: </b> Experimente novas receitas e cortes de frango para diversificar seu cardápio. <br>
+
+    <p style="margin-left: 6em;"> <b> Conclusão: </b>
+
+    <p style="margin-left: 8em;">
+        O frango é uma excelente opção para uma alimentação nutritiva, saborosa e acessível. Com seus diversos
+        cortes e possibilidades culinárias, o frango é um ingrediente versátil que pode agradar a todos os
+        paladares.
+
+    <p style="margin-left: 6em;"><b>Para mais informações:</b>
+
+    <p style="margin-left: 8em;">Associação Brasileira de Proteína Animal (ABPA): [[URL inválido removido]]([URL
+        inválido removido])
+        Ministério da Agricultura, Pecuária e Abastecimento (MAPA): https://www.gov.br/agricultura/pt-br
+        <br>
+        <br>
+        <hr class="rounded">
+</div>

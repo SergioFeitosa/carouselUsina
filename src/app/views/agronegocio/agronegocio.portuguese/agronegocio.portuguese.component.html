@@ -1,9 +1,11 @@
 <h1 id="h1Home">Agronegócio</h1>
-<div id="divCarousel" >
+<div id="divCarousel">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
@@ -12,16 +14,65 @@
     </ngx-slick-carousel>
     <br>
     <br>
-    <div class="textFont"> 
-        O agronegócio, também conhecido como agrobusiness, é um setor econômico que envolve uma cadeia de produção alimentar que interliga vários setores, como a agricultura, a pecuária e a indústria. Ele compreende as atividades econômicas ligadas à agropecuária, ao manejo de florestas para comércio e serviços (silvicultura) e ao extrativismo vegetal.<br>
-        O agronegócio é um setor econômico bastante importante para a sociedade mundial, pois envolve uma cadeia de produção alimentar que interliga vários setores, como a agricultura, a pecuária e a indústria, além do comércio que consome seus produtos. Nesse setor, o emprego de tecnologia é intenso, não sendo restrito ao campo rural, estando também presente no campo industrial, com indústrias de sementes, adubos, agrotóxicos e outros insumos agrícolas.<br>
-        No Brasil, o agronegócio é uma das atividades mais lucrativas. O setor representa 23% do PIB (Produto Interno Bruto), segundo o IBGE (Instituto Brasileiro de Geografia e Estatística). Nos últimos 25 anos, conforme o Ministério a Agricultura, Pecuária e Abastecimento (MAPA), a área plantada cresceu 53% e a produção 260% e a produtividade aumentou 135%.<br>
-        Os produtos de maior valor no agronegócio brasileiro são: algodão em pluma, arroz, feijão, milho, complexo soja (grão, farelo e óleo), café, açúcar, laranja, carnes, celulose e papel. A produção nacional de carne ocorre, em ordem de tamanho do rebanho, no Mato Grosso, Mato Grosso do Sul, São Paulo, Goiânia, Paraná, Rondônia e Rio Grande do Sul.<br>
-        No entanto, o agronegócio também representa perigo para o meio-ambiente, especialmente pela adoção do sistema de produção intensivo.</div>
-    <br>
-    <hr class="rounded">
-
-
 </div>
+<div class="textFont">
+    <p style="margin-left: 6em;"><b>O que é o Agronegócio? </b>
+
+    <p style="margin-left: 8em;">O agronegócio é um setor crucial da economia global, abrangendo todas as atividades
+        relacionadas à produção, processamento, distribuição e comercialização de produtos agrícolas e pecuários. Mais
+        do que apenas agricultura, o agronegócio engloba uma cadeia complexa de setores interligados, desde a pesquisa e
+        desenvolvimento de insumos agrícolas até a logística e o varejo de alimentos.
 
 
+    <p style="margin-left: 6em;"><b>Importância do Agronegócio no Brasil: </b>
+    <ul>
+        <p style="margin-left: 8em;">
+            <li><b>Sustento da Nação:</b> O Brasil é um dos maiores produtores e exportadores de alimentos do mundo,
+                alimentando milhões de pessoas em todo o planeta. O agronegócio brasileiro é responsável por cerca de
+                30% do PIB nacional e gera milhões de empregos diretos e indiretos. </li>
+            <li><b>Inovação Tecnológica: </b> O setor se destaca pela constante inovação tecnológica, com investimentos
+                em pesquisa e desenvolvimento de novas técnicas agrícolas, maquinário e biotecnologia, impulsionando a
+                produtividade e a sustentabilidade. </li>
+            <li><b>Desenvolvimento Regional: </b> O agronegócio contribui significativamente para o desenvolvimento
+                regional, promovendo o crescimento econômico e social em áreas rurais, especialmente em municípios menos
+                favorecidos. </li>
+            <li><b>Segurança Alimentar: </b> O agronegócio garante a segurança alimentar da população, fornecendo
+                alimentos de qualidade e a preços acessíveis. </li>
+    </ul>
+
+    <p style="margin-left: 6em;"><b>Desafios e Oportunidades: </b>
+
+    <ul>
+        <p style="margin-left: 8em;">
+            <li><b>Sustentabilidade Ambiental: </b> O agronegócio enfrenta o desafio de conciliar o aumento da produção
+                com a preservação ambiental, buscando práticas agrícolas sustentáveis que minimizem o impacto ambiental.
+            </li>
+            <li><b>Mudanças Climáticas: </b> As mudanças climáticas representam um desafio para o agronegócio, exigindo
+                a
+                adaptação das práticas agrícolas e o desenvolvimento de variedades de plantas mais resistentes. </li>
+            <li><b>Demanda por Alimentos Saudáveis: </b> A crescente demanda por alimentos saudáveis e orgânicos abre
+                novas oportunidades para o agronegócio investir em nichos de mercado com alto valor agregado. </li>
+    </ul>
+
+    <p style="margin-left: 6em;"><b>O Futuro do Agronegócio: </b>
+
+        O futuro do agronegócio é promissor, com perspectivas de crescimento contínuo. A demanda global por alimentos
+        deve aumentar significativamente nas próximas décadas, impulsionando a necessidade de um agronegócio ainda mais
+        eficiente, sustentável e inovador.
+
+    <p style="margin-left: 6em;"><b>Investindo no Futuro: </b>
+
+        Investir no agronegócio significa investir no futuro da humanidade. Ao apoiar o desenvolvimento de um
+        agronegócio sustentável e inovador, contribuímos para a segurança alimentar global, a geração de empregos e a
+        preservação ambiental.
+
+        Juntos, podemos construir um futuro mais próspero e sustentável para o agronegócio e para o mundo!
+
+        Este texto serve como um ponto de partida para sua apresentação. Você pode adaptá-lo e complementá-lo com
+        informações específicas sobre o seu negócio, região ou área de interesse.
+
+
+        <br>
+        <br>
+        <hr class="rounded">
+</div>

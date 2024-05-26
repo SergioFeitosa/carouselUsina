@@ -79,11 +79,10 @@ export class AcucarPortugueseComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/acucaric30.jpg",title: "Açúcar IC 30",routeUrl: "acucaric30/portuguese"},
-    {img: "/carousel/browser/assets/images/acucaric45.jpg",title: "Açúcar IC 45",routeUrl: "acucaric45/portuguese"},
-    {img: "/carousel/browser/assets/images/acucaric100.jpg",title: "Açúcar IC 100-150",routeUrl: "acucaric100/portuguese"},
-    {img: "/carousel/browser/assets/images/acucaric600.jpg",title: "Açúcar IC 600-1200",routeUrl: "acucaric600/portuguese"},
-    {img: "/carousel/browser/assets/images/acucaricVHP.jpg",title: "Açúcar IC VHP",routeUrl: "acucaricVHP/portuguese"},
+    {img: "/carousel/browser/assets/images/acucaric45.jpg",title: "Açúcar refinado (ICUMSA 45)",routeUrl: "acucaric45/portuguese"},
+    {img: "/carousel/browser/assets/images/acucaric100.jpg",title: "Açúcar cristal (ICUMSA 150)",routeUrl: "acucaric100/portuguese"},
+    {img: "/carousel/browser/assets/images/acucaric600.jpg",title: "Açúcar mascavo (ICUMSA 600-1200)",routeUrl: "acucaric600/portuguese"},
+    {img: "/carousel/browser/assets/images/acucaricVHP.jpg",title: "Açúcar demerara (ICUMSA VHP)",routeUrl: "acucaricVHP/portuguese"},
     
   ]
 

@@ -1,60 +1,117 @@
 <h1 id="h1Home">Sorghum</h1>
-<div id="divCarousel" >
+<div id="divCarousel">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
             </figure>
         </div>
     </ngx-slick-carousel>
-    <br>
-    <br>
-    <div class="textFont"> 
-
-        <p style="margin-left: 2em;"><b>Sorghum: A versatile and resilient crop</b>
-
-            <p style="margin-left: 3em;"> Sorghum is a grass native to Africa that has become an important crop around the world. It is a versatile plant that can be used for a variety of purposes, including food and feed, biofuel production, and materials manufacturing. Sorghum is a resilient crop that can tolerate stressful conditions such as drought and heat. It is an important crop for food security and sustainability.
-           
-            <p style="margin-left: 2em;"><b>Types of sorghum</b>
-           
-            <p style="margin-left: 3em;">Grain sorghum is grown for its grains, which are used for human and animal feed.<br>
-            Sweet sorghum: Sweet sorghum is grown for its high sugar content, which is used to produce ethanol and other biofuels.<br>
-            Broom: Broom sorghum is grown for its long panicles, which are used to make brooms and other products.<br>
-            Forage: Forage sorghum is grown for fodder, which is used to feed livestock.<br>
-           
-            <p style="margin-left: 3em;">There are four main types of sorghum: grain, sweet, broom and forage. Each type of sorghum is grown for a different purpose. Grain sorghum is the most common type of sorghum and is used for human and animal food. Sweet sorghum is used to produce biofuels, broom sorghum is used to make brooms and other products, and forage sorghum is used to feed livestock.
-           
-            <p style="margin-left: 2em;"><b>Importance of sorghum</b>
-           
-            <p style="margin-left: 3em;">Food security: Sorghum is an important source of food for millions of people around the world. It is a nutrient-rich crop that can provide energy and protein.<br>
-            Sustainability: Sorghum is a resilient crop that can tolerate stressful conditions such as drought and heat. It is an important crop for food security and sustainability.<br>
-            Biofuels: Sweet sorghum is an important source of biofuels. Sorghum ethanol is a renewable and sustainable fuel that can help reduce our dependence on fossil fuels.<br>
-            Materials: Sorghum can be used to make a variety of materials, including paper, plastic, and textiles.<br>
-           
-            <p style="margin-left: 3em;">Sorghum is an important crop for many reasons. It is an important source of food security, it is a sustainable crop, it is an important source of biofuels and it can be used to manufacture a variety of materials. Sorghum is a versatile and valuable crop that has an important role to play in the future of agriculture.
-           
-            <p style="margin-left: 2em;"><b>Sorghum production in Brazil</b>
-           
-            <p style="margin-left: 3em;">Brazil is the third largest producer of sorghum in the world, after the United States and China.<br>
-            In 2023, sorghum production in Brazil was 31.3 million tons.<br>
-            Sorghum is cultivated in all regions of Brazil, but the main producers are the states of the Central-West and Northeast.<br>
-            Sorghum is mainly used for animal feed in Brazil, but is also used for the production of biofuels and in the food industry.<br>
-           
-            <p style="margin-left: 3em;">Brazil is an important producer and consumer of sorghum. The crop is grown in all regions of the country, but the main producers are the states of the Central-West and Northeast. Sorghum is mainly used for animal feed in Brazil, but is also used for the production of biofuels and in the food industry.
-           
-            <p style="margin-left: 2em;"><b>The future of sorghum</b>
-           
-            <p style="margin-left: 3em;">Sorghum is a crop with a promising future.
-            The demand for sorghum is expected to increase in the coming years, due to the growth of the world population and the growing demand for food, biofuels and materials.
-            Sorghum is a resilient crop that can tolerate climate change, making it an important crop for future food security.
-            Researchers are working to develop new sorghum varieties that are more productive, disease resistant and stress tolerant.
-           
-            <p style="margin-left: 3em;">Sorghum has a promising future. Demand for sorghum is expected to increase in the coming years, making it an important crop for food security and sustainability.
-    </div>    
-    <br>
-    <hr class="rounded">
 </div>
+<br>
+<br>
+<div class="textFont">
 
+    <p style="margin-left: 6em;"> <b> Sorghum: </b> A Promising Cereal for the Future of Brazilian Agriculture <br>
+    <p style="margin-left: 8em;"> Sorghum, an ancient and resilient cereal, has been gaining prominence in the
+        agricultural scene
+        Brazilian as an alternative
+        promising way to diversify production and ensure food security.
+        Adapted to different climates and soils, sorghum has advantageous characteristics that make it an ideal option
+        attractive
+        for farmers and consumers. <br>
+
+    <p style="margin-left: 6em;"> <b> A Versatile Cereal: </b>
+
+    <p style="margin-left: 8em;"> Sorghum stands out for its versatility and can be used in different segments:
+
+    <p style="margin-left: 10em;"> <b> Human food: </b> Fresh grains, sorghum flour, sorghum flakes,
+        sorghum noodles, etc. <br>
+        <b> Animal feed: </b> Source of energy and nutrients for raising cattle, pigs, poultry and other animals. <br>
+        <b> Biofuels: </b> Production of ethanol and biogas, renewable and sustainable fuels for vehicles
+        automotive and energy generation. <br>
+        <b> Industry: </b> Production of plastics, biomaterials, pharmaceuticals and other products. <br>
+
+
+    <p style="margin-left: 6em;"> <b> Advantages for Agriculture: </b>
+
+    <p style="margin-left: 8em;"> Sorghum cultivation offers significant advantages for Brazilian agriculture:
+
+    <p style="margin-left: 10em;">
+        <b> Drought resistance: </b> Adapted to dry climatic conditions, sorghum withstands prolonged droughts with
+        bigger
+        efficiency than other cereals, such as corn. <br>
+        <b> Tolerance to saline soils: </b> Sorghum is tolerant to saline and degraded soils, allowing
+        its production
+        in areas with adverse soil conditions. <br>
+        <b> Lower need for inputs: </b> Sorghum requires fewer pesticides and fertilizers than other cereals,
+        contributing
+        for sustainable agriculture and environmental preservation. <br>
+        <b> Short cultivation cycle: </b> Sorghum has a short cultivation cycle, allowing more than one harvest per
+        harvest.
+        year in some
+        regions. <br>
+
+    <p style="margin-left: 6em;"> <b> A Nutritious Cereal: </b>
+
+    <p style="margin-left: 8em;"> Sorghum is a food rich in nutrients, such as:
+
+    <p style="margin-left: 10em;">
+        <b> Carbohydrates: </b> Source of energy for the body. <br>
+        <b> Proteins: </b> Important for the development and repair of muscle tissues. <br>
+        <b> Fibers: </b> They help with digestion, regulate the intestine and promote satiety. <br>
+        <b> Vitamins: </b> Rich in B vitamins, such as B1, B2 and B6, important for metabolism
+        energy, the nervous system and muscular function. <br>
+        <b> Minerals: </b> Source of iron, phosphorus, magnesium and potassium, essential minerals for the proper
+        functioning of the
+        body. <br>
+
+    <p style="margin-left: 6em;"> <b>Health Benefits:</b>
+
+    <p style="margin-left: 8em;">Regular consumption of sorghum can bring several health benefits, such as:
+
+    <p style="margin-left: 10em;"> <b> Prevent chronic diseases: </b> Helps in the prevention of chronic diseases such
+        as
+        type 2 diabetes, heart disease and
+        some types of cancer. <br>
+        <b> Control cholesterol: </b> The fiber present in sorghum helps reduce LDL ("bad") cholesterol,
+        decreasing the
+        risk of heart disease. <br>
+        <b>Improve digestion:</b>Fibers also help regulate the intestines and prevent constipation.
+        Strengthen the immune system: Rich in vitamins and minerals, sorghum helps strengthen the system
+        immunological,
+        protecting the body against diseases. <br>
+        <b> Promote satiety: </b> The fibers and proteins in sorghum promote satiety, helping to control
+        Weight
+        body. <br>
+
+
+    <p style="margin-left: 6em;"> <b> A Sustainable Future: </b>
+
+    <p style="margin-left: 8em;">Sorghum has a crucial role to play in building a more sustainable future
+        for agriculture
+        Brazilian:
+
+    <p style="margin-left: 10em;"> <b> Food security: </b> Contributes to the country's food security,
+        diversifying grain production and
+        ensuring the availability of nutritious food for the population. <br>
+        <b> Environmental sustainability: </b> Promotes the environmental sustainability of agriculture, through lower
+        utilization of
+        inputs and adaptability to different climatic conditions. <br>
+        <b> Income for farmers: </b> Generates income for farmers, especially in areas with conditions
+        climate
+        adverse conditions or degraded soils. <br>
+    <p style="margin-left: 6em;">Sorghum is a promising cereal with great potential for the future of agriculture
+        Brazilian.
+
+        Its adaptability, versatility, nutritional benefits and positive impact on sustainability make it a
+        option
+        attractive to farmers, consumers and the environment.
+</div>
+<br>
+<hr class="rounded">

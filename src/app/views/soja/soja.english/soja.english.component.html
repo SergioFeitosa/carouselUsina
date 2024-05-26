@@ -1,9 +1,11 @@
 <h1 id="h1Home">Soy</h1>
-<div id="divCarousel" >
+<div id="divCarousel">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
@@ -12,23 +14,94 @@
     </ngx-slick-carousel>
     <br>
     <br>
-    <div class="textFont"> 
-
-        <p style="margin-left: 2em;">There are more than 2 thousand types of soy registered with the Ministry of Agriculture, but we can classify them into three large distinct groups:
-
-        <p style="margin-left: 2em;"><b>Conventional Soy:</b>
-        <p style="margin-left: 4em;">These seeds are produced in a traditional way, without the use of Genetically Modified Organisms (GMOs). They are non-transgenic cultivars and do not have specific resistance to herbicides.
-        <p style="margin-left: 2em;"><b>RR Soya (Roundup Ready):</b>
-        <p style="margin-left: 4em;">RR soybean cultivars are transgenic and tolerant to the herbicide Glyphosate. This means that these plants can resist the application of this herbicide, making it easier to control weeds in crops.
-        <p style="margin-left: 2em;"><b>Intact Soybeans:</b>
-        <p style="margin-left: 4em;">These seeds are produced with more advanced technology. In addition to being transgenic and resistant to Glyphosate, they also have protection against pests, such as caterpillars. This makes Intacta soybeans an interesting choice for producers looking for greater protection against insects.
-        
-        <p style="margin-left: 2em;">In addition, soybean cultivars can present different types of growth, such as determinate, indeterminate and semi-determinate. Most Brazilian cultivars have determinate growth, which means that the plant grows little after the beginning of flowering and no longer branches.
-        
-        <p style="margin-left: 2em;">Remember that choosing the correct cultivar is fundamental to the success of soybean farming. The producer must consider the characteristics of the farm, research the properties of each variety and invest in certified materials to obtain the best results.
-                
-    </div>    
-    <br>
-    <hr class="rounded">
 </div>
+<div class="textFont">
 
+    <p style="margin-left: 6em;"> <b> Soy: </b> A Golden Grain that Nourishes the World <br>
+    <p style="margin-left: 8em;"> Soy, a golden grain originating in Asia, has become one of the main products
+        agriculture in Brazil and the world.
+        Cultivated in vast areas of the country, soybeans stand out for their high productivity, versatility and
+        importance.
+        for the economy, food and the environment.
+
+    <p style="margin-left: 6em;"> <b> Much More than Grains: </b>
+
+    <p style="margin-left: 8em;"> Soy goes beyond the simple golden grain. It is used in several segments of the
+        industry, such as:
+
+    <p style="margin-left: 10em;"> <b> Human food: </b> Soy milk, tofu, soy oil, soy protein,
+        soy lecithin, etc. <br>
+        <b> Animal feed: </b> Source of proteins and energy for raising cattle, pigs, poultry and other animals. <br>
+        <b> Biofuels: </b> Production of biodiesel, a renewable and sustainable fuel for vehicles
+        motor vehicles. <br>
+        <b> Industry: </b> Production of plastics, rubber, paints, cosmetics and other products. <br>
+
+
+    <p style="margin-left: 6em;"> <b> Importance for the Brazilian Economy: </b>
+
+    <p style="margin-left: 8em;"> Brazil is the largest producer and exporter of soybeans in the world, accounting for
+        around one
+        third of global production.
+        Soy production generates millions of direct and indirect jobs in the country, contributing significantly to the
+        socioeconomic development of producing regions.
+
+    <p style="margin-left: 6em;"> <b> A Nutritious Grain: </b>
+
+    <p style="margin-left: 8em;"> Soy is a food rich in nutrients, such as:
+
+    <p style="margin-left: 10em;"> <b> Proteins: </b> Source of high quality proteins, important for the
+        development and repair of muscle tissues. <br>
+        <b> Good fats: </b> Rich in unsaturated fatty acids, such as omega 3 and omega 6, important for the health of
+        the body.
+        heart and brain. <br>
+        <b> Fibers: </b> They help with digestion, regulate the intestine and promote satiety. <br>
+        <b> Vitamins: </b> Rich in B vitamins, such as B1, B2 and B6, important for metabolism
+        energy, the nervous system and muscular function. <br>
+        <b> Minerals: </b> Source of iron, calcium, phosphorus, magnesium and potassium, essential minerals for good
+        health
+        functioning of the organism. <br>
+
+    <p style="margin-left: 6em;"> <b>Health Benefits:</b>
+
+    <p style="margin-left: 8em;"> Regular consumption of soy can bring several health benefits, such as:
+
+    <p style="margin-left: 10em;"> <b> Prevent chronic diseases: </b> Helps in the prevention of chronic diseases such
+        as
+        type 2 diabetes, heart disease and some types of cancer. <br>
+        <b> Control cholesterol: </b> The good fats present in soy help reduce LDL ("bad") cholesterol,
+        reducing the risk of heart disease. <br>
+        <b>Improve digestion:</b>Fibers also help regulate the intestines and prevent constipation. <br>
+        <b> Strengthen the immune system: </b> Rich in vitamins and minerals, soy helps to strengthen the system
+        immunological, protecting the body against diseases. <br>
+        <b> Promote satiety: </b> The fibers and proteins in soy promote satiety, helping to control the
+        body weight. <br>
+
+
+    <p style="margin-left: 6em;"> <b> Challenges and Sustainability: </b>
+
+    <p style="margin-left: 8em;"> Soybean cultivation in Brazil faces some challenges, such as:
+
+    <p style="margin-left: 10em;"> <b> Deforestation: </b>The expansion of soybean cultivation areas could lead to
+        deforestation, with negative impacts on the environment. <br>
+        <b> Use of pesticides: </b> Excessive use of pesticides can contaminate soil and water, in addition to harming
+        human health and the environment. <br>
+        <b> Land concentration: </b> Soybean production is concentrated in a few hands, which can lead to
+        social inequality and income concentration. <br>
+
+
+    <p style="margin-left: 6em;"> <b> It is essential to seek solutions to these challenges, such as: </b>
+
+    <p style="margin-left: 8em;"> <b> Adopt sustainable agricultural practices: </b> Precision agriculture, management
+        soil conservation, crop rotation, etc. <br>
+        <b> Reduce the use of pesticides: </b> Seek biological alternatives to control pests and diseases. <br>
+        <b> Promote agrarian reform: </b> Distribute land more fairly and equitably. <br>
+
+    <p style="margin-left: 6em;"> Soy is a grain with enormous potential to nourish the world and contribute to the
+        socioeconomic development of Brazil. <br>
+        By investing in sustainability, technological innovation and social responsibility, we can ensure that soy
+        production continues to be an engine of growth for the country, without compromising the environment and
+        people's well-being.
+        <br>
+        <br>
+        <hr class="rounded">
+</div>

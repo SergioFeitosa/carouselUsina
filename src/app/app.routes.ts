@@ -143,11 +143,12 @@ import { CoxafrangoComponent } from './views/coxafrango/coxafrango.component';
 import { CoxafrangoChineseComponent } from './views/coxafrango/coxafrango.chinese/coxafrango.chinese.component';
 import { CoxafrangoEnglishComponent } from './views/coxafrango/coxafrango.english/coxafrango.english.component';
 import { CoxafrangoPortugueseComponent } from './views/coxafrango/coxafrango.portuguese/coxafrango.portuguese.component';
-import { DrumetfrangoSpanishComponent } from './views/drumetfrango/drumetfrango.spanish/drumetfrango.spanish.component';
+import { CoxafrangoSpanishComponent } from './views/coxafrango/coxafrango.spanish/coxafrango.spanish.component';
 import { DrumetfrangoComponent } from './views/drumetfrango/drumetfrango.component';
 import { DrumetfrangoChineseComponent } from './views/drumetfrango/drumetfrango.chinese/drumetfrango.chinese.component';
 import { DrumetfrangoEnglishComponent } from './views/drumetfrango/drumetfrango.english/drumetfrango.english.component';
 import { DrumetfrangoPortugueseComponent } from './views/drumetfrango/drumetfrango.portuguese/drumetfrango.portuguese.component';
+import { DrumetfrangoSpanishComponent } from './views/drumetfrango/drumetfrango.spanish/drumetfrango.spanish.component';
 import { FigadofrangoComponent } from './views/figadofrango/figadofrango.component';
 import { FigadofrangoChineseComponent } from './views/figadofrango/figadofrango.chinese/figadofrango.chinese.component';
 import { FigadofrangoEnglishComponent } from './views/figadofrango/figadofrango.english/figadofrango.english.component';
@@ -574,7 +575,7 @@ export const routes: Routes = [
     },
     {
         path: "coxafrango/spanish",
-        component: DrumetfrangoSpanishComponent
+        component: CoxafrangoSpanishComponent
     },
     {
         path: "drumetfrango",
@@ -769,6 +770,10 @@ export const routes: Routes = [
     {
         path: "milho/portuguese",
         component: MilhoPortugueseComponent
+    },
+    {
+        path: "milhobran/portuguese",
+        component: MilhobranPortugueseComponent
     },
     {
         path: "milhocanjica/portuguese",

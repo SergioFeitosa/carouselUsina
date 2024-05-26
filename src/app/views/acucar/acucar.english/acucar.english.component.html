@@ -1,62 +1,68 @@
 <h1 id="h1Home">Sugar</h1>
-<div id="divCarousel" >
+<div id="divCarousel">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
             </figure>
         </div>
     </ngx-slick-carousel>
-    <br>
-    <br>
-    <div class="textFont"> 
-        <p>What is Sugar?</p>
-        <p style="margin-left: 4em;" >Sugar is a simple carbohydrate, obtained mainly from sugar cane and sugar beet. It is an essential ingredient in several recipes and used to sweeten foods and drinks.</p>
-       
-        <p>Types of Sugar:</p>
-        <p style="margin-left: 4em;" >
-            Crystal sugar: It is the most common type, with large, dry crystals.<br>
-            Refined sugar: It goes through a refinement process that removes impurities and leaves the crystals whiter and finer.<br>
-            Icing sugar: It is refined sugar ground into a fine powder.<br>
-            Brown sugar: It is a less processed sugar, with moist crystals and a more intense flavor.<br>
-            Demerara sugar: It is a type of brown sugar with larger crystals and a milder flavor.</p>
-
-        <p>Acronyms for the type of sugar for marketing:</p>
-        <p style="margin-left: 4em;" >
-            <b>SUGAR IC 45 - IC 30 - IC100 - IC 150. VHP- IC600 - 1200</b></p>
-
-        <p>Benefits of Sugar:</p>
-        <p style="margin-left: 4em;" >
-        Energy: Sugar provides quick energy for the body, being important for physical and mental activities.<br>
-        Flavor: Sweetens foods and drinks, making them tastier and more attractive.<br>
-        Conservation: Helps preserve foods, such as fruit in jams.<br>
-        Texture: In recipes, sugar contributes to the texture and creaminess of cakes, pies and other sweets.</p>
-
-        <p>Consumption Precautions:</p>
-        <p style="margin-left: 4em;" >Excessive sugar consumption can cause several health problems, such as obesity, diabetes, heart disease and cavities. It is important to consume sugar in moderation and within a balanced diet.</p>
-       
-        <p>Alternatives to Sugar:</p>
-        <p style="margin-left: 4em;" >To reduce sugar consumption, there are several alternatives, such as:<br>
-            Natural sweeteners: stevia, xylitol, erythritol.<br>
-            Fruits: banana, apple, grape.<br>
-            Honey: natural sweetener with beneficial properties.</p>
-
-        <p>Conclusion:</p>
-       
-        <p style="margin-left: 4em;" >Sugar is a versatile ingredient with many benefits, but it is important to consume it in moderation. Choosing alternatives to sugar and a balanced diet are important to maintain good health.</p>
-       
-        <p>For more information:</p>
-       
-        <p style="margin-left: 4em;" >
-            Brazilian Sugarcane Industry Association (ABIA): https://www.abia.org.br/<br>
-            Ministry of Health: https://www.gov.br/saude/pt-br</p>
-    </div>    
-    <br>
-    <hr class="rounded">
-
-
 </div>
+<br>
+<div class="textFont">
+    <br>
+    <p style="margin-left: 6em;"> <b> What is Sugar? </b>
+    <p style="margin-left: 8em;">Sugar is a simple carbohydrate, obtained mainly from sugar cane and
+        sugar beet. It is an essential ingredient in several recipes and used to sweeten foods and drinks.
+    </p>
 
+    <p style="margin-left: 6em;"> <b> Types of Sugar: </b>
+    <p style="margin-left: 8em;">
+        <b>Refined sugar: (ICUMSA 45) </b> It goes through a refinement process that removes impurities and leaves the
+        whiter and finer crystals. <br>
+        <b>Crystal sugar: (ICUMSA 150) </b> It is the most common type, with large, dry crystals. <br>
+        <b>Brown sugar: (ICUMSA 600-1200) </b> It is a less processed sugar, with moist crystals and a more flavorful
+        flavor.
+        intense. <br>
+        <b>Demerara sugar: (ICUMSA VHP) </b> It is a type of brown sugar with larger crystals and a milder flavor.
+    </p>
+
+    <p style="margin-left: 6em;"> <b> Benefits of Sugar: </b>
+    <p style="margin-left: 8em;">
+        <b>Energy: </b> Sugar provides quick energy for the body, being important for physical activities and
+        mental. <br>
+        <b>Flavour: </b> Sweetens foods and drinks, making them tastier and more attractive. <br>
+        <b>Preservation:</b> Helps preserve foods, such as fruit in jams. <br>
+        <b>Texture: </b> In recipes, sugar contributes to the texture and creaminess of cakes, pies and other sweets.
+    </p>
+
+    <p style="margin-left: 6em;"> <b>Consumption Precautions:</b>
+    <p style="margin-left: 8em;">Excessive sugar consumption can cause several health problems, such as obesity,
+        diabetes, heart disease and tooth decay. It is important to consume sugar in moderation and within a diet.
+        balanced.</p>
+
+    <p style="margin-left: 6em;"> <b> Alternatives to Sugar: </b>
+    <p style="margin-left: 8em;">To reduce sugar consumption, there are several alternatives, such as: <br>
+        Natural sweeteners: stevia, xylitol, erythritol. <br>
+        Fruits: banana, apple, grape. <br>
+        Honey: natural sweetener with beneficial properties. </p>
+
+    <p style="margin-left: 6em;"> <b> Conclusion: </b>
+
+    <p style="margin-left: 8em;">Sugar is a versatile ingredient with many benefits, but it is important to consume it
+        with moderation. Choosing alternatives to sugar and a balanced diet are important to maintain a good
+        health. </p>
+
+    <p style="margin-left: 6em;"> <b>For more information:</b>
+
+    <p style="margin-left: 8em;">
+        Brazilian Sugarcane Industry Association (ABIA): https://www.abia.org.br/ <br>
+        Ministry of Health: https://www.gov.br/saude/pt-br </p>
+</div>
+<br>
+<hr class="rounded">

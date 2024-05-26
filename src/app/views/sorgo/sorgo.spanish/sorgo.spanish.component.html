@@ -1,10 +1,11 @@
-
 <h1 id="h1Home">Sorgo</h1>
-<div id="divCarousel" >
+<div id="divCarousel">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
@@ -13,52 +14,110 @@
     </ngx-slick-carousel>
     <br>
     <br>
-    <div class="textFont"> 
-
-        <p style="margin-left: 2em;"><b>Sorgo: un cultivo versátil y resistente</b>
-
-            <p style="margin-left: 3em;"> El sorgo es una hierba originaria de África que se ha convertido en un cultivo importante en todo el mundo. Es una planta versátil que puede utilizarse para diversos fines, incluidos alimentos y piensos, producción de biocombustibles y fabricación de materiales. El sorgo es un cultivo resistente que puede tolerar condiciones estresantes como la sequía y el calor. Es un cultivo importante para la seguridad alimentaria y la sostenibilidad.
-           
-            <p style="margin-left: 2em;"><b>Tipos de sorgo</b>
-           
-            <p style="margin-left: 3em;">El sorgo en grano se cultiva por sus granos, que se utilizan para la alimentación humana y animal.<br>
-            Sorgo dulce: El sorgo dulce se cultiva por su alto contenido de azúcar, que se utiliza para producir etanol y otros biocombustibles.<br>
-            Retama: El sorgo de retama se cultiva por sus largas panículas, que se utilizan para fabricar escobas y otros productos.<br>
-            Forraje: El sorgo forrajero se cultiva como forraje, que se utiliza para alimentar al ganado.<br>
-           
-            <p style="margin-left: 3em;">Hay cuatro tipos principales de sorgo: grano, dulce, retama y forrajero. Cada tipo de sorgo se cultiva con un propósito diferente. El sorgo en grano es el tipo más común de sorgo y se utiliza como alimento humano y animal. El sorgo dulce se utiliza para producir biocombustibles, el sorgo de retama se utiliza para fabricar escobas y otros productos, y el sorgo forrajero se utiliza para alimentar al ganado.
-           
-            <p style="margin-left: 2em;"><b>Importancia del sorgo</b>
-           
-            <p style="margin-left: 3em;">Seguridad alimentaria: el sorgo es una importante fuente de alimento para millones de personas en todo el mundo. Es un cultivo rico en nutrientes que puede proporcionar energía y proteínas.<br>
-            Sostenibilidad: El sorgo es un cultivo resistente que puede tolerar condiciones estresantes como la sequía y el calor. Es un cultivo importante para la seguridad alimentaria y la sostenibilidad.<br>
-            Biocombustibles: el sorgo dulce es una fuente importante de biocombustibles. El etanol de sorgo es un combustible renovable y sostenible que puede ayudar a reducir nuestra dependencia de los combustibles fósiles.<br>
-            Materiales: El sorgo se puede utilizar para fabricar una variedad de materiales, incluidos papel, plástico y textiles.<br>
-           
-            <p style="margin-left: 3em;">El sorgo es un cultivo importante por muchas razones. Es una fuente importante de seguridad alimentaria, es un cultivo sostenible, es una fuente importante de biocombustibles y puede utilizarse para fabricar una variedad de materiales. El sorgo es un cultivo versátil y valioso que desempeña un papel importante en el futuro de la agricultura.
-           
-            <p style="margin-left: 2em;"><b>Producción de sorgo en Brasil</b>
-           
-            <p style="margin-left: 3em;">Brasil es el tercer mayor productor de sorgo del mundo, después de Estados Unidos y China.<br>
-            En 2023, la producción de sorgo en Brasil fue de 31,3 millones de toneladas.<br>
-            El sorgo se cultiva en todas las regiones de Brasil, pero los principales productores son los estados del Centro-Oeste y Nordeste.<br>
-            El sorgo se utiliza principalmente para la alimentación animal en Brasil, pero también se utiliza para la producción de biocombustibles y en la industria alimentaria.<br>
-           
-            <p style="margin-left: 3em;">Brasil es un importante productor y consumidor de sorgo. El cultivo se cultiva en todas las regiones del país, pero los principales productores son los estados del Centro-Oeste y Nordeste. El sorgo se utiliza principalmente para la alimentación animal en Brasil, pero también se utiliza para la producción de biocombustibles y en la industria alimentaria.
-           
-            <p style="margin-left: 2em;"><b>El futuro del sorgo</b>
-           
-            <p style="margin-left: 3em;">El sorgo es un cultivo con un futuro prometedor.
-            Se espera que la demanda de sorgo aumente en los próximos años, debido al crecimiento de la población mundial y la creciente demanda de alimentos, biocombustibles y materiales.
-            El sorgo es un cultivo resiliente que puede tolerar el cambio climático, lo que lo convierte en un cultivo importante para la seguridad alimentaria futura.
-            Los investigadores están trabajando para desarrollar nuevas variedades de sorgo que sean más productivas, resistentes a las enfermedades y tolerantes al estrés.
-           
-            <p style="margin-left: 3em;">El sorgo tiene un futuro prometedor. Se espera que la demanda de sorgo aumente en los próximos años, convirtiéndolo en un cultivo importante para la seguridad alimentaria y la sostenibilidad.
-
-    </div>    
-    <br>
-    <hr class="rounded">
-
-
 </div>
+<div class="textFont">
 
+    <p style="margin-left: 6em;"> <b> Sorgo: </b> Un cereal prometedor para el futuro de la agricultura brasileña <br>
+    <p style="margin-left: 8em;"> El sorgo, un cereal antiguo y resistente, ha ido ganando protagonismo en el panorama
+        agrícola
+        Brasileño como alternativa
+        forma prometedora de diversificar la producción y garantizar la seguridad alimentaria.
+        Adaptado a diferentes climas y suelos, el sorgo presenta características ventajosas que lo convierten en una
+        opción ideal.
+        atractivo
+        para agricultores y consumidores. <br>
+
+    <p style="margin-left: 6em;"> <b> Un cereal versátil: </b>
+
+    <p style="margin-left: 8em;"> El sorgo destaca por su versatilidad y puede ser utilizado en diferentes segmentos:
+
+    <p style="margin-left: 10em;"> <b> Alimentación humana: </b> Granos frescos, harina de sorgo, copos de sorgo,
+        fideos de sorgo, etc. <br>
+        <b>Alimentos para animales: </b>Fuente de energía y nutrientes para la cría de ganado vacuno, porcino, aves y
+        otros animales. <br>
+        <b> Biocombustibles: </b> Producción de etanol y biogás, combustibles renovables y sostenibles para vehículos
+        automoción y generación de energía. <br>
+        <b> Industria: </b> Producción de plásticos, biomateriales, productos farmacéuticos y otros productos. <br>
+
+
+    <p style="margin-left: 6em;"> <b> Ventajas para la agricultura: </b>
+
+    <p style="margin-left: 8em;"> El cultivo de sorgo ofrece importantes ventajas para la agricultura brasileña:
+
+    <p style="margin-left: 10em;">
+        <b> Resistencia a la sequía: </b> Adaptado a condiciones climáticas secas, el sorgo resiste sequías prolongadas
+        con
+        más grande
+        eficiencia que otros cereales, como el maíz. <br>
+        <b> Tolerancia a suelos salinos: </b> El sorgo es tolerante a suelos salinos y degradados, lo que permite
+        su producción
+        en zonas con condiciones de suelo adversas. <br>
+        <b> Menor necesidad de insumos: </b> El sorgo requiere menos pesticidas y fertilizantes que otros cereales.
+        contribuyendo
+        para la agricultura sostenible y la preservación del medio ambiente. <br>
+        <b> Ciclo de cultivo corto: </b> El sorgo tiene un ciclo de cultivo corto, permitiendo más de una cosecha por
+        cosecha.
+        año en algunos
+        regiones. <br>
+
+    <p style="margin-left: 6em;"> <b> Un cereal nutritivo: </b>
+
+    <p style="margin-left: 8em;">El sorgo es un alimento rico en nutrientes, como:
+
+    <p style="margin-left: 10em;">
+        <b> Carbohidratos: </b> Fuente de energía para el organismo. <br>
+        <b> Proteínas: </b> Importantes para el desarrollo y reparación de los tejidos musculares. <br>
+        <b> Fibras: </b> Ayudan a la digestión, regulan el intestino y favorecen la saciedad. <br>
+        <b> Vitaminas: </b> Rica en vitaminas del grupo B, como B1, B2 y B6, importantes para el metabolismo.
+        energía, el sistema nervioso y la función muscular. <br>
+        <b>Minerales: </b>Fuente de hierro, fósforo, magnesio y potasio, minerales esenciales para el buen
+        funcionamiento del
+        cuerpo. <br>
+
+    <p style="margin-left: 6em;"> <b>Beneficios para la salud:</b>
+
+    <p style="margin-left: 8em;">El consumo regular de sorgo puede aportar varios beneficios para la salud, como:
+
+    <p style="margin-left: 10em;"> <b>Prevenir enfermedades crónicas: </b> Ayuda en la prevención de enfermedades
+        crónicas como
+        diabetes tipo 2, enfermedades cardíacas y
+        algunos tipos de cáncer. <br>
+        <b> Controlar el colesterol: </b> La fibra presente en el sorgo ayuda a reducir el colesterol LDL ("malo"),
+        disminuyendo el
+        riesgo de enfermedad cardíaca. <br>
+        <b>Mejora la digestión:</b>Las fibras también ayudan a regular los intestinos y previenen el estreñimiento.
+        Fortalecer el sistema inmunológico: Rico en vitaminas y minerales, el sorgo ayuda a fortalecer el sistema.
+        inmunológico,
+        protegiendo el cuerpo contra enfermedades. <br>
+        <b> Promueve la saciedad: </b> Las fibras y proteínas del sorgo promueven la saciedad, ayudando a controlar
+        Peso
+        cuerpo. <br>
+
+
+    <p style="margin-left: 6em;"> <b> Un futuro sostenible: </b>
+
+    <p style="margin-left: 8em;">El sorgo desempeña un papel crucial en la construcción de un futuro más sostenible
+        para la agricultura
+        Brasileño:
+
+    <p style="margin-left: 10em;"> <b> Seguridad alimentaria: </b> Contribuye a la seguridad alimentaria del país,
+        diversificar la producción de cereales y
+        asegurar la disponibilidad de alimentos nutritivos para la población. <br>
+        <b> Sostenibilidad ambiental: </b> Promueve la sostenibilidad ambiental de la agricultura, a través de una menor
+        utilización de
+        insumos y adaptabilidad a diferentes condiciones climáticas. <br>
+        <b> Ingresos para los agricultores: </b> Genera ingresos para los agricultores, especialmente en áreas con
+        condiciones
+        clima
+        condiciones adversas o suelos degradados. <br>
+    <p style="margin-left: 6em;">El sorgo es un cereal prometedor con un gran potencial para el futuro de la agricultura
+        Brasileño.
+
+        Su adaptabilidad, versatilidad, beneficios nutricionales e impacto positivo en la sostenibilidad lo convierten
+        en un
+        opción
+        atractivo para los agricultores, los consumidores y el medio ambiente.
+        <br>
+        <br>
+        <hr class="rounded">
+</div>

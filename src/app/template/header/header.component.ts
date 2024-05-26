@@ -220,6 +220,8 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['cobre/chinese']);
       } else if (this.urlRaiz == 'ferro') {
         this.router.navigate(['ferro/chinese']);
+      } else if (this.urlRaiz == 'ouro') {
+        this.router.navigate(['ouro/chinese']);
       } else if (this.urlRaiz == 'grafite') {
         this.router.navigate(['grafite/chinese']);
       } else if (this.urlRaiz == 'pedra') {
@@ -365,6 +367,8 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['cobre/english']);
       } else if (this.urlRaiz == 'ferro') {
         this.router.navigate(['ferro/english']);
+      } else if (this.urlRaiz == 'ouro') {
+        this.router.navigate(['ouro/english']);
       } else if (this.urlRaiz == 'grafite') {
         this.router.navigate(['grafite/english']);
       } else if (this.urlRaiz == 'pedra') {
@@ -514,6 +518,8 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['cobre/portuguese']);
         } else if (this.urlRaiz == 'ferro') {
           this.router.navigate(['ferro/portuguese']);
+        } else if (this.urlRaiz == 'ouro') {
+          this.router.navigate(['ouro/portuguese']);
         } else if (this.urlRaiz == 'grafite') {
           this.router.navigate(['grafite/portuguese']);
         } else if (this.urlRaiz == 'pedra') {
@@ -664,6 +670,8 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['cobre/spanish']);
         } else if (this.urlRaiz == 'ferro') {
           this.router.navigate(['ferro/spanish']);
+        } else if (this.urlRaiz == 'ouro') {
+          this.router.navigate(['ouro/spanish']);
         } else if (this.urlRaiz == 'grafite') {
           this.router.navigate(['grafite/spanish']);
         } else if (this.urlRaiz == 'pedra') {

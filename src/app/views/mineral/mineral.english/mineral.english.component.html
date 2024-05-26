@@ -3,7 +3,9 @@
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
+                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                    <img src="{{ slide.img }}" alt="" class="img-style">
+                </a>
                 <figcaption>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
@@ -12,15 +14,84 @@
     </ngx-slick-carousel>
     <br>
     <br>
-    <div  class="textFont">
-        Minerals are homogeneous solid substances, generally of inorganic origin, formed by one or more chemical elements, commonly found in nature. They have a well-defined and differentiated molecular structure, which results in distinct properties. The main characteristics of minerals are: solid and crystalline structure, defined chemical composition, and ordered atomic arrangement.<br>
+</div>
+<div class="textFont">
+    <p style="margin-left: 6em;"> <b> Minerals: </b> Earth's Hidden Treasures <br>
 
-        Minerals can be formed by atoms of just one chemical element or by different elements. Atoms arrange themselves and form combinations with determined proportions and defined geometric shapes. They form in nature by crystallization, recrystallization or even chemical reactions. The occurrence of these substances is influenced by temperature, pressure and chemical environment conditions.<br>
+    <p style="margin-left: 8em;">
+        Minerals, solid natural and inorganic elements with a defined crystalline structure, are essential for
+        life on Earth. <br>
+        Present in the Earth's crust, they are explored and processed for various purposes, such as:
 
-        Minerals are classified into metallic and non-metallic. Metallic minerals are those that have characteristics such as electrical and heat conductivity. Examples are iron, aluminum and gold. Non-metallic minerals are the others, that is, those that do not have the typical properties of metallic elements. Examples are limestone, basalt and salts.<br>
+    <p style="margin-left: 10em;">
+        <b> Civil construction: </b> Aggregates for concrete, cement, plaster, clay, sand and ornamental stones. <br>
+        <b> Metallurgy: </b> Iron, aluminum, copper, zinc, nickel, lead, gold, silver and other metals. <br>
+        <b> Production of consumer goods: </b> Glass, ceramics, household appliances, electronics, vehicles and others
+        products. <br>
+        <b> Agriculture: </b> Fertilizers, pesticides and micronutrients essential for plant growth.
+        <br>
+        <b> Power generation: </b> Coal, uranium and other minerals used in power plants.
 
-        Minerals are important for national economies and global economic dynamics, serving as raw materials for industry and being traded as commodities on the international market. Despite this, its unrestricted exploitation can cause environmental problems, such as soil degradation, pollution, deforestation and even serious environmental accidents.<br>    </div>
-    <br>
-    <hr class="rounded">
+    <p style="margin-left: 6em;"> <b> Types of Minerals: </b>
+
+    <p style="margin-left: 8em;">
+        Minerals can be classified into two large groups:
+
+    <p style="margin-left: 10em;">
+        <b> Metallic minerals: </b> Contain metals in their composition, such as iron, aluminum, copper, zinc, nickel,
+        lead,
+        gold and silver. <br>
+        <b> Non-metallic minerals: </b> They do not contain metals in their composition, such as quartz, limestone,
+        gypsum, rock salt,
+        clay and sand.
+
+    <p style="margin-left: 6em;"> <b>Mineral Exploration in Brazil:</b>
+
+    <p style="margin-left: 8em;">
+        Brazil has a vast mineral potential in its territory, with deposits of different types of minerals. <br>
+        Mineral exploration is an important activity for the Brazilian economy, generating income, jobs and
+        investments
+        in the country. <br>
+        However, mineral exploration can also have environmental and social impacts, such as:
+
+    <p style="margin-left: 10em;">
+        <b> Deforestation: </b> Opening new areas for mineral exploration can lead to deforestation and loss of
+        biodiversity. <br>
+        <b>Pollution:</b>The exploration and processing of minerals can generate air, water and soil pollution.
+        <br>
+        <b> Soil degradation: </b> Mining activities can cause soil degradation, making it unproductive
+        for agriculture. <br>
+        <b>Social conflicts:</b>Mineral exploration can generate social conflicts between mining companies and
+        local communities. <br>
+
+    <p style="margin-left: 6em;"> <b> Sustainable Mining: </b>
+
+    <p style="margin-left: 8em;">
+        It is essential to seek sustainable mining practices that minimize the environmental and social impacts of
+        activity. <br>
+
+        That includes:
+
+    <p style="margin-left: 10em;">
+        <b> Rigorous environmental planning: </b> Carrying out environmental impact studies and adopting measures to
+        mitigate
+        the impacts of mining. <br>
+        <b> Recovery of degraded areas: </b> Restoration of areas degraded by mining activity after the
+        termination
+        of exploration. <br>
+        <b> Dialogue with local communities: </b> Establishment of a transparent dialogue with local communities
+        for
+        guarantee their rights and minimize the impacts of mining on their lives. <br>
+        <b> Investments in technology: </b> Investment in technologies that minimize the environmental impact of
+        mining,
+        such as water reuse and control of pollutant emissions. <br>
+
+    <p style="margin-left: 6em;">
+        Minerals are finite natural resources, so it is essential to use them responsibly and sustainably. <br>
+        By investing in sustainable mining practices, we can ensure these resources continue to benefit
+        present and future generations, without compromising the environment and the well-being of communities.
+        <br>
+        <br>
+        <hr class="rounded">
 
 </div>
