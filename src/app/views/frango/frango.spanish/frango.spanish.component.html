@@ -1,73 +1,73 @@
-<h1 id="h1Home">Pollo</h1>
-<div id="divCarousel">
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-<div class="textFont">
-    <p style="margin-left: 6em;"> <b>Presentación de pollo:</b>
-    <p style="margin-left: 8em;">
-        Versatilidad y Sabor en Tu Mesa
-        El pollo (Gallus gallus domesticus) es un ave doméstica apreciada en todo el mundo por su sabrosa carne,
-        versátil y nutritivo. Su creación ofrece varias opciones de corte para satisfacer sus necesidades.
-        culinario.
-
-    <p style="margin-left: 6em;"> <b>Cortes de pollo: </b>
-
-    <p style="margin-left: 8em;">
-        <b>Pechuga:</b> Corte magro y rico en proteínas, ideal para asar, asar o freír. <br>
-        <b> Muslo: </b> Corte con más grasa y sabor, perfecto para asar, guisar o estofar. <br>
-        <b> Muslo: </b> Corte sabroso y jugoso, ideal para asar, freír o hacer moqueca. <br>
-        <b> Alita: </b> Corte popular para freír, asar o asar, y se puede condimentar de diferentes formas. <br>
-        <b> Drumet: </b> Parte del ala con más carne, ideal para asar, freír o hacer snacks. <br>
-        <b> Molleja: </b> Órgano de textura crujiente, ideal para guisos, estofados o moquecas. <br>
-        <b> Hígado: </b> Vísceras ricas en hierro y vitaminas, ideal para guisos, patés o rellenos. <br>
-        <b> Corazón: </b> Vísceras de textura firme y sabor intenso, perfecto para salteados, kebabs o asados.
-        <br>
-
-    <p style="margin-left: 6em;"> <b>Beneficios del pollo:</b>
-
-    <p style="margin-left: 8em;">
-        <b> Nutrición: </b> Carne rica en proteínas, vitaminas y minerales, baja en grasas saturadas. <br>
-        <b> Versatilidad: </b> Varios cortes para adaptarse a tus necesidades y preferencias culinarias. <br>
-        <b> Sabor: </b> Carne sabrosa que se puede condimentar de diferentes formas. <br>
-        <b> Precio: </b> Carne asequible y rentable. <br>
-        <b> Sostenibilidad: </b> Creación con menor impacto ambiental en comparación con otras carnes. <br>
-
-    <p style="margin-left: 6em;"> <b> Consejos para preparar pollo: </b>
-
-    <p style="margin-left: 8em;">
-        <b> Higiene: </b> Lávese bien las manos y los utensilios antes de manipular el pollo. <br>
-        <b> Cocinar: </b> Cocine el pollo hasta que esté completamente cocido para evitar enfermedades. <br>
-        <b> Condimentos: </b> Explora diferentes condimentos para variar el sabor del pollo. <br>
-        <b> Creatividad: </b> Pruebe nuevas recetas y cortes de pollo para diversificar su menú. <br>
-
-    <p style="margin-left: 6em;"> <b> Conclusión: </b>
-
-    <p style="margin-left: 8em;">
-        El pollo es una excelente opción para una dieta nutritiva, sabrosa y asequible. Con su diversa
-        Cortes y posibilidades culinarias, el pollo es un ingrediente versátil que puede complacer a todos.
-        paladares.
-
-    <p style="margin-left: 6em;"><b>Para más información:</b>
-
-    <p style="margin-left: 8em;">Asociación Brasileña de Proteína Animal (ABPA): [[URL no válida eliminada]]([URL
-        no válido eliminado])
-        Ministerio de Agricultura, Ganadería y Abastecimiento (MAPA): https://www.gov.br/agricultura/pt-br
+<div id="pagHome" class="content">
+    <h1 id="h1Home">Pollo</h1>
+    <div id="divCarousel">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
         <br>
         <br>
-        <hr class="rounded">
+    </div>
+    <div class="textFont">
+        <p style="margin-left: 6em;"> <b>Presentación de pollo:</b>
+        <p style="margin-left: 8em;">
+            Versatilidad y Sabor en Tu Mesa
+            El pollo (Gallus gallus domesticus) es un ave doméstica apreciada en todo el mundo por su sabrosa carne,
+            versátil y nutritivo. Su creación ofrece varias opciones de corte para satisfacer sus necesidades.
+            culinario.
 
+        <p style="margin-left: 6em;"> <b>Cortes de pollo: </b>
 
+        <p style="margin-left: 8em;">
+            <b>Pechuga:</b> Corte magro y rico en proteínas, ideal para asar, asar o freír. <br>
+            <b> Muslo: </b> Corte con más grasa y sabor, perfecto para asar, guisar o estofar. <br>
+            <b> Muslo: </b> Corte sabroso y jugoso, ideal para asar, freír o hacer moqueca. <br>
+            <b> Alita: </b> Corte popular para freír, asar o asar, y se puede condimentar de diferentes formas. <br>
+            <b> Drumet: </b> Parte del ala con más carne, ideal para asar, freír o hacer snacks. <br>
+            <b> Molleja: </b> Órgano de textura crujiente, ideal para guisos, estofados o moquecas. <br>
+            <b> Hígado: </b> Vísceras ricas en hierro y vitaminas, ideal para guisos, patés o rellenos. <br>
+            <b> Corazón: </b> Vísceras de textura firme y sabor intenso, perfecto para salteados, kebabs o asados.
+            <br>
+
+        <p style="margin-left: 6em;"> <b>Beneficios del pollo:</b>
+
+        <p style="margin-left: 8em;">
+            <b> Nutrición: </b> Carne rica en proteínas, vitaminas y minerales, baja en grasas saturadas. <br>
+            <b> Versatilidad: </b> Varios cortes para adaptarse a tus necesidades y preferencias culinarias. <br>
+            <b> Sabor: </b> Carne sabrosa que se puede condimentar de diferentes formas. <br>
+            <b> Precio: </b> Carne asequible y rentable. <br>
+            <b> Sostenibilidad: </b> Creación con menor impacto ambiental en comparación con otras carnes. <br>
+
+        <p style="margin-left: 6em;"> <b> Consejos para preparar pollo: </b>
+
+        <p style="margin-left: 8em;">
+            <b> Higiene: </b> Lávese bien las manos y los utensilios antes de manipular el pollo. <br>
+            <b> Cocinar: </b> Cocine el pollo hasta que esté completamente cocido para evitar enfermedades. <br>
+            <b> Condimentos: </b> Explora diferentes condimentos para variar el sabor del pollo. <br>
+            <b> Creatividad: </b> Pruebe nuevas recetas y cortes de pollo para diversificar su menú. <br>
+
+        <p style="margin-left: 6em;"> <b> Conclusión: </b>
+
+        <p style="margin-left: 8em;">
+            El pollo es una excelente opción para una dieta nutritiva, sabrosa y asequible. Con su diversa
+            Cortes y posibilidades culinarias, el pollo es un ingrediente versátil que puede complacer a todos.
+            paladares.
+
+        <p style="margin-left: 6em;"><b>Para más información:</b>
+
+        <p style="margin-left: 8em;">Asociación Brasileña de Proteína Animal (ABPA): [[URL no válida eliminada]]([URL
+            no válido eliminado])
+            Ministerio de Agricultura, Ganadería y Abastecimiento (MAPA): https://www.gov.br/agricultura/pt-br
+            <br>
+            <br>
+            <hr class="rounded">
+    </div>
 </div>

@@ -1,79 +1,81 @@
-<h1 id="h1Home">玉米</h1>
-<div id="divCarousel">
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-<div class="textFont">
-
-    <p style="margin-left: 6em;"> <b> 玉米：</b> 巴西的植物黃金
-    <p style="margin-left: 8em;">
-        玉米是一種古老且用途廣泛的穀物，是巴西農業的支柱之一。 <br>
-        玉米在全國不同地區種植，已成為巴西主要農產品之一，對人民的經濟、文化和營養具有重要意義。
-
-    <p style="margin-left: 6em;"> <b> 超越穀物：</b>
-
-    <p style="margin-left: 8em;">
-        玉米不僅僅是簡單的金色穀物。它用於各個行業領域，例如：
-
-    <p style="margin-left: 10em;">
-        <b> 人類食品：</b> 新鮮穀物、玉米粉、玉米粉、玉米油、玉米片、爆米花、澱粉玉米等 <br>
-        <b> 動物飼料：</b> 飼養牛、豬、家禽和其他動物的能量和營養來源。 <br>
-        <b> 生質燃料：</b> 生產乙醇，一種可再生且可持續的機動車輛燃料。 <br>
-        <b> 工業：</b> 塑膠、橡膠、藥品、化妝品等產品的生產。
-
-    <p style="margin-left: 6em;">
-        <b>對巴西經濟的重要性：</b>
-
-    <p style="margin-left: 8em;">
-        巴西是世界上最大的玉米生產國和出口國，約佔總產量的三分之一全球的。 <br>
-        玉米生產為該國創造了數百萬個直接和間接就業崗位，為經濟發展做出了重大貢獻產區經濟社會發展。 <br>
-
-    <p style="margin-left: 6em;"> <b> 營養穀物：</b>
-
-    <p style="margin-left: 8em;"> 玉米是一種富含營養的食物，例如：
-
-    <p style="margin-left: 10em;">
-        <b> 碳水化合物：</b> 身體的能量來源。 <br>
-        <b> 蛋白質：</b> 對於肌肉組織的發育和修復很重要。 <br>
-        <b> 纖維：</b> 它們有助於消化、調節腸道並促進飽足感。 <br>
-        <b> 維生素：</b> 富含B群維生素，如B1、B2和B5，對能量代謝很重要，神經系統和肌肉功能。 <br>
-        <b> 礦物質：</b> 鐵、磷、鎂和鉀的來源，是身體正常運作所必需的礦物質身體。
-
-    <p style="margin-left: 6em;"> <b>健康益處：</b>
-
-    <p style="margin-left: 8em;">經常食用玉米可以帶來多種健康益處，例如：<br>
-
-    <p style="margin-left: 10em;"> <b> 預防慢性疾病：</b> 有助於預防慢性疾病，如第 2 型糖尿病、心臟病和某些類型的癌症。 <br>
-        <b> 控制膽固醇：</b> 玉米中的纖維有助於降低低密度脂蛋白（「壞」）膽固醇，從而減少心臟病的風險。 <br>
-        <b>改善消化：</b> 纖維也有助於調節腸道並防止便秘。 <br>
-        <b>增強免疫系統：</b> 玉米富含維生素和礦物質，有助於增強免疫系統免疫，保護身體免受疾病侵害。 <br>
-        <b>促進飽足感：</b> 玉米中的纖維和蛋白質可促進飽足感，有助於控制體重身體。
-
-
-    <p style="margin-left: 6em;"> <b> 充滿希望的未來：</b>
-
-    <p style="margin-left: 8em;">玉米將繼續成為巴西非常重要的產品，並有進一步成長的潛力
-        在未來的幾十年裡。 <br>
-
-        對研發、技術創新和永續性的投資對於
-        確保巴西玉米在全球市場的競爭力並滿足日益增長的需求
-        營養豐富、用途廣泛的穀物。 <br>
-
-        玉米是真正的蔬菜黃金，它豐富了巴西人的餐桌，提振了國家經濟，
-        提供多種健康益處。
+<div id="pagHome" class="content">
+    <h1 id="h1Home">玉米</h1>
+    <div id="divCarousel">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
         <br>
         <br>
-        <hr class="rounded">
+    </div>
+    <div class="textFont">
+
+        <p style="margin-left: 6em;"> <b> 玉米：</b> 巴西的植物黃金
+        <p style="margin-left: 8em;">
+            玉米是一種古老且用途廣泛的穀物，是巴西農業的支柱之一。 <br>
+            玉米在全國不同地區種植，已成為巴西主要農產品之一，對人民的經濟、文化和營養具有重要意義。
+
+        <p style="margin-left: 6em;"> <b> 超越穀物：</b>
+
+        <p style="margin-left: 8em;">
+            玉米不僅僅是簡單的金色穀物。它用於各個行業領域，例如：
+
+        <p style="margin-left: 10em;">
+            <b> 人類食品：</b> 新鮮穀物、玉米粉、玉米粉、玉米油、玉米片、爆米花、澱粉玉米等 <br>
+            <b> 動物飼料：</b> 飼養牛、豬、家禽和其他動物的能量和營養來源。 <br>
+            <b> 生質燃料：</b> 生產乙醇，一種可再生且可持續的機動車輛燃料。 <br>
+            <b> 工業：</b> 塑膠、橡膠、藥品、化妝品等產品的生產。
+
+        <p style="margin-left: 6em;">
+            <b>對巴西經濟的重要性：</b>
+
+        <p style="margin-left: 8em;">
+            巴西是世界上最大的玉米生產國和出口國，約佔總產量的三分之一全球的。 <br>
+            玉米生產為該國創造了數百萬個直接和間接就業崗位，為經濟發展做出了重大貢獻產區經濟社會發展。 <br>
+
+        <p style="margin-left: 6em;"> <b> 營養穀物：</b>
+
+        <p style="margin-left: 8em;"> 玉米是一種富含營養的食物，例如：
+
+        <p style="margin-left: 10em;">
+            <b> 碳水化合物：</b> 身體的能量來源。 <br>
+            <b> 蛋白質：</b> 對於肌肉組織的發育和修復很重要。 <br>
+            <b> 纖維：</b> 它們有助於消化、調節腸道並促進飽足感。 <br>
+            <b> 維生素：</b> 富含B群維生素，如B1、B2和B5，對能量代謝很重要，神經系統和肌肉功能。 <br>
+            <b> 礦物質：</b> 鐵、磷、鎂和鉀的來源，是身體正常運作所必需的礦物質身體。
+
+        <p style="margin-left: 6em;"> <b>健康益處：</b>
+
+        <p style="margin-left: 8em;">經常食用玉米可以帶來多種健康益處，例如：<br>
+
+        <p style="margin-left: 10em;"> <b> 預防慢性疾病：</b> 有助於預防慢性疾病，如第 2 型糖尿病、心臟病和某些類型的癌症。 <br>
+            <b> 控制膽固醇：</b> 玉米中的纖維有助於降低低密度脂蛋白（「壞」）膽固醇，從而減少心臟病的風險。 <br>
+            <b>改善消化：</b> 纖維也有助於調節腸道並防止便秘。 <br>
+            <b>增強免疫系統：</b> 玉米富含維生素和礦物質，有助於增強免疫系統免疫，保護身體免受疾病侵害。 <br>
+            <b>促進飽足感：</b> 玉米中的纖維和蛋白質可促進飽足感，有助於控制體重身體。
+
+
+        <p style="margin-left: 6em;"> <b> 充滿希望的未來：</b>
+
+        <p style="margin-left: 8em;">玉米將繼續成為巴西非常重要的產品，並有進一步成長的潛力
+            在未來的幾十年裡。 <br>
+
+            對研發、技術創新和永續性的投資對於
+            確保巴西玉米在全球市場的競爭力並滿足日益增長的需求
+            營養豐富、用途廣泛的穀物。 <br>
+
+            玉米是真正的蔬菜黃金，它豐富了巴西人的餐桌，提振了國家經濟，
+            提供多種健康益處。
+            <br>
+            <br>
+            <hr class="rounded">
+    </div>
 </div>

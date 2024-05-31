@@ -1,102 +1,113 @@
-<h1 id="h1Home">Maíz</h1>
-<div id="divCarousel">
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-<div class="textFont">
-
-    <p style="margin-left: 6em;"> <b> Maíz: </b> El oro vegetal de Brasil
-    <p style="margin-left: 8em;">
-        El maíz, cereal antiguo y versátil, se destaca como uno de los pilares de la agricultura brasileña. <br>
-        Cultivado en diferentes regiones del país, el maíz se ha convertido en uno de los principales productos
-        agrícolas de Brasil, con
-        gran importancia para la economía, la cultura y la nutrición de la población.
-
-    <p style="margin-left: 6em;"> <b> Más allá de los cereales: </b>
-
-    <p style="margin-left: 8em;">
-        El maíz va más allá del simple grano dorado. Se utiliza en diversos segmentos de la industria, tales como:
-
-    <p style="margin-left: 10em;">
-        <b> Alimentación humana: </b> Granos frescos, harina de maíz, harina de maíz, aceite de maíz, copos de maíz,
-        palomitas de maíz, almidón.
-        maíz, etc <br>
-        <b>Alimentos para animales: </b>Fuente de energía y nutrientes para la cría de ganado vacuno, porcino, aves y
-        otros animales. <br>
-        <b> Biocombustibles: </b> Producción de etanol, un combustible renovable y sostenible para vehículos de motor.
+<div id="pagHome" class="content">
+    <h1 id="h1Home">Maíz</h1>
+    <div id="divCarousel">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
         <br>
-        <b> Industria: </b> Producción de plásticos, caucho, productos farmacéuticos, cosméticos y otros productos. <br>
-
-    <p style="margin-left: 6em;">
-        <b>Importancia para la economía brasileña:</b>
-
-    <p style="margin-left: 8em;">
-        Brasil es el mayor productor y exportador de maíz del mundo y representa alrededor de un tercio de la
-        producción.
-        global. <br>
-        La producción de maíz genera millones de empleos directos e indirectos en el país, contribuyendo
-        significativamente al
-        desarrollo socioeconómico de las regiones productoras. <br>
-
-    <p style="margin-left: 6em;"> <b> Un cereal nutritivo: </b>
-
-    <p style="margin-left: 8em;">El maíz es un alimento rico en nutrientes, como:
-
-    <p style="margin-left: 10em;">
-        <b> Carbohidratos: </b> Fuente de energía para el organismo. <br>
-        <b> Proteínas: </b> Importantes para el desarrollo y reparación de los tejidos musculares. <br>
-        <b> Fibras: </b> Ayudan a la digestión, regulan el intestino y favorecen la saciedad. <br>
-        <b> Vitaminas: </b> Ricas en vitaminas del grupo B, como B1, B2 y B5, importantes para el metabolismo
-        energético.
-        sistema nervioso y función muscular. <br>
-        <b>Minerales: </b>Fuente de hierro, fósforo, magnesio y potasio, minerales esenciales para el buen
-        funcionamiento del
-        cuerpo. <br>
-
-    <p style="margin-left: 6em;"> <b>Beneficios para la salud:</b>
-
-    <p style="margin-left: 8em;"> El consumo regular de maíz puede traer varios beneficios para la salud, tales como:
         <br>
+    </div>
+    <div class="textFont">
 
-    <p style="margin-left: 10em;"> <b>Prevenir enfermedades crónicas: </b> Ayuda en la prevención de enfermedades
-        crónicas como diabetes tipo 2, enfermedades cardíacas y
-        algunos tipos de cáncer. <br>
-        <b> Controlar el colesterol: </b> La fibra presente en el maíz ayuda a reducir el colesterol LDL ("malo"),
-        reduciendo
-        riesgo de enfermedad cardíaca. <br>
-        <b>Mejora la digestión:</b>Las fibras también ayudan a regular los intestinos y previenen el estreñimiento. <br>
-        <b> Fortalecer el sistema inmunológico: </b> Rico en vitaminas y minerales, el maíz ayuda a fortalecer el
-        sistema
-        inmunológico, protegiendo al organismo contra enfermedades. <br>
-        <b> Promueve la saciedad: </b> Las fibras y proteínas del maíz promueven la saciedad, ayudando a controlar el
-        peso.
-        cuerpo. <br> <br>
+        <p style="margin-left: 6em;"> <b> Maíz: </b> El oro vegetal de Brasil
+        <p style="margin-left: 8em;">
+            El maíz, cereal antiguo y versátil, se destaca como uno de los pilares de la agricultura brasileña. <br>
+            Cultivado en diferentes regiones del país, el maíz se ha convertido en uno de los principales productos
+            agrícolas de Brasil, con
+            gran importancia para la economía, la cultura y la nutrición de la población.
+
+        <p style="margin-left: 6em;"> <b> Más allá de los cereales: </b>
+
+        <p style="margin-left: 8em;">
+            El maíz va más allá del simple grano dorado. Se utiliza en diversos segmentos de la industria, tales como:
+
+        <p style="margin-left: 10em;">
+            <b> Alimentación humana: </b> Granos frescos, harina de maíz, harina de maíz, aceite de maíz, copos de maíz,
+            palomitas de maíz, almidón.
+            maíz, etc <br>
+            <b>Alimentos para animales: </b>Fuente de energía y nutrientes para la cría de ganado vacuno, porcino, aves
+            y
+            otros animales. <br>
+            <b> Biocombustibles: </b> Producción de etanol, un combustible renovable y sostenible para vehículos de
+            motor.
+            <br>
+            <b> Industria: </b> Producción de plásticos, caucho, productos farmacéuticos, cosméticos y otros productos.
+            <br>
+
+        <p style="margin-left: 6em;">
+            <b>Importancia para la economía brasileña:</b>
+
+        <p style="margin-left: 8em;">
+            Brasil es el mayor productor y exportador de maíz del mundo y representa alrededor de un tercio de la
+            producción.
+            global. <br>
+            La producción de maíz genera millones de empleos directos e indirectos en el país, contribuyendo
+            significativamente al
+            desarrollo socioeconómico de las regiones productoras. <br>
+
+        <p style="margin-left: 6em;"> <b> Un cereal nutritivo: </b>
+
+        <p style="margin-left: 8em;">El maíz es un alimento rico en nutrientes, como:
+
+        <p style="margin-left: 10em;">
+            <b> Carbohidratos: </b> Fuente de energía para el organismo. <br>
+            <b> Proteínas: </b> Importantes para el desarrollo y reparación de los tejidos musculares. <br>
+            <b> Fibras: </b> Ayudan a la digestión, regulan el intestino y favorecen la saciedad. <br>
+            <b> Vitaminas: </b> Ricas en vitaminas del grupo B, como B1, B2 y B5, importantes para el metabolismo
+            energético.
+            sistema nervioso y función muscular. <br>
+            <b>Minerales: </b>Fuente de hierro, fósforo, magnesio y potasio, minerales esenciales para el buen
+            funcionamiento del
+            cuerpo. <br>
+
+        <p style="margin-left: 6em;"> <b>Beneficios para la salud:</b>
+
+        <p style="margin-left: 8em;"> El consumo regular de maíz puede traer varios beneficios para la salud, tales
+            como:
+            <br>
+
+        <p style="margin-left: 10em;"> <b>Prevenir enfermedades crónicas: </b> Ayuda en la prevención de enfermedades
+            crónicas como diabetes tipo 2, enfermedades cardíacas y
+            algunos tipos de cáncer. <br>
+            <b> Controlar el colesterol: </b> La fibra presente en el maíz ayuda a reducir el colesterol LDL ("malo"),
+            reduciendo
+            riesgo de enfermedad cardíaca. <br>
+            <b>Mejora la digestión:</b>Las fibras también ayudan a regular los intestinos y previenen el estreñimiento.
+            <br>
+            <b> Fortalecer el sistema inmunológico: </b> Rico en vitaminas y minerales, el maíz ayuda a fortalecer el
+            sistema
+            inmunológico, protegiendo al organismo contra enfermedades. <br>
+            <b> Promueve la saciedad: </b> Las fibras y proteínas del maíz promueven la saciedad, ayudando a controlar
+            el
+            peso.
+            cuerpo. <br> <br>
 
 
-    <p style="margin-left: 6em;"> <b> Un futuro prometedor: </b>
+        <p style="margin-left: 6em;"> <b> Un futuro prometedor: </b>
 
-    <p style="margin-left: 8em;">El maíz seguirá siendo un producto de gran importancia para Brasil, con potencial de
-        crecer aún más
-        en las próximas décadas. <br>
+        <p style="margin-left: 8em;">El maíz seguirá siendo un producto de gran importancia para Brasil, con potencial
+            de
+            crecer aún más
+            en las próximas décadas. <br>
 
-        Las inversiones en investigación y desarrollo, innovación tecnológica y sostenibilidad son esenciales para
-        asegurar la competitividad del maíz brasileño en el mercado global y satisfacer la creciente demanda de este
-        Cereal nutritivo y versátil. <br>
+            Las inversiones en investigación y desarrollo, innovación tecnológica y sostenibilidad son esenciales para
+            asegurar la competitividad del maíz brasileño en el mercado global y satisfacer la creciente demanda de este
+            Cereal nutritivo y versátil. <br>
 
-        El maíz es un verdadero oro vegetal, que enriquece la mesa de los brasileños, dinamiza la economía del país y
-        ofrece varios beneficios para la salud.
+            El maíz es un verdadero oro vegetal, que enriquece la mesa de los brasileños, dinamiza la economía del país
+            y
+            ofrece varios beneficios para la salud.
+            <br>
+            <br>
+            <hr class="rounded">
+    </div>
 </div>
-<br>
-<hr class="rounded">

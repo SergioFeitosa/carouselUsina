@@ -1,90 +1,95 @@
-<h1 id="h1Home">Agronegocio</h1>
-<div id="divCarousel">
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-
-<div class="textFont">
-    <p style="margin-left: 6em;"><b>¿Qué es la agroindustria?</b>
-
-    <p style="margin-left: 8em;">La agroindustria es un sector crucial de la economía global, que abarca todas las
-        actividades.
-        relacionados con la producción, transformación, distribución y comercialización de productos agrícolas y
-        ganaderos. Más
-        Más que solo agricultura, los agronegocios abarcan una cadena compleja de sectores interconectados, desde la
-        investigación y
-        desarrollo de insumos agrícolas para la logística y venta minorista de alimentos.
-
-
-    <p style="margin-left: 6em;"><b>Importancia de los agronegocios en Brasil:</b>
-    <ul>
-        <p style="margin-left: 8em;">
-            <li><b>Sustento de la Nación:</b> Brasil es uno de los mayores productores y exportadores de alimentos del
-                mundo,
-                alimentando a millones de personas en todo el planeta. La agroindustria brasileña es responsable de
-                alrededor
-                30% del PIB nacional y genera millones de empleos directos e indirectos. </li>
-            <li><b>Innovación Tecnológica:</b> El sector destaca por su constante innovación tecnológica, con
-                inversiones
-                en investigación y desarrollo de nuevas técnicas agrícolas, maquinaria y biotecnología, impulsando la
-                productividad y sostenibilidad. </li>
-            <li><b>Desarrollo Regional:</b> Los agronegocios contribuyen significativamente al desarrollo
-                regional, promoviendo el crecimiento económico y social en las zonas rurales, especialmente en los
-                municipios menos poblados.
-                favorecido. </li>
-            <li><b>Seguridad Alimentaria:</b> El agronegocio garantiza la seguridad alimentaria de la población,
-                brindando
-                comida de calidad a precios asequibles. </li>
-    </ul>
-
-    <p style="margin-left: 6em;"><b>Desafíos y oportunidades:</b>
-
-    <ul>
-        <p style="margin-left: 8em;">
-            <li><b>Sostenibilidad ambiental:</b> El agronegocio enfrenta el desafío de conciliar el aumento de la
-                producción
-                con la preservación del medio ambiente, buscando prácticas agrícolas sostenibles que minimicen el
-                impacto ambiental.
-            </li>
-            <li><b>Cambio climático:</b> El cambio climático representa un desafío para la agroindustria, que requiere
-                adaptación de prácticas agrícolas y desarrollo de variedades vegetales más resistentes. </li>
-            <li><b>Demanda de Alimentos Saludables:</b> Se abre la creciente demanda de alimentos saludables y orgánicos
-                nuevas oportunidades para que la agroindustria invierta en nichos de mercado con alto valor agregado.
-            </li>
-    </ul>
-
-    <p style="margin-left: 6em;"><b>El futuro de los agronegocios: </b>
-
-        El futuro de la agroindustria es prometedor y hay perspectivas de crecimiento continuo. La demanda mundial de
-        alimentos
-        debería aumentar significativamente en las próximas décadas, impulsando aún más la necesidad de agronegocios
-        eficiente, sostenible e innovadora.
-
-    <p style="margin-left: 6em;"><b>Invertir en el futuro: </b>
-
-        Invertir en agronegocios significa invertir en el futuro de la humanidad. Al apoyar el desarrollo de una
-        agronegocios sostenibles e innovadores, contribuimos a la seguridad alimentaria global, la creación de empleo y
-        preservación del medio ambiente.
-
-        ¡Juntos podemos construir un futuro más próspero y sostenible para la agroindustria y el mundo!
-
-        Este texto sirve como punto de partida para su presentación. Puedes adaptarlo y complementarlo con
-        información específica sobre su negocio, región o área de interés.
-
-
+<div id="pagHome" class="content">
+    <h1 id="h1Home">Agronegocio</h1>
+    <div id="divCarousel">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
         <br>
         <br>
-        <hr class="rounded">
+    </div>
+
+    <div class="textFont">
+        <p style="margin-left: 6em;"><b>¿Qué es la agroindustria?</b>
+
+        <p style="margin-left: 8em;">La agroindustria es un sector crucial de la economía global, que abarca todas las
+            actividades.
+            relacionados con la producción, transformación, distribución y comercialización de productos agrícolas y
+            ganaderos. Más
+            Más que solo agricultura, los agronegocios abarcan una cadena compleja de sectores interconectados, desde la
+            investigación y
+            desarrollo de insumos agrícolas para la logística y venta minorista de alimentos.
+
+
+        <p style="margin-left: 6em;"><b>Importancia de los agronegocios en Brasil:</b>
+        <ul>
+            <p style="margin-left: 8em;">
+                <li><b>Sustento de la Nación:</b> Brasil es uno de los mayores productores y exportadores de alimentos
+                    del
+                    mundo,
+                    alimentando a millones de personas en todo el planeta. La agroindustria brasileña es responsable de
+                    alrededor
+                    30% del PIB nacional y genera millones de empleos directos e indirectos. </li>
+                <li><b>Innovación Tecnológica:</b> El sector destaca por su constante innovación tecnológica, con
+                    inversiones
+                    en investigación y desarrollo de nuevas técnicas agrícolas, maquinaria y biotecnología, impulsando
+                    la
+                    productividad y sostenibilidad. </li>
+                <li><b>Desarrollo Regional:</b> Los agronegocios contribuyen significativamente al desarrollo
+                    regional, promoviendo el crecimiento económico y social en las zonas rurales, especialmente en los
+                    municipios menos poblados.
+                    favorecido. </li>
+                <li><b>Seguridad Alimentaria:</b> El agronegocio garantiza la seguridad alimentaria de la población,
+                    brindando
+                    comida de calidad a precios asequibles. </li>
+        </ul>
+
+        <p style="margin-left: 6em;"><b>Desafíos y oportunidades:</b>
+
+        <ul>
+            <p style="margin-left: 8em;">
+                <li><b>Sostenibilidad ambiental:</b> El agronegocio enfrenta el desafío de conciliar el aumento de la
+                    producción
+                    con la preservación del medio ambiente, buscando prácticas agrícolas sostenibles que minimicen el
+                    impacto ambiental.
+                </li>
+                <li><b>Cambio climático:</b> El cambio climático representa un desafío para la agroindustria, que
+                    requiere
+                    adaptación de prácticas agrícolas y desarrollo de variedades vegetales más resistentes. </li>
+                <li><b>Demanda de Alimentos Saludables:</b> Se abre la creciente demanda de alimentos saludables y
+                    orgánicos
+                    nuevas oportunidades para que la agroindustria invierta en nichos de mercado con alto valor
+                    agregado.
+                </li>
+        </ul>
+
+        <p style="margin-left: 6em;"><b>El futuro de los agronegocios: </b>
+
+            El futuro de la agroindustria es prometedor y hay perspectivas de crecimiento continuo. La demanda mundial
+            de
+            alimentos
+            debería aumentar significativamente en las próximas décadas, impulsando aún más la necesidad de agronegocios
+            eficiente, sostenible e innovadora.
+
+        <p style="margin-left: 6em;"><b>Invertir en el futuro: </b>
+
+            Invertir en agronegocios significa invertir en el futuro de la humanidad. Al apoyar el desarrollo de una
+            agronegocios sostenibles e innovadores, contribuimos a la seguridad alimentaria global, la creación de
+            empleo y
+            preservación del medio ambiente.
+            ¡Juntos podemos construir un futuro más próspero y sostenible para la agroindustria y el mundo!
+            Este texto sirve como punto de partida para su presentación. Puedes adaptarlo y complementarlo con
+            información específica sobre su negocio, región o área de interés.
+            <br>
+            <br>
+            <hr class="rounded">
+    </div>
 </div>

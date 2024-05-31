@@ -1,70 +1,73 @@
-<h1 id="h1Home">Chicken</h1>
-<div id="divCarousel">
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-<div class="textFont">
-    <p style="margin-left: 6em;"> <b> Chicken Presentation: </b>
+<div id="pagHome" class="content">
+    <h1 id="h1Home">Chicken</h1>
+    <div id="divCarousel">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
+        <br>
+        <br>
+    </div>
+    <div class="textFont">
+        <p style="margin-left: 6em;"> <b> Chicken Presentation: </b>
         <p style="margin-left: 8em;">
-        Versatility and Flavor at Your Table
-        The chicken (Gallus gallus domesticus) is a domestic bird appreciated throughout the world for its tasty meat,
-        versatile and nutritious. Its creation offers several cutting options to meet your needs
-        culinary.
-       
+            Versatility and Flavor at Your Table
+            The chicken (Gallus gallus domesticus) is a domestic bird appreciated throughout the world for its tasty
+            meat,
+            versatile and nutritious. Its creation offers several cutting options to meet your needs
+            culinary.
+
         <p style="margin-left: 6em;"> <b> Chicken Cuts: </b>
-       
+
         <p style="margin-left: 8em;">
-        <b> Brisket: </b> Lean, protein-rich cut, ideal for grilling, roasting or frying. <br>
-        <b> Thigh: </b> Cut with more fat and flavor, perfect for roasting, stewing or braising. <br>
-        <b> Thigh: </b> Tasty and juicy cut, ideal for roasting, frying or making moqueca. <br>
-        <b> Wing: </b> Popular cut for frying, roasting or grilling, and can be seasoned in different ways. <br>
-        <b> Drumet: </b> Part of the wing with more meat, ideal for roasting, frying or making snacks. <br>
-        <b> Gizzard: </b> Organ with a crunchy texture, ideal for stews, braises or moquecas. <br>
-        <b> Liver: </b> Viscera rich in iron and vitamins, ideal for stews, pâtés or fillings. <br>
-        <b> Heart: </b> Viscera with a firm texture and intense flavor, perfect for stir-fries, kebabs or roasts.
-        <br>
-       
+            <b> Brisket: </b> Lean, protein-rich cut, ideal for grilling, roasting or frying. <br>
+            <b> Thigh: </b> Cut with more fat and flavor, perfect for roasting, stewing or braising. <br>
+            <b> Thigh: </b> Tasty and juicy cut, ideal for roasting, frying or making moqueca. <br>
+            <b> Wing: </b> Popular cut for frying, roasting or grilling, and can be seasoned in different ways. <br>
+            <b> Drumet: </b> Part of the wing with more meat, ideal for roasting, frying or making snacks. <br>
+            <b> Gizzard: </b> Organ with a crunchy texture, ideal for stews, braises or moquecas. <br>
+            <b> Liver: </b> Viscera rich in iron and vitamins, ideal for stews, pâtés or fillings. <br>
+            <b> Heart: </b> Viscera with a firm texture and intense flavor, perfect for stir-fries, kebabs or roasts.
+            <br>
+
         <p style="margin-left: 6em;"> <b>Benefits of Chicken:</b>
-       
+
         <p style="margin-left: 8em;">
-        <b> Nutrition: </b> Meat rich in proteins, vitamins and minerals, low in saturated fat. <br>
-        <b> Versatility: </b> Various cuts to suit your culinary needs and preferences. <br>
-        <b> Flavor: </b> Tasty meat that can be seasoned in different ways. <br>
-        <b> Price: </b> Affordable and cost-effective meat. <br>
-        <b> Sustainability: </b> Creation with less environmental impact compared to other meats. <br>
-       
+            <b> Nutrition: </b> Meat rich in proteins, vitamins and minerals, low in saturated fat. <br>
+            <b> Versatility: </b> Various cuts to suit your culinary needs and preferences. <br>
+            <b> Flavor: </b> Tasty meat that can be seasoned in different ways. <br>
+            <b> Price: </b> Affordable and cost-effective meat. <br>
+            <b> Sustainability: </b> Creation with less environmental impact compared to other meats. <br>
+
         <p style="margin-left: 6em;"> <b> Tips for Preparing Chicken: </b>
-       
+
         <p style="margin-left: 8em;">
-        <b> Hygiene: </b> Wash your hands and utensils well before handling the chicken. <br>
-        <b> Cooking: </b> Cook chicken until completely cooked to avoid illness. <br>
-        <b> Seasonings: </b> Explore different seasonings to vary the flavor of the chicken. <br>
-        <b> Creativity: </b> Try new recipes and chicken cuts to diversify your menu. <br>
-       
+            <b> Hygiene: </b> Wash your hands and utensils well before handling the chicken. <br>
+            <b> Cooking: </b> Cook chicken until completely cooked to avoid illness. <br>
+            <b> Seasonings: </b> Explore different seasonings to vary the flavor of the chicken. <br>
+            <b> Creativity: </b> Try new recipes and chicken cuts to diversify your menu. <br>
+
         <p style="margin-left: 6em;"> <b> Conclusion: </b>
-       
+
         <p style="margin-left: 8em;">
-        Chicken is an excellent option for a nutritious, tasty and affordable diet. With its diverse
-        cuts and culinary possibilities, chicken is a versatile ingredient that can please everyone.
-        palates.
-       
+            Chicken is an excellent option for a nutritious, tasty and affordable diet. With its diverse
+            cuts and culinary possibilities, chicken is a versatile ingredient that can please everyone.
+            palates.
+
         <p style="margin-left: 6em;"><b>For more information:</b>
-       
+
         <p style="margin-left: 8em;">Brazilian Animal Protein Association (ABPA): [[Invalid URL removed]]([URL
-        invalid removed])
-        Ministry of Agriculture, Livestock and Supply (MAPA): https://www.gov.br/agricultura/pt-br        <br>
-        <br>
-        <hr class="rounded">
+            invalid removed])
+            Ministry of Agriculture, Livestock and Supply (MAPA): https://www.gov.br/agricultura/pt-br <br>
+            <br>
+            <hr class="rounded">
+    </div>
 </div>

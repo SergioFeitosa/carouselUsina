@@ -1,11 +1,10 @@
 #sidebar {
-    
-    width: 100%;
-    height: 100%;
-    box-shadow: 5px 4px 4px #ccc;
-    border-right: 1px solid #ccc;
+    height: 100vh;
+    box-shadow: 5px 4px 4px #97be97;
+    border-right: 1px solid rgb(151, 190, 151);
     width: 200px;
-    background-color: #719c71;
+    background-color: rgb(31, 101, 31);
+    padding-top: 100px;
     #menu {
         display: flex;
         flex-direction: column;
@@ -26,12 +25,16 @@
 
 #title {
     align-self: start;;
+    color: rgb(80, 248, 226);
 }
 
 #subItem {
     width: 200px;
     padding-left: 40px;;
     font-size: 5px;
+    background-color: #1f661f;
+    color: #50f8e2;
+
 }
 
 #iconSpace{
@@ -41,6 +44,7 @@
 #textSubItem {
     font-size: 15px;
     padding-left: 5px;
+    color: #50f8e2;
 }
 
 #textSubItemGrande {
@@ -54,14 +58,14 @@
   .figureSombra {
     position: absolute;
     padding-top: 100px;
-    background-color: #719c71;
+    background-color: #1f661f;
     width:200px;
     height:100%;
   }
   .figure {
     position: absolute;
     top: 100px;
-    background-color: #719c71;
+    background-color: #1f661f;
   }
   .figurexz {
     position: fixed;
@@ -74,3 +78,4 @@
         height:auto;
         text-align:center;
   }
+

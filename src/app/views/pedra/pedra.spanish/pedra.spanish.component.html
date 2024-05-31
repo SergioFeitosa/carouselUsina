@@ -1,98 +1,111 @@
-<h1 id="h1Home">Piedras</h1>
-<div id="divCarousel" >
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-<div  class="textFont">
-    <p style="margin-left: 6em;"> <b> Piedras preciosas: </b> Joyas de la naturaleza que encantan y fascinan <br>
-        <p style="margin-left: 8em;">
-        Las piedras preciosas, verdaderas obras de arte de la naturaleza, han sido apreciadas desde la antigüedad por su belleza,
-        rareza, simbolismo y valor.
-        Más que simples adornos, llevan historias, creencias y significados, despertando admiración y
-        oh
-        fascinación de personas de todo el mundo.
-       
-        <p style="margin-left: 6em;"> <b> Una variedad de colores y propiedades: </b>
-       
-        <p style="margin-left: 8em;">
-        Cada piedra preciosa tiene características únicas, como color, talla, dureza, brillo e índice de refracción de la piedra.
-        luz. <br>
-        Esta variedad crea un universo de posibilidades, con piedras para todos los gustos y estilos:
-       
-        <p style="margin-left: 10em;">
-        <b>Diamante:</b>La más dura de las piedras preciosas, conocida por su brillo intenso y su talla clásica.
-        forma brillante. <br>
-        <b> Zafiro: </b> Piedra azul real, asociada a la realeza, la sabiduría y la prosperidad. <br>
-        <b> Rubí: </b> Piedra de color rojo vibrante, símbolo de amor, pasión y poder. <br>
-        <b> Esmeralda: </b> Piedra verde exuberante conocida por su color vivo e inclusiones únicas. <br>
-        <b> Amatista: </b> Piedra de color púrpura intenso, asociada a la espiritualidad, la protección y la intuición. <br>
-        <b> Topacio: </b> Se encuentra en diferentes colores, como amarillo, azul, rosa y naranja, conocido por su claridad y
-        brillar. <br>
-        <b> Turmalina: </b> Una de las piedras más versátiles, con una amplia variedad de colores y propiedades, entre ellas
-        rara turmalina de Paraíba. <br>
-        <b>Granate:</b> Piedra de color rojo oscuro, símbolo de pasión, vitalidad y éxito. <br>
-        <b> Aguamarina: </b> Piedra de color azul claro, asociada a la tranquilidad, la paz y la fidelidad. <br>
-        <b> Citrino: </b> Piedra de color amarillo vibrante, conocida por su energía positiva y su poder para atraer la prosperidad.
-        <br>
-       
-        <p style="margin-left: 6em;"> <b> Más que belleza: </b> <br>
-       
-        <p style="margin-left: 8em;">
-        Las piedras preciosas son más que objetos de belleza. <br>
-        A lo largo de la historia, se han utilizado para diversos fines, como por ejemplo:
-       
-        <p style="margin-left: 10em;">
-        <b> Amuletos y talismanes: </b> Se creía que las piedras preciosas poseían poderes de curación, protección y suerte.
-        <br>
-        <b> Símbolos de estatus y riqueza: </b> Las piedras preciosas se utilizaban para adornar coronas, joyas y otros
-        objetos de
-        valor, demostrando poder y riqueza. <br>
-        <b> Moneda de cambio: </b> En algunas culturas, las piedras preciosas se utilizaban como moneda de cambio, debido a la
-        su valor y rareza. <br>
-        <b> Objetos de arte y decoración: </b> Se tallaban y cortaban piedras preciosas para crear obras de arte y
-        decorar objetos, como muebles y utensilios.
-       
-        <p style="margin-left: 6em;"> <b> Un mercado global: </b> <br>
-       
-        <p style="margin-left: 8em;">
-        El mercado de las piedras preciosas es uno de los más importantes del mundo, moviendo miles de millones de dólares anualmente.
-        <br>
-        Las principales fuentes de piedras preciosas se encuentran en diferentes países, como
-        Brasil, Sudáfrica, Colombia, Sri Lanka y Australia.
-       
-        <p style="margin-left: 6em;"> <b> Lapidación: Revelación de la belleza: </b>
-       
-        <p style="margin-left: 8em;">
-        El corte es un proceso artesanal que revela la belleza y el brillo de las piedras preciosas. <br>
-        Mediante técnicas precisas, los cortadores transforman piedras en bruto en joyas
-        brillando, utilizando herramientas como lupas, pulidores y discos de diamante.
-       
-        <p style="margin-left: 6em;"> <b>Cuidado y Conservación: </b>
-       
-        <p style="margin-left: 8em;">
-        Las piedras preciosas son activos valiosos que requieren cuidados especiales para mantener su belleza y brillo. <br>
-        Es importante protegerlos de caídas, golpes, productos químicos y fuentes de calor excesivo. <br>
-        La limpieza periódica con agua tibia y jabón neutro es fundamental para preservar la calidad.
-        de las piedras. <br>
-        Las piedras preciosas son verdaderos regalos de la naturaleza que encantan y fascinan a las personas.
-        humanidad durante siglos. <br>
-        Su belleza, rareza, simbolismo y valor los convierten en objetos de deseo y admiración,
-        inmortalizando momentos especiales y
-        complementando nuestra historia con un toque de brillo y sofisticación.        
+<div id="pagHome" class="content">
+    <h1 id="h1Home">Piedras</h1>
+    <div id="divCarousel">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
         <br>
         <br>
-        <hr class="rounded">
+    </div>
+    <div class="textFont">
+        <p style="margin-left: 6em;"> <b> Piedras preciosas: </b> Joyas de la naturaleza que encantan y fascinan <br>
+        <p style="margin-left: 8em;">
+            Las piedras preciosas, verdaderas obras de arte de la naturaleza, han sido apreciadas desde la antigüedad
+            por su belleza,
+            rareza, simbolismo y valor.
+            Más que simples adornos, llevan historias, creencias y significados, despertando admiración y
+            oh
+            fascinación de personas de todo el mundo.
 
+        <p style="margin-left: 6em;"> <b> Una variedad de colores y propiedades: </b>
+
+        <p style="margin-left: 8em;">
+            Cada piedra preciosa tiene características únicas, como color, talla, dureza, brillo e índice de refracción
+            de la piedra.
+            luz. <br>
+            Esta variedad crea un universo de posibilidades, con piedras para todos los gustos y estilos:
+
+        <p style="margin-left: 10em;">
+            <b>Diamante:</b>La más dura de las piedras preciosas, conocida por su brillo intenso y su talla clásica.
+            forma brillante. <br>
+            <b> Zafiro: </b> Piedra azul real, asociada a la realeza, la sabiduría y la prosperidad. <br>
+            <b> Rubí: </b> Piedra de color rojo vibrante, símbolo de amor, pasión y poder. <br>
+            <b> Esmeralda: </b> Piedra verde exuberante conocida por su color vivo e inclusiones únicas. <br>
+            <b> Amatista: </b> Piedra de color púrpura intenso, asociada a la espiritualidad, la protección y la
+            intuición. <br>
+            <b> Topacio: </b> Se encuentra en diferentes colores, como amarillo, azul, rosa y naranja, conocido por su
+            claridad y
+            brillar. <br>
+            <b> Turmalina: </b> Una de las piedras más versátiles, con una amplia variedad de colores y propiedades,
+            entre ellas
+            rara turmalina de Paraíba. <br>
+            <b>Granate:</b> Piedra de color rojo oscuro, símbolo de pasión, vitalidad y éxito. <br>
+            <b> Aguamarina: </b> Piedra de color azul claro, asociada a la tranquilidad, la paz y la fidelidad. <br>
+            <b> Citrino: </b> Piedra de color amarillo vibrante, conocida por su energía positiva y su poder para atraer
+            la prosperidad.
+            <br>
+
+        <p style="margin-left: 6em;"> <b> Más que belleza: </b> <br>
+
+        <p style="margin-left: 8em;">
+            Las piedras preciosas son más que objetos de belleza. <br>
+            A lo largo de la historia, se han utilizado para diversos fines, como por ejemplo:
+
+        <p style="margin-left: 10em;">
+            <b> Amuletos y talismanes: </b> Se creía que las piedras preciosas poseían poderes de curación, protección y
+            suerte.
+            <br>
+            <b> Símbolos de estatus y riqueza: </b> Las piedras preciosas se utilizaban para adornar coronas, joyas y
+            otros
+            objetos de
+            valor, demostrando poder y riqueza. <br>
+            <b> Moneda de cambio: </b> En algunas culturas, las piedras preciosas se utilizaban como moneda de cambio,
+            debido a la
+            su valor y rareza. <br>
+            <b> Objetos de arte y decoración: </b> Se tallaban y cortaban piedras preciosas para crear obras de arte y
+            decorar objetos, como muebles y utensilios.
+
+        <p style="margin-left: 6em;"> <b> Un mercado global: </b> <br>
+
+        <p style="margin-left: 8em;">
+            El mercado de las piedras preciosas es uno de los más importantes del mundo, moviendo miles de millones de
+            dólares anualmente.
+            <br>
+            Las principales fuentes de piedras preciosas se encuentran en diferentes países, como
+            Brasil, Sudáfrica, Colombia, Sri Lanka y Australia.
+
+        <p style="margin-left: 6em;"> <b> Lapidación: Revelación de la belleza: </b>
+
+        <p style="margin-left: 8em;">
+            El corte es un proceso artesanal que revela la belleza y el brillo de las piedras preciosas. <br>
+            Mediante técnicas precisas, los cortadores transforman piedras en bruto en joyas
+            brillando, utilizando herramientas como lupas, pulidores y discos de diamante.
+
+        <p style="margin-left: 6em;"> <b>Cuidado y Conservación: </b>
+
+        <p style="margin-left: 8em;">
+            Las piedras preciosas son activos valiosos que requieren cuidados especiales para mantener su belleza y
+            brillo. <br>
+            Es importante protegerlos de caídas, golpes, productos químicos y fuentes de calor excesivo. <br>
+            La limpieza periódica con agua tibia y jabón neutro es fundamental para preservar la calidad.
+            de las piedras. <br>
+            Las piedras preciosas son verdaderos regalos de la naturaleza que encantan y fascinan a las personas.
+            humanidad durante siglos. <br>
+            Su belleza, rareza, simbolismo y valor los convierten en objetos de deseo y admiración,
+            inmortalizando momentos especiales y
+            complementando nuestra historia con un toque de brillo y sofisticación.
+            <br>
+            <br>
+            <hr class="rounded">
+
+    </div>
 </div>

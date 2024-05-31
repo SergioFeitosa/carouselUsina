@@ -1,20 +1,21 @@
-
 <div id="header">
     <div id="logo">
-        <img alt="menu" [src]="
+        <img class="color_icon" alt="menu" 
+        title= "{{ sidebarActive ? 'Close Menu' : 'Open Menu'}}"
+        [src]="
         sidebarActive
-        ? '/carousel/browser/assets/images/icons/left-arrow.svg'            
+        ? '/carousel/browser/assets/images/icons/left-arrow.svg'           
         : '/carousel/browser/assets/images/icons/menu.svg'
        " (click)="toggleSidebar.emit()" />
     </div>
 
-    <div class="menuhorizontal">
+    <div class="titlenormal">
         {{ this.data.name }}
 
     </div>
 
-    <div class="menuvertical">
-        {{ this.data.name }}
+    <div class="titleresume">
+        {{'AgroKelvy' }}
 
     </div>
 
@@ -29,7 +30,10 @@
                     {{ this.service }} &nbsp;&nbsp;&nbsp;
                 </a>
                 <a routerLink="contato/chinese">
-                    {{ this.contact }}
+                    {{ this.contact }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="">
+                    {{ this.logout }}
                 </a>
             </div>
             <div *ngIf="this.service == 'Service'">
@@ -40,7 +44,10 @@
                     {{ this.service }} &nbsp;&nbsp;&nbsp;
                 </a>
                 <a routerLink="contato/english">
-                    {{ this.contact }}
+                    {{ this.contact }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="">
+                    {{ this.logout }}
                 </a>
 
             </div>
@@ -52,7 +59,10 @@
                     {{ this.service }} &nbsp;&nbsp;&nbsp;
                 </a>
                 <a routerLink="contato/portuguese">
-                    {{ this.contact }}
+                    {{ this.contact }} &nbsp;&nbsp;&nbsp;
+                </a>
+                <a routerLink="">
+                    {{ this.logout }}
                 </a>
             </div>
             <div *ngIf="this.service == 'Servicio'">
@@ -63,12 +73,12 @@
                     {{ this.service }} &nbsp;&nbsp;&nbsp;
                 </a>
                 <a routerLink="contato/spanish">
-                    {{ this.contact }}
+                    {{ this.contact }} &nbsp;&nbsp;&nbsp;
                 </a>
-                </div>
-            <a routerLink="">
-                {{ this.logout }}
-            </a>
+                <a routerLink="">
+                    {{ this.logout }}
+                </a>
+            </div>
         </div>
     </div>
 
@@ -85,6 +95,9 @@
                 <a routerLink="contato/chinese">
                     {{ this.contact }}
                 </a>
+                <a routerLink="">
+                    {{ this.logout }}
+                </a>
             </div>
             <div *ngIf="this.service == 'Service'">
                 <a routerLink="home/english">
@@ -95,6 +108,9 @@
                 </a>
                 <a routerLink="contato/english">
                     {{ this.contact }}
+                </a>
+                <a routerLink="">
+                    {{ this.logout }}
                 </a>
             </div>
             <div *ngIf="this.service == 'Serviços'">
@@ -107,7 +123,10 @@
                 <a routerLink="contato/portuguese">
                     {{ this.contact }}
                 </a>
-                </div>
+                <a routerLink="">
+                    {{ this.logout }}
+                </a>
+            </div>
             <div *ngIf="this.service == 'Servicio'">
                 <a routerLink="home/spanish">
                     {{ this.home }}
@@ -118,22 +137,100 @@
                 <a routerLink="contato/spanish">
                     {{ this.contact }}
                 </a>
+                <a routerLink="">
+                    {{ this.logout }}
+                </a>
             </div>
-            <a routerLink="">
-                {{ this.logout }}
-            </a>
 
         </div>
 
     </div>
 
-    <div id="menu">
-        <img class="fi fi-ch" alt="Chines" [src]="'/carousel/browser/assets/images/bandeira-china.jpg'"
-            (click)="toogleChineseLanguageSend()">
+    <div class="menuvertical2">
+
+        <div class="vertical-menu2">
+            <div *ngIf="this.service == '服务'">
+                <a routerLink="home/chinese">
+                    {{ this.home }}
+                </a>
+                <a routerLink="servico/chinese">
+                    {{ this.service }}
+                </a>
+                <a routerLink="contato/chinese">
+                    {{ this.contact }}
+                </a>
+                <a routerLink="">
+                    {{ this.logout }}
+                </a>
+            </div>
+            <div *ngIf="this.service == 'Service'">
+                <a routerLink="home/english">
+                    {{ this.home }}
+                </a>
+                <a routerLink="servico/english">
+                    {{ this.service }}
+                </a>
+                <a routerLink="contato/english">
+                    {{ this.contact }}
+                </a>
+                <a routerLink="">
+                    {{ this.logout }}
+                </a>
+            </div>
+            <div *ngIf="this.service == 'Serviços'">
+                <a routerLink="home/portuguese">
+                    {{ this.home }}
+                </a>
+                <a routerLink="servico/portuguese">
+                    {{ this.service }}
+                </a>
+                <a routerLink="contato/portuguese">
+                    {{ this.contact }}
+                </a>
+                <a routerLink="">
+                    {{ this.logout }}
+                </a>
+            </div>
+            <div *ngIf="this.service == 'Servicio'">
+                <a routerLink="home/spanish">
+                    {{ this.home }}
+                </a>
+                <a routerLink="servico/spanish">
+                    {{ this.service }}
+                </a>
+                <a routerLink="contato/spanish">
+                    {{ this.contact }}
+                </a>
+                <a routerLink="">
+                    {{ this.logout }}
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="menuimghorizontal">
+        <img class="fi fi-ch" alt="Chines" [src]="'/carousel/browser/assets/images/bandeirachina.png'"
+            (click)="toogleChineseLanguageSend()" title="Chinese">
         <img class="fi fi-us" alt="Ingles" [src]="'/carousel/browser/assets/images/bandeira-estados_unidos.png'"
-            (click)="toogleEnglishLanguageSend()">
-        <img class="fi fi-br" alt="Portugues" [src]="'/carousel/browser/assets/images/bandeira-brasil.png'"
-            (click)="tooglePortugueseLanguageSend()">
+            (click)="toogleEnglishLanguageSend()" title="English">
+        <img class="fi fi-br" alt="Portugues" [src]="'/carousel/browser/assets/images/bandeirabrasil.jpg'"
+            (click)="tooglePortugueseLanguageSend()" title="Portuguese">
         <img class="fi fi-es" alt="Espanha" [src]="'/carousel/browser/assets/images/bandeira-espanha.png'"
-            (click)="toogleSpanishLanguageSend()">
+            (click)="toogleSpanishLanguageSend()" title="Spanish">
+    </div>
+
+    <div id="menuimgvertical">
+        <ul>
+            <li><img class="fi fi-ch" alt="Chines" [src]="'/carousel/browser/assets/images/bandeirachina.png'"
+                    (click)="toogleChineseLanguageSend()" title="Chinese"></li>
+            <li><img class="fi fi-us" alt="Ingles" [src]="'/carousel/browser/assets/images/bandeira-estados_unidos.png'"
+                    (click)="toogleEnglishLanguageSend()"  title="English"></li>
+            <li><img class="fi fi-br" alt="Portugues" [src]="'/carousel/browser/assets/images/bandeirabrasil.jpg'"
+                    (click)="tooglePortugueseLanguageSend()"  title="Portuguese"></li>
+            <li><img class="fi fi-es" alt="Espanha" [src]="'/carousel/browser/assets/images/bandeira-espanha.png'"
+                    (click)="toogleSpanishLanguageSend()" title="Spanish"></li>
+        </ul>
     </div>

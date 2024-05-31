@@ -1,114 +1,125 @@
-<h1 id="h1Home">Soya</h1>
-<div id="divCarousel">
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-<div class="textFont">
-    <p style="margin-left: 6em;"> <b> Soja: </b> Un grano de oro que nutre al mundo <br>
-    <p style="margin-left: 8em;">La soja, un grano dorado originario de Asia, se ha convertido en uno de los principales
-        productos
-        agricultura en Brasil y el mundo.
-        Cultivada en vastas zonas del país, la soja destaca por su alta productividad, versatilidad e importancia.
-        para la economía, la alimentación y el medio ambiente.
-
-    <p style="margin-left: 6em;"> <b> Mucho más que cereales: </b>
-
-    <p style="margin-left: 8em;"> La soja va más allá del simple grano dorado. Se utiliza en varios segmentos del
-        industria, tales como:
-
-    <p style="margin-left: 10em;"> <b> Alimento humano: </b> Leche de soja, tofu, aceite de soja, proteína de soja,
-        lecitina de soja, etc. <br>
-        <b>Alimentos para animales: </b>Fuente de proteínas y energía para la cría de ganado vacuno, porcino, aves y
-        otros animales. <br>
-        <b> Biocombustibles: </b> Producción de biodiesel, un combustible renovable y sostenible para vehículos
-        vehículos de motor. <br>
-        <b> Industria: </b> Producción de plásticos, caucho, pinturas, cosméticos y otros productos. <br>
-
-
-    <p style="margin-left: 6em;"> <b> Importancia para la economía brasileña: </b>
-
-    <p style="margin-left: 8em;"> Brasil es el mayor productor y exportador de soja del mundo, representando alrededor
-        de un
-        un tercio de la producción mundial.
-        La producción de soja genera millones de empleos directos e indirectos en el país, contribuyendo
-        significativamente al
-        desarrollo socioeconómico de las regiones productoras.
-
-    <p style="margin-left: 6em;"> <b> Un grano nutritivo: </b>
-
-    <p style="margin-left: 8em;">La soja es un alimento rico en nutrientes, como:
-
-    <p style="margin-left: 10em;"> <b> Proteínas: </b> Fuente de proteínas de alta calidad, importantes para el
-        Desarrollo y reparación de los tejidos musculares. <br>
-        <b> Grasas buenas: </b> Ricas en ácidos grasos insaturados, como omega 3 y omega 6, importantes para la salud
-        del organismo.
-        corazón y cerebro. <br>
-        <b> Fibras: </b> Ayudan a la digestión, regulan el intestino y favorecen la saciedad. <br>
-        <b> Vitaminas: </b> Rica en vitaminas del grupo B, como B1, B2 y B6, importantes para el metabolismo.
-        energía, el sistema nervioso y la función muscular. <br>
-        <b>Minerales: </b>Fuente de hierro, calcio, fósforo, magnesio y potasio, minerales esenciales para una buena
-        salud
-        funcionamiento del organismo. <br>
-
-    <p style="margin-left: 6em;"> <b>Beneficios para la salud:</b>
-
-    <p style="margin-left: 8em;"> El consumo regular de soja puede aportar varios beneficios para la salud, como:
-
-    <p style="margin-left: 10em;"> <b>Prevenir enfermedades crónicas: </b> Ayuda en la prevención de enfermedades
-        crónicas como
-        diabetes tipo 2, enfermedades cardíacas y algunos tipos de cáncer. <br>
-        <b> Controlar el colesterol: </b> Las grasas buenas presentes en la soja ayudan a reducir el colesterol LDL
-        ("malo"),
-        reduciendo el riesgo de enfermedades cardíacas. <br>
-        <b>Mejora la digestión:</b>Las fibras también ayudan a regular los intestinos y previenen el estreñimiento. <br>
-        <b> Fortalecer el sistema inmunológico: </b> Rica en vitaminas y minerales, la soja ayuda a fortalecer el
-        sistema
-        inmunológico, protegiendo al organismo contra enfermedades. <br>
-        <b> Promueve la saciedad: </b> Las fibras y proteínas de la soja promueven la saciedad, ayudando a controlar la
-        peso corporal. <br>
-
-
-    <p style="margin-left: 6em;"> <b> Retos y sostenibilidad: </b>
-
-    <p style="margin-left: 8em;"> El cultivo de soja en Brasil enfrenta algunos desafíos, tales como:
-
-    <p style="margin-left: 10em;"> <b> Deforestación: </b>La expansión de las áreas de cultivo de soja podría provocar
-        deforestación, con impactos negativos sobre el medio ambiente. <br>
-        <b> Uso de pesticidas: </b> El uso excesivo de pesticidas puede contaminar el suelo y el agua, además de
-        perjudicar
-        la salud humana y el medio ambiente. <br>
-        <b> Concentración de la tierra: </b> La producción de soja se concentra en unas pocas manos, lo que puede
-        provocar
-        desigualdad social y concentración del ingreso. <br>
-
-
-    <p style="margin-left: 6em;"> <b> Es fundamental buscar soluciones a estos desafíos, tales como: </b>
-
-    <p style="margin-left: 8em;"> <b> Adoptar prácticas agrícolas sostenibles: </b> Agricultura de precisión, gestión
-        conservación del suelo, rotación de cultivos, etc. <br>
-        <b> Reducir el uso de pesticidas: </b> Buscar alternativas biológicas para controlar plagas y enfermedades. <br>
-        <b> Promover la reforma agraria: </b> Distribuir la tierra de manera más justa y equitativa. <br>
-
-    <p style="margin-left: 6em;"> La soja es un grano con un enorme potencial para nutrir al mundo y contribuir a la
-        Desarrollo socioeconómico de Brasil. <br>
-        Invirtiendo en sostenibilidad, innovación tecnológica y responsabilidad social, podemos asegurar que la
-        producción de
-        soja siga siendo un motor de crecimiento para el país, sin comprometer el medio ambiente y el bienestar de las
-        personas.
-
+<div id="pagHome" class="content">
+    <h1 id="h1Home">Soya</h1>
+    <div id="divCarousel">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
         <br>
         <br>
-        <hr class="rounded">
+    </div>
+    <div class="textFont">
+        <p style="margin-left: 6em;"> <b> Soja: </b> Un grano de oro que nutre al mundo <br>
+        <p style="margin-left: 8em;">La soja, un grano dorado originario de Asia, se ha convertido en uno de los
+            principales
+            productos
+            agricultura en Brasil y el mundo.
+            Cultivada en vastas zonas del país, la soja destaca por su alta productividad, versatilidad e importancia.
+            para la economía, la alimentación y el medio ambiente.
+
+        <p style="margin-left: 6em;"> <b> Mucho más que cereales: </b>
+
+        <p style="margin-left: 8em;"> La soja va más allá del simple grano dorado. Se utiliza en varios segmentos del
+            industria, tales como:
+
+        <p style="margin-left: 10em;"> <b> Alimento humano: </b> Leche de soja, tofu, aceite de soja, proteína de soja,
+            lecitina de soja, etc. <br>
+            <b>Alimentos para animales: </b>Fuente de proteínas y energía para la cría de ganado vacuno, porcino, aves y
+            otros animales. <br>
+            <b> Biocombustibles: </b> Producción de biodiesel, un combustible renovable y sostenible para vehículos
+            vehículos de motor. <br>
+            <b> Industria: </b> Producción de plásticos, caucho, pinturas, cosméticos y otros productos. <br>
+
+
+        <p style="margin-left: 6em;"> <b> Importancia para la economía brasileña: </b>
+
+        <p style="margin-left: 8em;"> Brasil es el mayor productor y exportador de soja del mundo, representando
+            alrededor
+            de un
+            un tercio de la producción mundial.
+            La producción de soja genera millones de empleos directos e indirectos en el país, contribuyendo
+            significativamente al
+            desarrollo socioeconómico de las regiones productoras.
+
+        <p style="margin-left: 6em;"> <b> Un grano nutritivo: </b>
+
+        <p style="margin-left: 8em;">La soja es un alimento rico en nutrientes, como:
+
+        <p style="margin-left: 10em;"> <b> Proteínas: </b> Fuente de proteínas de alta calidad, importantes para el
+            Desarrollo y reparación de los tejidos musculares. <br>
+            <b> Grasas buenas: </b> Ricas en ácidos grasos insaturados, como omega 3 y omega 6, importantes para la
+            salud
+            del organismo.
+            corazón y cerebro. <br>
+            <b> Fibras: </b> Ayudan a la digestión, regulan el intestino y favorecen la saciedad. <br>
+            <b> Vitaminas: </b> Rica en vitaminas del grupo B, como B1, B2 y B6, importantes para el metabolismo.
+            energía, el sistema nervioso y la función muscular. <br>
+            <b>Minerales: </b>Fuente de hierro, calcio, fósforo, magnesio y potasio, minerales esenciales para una buena
+            salud
+            funcionamiento del organismo. <br>
+
+        <p style="margin-left: 6em;"> <b>Beneficios para la salud:</b>
+
+        <p style="margin-left: 8em;"> El consumo regular de soja puede aportar varios beneficios para la salud, como:
+
+        <p style="margin-left: 10em;"> <b>Prevenir enfermedades crónicas: </b> Ayuda en la prevención de enfermedades
+            crónicas como
+            diabetes tipo 2, enfermedades cardíacas y algunos tipos de cáncer. <br>
+            <b> Controlar el colesterol: </b> Las grasas buenas presentes en la soja ayudan a reducir el colesterol LDL
+            ("malo"),
+            reduciendo el riesgo de enfermedades cardíacas. <br>
+            <b>Mejora la digestión:</b>Las fibras también ayudan a regular los intestinos y previenen el estreñimiento.
+            <br>
+            <b> Fortalecer el sistema inmunológico: </b> Rica en vitaminas y minerales, la soja ayuda a fortalecer el
+            sistema
+            inmunológico, protegiendo al organismo contra enfermedades. <br>
+            <b> Promueve la saciedad: </b> Las fibras y proteínas de la soja promueven la saciedad, ayudando a controlar
+            la
+            peso corporal. <br>
+
+
+        <p style="margin-left: 6em;"> <b> Retos y sostenibilidad: </b>
+
+        <p style="margin-left: 8em;"> El cultivo de soja en Brasil enfrenta algunos desafíos, tales como:
+
+        <p style="margin-left: 10em;"> <b> Deforestación: </b>La expansión de las áreas de cultivo de soja podría
+            provocar
+            deforestación, con impactos negativos sobre el medio ambiente. <br>
+            <b> Uso de pesticidas: </b> El uso excesivo de pesticidas puede contaminar el suelo y el agua, además de
+            perjudicar
+            la salud humana y el medio ambiente. <br>
+            <b> Concentración de la tierra: </b> La producción de soja se concentra en unas pocas manos, lo que puede
+            provocar
+            desigualdad social y concentración del ingreso. <br>
+
+
+        <p style="margin-left: 6em;"> <b> Es fundamental buscar soluciones a estos desafíos, tales como: </b>
+
+        <p style="margin-left: 8em;"> <b> Adoptar prácticas agrícolas sostenibles: </b> Agricultura de precisión,
+            gestión
+            conservación del suelo, rotación de cultivos, etc. <br>
+            <b> Reducir el uso de pesticidas: </b> Buscar alternativas biológicas para controlar plagas y enfermedades.
+            <br>
+            <b> Promover la reforma agraria: </b> Distribuir la tierra de manera más justa y equitativa. <br>
+
+        <p style="margin-left: 6em;"> La soja es un grano con un enorme potencial para nutrir al mundo y contribuir a la
+            Desarrollo socioeconómico de Brasil. <br>
+            Invirtiendo en sostenibilidad, innovación tecnológica y responsabilidad social, podemos asegurar que la
+            producción de
+            soja siga siendo un motor de crecimiento para el país, sin comprometer el medio ambiente y el bienestar de
+            las
+            personas.
+
+            <br>
+            <br>
+            <hr class="rounded">
+    </div>
 </div>

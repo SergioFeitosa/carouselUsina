@@ -1,5 +1,5 @@
 .home {
-    display: flex;
+    display: block;
     padding-top: 10px;
     padding-left: 20px;
 }

@@ -1,123 +1,135 @@
-<h1 id="h1Home">Sorgo</h1>
-<div id="divCarousel">
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-<div class="textFont">
-
-    <p style="margin-left: 6em;"> <b> Sorgo: </b> Un cereal prometedor para el futuro de la agricultura brasileña <br>
-    <p style="margin-left: 8em;"> El sorgo, un cereal antiguo y resistente, ha ido ganando protagonismo en el panorama
-        agrícola
-        Brasileño como alternativa
-        forma prometedora de diversificar la producción y garantizar la seguridad alimentaria.
-        Adaptado a diferentes climas y suelos, el sorgo presenta características ventajosas que lo convierten en una
-        opción ideal.
-        atractivo
-        para agricultores y consumidores. <br>
-
-    <p style="margin-left: 6em;"> <b> Un cereal versátil: </b>
-
-    <p style="margin-left: 8em;"> El sorgo destaca por su versatilidad y puede ser utilizado en diferentes segmentos:
-
-    <p style="margin-left: 10em;"> <b> Alimentación humana: </b> Granos frescos, harina de sorgo, copos de sorgo,
-        fideos de sorgo, etc. <br>
-        <b>Alimentos para animales: </b>Fuente de energía y nutrientes para la cría de ganado vacuno, porcino, aves y
-        otros animales. <br>
-        <b> Biocombustibles: </b> Producción de etanol y biogás, combustibles renovables y sostenibles para vehículos
-        automoción y generación de energía. <br>
-        <b> Industria: </b> Producción de plásticos, biomateriales, productos farmacéuticos y otros productos. <br>
-
-
-    <p style="margin-left: 6em;"> <b> Ventajas para la agricultura: </b>
-
-    <p style="margin-left: 8em;"> El cultivo de sorgo ofrece importantes ventajas para la agricultura brasileña:
-
-    <p style="margin-left: 10em;">
-        <b> Resistencia a la sequía: </b> Adaptado a condiciones climáticas secas, el sorgo resiste sequías prolongadas
-        con
-        más grande
-        eficiencia que otros cereales, como el maíz. <br>
-        <b> Tolerancia a suelos salinos: </b> El sorgo es tolerante a suelos salinos y degradados, lo que permite
-        su producción
-        en zonas con condiciones de suelo adversas. <br>
-        <b> Menor necesidad de insumos: </b> El sorgo requiere menos pesticidas y fertilizantes que otros cereales.
-        contribuyendo
-        para la agricultura sostenible y la preservación del medio ambiente. <br>
-        <b> Ciclo de cultivo corto: </b> El sorgo tiene un ciclo de cultivo corto, permitiendo más de una cosecha por
-        cosecha.
-        año en algunos
-        regiones. <br>
-
-    <p style="margin-left: 6em;"> <b> Un cereal nutritivo: </b>
-
-    <p style="margin-left: 8em;">El sorgo es un alimento rico en nutrientes, como:
-
-    <p style="margin-left: 10em;">
-        <b> Carbohidratos: </b> Fuente de energía para el organismo. <br>
-        <b> Proteínas: </b> Importantes para el desarrollo y reparación de los tejidos musculares. <br>
-        <b> Fibras: </b> Ayudan a la digestión, regulan el intestino y favorecen la saciedad. <br>
-        <b> Vitaminas: </b> Rica en vitaminas del grupo B, como B1, B2 y B6, importantes para el metabolismo.
-        energía, el sistema nervioso y la función muscular. <br>
-        <b>Minerales: </b>Fuente de hierro, fósforo, magnesio y potasio, minerales esenciales para el buen
-        funcionamiento del
-        cuerpo. <br>
-
-    <p style="margin-left: 6em;"> <b>Beneficios para la salud:</b>
-
-    <p style="margin-left: 8em;">El consumo regular de sorgo puede aportar varios beneficios para la salud, como:
-
-    <p style="margin-left: 10em;"> <b>Prevenir enfermedades crónicas: </b> Ayuda en la prevención de enfermedades
-        crónicas como
-        diabetes tipo 2, enfermedades cardíacas y
-        algunos tipos de cáncer. <br>
-        <b> Controlar el colesterol: </b> La fibra presente en el sorgo ayuda a reducir el colesterol LDL ("malo"),
-        disminuyendo el
-        riesgo de enfermedad cardíaca. <br>
-        <b>Mejora la digestión:</b>Las fibras también ayudan a regular los intestinos y previenen el estreñimiento.
-        Fortalecer el sistema inmunológico: Rico en vitaminas y minerales, el sorgo ayuda a fortalecer el sistema.
-        inmunológico,
-        protegiendo el cuerpo contra enfermedades. <br>
-        <b> Promueve la saciedad: </b> Las fibras y proteínas del sorgo promueven la saciedad, ayudando a controlar
-        Peso
-        cuerpo. <br>
-
-
-    <p style="margin-left: 6em;"> <b> Un futuro sostenible: </b>
-
-    <p style="margin-left: 8em;">El sorgo desempeña un papel crucial en la construcción de un futuro más sostenible
-        para la agricultura
-        Brasileño:
-
-    <p style="margin-left: 10em;"> <b> Seguridad alimentaria: </b> Contribuye a la seguridad alimentaria del país,
-        diversificar la producción de cereales y
-        asegurar la disponibilidad de alimentos nutritivos para la población. <br>
-        <b> Sostenibilidad ambiental: </b> Promueve la sostenibilidad ambiental de la agricultura, a través de una menor
-        utilización de
-        insumos y adaptabilidad a diferentes condiciones climáticas. <br>
-        <b> Ingresos para los agricultores: </b> Genera ingresos para los agricultores, especialmente en áreas con
-        condiciones
-        clima
-        condiciones adversas o suelos degradados. <br>
-    <p style="margin-left: 6em;">El sorgo es un cereal prometedor con un gran potencial para el futuro de la agricultura
-        Brasileño.
-
-        Su adaptabilidad, versatilidad, beneficios nutricionales e impacto positivo en la sostenibilidad lo convierten
-        en un
-        opción
-        atractivo para los agricultores, los consumidores y el medio ambiente.
+<div id="pagHome" class="content">
+    <h1 id="h1Home">Sorgo</h1>
+    <div id="divCarousel">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
         <br>
         <br>
-        <hr class="rounded">
+    </div>
+    <div class="textFont">
+
+        <p style="margin-left: 6em;"> <b> Sorgo: </b> Un cereal prometedor para el futuro de la agricultura brasileña
+            <br>
+        <p style="margin-left: 8em;"> El sorgo, un cereal antiguo y resistente, ha ido ganando protagonismo en el
+            panorama
+            agrícola
+            Brasileño como alternativa
+            forma prometedora de diversificar la producción y garantizar la seguridad alimentaria.
+            Adaptado a diferentes climas y suelos, el sorgo presenta características ventajosas que lo convierten en una
+            opción ideal.
+            atractivo
+            para agricultores y consumidores. <br>
+
+        <p style="margin-left: 6em;"> <b> Un cereal versátil: </b>
+
+        <p style="margin-left: 8em;"> El sorgo destaca por su versatilidad y puede ser utilizado en diferentes
+            segmentos:
+
+        <p style="margin-left: 10em;"> <b> Alimentación humana: </b> Granos frescos, harina de sorgo, copos de sorgo,
+            fideos de sorgo, etc. <br>
+            <b>Alimentos para animales: </b>Fuente de energía y nutrientes para la cría de ganado vacuno, porcino, aves
+            y
+            otros animales. <br>
+            <b> Biocombustibles: </b> Producción de etanol y biogás, combustibles renovables y sostenibles para
+            vehículos
+            automoción y generación de energía. <br>
+            <b> Industria: </b> Producción de plásticos, biomateriales, productos farmacéuticos y otros productos. <br>
+
+
+        <p style="margin-left: 6em;"> <b> Ventajas para la agricultura: </b>
+
+        <p style="margin-left: 8em;"> El cultivo de sorgo ofrece importantes ventajas para la agricultura brasileña:
+
+        <p style="margin-left: 10em;">
+            <b> Resistencia a la sequía: </b> Adaptado a condiciones climáticas secas, el sorgo resiste sequías
+            prolongadas
+            con
+            más grande
+            eficiencia que otros cereales, como el maíz. <br>
+            <b> Tolerancia a suelos salinos: </b> El sorgo es tolerante a suelos salinos y degradados, lo que permite
+            su producción
+            en zonas con condiciones de suelo adversas. <br>
+            <b> Menor necesidad de insumos: </b> El sorgo requiere menos pesticidas y fertilizantes que otros cereales.
+            contribuyendo
+            para la agricultura sostenible y la preservación del medio ambiente. <br>
+            <b> Ciclo de cultivo corto: </b> El sorgo tiene un ciclo de cultivo corto, permitiendo más de una cosecha
+            por
+            cosecha.
+            año en algunos
+            regiones. <br>
+
+        <p style="margin-left: 6em;"> <b> Un cereal nutritivo: </b>
+
+        <p style="margin-left: 8em;">El sorgo es un alimento rico en nutrientes, como:
+
+        <p style="margin-left: 10em;">
+            <b> Carbohidratos: </b> Fuente de energía para el organismo. <br>
+            <b> Proteínas: </b> Importantes para el desarrollo y reparación de los tejidos musculares. <br>
+            <b> Fibras: </b> Ayudan a la digestión, regulan el intestino y favorecen la saciedad. <br>
+            <b> Vitaminas: </b> Rica en vitaminas del grupo B, como B1, B2 y B6, importantes para el metabolismo.
+            energía, el sistema nervioso y la función muscular. <br>
+            <b>Minerales: </b>Fuente de hierro, fósforo, magnesio y potasio, minerales esenciales para el buen
+            funcionamiento del
+            cuerpo. <br>
+
+        <p style="margin-left: 6em;"> <b>Beneficios para la salud:</b>
+
+        <p style="margin-left: 8em;">El consumo regular de sorgo puede aportar varios beneficios para la salud, como:
+
+        <p style="margin-left: 10em;"> <b>Prevenir enfermedades crónicas: </b> Ayuda en la prevención de enfermedades
+            crónicas como
+            diabetes tipo 2, enfermedades cardíacas y
+            algunos tipos de cáncer. <br>
+            <b> Controlar el colesterol: </b> La fibra presente en el sorgo ayuda a reducir el colesterol LDL ("malo"),
+            disminuyendo el
+            riesgo de enfermedad cardíaca. <br>
+            <b>Mejora la digestión:</b>Las fibras también ayudan a regular los intestinos y previenen el estreñimiento.
+            Fortalecer el sistema inmunológico: Rico en vitaminas y minerales, el sorgo ayuda a fortalecer el sistema.
+            inmunológico,
+            protegiendo el cuerpo contra enfermedades. <br>
+            <b> Promueve la saciedad: </b> Las fibras y proteínas del sorgo promueven la saciedad, ayudando a controlar
+            Peso
+            cuerpo. <br>
+
+
+        <p style="margin-left: 6em;"> <b> Un futuro sostenible: </b>
+
+        <p style="margin-left: 8em;">El sorgo desempeña un papel crucial en la construcción de un futuro más sostenible
+            para la agricultura
+            Brasileño:
+
+        <p style="margin-left: 10em;"> <b> Seguridad alimentaria: </b> Contribuye a la seguridad alimentaria del país,
+            diversificar la producción de cereales y
+            asegurar la disponibilidad de alimentos nutritivos para la población. <br>
+            <b> Sostenibilidad ambiental: </b> Promueve la sostenibilidad ambiental de la agricultura, a través de una
+            menor
+            utilización de
+            insumos y adaptabilidad a diferentes condiciones climáticas. <br>
+            <b> Ingresos para los agricultores: </b> Genera ingresos para los agricultores, especialmente en áreas con
+            condiciones
+            clima
+            condiciones adversas o suelos degradados. <br>
+        <p style="margin-left: 6em;">El sorgo es un cereal prometedor con un gran potencial para el futuro de la
+            agricultura
+            Brasileño.
+
+            Su adaptabilidad, versatilidad, beneficios nutricionales e impacto positivo en la sostenibilidad lo
+            convierten
+            en un
+            opción
+            atractivo para los agricultores, los consumidores y el medio ambiente.
+            <br>
+            <br>
+            <hr class="rounded">
+    </div>
 </div>

@@ -69,7 +69,7 @@ export class HeaderComponent implements OnInit {
       this.data = data;
     }
     );
-    this.headerLanguageService.setDataLanguage({ name: 'International Commodities', age: 0, language: this.idiomaActive });
+    this.headerLanguageService.setDataLanguage({ name: 'Agro Kelvy - Commodity Representation', age: 0, language: this.idiomaActive });
     //this.languageEnglishActive = false
   }
 
@@ -117,7 +117,7 @@ export class HeaderComponent implements OnInit {
       this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
       this.idiomaAnterior = this.data.language
 
-      this.headerLanguageService.setDataLanguage({ name: 'Agro Kelvy 商品代表', age: 0, language: 'chinese' });
+      this.headerLanguageService.setDataLanguage({ name: 'Agro Kelvy - 商品代表', age: 0, language: 'chinese' });
       this.home = '家'
       this.service = '服务'
       this.contact = '接触'
@@ -265,7 +265,7 @@ export class HeaderComponent implements OnInit {
       this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
       this.idiomaAnterior = this.data.language
 
-      this.headerLanguageService.setDataLanguage({ name: 'Agro Kelvy Commodity Representation', age: 30, language: 'english' });
+      this.headerLanguageService.setDataLanguage({ name: 'Agro Kelvy - Commodity Representation', age: 30, language: 'english' });
       this.home = 'Home'
       this.service = 'Service'
       this.contact = 'Contact us'
@@ -417,7 +417,7 @@ export class HeaderComponent implements OnInit {
         this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
         this.idiomaAnterior = this.data.language
 
-        this.headerLanguageService.setDataLanguage({ name: 'Agro Kelvy Representação de Commodities', age: 30, language: 'portuguese' });
+        this.headerLanguageService.setDataLanguage({ name: 'Agro Kelvy - Representação de Commodities', age: 30, language: 'portuguese' });
         this.home = 'Home'
         this.service = 'Serviços'
         this.contact = 'Contato'
@@ -568,7 +568,7 @@ export class HeaderComponent implements OnInit {
         this.headerLanguageService.getDataLanguage().subscribe((data) => { this.data = data })
         this.idiomaAnterior = this.data.language
 
-        this.headerLanguageService.setDataLanguage({ name: 'Representación de productos básicos de Agro Kelvy', age: 0, language: 'spanish' });
+        this.headerLanguageService.setDataLanguage({ name: 'Agro Kelvy - Representación de productos básicos ', age: 0, language: 'spanish' });
         this.home = 'Hogar'
         this.service = 'Servicio'
         this.contact = 'Contacto'

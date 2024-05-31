@@ -1,31 +1,25 @@
-.slick-prev::before, .slick-next::before{
-    color: black !important;
-}
-
-.img-style {
-    margin-left: auto;
-    margin-right: auto;
-    height: 250px;
-    width: 250px;
-    
-}
-
-@media (max-width:  992){
-    .img-style{
+@media (max-width: 992) {
+    .img-style {
         margin-left: 10px !important;
         margin-right: 10px !important;
     }
-    
+
 }
 
-#h1Home {
-    display: flex; 
-    margin-left: 3%; 
+#divCarousel {
+    margin-left: 3%;
     margin-right: 3%;
+    margin-top: 50px;
 }
 
 #divHome {
-    margin-left: 3%; 
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 20px;
+}
+
+#divHomeComMenu {
+    margin-left: 3%;
     margin-right: 3%;
     margin-top: 20px;
 }
@@ -34,19 +28,76 @@
     margin-top: 30px;
 }
 
-#divCarousel {
-    margin-left: 3%; 
-    margin-right: 3%; 
-    margin-top: 50px;
+#h1Home {
+    display: flex;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-.textFont {
-    margin-left: 150px; 
-    width: 83%; 
-    font-size: medium;
+#pagHome {
+    background-color: rgb(213, 250, 213);
 }
+
+
+.container {
+    background-color: rgb(213, 250, 213);
+  }
+
+  .content {
+    border: none;
+    padding: .5em;
+    
+    white-space: pre-wrap;
+    height: 100vh;
+    /*overflow: hidden;        /* SEM SCROLL */
+    overflow-y: scroll;    /* COM SCROLL VERTICAL */
+    /*overflow-x: scroll;    /* COM SCROLL HORIZONTAL */
+  }
+  
+  .content::-webkit-scrollbar { 
+    display: none;
+  }  
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-bottom: 8px solid #719c71;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: 0.1%;
+}
+
 
 hr.rounded {
     border-top: 8px solid #dff7df;
     border-radius: 5px;
-  }
+}
+
+.img-style {
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: black !important;
+}
+
+
+
+.textFont {
+    margin-left: 150px;
+    width: 83%;
+    font-size: medium;
+}
+
+.carousel {
+    display: block;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(213, 250, 213);
+}

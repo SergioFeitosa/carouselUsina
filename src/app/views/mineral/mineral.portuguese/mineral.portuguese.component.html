@@ -1,95 +1,104 @@
-<h1 id="h1Home">Mineral</h1>
-<div id="divCarousel">
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-<div class="textFont">
-    <p style="margin-left: 6em;"> <b> Minerais: </b> Tesouros Escondidos da Terra <br>
-
-    <p style="margin-left: 8em;">
-        Os minerais, elementos naturais e inorgânicos sólidos com estrutura cristalina definida, são essenciais para a
-        vida na Terra. <br>
-        Presentes na crosta terrestre, eles são explorados e processados para diversos fins, como:
-
-    <p style="margin-left: 10em;">
-        <b> Construção civil: </b> Agregados para concreto, cimento, gesso, argila, areia e pedras ornamentais. <br>
-        <b> Metalurgia: </b> Ferro, alumínio, cobre, zinco, níquel, chumbo, ouro, prata e outros metais. <br>
-        <b> Produção de bens de consumo: </b> Vidro, cerâmica, eletrodomésticos, eletrônicos, veículos e outros
-        produtos. <br>
-        <b> Agricultura: </b> Fertilizantes, agrotóxicos e micronutrientes essenciais para o crescimento das plantas.
-        <br>
-        <b> Geração de energia: </b> Carvão, urânio e outros minerais utilizados em usinas de energia.
-
-    <p style="margin-left: 6em;"> <b> Tipos de Minerais: </b>
-
-    <p style="margin-left: 8em;">
-        Os minerais podem ser classificados em dois grandes grupos:
-
-    <p style="margin-left: 10em;">
-        <b> Minerais metálicos: </b> Contêm metais em sua composição, como ferro, alumínio, cobre, zinco, níquel,
-        chumbo,
-        ouro e prata. <br>
-        <b> Minerais não metálicos: </b> Não contêm metais em sua composição, como quartzo, calcário, gipsita, sal-gema,
-        argila e areia.
-
-    <p style="margin-left: 6em;"> <b> Exploração Mineral no Brasil: </b>
-
-    <p style="margin-left: 8em;">
-        O Brasil possui um vasto potencial mineral em seu território, com jazidas de diversos tipos de minerais. <br>
-        A exploração mineral é uma atividade importante para a economia brasileira, gerando renda, empregos e
-        investimentos
-        no país. <br>
-        No entanto, a exploração mineral também pode trazer impactos ambientais e sociais, como:
-
-    <p style="margin-left: 10em;">
-        <b> Desmatamento: </b> Abertura de novas áreas de exploração mineral pode levar ao desmatamento e à perda de
-        biodiversidade. <br>
-        <b> Poluição: </b> A exploração e o processamento de minerais podem gerar poluição do ar, da água e do solo.
-        <br>
-        <b> Degradação do solo: </b> A atividade mineradora pode causar a degradação do solo, tornando-o improdutivo
-        para a agricultura. <br>
-        <b> Conflitos sociais: </b> A exploração mineral pode gerar conflitos sociais entre empresas mineradoras e
-        comunidades locais. <br>
-
-    <p style="margin-left: 6em;"> <b> Mineração Sustentável: </b>
-
-    <p style="margin-left: 8em;">
-        É fundamental buscar práticas de mineração sustentável que minimizem os impactos ambientais e sociais da
-        atividade. <br>
-
-        Isso inclui:
-
-    <p style="margin-left: 10em;">
-        <b> Planejamento ambiental rigoroso: </b> Realização de estudos de impacto ambiental e adoção de medidas para
-        mitigar
-        os impactos da mineração. <br>
-        <b> Recuperação de áreas degradadas: </b> Restauração das áreas degradadas pela atividade mineradora após o
-        término
-        da exploração. <br>
-        <b> Diálogo com comunidades locais: </b> Estabelecimento de um diálogo transparente com as comunidades locais
-        para
-        garantir seus direitos e minimizar os impactos da mineração em suas vidas. <br>
-        <b> Investimentos em tecnologia: </b> Investimento em tecnologias que minimizem o impacto ambiental da
-        mineração,
-        como a reutilização da água e o controle de emissões de poluentes. <br>
-
-    <p style="margin-left: 6em;">
-        Os minerais são recursos naturais finitos, por isso é essencial usá-los de forma responsável e sustentável. <br>
-        Ao investir em práticas de mineração sustentável, podemos garantir que esses recursos continuem a beneficiar
-        as gerações presentes e futuras, sem comprometer o meio ambiente e o bem-estar das comunidades.
+<div id="pagHome" class="content">
+    <h1 id="h1Home">Mineral</h1>
+    <div id="divCarousel">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
         <br>
         <br>
-        <hr class="rounded">
+    </div>
+    <div class="textFont">
+        <p style="margin-left: 6em;"> <b> Minerais: </b> Tesouros Escondidos da Terra <br>
+
+        <p style="margin-left: 8em;">
+            Os minerais, elementos naturais e inorgânicos sólidos com estrutura cristalina definida, são essenciais para
+            a
+            vida na Terra. <br>
+            Presentes na crosta terrestre, eles são explorados e processados para diversos fins, como:
+
+        <p style="margin-left: 10em;">
+            <b> Construção civil: </b> Agregados para concreto, cimento, gesso, argila, areia e pedras ornamentais. <br>
+            <b> Metalurgia: </b> Ferro, alumínio, cobre, zinco, níquel, chumbo, ouro, prata e outros metais. <br>
+            <b> Produção de bens de consumo: </b> Vidro, cerâmica, eletrodomésticos, eletrônicos, veículos e outros
+            produtos. <br>
+            <b> Agricultura: </b> Fertilizantes, agrotóxicos e micronutrientes essenciais para o crescimento das
+            plantas.
+            <br>
+            <b> Geração de energia: </b> Carvão, urânio e outros minerais utilizados em usinas de energia.
+
+        <p style="margin-left: 6em;"> <b> Tipos de Minerais: </b>
+
+        <p style="margin-left: 8em;">
+            Os minerais podem ser classificados em dois grandes grupos:
+
+        <p style="margin-left: 10em;">
+            <b> Minerais metálicos: </b> Contêm metais em sua composição, como ferro, alumínio, cobre, zinco, níquel,
+            chumbo,
+            ouro e prata. <br>
+            <b> Minerais não metálicos: </b> Não contêm metais em sua composição, como quartzo, calcário, gipsita,
+            sal-gema,
+            argila e areia.
+
+        <p style="margin-left: 6em;"> <b> Exploração Mineral no Brasil: </b>
+
+        <p style="margin-left: 8em;">
+            O Brasil possui um vasto potencial mineral em seu território, com jazidas de diversos tipos de minerais.
+            <br>
+            A exploração mineral é uma atividade importante para a economia brasileira, gerando renda, empregos e
+            investimentos
+            no país. <br>
+            No entanto, a exploração mineral também pode trazer impactos ambientais e sociais, como:
+
+        <p style="margin-left: 10em;">
+            <b> Desmatamento: </b> Abertura de novas áreas de exploração mineral pode levar ao desmatamento e à perda de
+            biodiversidade. <br>
+            <b> Poluição: </b> A exploração e o processamento de minerais podem gerar poluição do ar, da água e do solo.
+            <br>
+            <b> Degradação do solo: </b> A atividade mineradora pode causar a degradação do solo, tornando-o improdutivo
+            para a agricultura. <br>
+            <b> Conflitos sociais: </b> A exploração mineral pode gerar conflitos sociais entre empresas mineradoras e
+            comunidades locais. <br>
+
+        <p style="margin-left: 6em;"> <b> Mineração Sustentável: </b>
+
+        <p style="margin-left: 8em;">
+            É fundamental buscar práticas de mineração sustentável que minimizem os impactos ambientais e sociais da
+            atividade. <br>
+
+            Isso inclui:
+
+        <p style="margin-left: 10em;">
+            <b> Planejamento ambiental rigoroso: </b> Realização de estudos de impacto ambiental e adoção de medidas
+            para
+            mitigar
+            os impactos da mineração. <br>
+            <b> Recuperação de áreas degradadas: </b> Restauração das áreas degradadas pela atividade mineradora após o
+            término
+            da exploração. <br>
+            <b> Diálogo com comunidades locais: </b> Estabelecimento de um diálogo transparente com as comunidades
+            locais
+            para
+            garantir seus direitos e minimizar os impactos da mineração em suas vidas. <br>
+            <b> Investimentos em tecnologia: </b> Investimento em tecnologias que minimizem o impacto ambiental da
+            mineração,
+            como a reutilização da água e o controle de emissões de poluentes. <br>
+
+        <p style="margin-left: 6em;">
+            Os minerais são recursos naturais finitos, por isso é essencial usá-los de forma responsável e sustentável.
+            <br>
+            Ao investir em práticas de mineração sustentável, podemos garantir que esses recursos continuem a beneficiar
+            as gerações presentes e futuras, sem comprometer o meio ambiente e o bem-estar das comunidades.
+            <br>
+            <br>
+            <hr class="rounded">
+    </div>
 </div>

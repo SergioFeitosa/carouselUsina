@@ -1,96 +1,108 @@
-<h1 id="h1Home">Milho</h1>
-<div id="divCarousel">
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-<div class="textFont">
-
-    <p style="margin-left: 6em;"> <b> Milho: </b> O Ouro Vegetal do Brasil <br>
-    <p style="margin-left: 8em;">
-        O milho, um cereal milenar e versátil, se destaca como um dos pilares da agricultura brasileira. <br>
-        Cultivado em diversas regiões do país, o milho se tornou um dos principais produtos agrícolas do Brasil, com
-        grande importância para a economia, a cultura e a alimentação da população.
-
-    <p style="margin-left: 6em;"> <b> Muito Além de Grãos: </b>
-
-    <p style="margin-left: 8em;">
-        O milho vai além do simples grão dourado. Ele é utilizado em diversos segmentos da indústria, como:
-
-    <p style="margin-left: 10em;">
-        <b> Alimentação humana: </b> Grãos frescos, farinha de milho, fubá, óleo de milho, flocos de milho, popcorn,
-        amido de
-        milho, etc. <br>
-        <b> Ração animal: </b> Fonte de energia e nutrientes para a criação de gado, suínos, aves e outros animais. <br>
-        <b> Biocombustíveis: </b> Produção de etanol, um combustível renovável e sustentável para veículos automotores.
-        <br>
-        <b> Indústria: </b> Produção de plásticos, borracha, produtos farmacêuticos, cosméticos e outros produtos. <br>
-
-    <p style="margin-left: 6em;">
-        <b> Importância para a Economia Brasileira: </b>
-
-    <p style="margin-left: 8em;">
-        O Brasil é o maior produtor e exportador de milho do mundo, respondendo por cerca de um terço da produção
-        global. <br>
-        A produção de milho gera milhões de empregos diretos e indiretos no país, contribuindo significativamente para o
-        desenvolvimento socioeconômico das regiões produtoras. <br>
-
-    <p style="margin-left: 6em;"> <b> Um Cereal Nutritivo: </b>
-
-    <p style="margin-left: 8em;"> O milho é um alimento rico em nutrientes, como:
-
-    <p style="margin-left: 10em;">
-        <b> Carboidratos: </b> Fonte de energia para o corpo. <br>
-        <b> Proteínas: </b> Importantes para o desenvolvimento e reparo dos tecidos musculares. <br>
-        <b> Fibras: </b> Auxiliam na digestão, regulam o intestino e promovem a saciedade. <br>
-        <b> Vitaminas: </b> Rico em vitaminas do complexo B, como B1, B2 e B5, importantes para o metabolismo
-        energético, o
-        sistema nervoso e a função muscular. <br>
-        <b> Minerais: </b> Fonte de ferro, fósforo, magnésio e potássio, minerais essenciais para o bom funcionamento do
-        organismo. <br>
-
-    <p style="margin-left: 6em;"> <b> Benefícios para a Saúde: </b>
-
-    <p style="margin-left: 8em;"> O consumo regular de milho pode trazer diversos benefícios para a saúde, como: <br>
-
-    <p style="margin-left: 10em;"> <b> Prevenir doenças crônicas: </b> Auxilia na prevenção de doenças crônicas como
-        diabetes tipo 2, doenças cardíacas e
-        alguns tipos de câncer. <br>
-        <b> Controlar o colesterol: </b> As fibras presentes no milho ajudam a reduzir o colesterol LDL ("ruim"),
-        diminuindo o
-        risco de doenças cardíacas. <br>
-        <b> Melhorar a digestão: </b> As fibras também auxiliam na regulação do intestino e previnem a constipação. <br>
-        <b> Fortalecer o sistema imunológico: </b> Rico em vitaminas e minerais, o milho ajuda a fortalecer o sistema
-        imunológico, protegendo o organismo contra doenças. <br>
-        <b> Promover a saciedade: </b> As fibras e proteínas do milho promovem a saciedade, auxiliando no controle do
-        peso
-        corporal. <br> <br>
-
-
-    <p style="margin-left: 6em;"> <b> Um Futuro Promissor: </b>
-
-    <p style="margin-left: 8em;">O milho continuará a ser um produto de grande importância para o Brasil, com potencial
-        para crescer ainda mais
-        nas próximas décadas. <br>
-
-        Investimentos em pesquisa e desenvolvimento, inovação tecnológica e sustentabilidade são essenciais para
-        garantir a competitividade do milho brasileiro no mercado global e para atender à crescente demanda por esse
-        cereal nutritivo e versátil. <br>
-
-        O milho é um verdadeiro ouro vegetal, que enriquece a mesa dos brasileiros, impulsiona a economia do país e
-        oferece diversos benefícios para a saúde.
+<div id="pagHome" class="content">
+    <h1 id="h1Home">Milho</h1>
+    <div id="divCarousel">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
         <br>
         <br>
-        <hr class="rounded">
+    </div>
+    <div class="textFont">
+
+        <p style="margin-left: 6em;"> <b> Milho: </b> O Ouro Vegetal do Brasil <br>
+        <p style="margin-left: 8em;">
+            O milho, um cereal milenar e versátil, se destaca como um dos pilares da agricultura brasileira. <br>
+            Cultivado em diversas regiões do país, o milho se tornou um dos principais produtos agrícolas do Brasil, com
+            grande importância para a economia, a cultura e a alimentação da população.
+
+        <p style="margin-left: 6em;"> <b> Muito Além de Grãos: </b>
+
+        <p style="margin-left: 8em;">
+            O milho vai além do simples grão dourado. Ele é utilizado em diversos segmentos da indústria, como:
+
+        <p style="margin-left: 10em;">
+            <b> Alimentação humana: </b> Grãos frescos, farinha de milho, fubá, óleo de milho, flocos de milho, popcorn,
+            amido de
+            milho, etc. <br>
+            <b> Ração animal: </b> Fonte de energia e nutrientes para a criação de gado, suínos, aves e outros animais.
+            <br>
+            <b> Biocombustíveis: </b> Produção de etanol, um combustível renovável e sustentável para veículos
+            automotores.
+            <br>
+            <b> Indústria: </b> Produção de plásticos, borracha, produtos farmacêuticos, cosméticos e outros produtos.
+            <br>
+
+        <p style="margin-left: 6em;">
+            <b> Importância para a Economia Brasileira: </b>
+
+        <p style="margin-left: 8em;">
+            O Brasil é o maior produtor e exportador de milho do mundo, respondendo por cerca de um terço da produção
+            global. <br>
+            A produção de milho gera milhões de empregos diretos e indiretos no país, contribuindo significativamente
+            para o
+            desenvolvimento socioeconômico das regiões produtoras. <br>
+
+        <p style="margin-left: 6em;"> <b> Um Cereal Nutritivo: </b>
+
+        <p style="margin-left: 8em;"> O milho é um alimento rico em nutrientes, como:
+
+        <p style="margin-left: 10em;">
+            <b> Carboidratos: </b> Fonte de energia para o corpo. <br>
+            <b> Proteínas: </b> Importantes para o desenvolvimento e reparo dos tecidos musculares. <br>
+            <b> Fibras: </b> Auxiliam na digestão, regulam o intestino e promovem a saciedade. <br>
+            <b> Vitaminas: </b> Rico em vitaminas do complexo B, como B1, B2 e B5, importantes para o metabolismo
+            energético, o
+            sistema nervoso e a função muscular. <br>
+            <b> Minerais: </b> Fonte de ferro, fósforo, magnésio e potássio, minerais essenciais para o bom
+            funcionamento do
+            organismo. <br>
+
+        <p style="margin-left: 6em;"> <b> Benefícios para a Saúde: </b>
+
+        <p style="margin-left: 8em;"> O consumo regular de milho pode trazer diversos benefícios para a saúde, como:
+            <br>
+
+        <p style="margin-left: 10em;"> <b> Prevenir doenças crônicas: </b> Auxilia na prevenção de doenças crônicas como
+            diabetes tipo 2, doenças cardíacas e
+            alguns tipos de câncer. <br>
+            <b> Controlar o colesterol: </b> As fibras presentes no milho ajudam a reduzir o colesterol LDL ("ruim"),
+            diminuindo o
+            risco de doenças cardíacas. <br>
+            <b> Melhorar a digestão: </b> As fibras também auxiliam na regulação do intestino e previnem a constipação.
+            <br>
+            <b> Fortalecer o sistema imunológico: </b> Rico em vitaminas e minerais, o milho ajuda a fortalecer o
+            sistema
+            imunológico, protegendo o organismo contra doenças. <br>
+            <b> Promover a saciedade: </b> As fibras e proteínas do milho promovem a saciedade, auxiliando no controle
+            do
+            peso
+            corporal. <br> <br>
+
+
+        <p style="margin-left: 6em;"> <b> Um Futuro Promissor: </b>
+
+        <p style="margin-left: 8em;">O milho continuará a ser um produto de grande importância para o Brasil, com
+            potencial
+            para crescer ainda mais
+            nas próximas décadas. <br>
+
+            Investimentos em pesquisa e desenvolvimento, inovação tecnológica e sustentabilidade são essenciais para
+            garantir a competitividade do milho brasileiro no mercado global e para atender à crescente demanda por esse
+            cereal nutritivo e versátil. <br>
+
+            O milho é um verdadeiro ouro vegetal, que enriquece a mesa dos brasileiros, impulsiona a economia do país e
+            oferece diversos benefícios para a saúde.
+            <br>
+            <br>
+            <hr class="rounded">
+    </div>
 </div>

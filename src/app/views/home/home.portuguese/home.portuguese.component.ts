@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-home.portuguese',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.portuguese.component.scss'
 })
 export class HomePortugueseComponent {
+
+  @Input() sidebarActive: boolean = false;
 
 }

@@ -1,71 +1,73 @@
-<h1 id="h1Home">雞</h1>
-<div id="divCarousel">
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-<div class="textFont">
-    <p style="margin-left: 6em;"> <b> 雞肉介紹：</b>
+<div id="pagHome" class="content">
+    <h1 id="h1Home">雞</h1>
+    <div id="divCarousel">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
+        <br>
+        <br>
+    </div>
+    <div class="textFont">
+        <p style="margin-left: 6em;"> <b> 雞肉介紹：</b>
         <p style="margin-left: 8em;">
-        餐桌上的多功能性和風味
-        雞（Gallus gallus Domesticus）是一種家禽，因其肉質鮮美而受到全世界的喜愛，
-        用途廣泛且營養豐富。它的創建提供了多種切割選項來滿足您的需求
-        烹飪。
-       
+            餐桌上的多功能性和風味
+            雞（Gallus gallus Domesticus）是一種家禽，因其肉質鮮美而受到全世界的喜愛，
+            用途廣泛且營養豐富。它的創建提供了多種切割選項來滿足您的需求
+            烹飪。
+
         <p style="margin-left: 6em;"> <b> 雞肉切塊：</b>
-       
+
         <p style="margin-left: 8em;">
-        <b> 牛胸肉：</b> 瘦肉，富含蛋白質，非常適合燒烤、烘烤或煎炸。 <br>
-        <b> 大腿：</b> 切塊時脂肪較多，味道較佳，非常適合烤、燉或燉。 <br>
-        <b> 大腿：</b> 美味多汁的切塊，非常適合烘烤、煎炸或製作 moqueca。 <br>
-        <b> 雞翅：</b> 流行的切法，適合煎炸、烘烤或燒烤，並且可以用不同的方式調味。 <br>
-        <b> Drumet：</b> 雞翅的一部分，肉較多，非常適合烘烤、煎炸或製作零食。 <br>
-        <b> 砂囊：</b> 質地鬆脆的器官，非常適合燉菜、燉菜或火鍋。 <br>
-        <b> 肝臟：</b> 內臟富含鐵和維生素，非常適合燉菜、肉醬或餡料。 <br>
-        <b> 心：</b> 內臟，質地堅實，味道濃鬱，非常適合炒菜、烤肉串或烤肉。
-        <br>
-       
+            <b> 牛胸肉：</b> 瘦肉，富含蛋白質，非常適合燒烤、烘烤或煎炸。 <br>
+            <b> 大腿：</b> 切塊時脂肪較多，味道較佳，非常適合烤、燉或燉。 <br>
+            <b> 大腿：</b> 美味多汁的切塊，非常適合烘烤、煎炸或製作 moqueca。 <br>
+            <b> 雞翅：</b> 流行的切法，適合煎炸、烘烤或燒烤，並且可以用不同的方式調味。 <br>
+            <b> Drumet：</b> 雞翅的一部分，肉較多，非常適合烘烤、煎炸或製作零食。 <br>
+            <b> 砂囊：</b> 質地鬆脆的器官，非常適合燉菜、燉菜或火鍋。 <br>
+            <b> 肝臟：</b> 內臟富含鐵和維生素，非常適合燉菜、肉醬或餡料。 <br>
+            <b> 心：</b> 內臟，質地堅實，味道濃鬱，非常適合炒菜、烤肉串或烤肉。
+            <br>
+
         <p style="margin-left: 6em;"> <b>雞肉的好處：</b>
-       
+
         <p style="margin-left: 8em;">
-        <b>營養：</b>肉類富含蛋白質、維生素和礦物質，飽和脂肪含量低。 <br>
-        <b> 多功能性：</b> 各種切法以滿足您的烹飪需求和喜好。 <br>
-        <b>味道：</b>美味的肉，可以用不同的方式調味。 <br>
-        <b>價格：</b>實惠又划算的肉。 <br>
-        <b>永續性：</b> 與其他肉類相比，對環境的影響較小。 <br>
-       
+            <b>營養：</b>肉類富含蛋白質、維生素和礦物質，飽和脂肪含量低。 <br>
+            <b> 多功能性：</b> 各種切法以滿足您的烹飪需求和喜好。 <br>
+            <b>味道：</b>美味的肉，可以用不同的方式調味。 <br>
+            <b>價格：</b>實惠又划算的肉。 <br>
+            <b>永續性：</b> 與其他肉類相比，對環境的影響較小。 <br>
+
         <p style="margin-left: 6em;"> <b> 準備雞肉的技巧：</b>
-       
+
         <p style="margin-left: 8em;">
-        <b> 衛生：</b> 在處理雞肉之前，請徹底清洗雙手和器皿。 <br>
-        <b>烹調：</b>將雞肉煮至完全煮熟，以免生病。 <br>
-        <b>調味料：</b>探索不同的調味料來改變雞肉的味道。 <br>
-        <b>創意：</b>嘗試新的食譜和雞肉切法以使您的菜單多樣化。 <br>
-       
+            <b> 衛生：</b> 在處理雞肉之前，請徹底清洗雙手和器皿。 <br>
+            <b>烹調：</b>將雞肉煮至完全煮熟，以免生病。 <br>
+            <b>調味料：</b>探索不同的調味料來改變雞肉的味道。 <br>
+            <b>創意：</b>嘗試新的食譜和雞肉切法以使您的菜單多樣化。 <br>
+
         <p style="margin-left: 6em;"> <b> 結論：</b>
-       
+
         <p style="margin-left: 8em;">
-        雞肉是營養、美味且價格實惠的飲食的絕佳選擇。以其多樣化的
-        雞肉是一種多功能食材，可以滿足所有人的需求。
-        味覺。
-       
+            雞肉是營養、美味且價格實惠的飲食的絕佳選擇。以其多樣化的
+            雞肉是一種多功能食材，可以滿足所有人的需求。
+            味覺。
+
         <p style="margin-left: 6em;"><b>了解更多：</b>
-       
+
         <p style="margin-left: 8em;">巴西動物蛋白協會 (ABPA)：[[已刪除無效 URL]]([URL
-        無效已刪除]）
-        農業、畜牧業和供應部 (MAPA)：https://www.gov.br/agricultura/pt-br
-        <br>
-        <br>
-        <hr class="rounded">
+            無效已刪除]）
+            農業、畜牧業和供應部 (MAPA)：https://www.gov.br/agricultura/pt-br
+            <br>
+            <br>
+            <hr class="rounded">
+    </div>
 </div>
