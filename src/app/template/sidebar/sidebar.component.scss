@@ -1,22 +1,29 @@
 #sidebar {
-    height: 100vh;
-    box-shadow: 5px 4px 4px #97be97;
-    border-right: 1px solid rgb(151, 190, 151);
+
     width: 200px;
-    background-color: rgb(31, 101, 31);
-    padding-top: 100px;
+    #vazio {
+        background-color: #1f661f;
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+    
+    }
+
     #menu {
         display: flex;
         flex-direction: column;
-        padding-top: 100px;
-        a {
+        margin-top: 100px;
+        button {
             text-decoration: none;
-            color: #333;
+            color: #50f8e2;
             border-bottom: 1px solid #ccc;
             padding: 15px 20px;
+            width: 200px;
+            justify-content: flex-start;
 
             &:hover {
                 background-color: #cff5cf;
+                color: #1f661f;
 
             }
         }
@@ -24,21 +31,28 @@
 }
 
 #title {
-    align-self: start;;
-    color: rgb(80, 248, 226);
+    align-self: start;
+    color: #50f8e2;
 }
 
 #subItem {
+    text-decoration: none;
+    color: #50f8e2;
+    border-bottom: 1px solid #ccc;
     width: 200px;
-    padding-left: 40px;;
+    padding-left: 40px;
     font-size: 5px;
     background-color: #1f661f;
-    color: #50f8e2;
+    &:hover {
+        background-color: #cff5cf;
+        color: #1f661f;
+    }
 
 }
 
-#iconSpace{
-    padding-right: 15px;;
+#iconSpace {
+    padding-right: 15px;
+    ;
 }
 
 #textSubItem {
@@ -54,28 +68,31 @@
 
 .figureInicial {
     position: relative;
-  }
-  .figureSombra {
+}
+
+.figureSombra {
     position: absolute;
     padding-top: 100px;
     background-color: #1f661f;
-    width:200px;
-    height:100%;
-  }
-  .figure {
+    width: 200px;
+    height: 100%;
+}
+
+.figure {
     position: absolute;
     top: 100px;
     background-color: #1f661f;
-  }
-  .figurexz {
+}
+
+.figurexz {
     position: fixed;
     align-items: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 60%;
-        height:auto;
-        text-align:center;
-  }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    height: auto;
+    text-align: center;
+}
 

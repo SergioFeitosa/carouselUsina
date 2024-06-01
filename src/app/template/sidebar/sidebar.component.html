@@ -1,7 +1,8 @@
 <div id="sidebar">
+    <div id="vazio">
+    </div>
     <div id="menu">
-
-        <div *ngIf="this.languageChineseActive" class= "figure">
+        <div *ngIf="this.languageChineseActive" class="figure">
             <div class="figureSombra"> </div>
             <!-- Menu chines -->
             <button mat-button routerLink="home/chinese" id="title">
@@ -18,41 +19,41 @@
             </button>
             <mat-menu #menu1="matMenu">
                 <button mat-menu-item routerLink="acucar/chinese" id="subItem">
-                    <span id="textSubItemGrande">糖</span>
+                    <span id="textSubItemGrande">糖 </span>
                 </button>
                 <button mat-menu-item routerLink="algodao/chinese" id="subItem">
-                    <span id="textSubItem">棉布</span>
+                    棉布
                 </button>
                 <button mat-menu-item routerLink="cafe/chinese" id="subItem">
-                    <span id="textSubItem">咖啡</span>
+                    咖啡
                 </button>
                 <button mat-menu-item routerLink="canadeacucar/chinese" id="subItem">
-                    <span id="textSubItemGrande">甘蔗</span>
+                    <span id="textSubItemGrande">甘蔗 </span>
                 </button>
                 <button mat-menu-item routerLink="etanol/chinese" id="subItem">
-                    <span id="textSubItem">乙醇</span>
+                    乙醇
                 </button>
                 <button mat-menu-item routerLink="feijaopreto/chinese" id="subItem">
-                    <span id="textSubItem">黑豆</span>
+                    黑豆
                 </button>
                 <button mat-menu-item routerLink="milho/chinese" id="subItem">
-                    <span id="textSubItem">玉米</span>
+                    玉米
                 </button>
                 <button mat-menu-item routerLink="soja/chinese" id="subItem">
-                    <span id="textSubItem">大豆</span>
+                    大豆
                 </button>
                 <button mat-menu-item routerLink="sorgo/chinese" id="subItem">
-                    <span id="textSubItem">高粱</span>
+                    高粱
                 </button>
                 <button mat-menu-item routerLink="trigo/chinese" id="subItem">
-                    <span id="textSubItem">小麥</span>
+                    小麥
                 </button>
             </mat-menu>
             <button mat-button [matMenuTriggerFor]="menu2" id="title" routerLink="frango/chinese">
                 <i class="material-icons" id="iconSpace">
                     storefront
                 </i>
-                <span>雞</span>
+                <span>雞 </span>
             </button>
             <mat-menu #menu2="matMenu">
                 <button mat-menu-item routerLink="asafrango/chinese" id="subItem">
@@ -87,7 +88,7 @@
                 <i class="material-icons" id="iconSpace">
                     hub
                 </i>
-                <span>礦物質&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span>礦物質&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
             </button>
             <mat-menu #menu3="matMenu">
                 <button mat-menu-item routerLink="cobre/chinese" id="subItem">
@@ -130,7 +131,7 @@
     <!-- Menu Ingles -->
 
     <div id="menu">
-        <div *ngIf="this.languageEnglishActive" class= "figure">
+        <div *ngIf="this.languageEnglishActive" class="figure">
             <div class="figureSombra"> </div>
             <button mat-button routerLink="home/english" id="title">
                 <i class="material-icons" id="iconSpace">
@@ -146,23 +147,23 @@
             </button>
             <mat-menu #menu1="matMenu">
                 <button mat-menu-item routerLink="feijaopreto/english" id="subItem">
-                    <span id="textSubItem">Black Bean</span>
+                    Black Bean
                 </button>
                 <button mat-menu-item routerLink="cafe/english" id="subItem">
-                    <span id="textSubItem">Coffee</span>
+                    Coffee
                 </button>
                 <button mat-menu-item routerLink="milho/english" id="subItem">
-                    <span id="textSubItem">Corn</span>
+                    Corn
                 </button>
                 <button mat-menu-item routerLink="algodao/english" id="subItem">
-                    <span id="textSubItem">Cotton</span>
+                    Cotton
 
                 </button>
                 <button mat-menu-item routerLink="etanol/english" id="subItem">
-                    <span id="textSubItem">Ethanol</span>
+                    Ethanol
                 </button>
                 <button mat-menu-item routerLink="soja/english" id="subItem">
-                    <span id="textSubItem">Soy</span>
+                    Soy
                 </button>
                 <button mat-menu-item routerLink="acucar/english" id="subItem">
                     <span id="textSubItemGrande">Sugar</span>
@@ -171,10 +172,10 @@
                     <span id="textSubItemGrande">Sugar Cane</span>
                 </button>
                 <button mat-menu-item routerLink="sorgo/english" id="subItem">
-                    <span id="textSubItem">Sorghum</span>
+                    Sorghum
                 </button>
                 <button mat-menu-item routerLink="trigo/english" id="subItem">
-                    <span id="textSubItem">Wheat</span>
+                    Wheat
                 </button>
             </mat-menu>
 
@@ -195,7 +196,7 @@
                     Chicken feets
                 </button>
                 <button mat-menu-item routerLink="moelafrango/english" id="subItem">
-                    <span style="font-size: smaller;"> Chicken gizzard</span>                    
+                    <span style="font-size: smaller;"> Chicken gizzard</span>
                 </button>
                 <button mat-menu-item routerLink="coracaofrango/english" id="subItem">
                     Chicken heart
@@ -207,7 +208,7 @@
                     Chicken thighs
                 </button>
                 <button mat-menu-item routerLink="sobrecoxafrango/english" id="subItem">
-                    <span style="font-size: smaller;"> Chicken upperleg</span>                    
+                    <span style="font-size: smaller;"> Chicken upperleg</span>
                 </button>
                 <button mat-menu-item routerLink="asafrango/english" id="subItem">
                     Chicken wings
@@ -260,7 +261,7 @@
     <!-- Menu Portugues -->
 
     <div id="menu">
-        <div *ngIf="this.languagePortugueseActive" class= "figure">
+        <div *ngIf="this.languagePortugueseActive" class="figure">
             <div class="figureSombra"> </div>
             <button mat-button routerLink="home/portuguese" id="title">
                 <i class="material-icons" id="iconSpace">
@@ -276,34 +277,34 @@
             </button>
             <mat-menu #menu1="matMenu">
                 <button mat-menu-item routerLink="acucar/portuguese" id="subItem">
-                    <span id="textSubItem">Açucar</span>
+                    Açucar
                 </button>
                 <button mat-menu-item routerLink="algodao/portuguese" id="subItem">
-                    <span id="textSubItem">Algodão</span>
+                    Algodão
                 </button>
                 <button mat-menu-item routerLink="cafe/portuguese" id="subItem">
-                    <span id="textSubItem">Café</span>
+                    Café
                 </button>
                 <button mat-menu-item routerLink="canadeacucar/portuguese" id="subItem">
-                    <span id="textSubItemGrande">Cana de Açucar</span>
+                    Cana de Açucar
                 </button>
                 <button mat-menu-item routerLink="etanol/portuguese" id="subItem">
-                    <span id="textSubItem">Etanol</span>
+                    Etanol
                 </button>
                 <button mat-menu-item routerLink="feijaopreto/portuguese" id="subItem">
-                    <span id="textSubItem">Feijão Preto</span>
+                    Feijão Preto
                 </button>
                 <button mat-menu-item routerLink="milho/portuguese" id="subItem">
-                    <span id="textSubItem">Milho</span>
+                    Milho
                 </button>
                 <button mat-menu-item routerLink="soja/portuguese" id="subItem">
-                    <span id="textSubItem">Soja</span>
+                    Soja
                 </button>
                 <button mat-menu-item routerLink="sorgo/portuguese" id="subItem">
-                    <span id="textSubItem">Sorgo</span>
+                    Sorgo
                 </button>
                 <button mat-menu-item routerLink="trigo/portuguese" id="subItem">
-                    <span id="textSubItem">Trigo</span>
+                    Trigo
                 </button>
             </mat-menu>
 
@@ -389,7 +390,7 @@
     <!-- Menu Espanhol -->
 
     <div id="menu">
-        <div *ngIf="this.languageSpanishActive" class= "figure">
+        <div *ngIf="this.languageSpanishActive" class="figure">
             <div class="figureSombra"> </div>
             <button mat-button routerLink="home/spanish" id="title">
                 <i class="material-icons" id="iconSpace">
@@ -405,42 +406,44 @@
             </button>
             <mat-menu #menu1="matMenu">
                 <button mat-menu-item routerLink="algodao/spanish" id="subItem">
-                    <span id="textSubItem">Algodón</span>
+                    Algodón
 
                 </button>
                 <button mat-menu-item routerLink="acucar/spanish" id="subItem">
                     <span id="textSubItemGrande">Azúcar</span>
 
+
                 </button>
                 <button mat-menu-item routerLink="canadeacucar/spanish" id="subItem">
                     <span id="textSubItemGrande" style="font-size: smaller;">Caña de azúcar</span>
 
+
                 </button>
                 <button mat-menu-item routerLink="cafe/spanish" id="subItem">
-                    <span id="textSubItem">Café</span>
+                    Café
                 </button>
                 <button mat-menu-item routerLink="etanol/spanish" id="subItem">
-                    <span id="textSubItem">Etanol</span>
+                    Etanol
 
                 </button>
                 <button mat-menu-item routerLink="feijaopreto/spanish" id="subItem">
-                    <span id="textSubItem">Frijol negro</span>
+                    Frijol negro
 
                 </button>
                 <button mat-menu-item routerLink="milho/spanish" id="subItem">
-                    <span id="textSubItem">Maíz</span>
+                    Maíz
 
                 </button>
                 <button mat-menu-item routerLink="soja/spanish" id="subItem">
-                    <span id="textSubItem">Soja</span>
+                    Soja
 
                 </button>
                 <button mat-menu-item routerLink="sorgo/spanish" id="subItem">
-                    <span id="textSubItem">Sorgo</span>
+                    Sorgo
 
                 </button>
                 <button mat-menu-item routerLink="trigo/spanish" id="subItem">
-                    <span id="textSubItem">Trigo</span>
+                    Trigo
 
                 </button>
             </mat-menu>
@@ -456,8 +459,8 @@
                     Alita de pollo
                 </button>
                 <button mat-menu-item routerLink="coracaofrango/spanish" id="subItem">
-                    <span style="font-size: smaller;">Corazón de pollo</span>                    
-                    
+                    <span style="font-size: smaller;">Corazón de pollo</span>
+
                 </button>
                 <button mat-menu-item routerLink="figadofrango/spanish" id="subItem">
                     <span style="font-size: smaller;">Higado de pollo</span>
@@ -478,7 +481,7 @@
                     Patas de pollo
                 </button>
                 <button mat-menu-item routerLink="peitofrango/spanish" id="subItem">
-                    <span style="font-size: smaller;">Pechuga de pollo</span>                    
+                    <span style="font-size: smaller;">Pechuga de pollo</span>
                 </button>
             </mat-menu>
             <button mat-button [matMenuTriggerFor]="menu3" id="title" routerLink="mineral/spanish">

@@ -55,25 +55,19 @@ p {
   margin-right: 0;
 }
 
-.container {
-  background-color: rgb(213, 250, 213);
-}
-
-#pagHome {
-  background-color: rgb(213, 250, 213);
-}
-
 .content {
   border: none;
-  padding: .5em;
-  
+  padding: .5em;  
   white-space: pre-wrap;
-  height: 100vh;
-  /*overflow: hidden;        /* SEM SCROLL */
-  overflow-y: scroll;    /* COM SCROLL VERTICAL */
-  /*overflow-x: scroll;    /* COM SCROLL HORIZONTAL */
 }
 
 .content::-webkit-scrollbar { 
   display: none;
 }
+
+#pagHome {
+  overflow-y: scroll;    /* COM SCROLL VERTICAL */
+  height: 90%;
+  width: 100%;
+}
+
