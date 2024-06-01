@@ -2,13 +2,14 @@
   background: rgb(213, 250, 213);
   padding-right: 8%;
 }
+
 .complemento {
   background: rgb(213, 250, 213);
   padding-right: 30px;
 }
 
 @media screen and (min-width: 1865px) {
-  
+
   img {
     width: 180px;
     height: 180px;
@@ -59,15 +60,18 @@ p {
   border: none;
   padding: .5em;
   white-space: pre-wrap;
-  
-} 
 
-.content::-webkit-scrollbar { 
+}
+
+.content::-webkit-scrollbar {
   display: none;
 }
 
+
 #pagHome {
-  overflow-y: scroll;    /* COM SCROLL VERTICAL */
+  overflow-y: scroll;
+  /* COM SCROLL VERTICAL */
   height: 90%;
   width: 100%;
+  border-bottom: 5px solid #719c71;
 }
