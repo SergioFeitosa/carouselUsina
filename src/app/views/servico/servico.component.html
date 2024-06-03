@@ -1,30 +1,141 @@
-<h1 id="h1Home">Serviços</h1>
-<div id="divCarousel" >
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-    <div  class="textFont">
-        Os serviços de compra e venda de commodities envolvem a negociação de matérias-primas básicas, como metais, energia, produtos agrícolas, entre outros. Essas transações são realizadas por meio de contratos futuros e opções na Bolsa de Valores.<br>
-
-        As empresas que oferecem esses serviços possuem equipes de corretores com vasta experiência em intermediação nos mercados de commodities, atuando tanto no mercado interno quanto na exportação. Elas oferecem acesso às principais Bolsas de Futuros e as melhores ferramentas e estratégias para o gerenciamento do risco de preço da comercialização agrícola.<br>
-        
-        Além disso, essas empresas fornecem informações diárias, da abertura até o fechamento do mercado, com todas as atualizações para uma tomada de decisão mais assertiva. Elas monitoram as condições de mercado e acionam gatilhos de compra e venda de acordo com metas de lucratividades estipuladas pelo cliente.<br>
-        
-        Os benefícios do Trading de Commodities incluem alavancagem até 500:1, escolha entre uma ampla gama de commodities, como energia, metais e produtos agrícolas, e a possibilidade de entrar e sair de negociações sempre que desejar. Além disso, é possível negociar em qualquer direção que se acredite que os mercados irão.<br>
-        
-        No entanto, é importante ressaltar que a negociação de commodities é recomendada apenas para investidores experientes, pois os riscos são altos. Portanto, é aconselhável buscar aconselhamento de um consultor financeiro antes de investir em commodities.<br>
+<div id="pagHome">
+    <h1 id="h1Home">Servicios</h1>
+    <div id="divHome">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption class="img-label">
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
+        <br>
+        <br>
     </div>
-    <br>
-    <footer class="footer navbar-fixed-bottom">
-            </footer>
+    <div>
 
-</div>
+    <p style="margin-left: 6em;"> <b> Los servicios esenciales de un representante de ventas de productos básicos </b>
+    <p style="margin-left: 8em;">
+    Un representante de ventas de productos básicos actúa como vínculo crucial entre productores, comerciantes y consumidores.
+    facilitar el comercio global de estos productos básicos.<br>
+    Su trabajo integral involucra diversas responsabilidades que aseguran el flujo eficiente de la cadena de suministro.
+    suministros y la satisfacción de todas las partes involucradas.
+   
+    <p style="margin-left: 6em;"> <b> Actividades esenciales: </b>
+   
+    <p style="margin-left: 8em;">
+    <b> 1. Prospectar y calificar clientes: </b>
+   
+    <p style="margin-left: 10em; color: gris oscuro;">
+    <b> Identificar compradores y vendedores potenciales: </b> A través de estudios de mercado, networking y
+    análisis de datos,
+    el representante busca empresas y personas interesadas en comprar o vender productos básicos. <br>
+    <b> Evaluar la capacidad financiera y la confiabilidad de los clientes: </b> Analizar la salud financiera,
+    historia de
+    Los pagos y la reputación del cliente son fundamentales para garantizar transacciones seguras y rentables. <br>
+    <b>Construir relaciones duraderas:</b> Crear vínculos de confianza con los clientes es fundamental para
+    retenerlos y
+    negocio futuro seguro.
+   
+   
+    <p style="margin-left: 8em;">
+    <b> 2. Negociar Contratos y Condiciones de Venta: </b>
+   
+    <p style="margin-left: 10em; color: gris oscuro;">
+    <b> Negociar precios, volúmenes, plazos de entrega y condiciones de pago: </b> Mediante negociaciones
+    hábil, el
+    El representante busca llegar al mejor acuerdo para ambas partes, asegurando márgenes de beneficio satisfactorios.
+    Es
+    minimizando riesgos. <br>
+    <b> Redactar y revisar contratos: </b> El representante garantiza que los contratos sean claros, precisos y
+    satisfacer la
+    necesidades de ambas partes, protegiendo sus intereses. <br>
+    <b>Manténgase actualizado con las leyes y regulaciones:</b>Es crucial que el representante esté al tanto
+    de las leyes y
+    regulaciones que impactan el comercio de productos básicos para garantizar el cumplimiento legal y evitar
+    problemas. <br>
+   
+    <p style="margin-left: 8em;">
+    <b> 3. Monitorear el mercado y analizar tendencias: </b>
+   
+    <p style="margin-left: 10em; color: gris oscuro;">
+    <b> Monitorear los precios de las materias primas en tiempo real: </b> A través de herramientas de análisis y
+    seguimiento de
+    mercado, el representante identifica las fluctuaciones de precios y las oportunidades ventajosas de compra o venta. <br>
+    <b>Analizar las tendencias de la oferta y la demanda:</b>Comprender los factores que influyen en la oferta y la demanda
+    en
+    materias primas es crucial para tomar decisiones estratégicas de compra y venta. <br>
+    <b> Identificar riesgos y oportunidades en el mercado: </b> El representante debe estar al tanto de los acontecimientos
+    geopolítico,
+    condiciones climáticas y otros factores que puedan afectar el mercado de productos básicos, con el fin de minimizar riesgos y
+    Aprovechar oportunidades. <br>
+   
+    <p style="margin-left: 8em;">
+    <b> 4. Gestionar la Logística y el Transporte: </b>
+   
+    <p style="margin-left: 10em; color: gris oscuro;">
+    <b> Coordinar el transporte de mercancías: </b> El representante garantiza que las mercancías estén
+    transportado de una manera
+    seguro, eficiente y en el plazo acordado, minimizando costes y riesgos. <br>
+    <b>Gestionar la documentación requerida:</b>El representante prepara y gestiona toda la documentación
+    necesario para el
+    transporte de mercancías, como manifiestos de carga, certificados de origen y otros documentos requeridos
+    por
+    autoridades. <br>
+    <b> Supervisar el estado del transporte: </b> El seguimiento del estado del transporte en tiempo real es crucial para
+    asegurar que el
+    comunicaciónLos objetos llegan a su destino final sin problemas. <br>
+
+    <p style="margin-left: 8em;">
+    <b> 5. Proporcionar asistencia al cliente: </b>
+   
+    <p style="margin-left: 10em; color: gris oscuro;">
+    <b> Responder a las consultas y solicitudes de los clientes: </b> El representante debe estar siempre disponible para
+    satisfacer la
+    consultas y solicitudes de los clientes, brindando información veraz y eficiente. <br>
+    <b> Resolver problemas y quejas: </b> Manejar problemas y quejas de manera profesional y efectiva
+    es esencial
+    para mantener la satisfacción del cliente y la reputación de la empresa. <br>
+    <b> Construir relaciones duraderas con los clientes: </b> A través de un servicio personalizado y
+    calidad, la
+    El representante fortalece las relaciones con los clientes, fidelizándolos y garantizando negocios futuros. <br>
+   
+    <p style="margin-left: 8em;">
+    <b>Habilidades y calificaciones esenciales:</b>
+   
+    <p style="margin-left: 10em; color: gris oscuro;">
+    <b>Excelentes habilidades interpersonales y de comunicación:</b>El representante debe poder comunicarse
+    de forma
+    Claro, conciso y persuasivo con clientes, proveedores y compañeros de trabajo. <br>
+    <b> Conocimiento profundo del mercado de commodities: </b> Comprender las características, dinámica y
+    tendencias en
+    El mercado de productos básicos es fundamental para el éxito del representante. <br>
+    <b>Habilidades analíticas y de resolución de problemas:</b> El representante debe ser capaz de analizar
+    datos del mercado,
+    identificar oportunidades y problemas, y tomar decisiones estratégicas para alcanzar los objetivos de la empresa. <br>
+    <b> Habilidades de negociación y persuasión: </b> El representante debe ser capaz de negociar contratos,
+    defender el
+    intereses de la empresa y convencer a los clientes para cerrar acuerdos. <br>
+    <b> Orientación a resultados y enfoque al cliente: </b> El representante siempre debe estar buscando lograr
+    los mejores
+    resultados para la empresa y sus clientes, priorizando la satisfacción y fidelización del cliente. <br>
+   
+    <p style="margin-left: 6em;">
+    **Un representante de ventas de productos básicos exitoso combina habilidades técnicas, conocimiento de
+    mercado y
+    Excelentes habilidades interpersonales para facilitar el comercio mundial de productos básicos de manera eficiente y
+    rentable
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="pie de página barra de navegación-fondo-fijo">
+    </footer>
+    </div>
+   </div>

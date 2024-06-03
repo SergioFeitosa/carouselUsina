@@ -1,29 +1,140 @@
-<h1 id="h1Home">服務</h1>
-<div id="divCarousel" >
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-    <div  class="textFont">
-        商品買賣服務涉及金屬、能源、農產品等基礎原料的協商。 這些交易是透過證券交易所的期貨合約和選擇權進行的。<br>
+<div id="pagHome">
+    <h1 id="h1Home">服務</h1>
+    <div id="divHome">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption 類別=“img-label”>
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
+        <br>
+        <br>
+    </div>
+    <div>
+        <p style="margin-left: 6em;"> <b>商品銷售代表的基本服務</b>
+        <p style="margin-left: 8em;">
+            商品銷售代表是生產者、貿易商和消費者之間的重要紐帶，
+            促進這些基本產品的全球貿易。
+            其全面的工作涉及多種職責，確保供應鏈的高效流動。
+            供應和所有相關方的滿意度。
 
-        提供這些服務的公司擁有在商品市場中介方面擁有豐富經驗的經紀人團隊，在國內和出口市場開展業務。 他們提供進入主要期貨交易所的機會以及管理農產品行銷價格風險的最佳工具和策略。<br>
-       
-        此外，這些公司還提供從開盤到收盤的每日信息，以及所有更新信息，以便做出更果斷的決策。 他們監控市場狀況並根據客戶規定的獲利目標啟動購買和銷售觸發器。<br>
-       
-        商品交易的優勢包括高達 500:1 的槓桿，從能源、金屬和農產品等多種商品中進行選擇，以及隨時進入和退出交易的能力。 此外，您可以按照您認為市場走向的任何方向進行交易。<br>
-       
-        但要注意的是，大宗商品交易僅建議經驗豐富的投資者，因為風險較高。 因此，建議在投資商品之前尋求財務顧問的建議。<br>    </div>
-    <br>
-    <footer class="footer navbar-fixed-bottom">
-            </footer>
+        <p style="margin-left: 6em;"> <b> 基本活動：</b>
 
+        <p style="margin-left: 8em;">
+            <b> 1. 尋找客戶並確定客戶資格：</b>
+
+        <p style="margin-left: 10em; color: dimgrey;">
+            <b> 識別潛在買家和賣家：</b> 透過市場研究、網路和
+            數據分析，
+            該代表尋找有興趣購買或銷售商品的公司和個人。 <br>
+            <b> 評估客戶的財務能力與可靠性：</b> 分析財務健康狀況，
+            的歷史
+            付款和客戶聲譽對於確保安全和有利可圖的交易至關重要。 <br>
+            <b> 建立持久的關係：</b> 與客戶建立信任關係對於
+            保留它們並
+            確保未來的業務。
+
+
+        <p style="margin-left: 8em;">
+            <b> 2. 談判合約與銷售條件：</b>
+
+        <p style="margin-left: 10em; color: dimgrey;">
+            <b> 協商價格、數量、交貨時間和付款條件：</b> 透過協商
+            熟練的、
+            代表尋求雙方達成最佳協議，確保滿意的利潤率
+            這是
+            最大限度地減少風險。 <br>
+            <b> 起草和審查合約：</b> 代表確保合約清晰、準確和
+            滿足
+            雙方的需求，保護雙方的利益。 <br>
+            <b> 了解最新的法律法規：</b> 代表了解這一點至關重要
+            的法律和
+            影響商品交易的法規，以確保合法合規並避免
+            問題。 <br>
+
+        <p style="margin-left: 8em;">
+            <b> 3. 監控市場並分析趨勢：</b>
+
+        <p style="margin-left: 10em; color: dimgrey;">
+            <b>即時監控商品價格：</b> 透過分析工具和
+            監測
+            市場，代表確定價格波動和有利的買入或賣出機會。 <br>
+            <b> 分析供需趨勢：</b> 了解影響供需的因素
+            在
+            大宗商品對於制定策略性買賣決策至關重要。 <br>
+            <b> 辨識市場中的風險與機會：</b> 代表必須了解事件
+            地緣政治,
+            天氣狀況和其他可能影響大宗商品市場的因素，以最大限度地降低風險和
+            抓住機會。
+
+        <p style="margin-left: 8em;">
+            <b> 4. 管理物流與運輸：</b>
+
+        <p style="margin-left: 10em; color: dimgrey;">
+            <b> 協調商品的運送：</b> 代表確保商品是
+            以某種方式運輸
+            安全、有效率並在約定的期限內，最大限度地降低成本和風險。 <br>
+            <b> 管理所需文件：</b>代表準備並管理所有文件
+            必要的
+            商品運輸，如貨物艙單、原產地證明和其他所需文件
+            經過
+            當局。 <br>
+            <b> 監控運輸狀態：</b> 即時追蹤運輸狀態對於
+            確保
+            通訊奇事毫無問題地到達最終目的地。 <br>
+
+        <p style="margin-left: 8em;">
+            <b> 5. 提供客戶支援：</b>
+
+        <p style="margin-left: 10em; color: dimgrey;">
+            <b> 回應客戶的詢問和要求：</b> 代表必須隨時為您服務
+            滿足
+            客戶查詢和要求，提供準確、有效率的資訊。 <br>
+            <b> 解決問題和投訴：</b> 專業有效地處理問題和投訴
+            這是必要的
+            維護客戶滿意度和公司聲譽。 <br>
+            <b> 與客戶建立持久的關係：</b> 透過個人化服務和
+            質, 的
+            代表加強與客戶的關係，建立客戶忠誠度並確保未來的業務。 <br>
+
+        <p style="margin-left: 8em;">
+            <b> 基本技能與資格：</b>
+
+        <p style="margin-left: 10em; color: dimgrey;">
+            <b> 優秀的溝通與人際溝通能力：</b> 代表必須能夠溝通
+                形狀
+                對客戶、供應商和同事來說清晰、簡潔且具說服力。 <br>
+                <b> 深入了解商品市場：</b> 了解商品市場的特徵、動態和
+                趨勢
+                商品市場是代表成功的基礎。 <br>
+                <b> 分析和解決問題的能力：</b> 代表必須能夠分析
+                    市場數據，
+                    識別機會和問題，並做出策略決策以實現公司的目標。 <br>
+                    <b> 談判和說服技巧：</b> 代表必須能夠談判合同，
+                    捍衛
+                    公司利益並說服客戶完成交易。 <br>
+                    <b> 以結果為導向，以客戶為中心：</b> 代表必須始終尋求實現目標
+                    最好的
+                    為公司及其客戶帶來成果，優先考慮客戶滿意度和忠誠度。 <br>
+
+                    <p style="margin-left: 6em;">
+                        **一個成功的商品銷售代表結合了技術技能、知識
+                        市場和
+                        優秀的人際溝通能力，有效促進全球商品貿易
+                        有利可圖
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    <footer class="footer navbar-fixed-bottom">
+                    </footer>
+    </div>
 </div>

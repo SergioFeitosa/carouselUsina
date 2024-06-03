@@ -1,30 +1,140 @@
-<h1 id="h1Home">Serviços</h1>
-<div id="divCarousel" >
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <img src="{{ slide.img }}" alt="" class="img-style">
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-    <div  class="textFont">
-        Os serviços de compra e venda de commodities envolvem a negociação de matérias-primas básicas, como metais, energia, produtos agrícolas, entre outros. Essas transações são realizadas por meio de contratos futuros e opções na Bolsa de Valores.<br>
-
-        As empresas que oferecem esses serviços possuem equipes de corretores com vasta experiência em intermediação nos mercados de commodities, atuando tanto no mercado interno quanto na exportação. Elas oferecem acesso às principais Bolsas de Futuros e as melhores ferramentas e estratégias para o gerenciamento do risco de preço da comercialização agrícola.<br>
-        
-        Além disso, essas empresas fornecem informações diárias, da abertura até o fechamento do mercado, com todas as atualizações para uma tomada de decisão mais assertiva. Elas monitoram as condições de mercado e acionam gatilhos de compra e venda de acordo com metas de lucratividades estipuladas pelo cliente.<br>
-        
-        Os benefícios do Trading de Commodities incluem alavancagem até 500:1, escolha entre uma ampla gama de commodities, como energia, metais e produtos agrícolas, e a possibilidade de entrar e sair de negociações sempre que desejar. Além disso, é possível negociar em qualquer direção que se acredite que os mercados irão.<br>
-        
-        No entanto, é importante ressaltar que a negociação de commodities é recomendada apenas para investidores experientes, pois os riscos são altos. Portanto, é aconselhável buscar aconselhamento de um consultor financeiro antes de investir em commodities.<br>
+<div id="pagHome">
+    <h1 id="h1Home">Serviços</h1>
+    <div id="divHome">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption class="img-label">
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
+        <br>
+        <br>
     </div>
-    <br>
-    <footer class="footer navbar-fixed-bottom">
-            </footer>
+    <div>
+        <p style="margin-left: 6em;"> <b> O Essencial dos Serviços de um Representante de Venda de Commodities </b>
+        <p style="margin-left: 8em;">
+            Um representante de venda de commodities atua como um elo crucial entre produtores, traders e consumidores,
+            facilitando o comércio global desses produtos básicos.<br>
+            Seu trabalho abrangente envolve diversas responsabilidades que garantem o fluxo eficiente da cadeia de
+            suprimentos e a satisfação de todas as partes envolvidas.
 
+        <p style="margin-left: 6em;"> <b> Atividades Essenciais: </b>
+
+        <p style="margin-left: 8em;">
+            <b> 1. Prospectar e Qualificar Clientes: </b>
+
+        <p style="margin-left: 10em; color: dimgrey;">
+            <b> Identificar potenciais compradores e vendedores: </b> Através de pesquisas de mercado, networking e
+            análise de dados,
+            o representante busca empresas e indivíduos interessados em comprar ou vender commodities. <br>
+            <b> Avaliar a capacidade financeira e confiabilidade dos clientes: </b> Analisar a saúde financeira,
+            histórico de
+            pagamentos e reputação dos clientes é fundamental para garantir transações seguras e lucrativas. <br>
+            <b> Construir relacionamentos duradouros: </b> Criar laços de confiança com os clientes é essencial para
+            fidelizá-los e
+            garantir negócios futuros.
+
+
+        <p style="margin-left: 8em;">
+            <b> 2. Negociar Contratos e Condições de Venda: </b>
+
+            <p style="margin-left: 10em; color: dimgrey;">
+                <b> Negociar preços, volumes, prazos de entrega e termos de pagamento: </b> Através de negociações
+            habilidosas, o
+            representante busca alcançar o melhor acordo para ambas as partes, garantindo margens de lucro satisfatórias
+            e
+            minimizando riscos. <br>
+            <b> Redigir e revisar contratos: </b> O representante garante que os contratos sejam claros, precisos e
+            atendam às
+            necessidades de ambas as partes, protegendo seus interesses. <br>
+            <b> Manter-se atualizado sobre as leis e regulamentações: </b> É crucial que o representante esteja ciente
+            das leis e
+            regulamentações que impactam o comércio de commodities, a fim de garantir a conformidade legal e evitar
+            problemas. <br>
+
+        <p style="margin-left: 8em;">
+            <b> 3. Monitorar o Mercado e Analisar Tendências: </b>
+
+            <p style="margin-left: 10em; color: dimgrey;">
+                <b> Acompanhar os preços das commodities em tempo real: </b> Através de ferramentas de análise e
+            acompanhamento do
+            mercado, o representante identifica flutuações de preços e oportunidades de compra ou venda vantajosas. <br>
+            <b> Analisar tendências de oferta e demanda: </b> Compreender os fatores que influenciam a oferta e demanda
+            de
+            commodities é crucial para tomar decisões estratégicas de compra e venda. <br>
+            <b> Identificar riscos e oportunidades no mercado: </b> O representante deve estar atento a eventos
+            geopolíticos,
+            condições climáticas e outros fatores que podem afetar o mercado de commodities, a fim de minimizar riscos e
+            aproveitar oportunidades. <br>
+
+        <p style="margin-left: 8em;">
+            <b> 4. Gerenciar Logística e Transporte: </b>
+
+            <p style="margin-left: 10em; color: dimgrey;">
+                <b> Coordenar o transporte das commodities: </b> O representante garante que as commodities sejam
+            transportadas de forma
+            segura, eficiente e dentro do prazo acordado, minimizando custos e riscos. <br>
+            <b> Gerenciar a documentação necessária: </b> O representante prepara e gerencia toda a documentação
+            necessária para o
+            transporte das commodities, como manifestos de carga, certificados de origem e outros documentos exigidos
+            pelas
+            autoridades. <br>
+            <b> Monitorar o status do transporte: </b> Acompanhar o status do transporte em tempo real é crucial para
+            garantir que as
+            commodities cheguem ao destino final sem problemas. <br>
+
+            <p style="margin-left: 8em;">
+                <b> 5. Prestar Suporte ao Cliente: </b>
+
+                <p style="margin-left: 10em; color: dimgrey;">
+                    <b> Responder a dúvidas e solicitações dos clientes: </b> O representante deve estar sempre disponível para
+            atender às
+            dúvidas e solicitações dos clientes, fornecendo informações precisas e eficientes. <br>
+            <b> Resolver problemas e reclamações: </b> Lidar com problemas e reclamações de forma profissional e eficaz
+            é essencial
+            para manter a satisfação dos clientes e a reputação da empresa. <br>
+            <b> Construir relacionamentos duradouros com os clientes: </b> Através de um atendimento personalizado e de
+            qualidade, o
+            representante fortalece os relacionamentos com os clientes, fidelizando-os e garantindo negócios futuros. <br>
+
+            <p style="margin-left: 8em;">
+                <b> Habilidades e Qualificações Essenciais: </b>
+
+                <p style="margin-left: 10em;  color: dimgrey;">
+                    <b> Excelente comunicação e habilidades interpessoais: </b> O representante deve ser capaz de se comunicar
+            de forma
+            clara, concisa e persuasiva com clientes, fornecedores e colegas de trabalho. <br>
+            <b> Conhecimento profundo do mercado de commodities: </b> Compreender as características, dinâmicas e
+            tendências do
+            mercado de commodities é fundamental para o sucesso do representante. <br>
+            <b> Habilidades analíticas e de resolução de problemas: </b> O representante deve ser capaz de analisar
+            dados de mercado,
+            identificar oportunidades e problemas, e tomar decisões estratégicas para alcançar os objetivos da empresa. <br>
+            <b> Negociação e habilidades de persuasão: </b> O representante deve ser capaz de negociar contratos,
+            defender os
+            interesses da empresa e convencer clientes a fechar negócios. <br>
+            <b> Orientação para resultados e foco no cliente: </b> O representante deve estar sempre buscando alcançar
+            os melhores
+            resultados para a empresa e para seus clientes, priorizando a satisfação e a fidelização dos mesmos. <br>
+
+            <p style="margin-left: 6em;">
+                **Um representante de venda de commodities bem-sucedido combina habilidades técnicas, conhecimento de
+            mercado e
+            excelentes habilidades interpessoais para **facilitar o comércio global de commodities de forma eficiente e
+            lucrativa
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <footer class="footer navbar-fixed-bottom">
+        </footer>
+    </div>
 </div>

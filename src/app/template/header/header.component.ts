@@ -230,6 +230,8 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['diamante/chinese']);
       } else if (this.urlRaiz == 'esmeralda') {
         this.router.navigate(['esmeralda/chinese']);
+      } else if (this.urlRaiz == 'servico') {
+        this.router.navigate(['servico/chinese']);
       } else if (this.urlRaiz == 'contato') {
         this.router.navigate(['contato/chinese']);
       } else if (this.urlRaiz == 'quemsomos') {
@@ -377,10 +379,14 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['diamante/english']);
       } else if (this.urlRaiz == 'esmeralda') {
         this.router.navigate(['esmeralda/english']);
+      } else if (this.urlRaiz == 'servico') {
+        this.router.navigate(['servico/english']);
       } else if (this.urlRaiz == 'contato') {
         this.router.navigate(['contato/english']);
       } else if (this.urlRaiz == 'quemsomos') {
         this.router.navigate(['quemsomos/english']);
+      } else if (this.urlRaiz == 'service') {
+        this.router.navigate(['service/english']);
       } else {
         this.router.navigate(['home/english']);
       }
@@ -528,6 +534,8 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['diamante/portuguese']);
         } else if (this.urlRaiz == 'esmeralda') {
           this.router.navigate(['esmeralda/portuguese']);
+        } else if (this.urlRaiz == 'servico') {
+          this.router.navigate(['servico/portuguese']);
         } else if (this.urlRaiz == 'contato') {
           this.router.navigate(['contato/portuguese']);
         } else if (this.urlRaiz == 'quemsomos') {
@@ -680,6 +688,8 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['diamante/spanish']);
         } else if (this.urlRaiz == 'esmeralda') {
           this.router.navigate(['esmeralda/spanish']);
+        } else if (this.urlRaiz == 'servico') {
+          this.router.navigate(['servico/spanish']);
         } else if (this.urlRaiz == 'contato') {
           this.router.navigate(['contato/spanish']);
         } else if (this.urlRaiz == 'quemsomos') {
