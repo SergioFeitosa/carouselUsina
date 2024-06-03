@@ -1,13 +1,13 @@
-<div id="pagHome" class="content">
+<div id="pagHome">
 <h1 id="h1Home">Pedras</h1>
-<div id="divCarousel">
+<div id="divHome">
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
             <figure>
                 <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
                     <img src="{{ slide.img }}" alt="" class="img-style">
                 </a>
-                <figcaption>
+                <figcaption class="img-label">
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                 </figcaption>
             </figure>
@@ -16,7 +16,7 @@
     <br>
     <br>
 </div>
-<div class="textFont">
+<div>
     <p style="margin-left: 6em;"> <b> Pedras Preciosas: </b> Jóias da Natureza que Encantam e Fascinam <br>
     <p style="margin-left: 8em;">
         As pedras preciosas, verdadeiras obras de arte da natureza, são apreciadas desde a antiguidade por sua beleza,
@@ -94,6 +94,11 @@
         complementando a nossa história com um toque de brilho e sofisticação.
         <br>
         <br>
-        <hr class="rounded">
+        <br>
+        <br>
+        <br>
+        <br>
+    <footer class="footer navbar-fixed-bottom">
+            </footer>
     </div>
 </div>

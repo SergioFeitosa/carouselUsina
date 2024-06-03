@@ -1,13 +1,13 @@
-<div id="pagHome" class="content">
+<div id="pagHome">
     <h1 id="h1Home">高粱</h1>
-    <div id="divCarousel">
+    <div id="divHome">
         <ngx-slick-carousel class="carousel" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                 <figure>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
                         <img src="{{ slide.img }}" alt="" class="img-style">
                     </a>
-                    <figcaption>
+                    <figcaption  class="img-label">
                         <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                     </figcaption>
                 </figure>
@@ -16,7 +16,7 @@
     </div>
     <br>
     <br>
-    <div class="textFont">
+    <div>
 
         <p style="margin-left: 6em;"> <b> 高粱：</b> 巴西農業未來前景光明的穀物 <br>
         <p style="margin-left: 8em;">高粱是一種古老而堅韌的穀物，在農業領域越來越受到重視
@@ -111,6 +111,11 @@
             對農民、消費者和環境都具有吸引力。
             <br>
             <br>
-            <hr class="rounded">
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="footer navbar-fixed-bottom">
+            </footer>
     </div>
 </div>

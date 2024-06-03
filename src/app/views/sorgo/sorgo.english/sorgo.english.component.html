@@ -1,13 +1,13 @@
-<div id="pagHome" class="content">
+<div id="pagHome">
     <h1 id="h1Home">Sorghum</h1>
-    <div id="divCarousel">
+    <div id="divHome">
         <ngx-slick-carousel class="carousel" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                 <figure>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
                         <img src="{{ slide.img }}" alt="" class="img-style">
                     </a>
-                    <figcaption>
+                    <figcaption  class="img-label">
                         <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                     </figcaption>
                 </figure>
@@ -16,7 +16,7 @@
     </div>
     <br>
     <br>
-    <div class="textFont">
+    <div>
 
         <p style="margin-left: 6em;"> <b> Sorghum: </b> A Promising Cereal for the Future of Brazilian Agriculture <br>
         <p style="margin-left: 8em;"> Sorghum, an ancient and resilient cereal, has been gaining prominence in the
@@ -119,6 +119,11 @@
             attractive to farmers, consumers and the environment.
             <br>
             <br>
-            <hr class="rounded">
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="footer navbar-fixed-bottom">
+            </footer>
     </div>
 </div>

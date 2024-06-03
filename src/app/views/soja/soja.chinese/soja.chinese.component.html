@@ -1,13 +1,13 @@
-<div id="pagHome" class="content">
+<div id="pagHome">
     <h1 id="h1Home">大豆</h1>
-    <div id="divCarousel">
+    <div id="divHome">
         <ngx-slick-carousel class="carousel" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                 <figure>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
                         <img src="{{ slide.img }}" alt="" class="img-style">
                     </a>
-                    <figcaption>
+                    <figcaption class="img-label">
                         <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                     </figcaption>
                 </figure>
@@ -16,7 +16,7 @@
         <br>
         <br>
     </div>
-    <div class="textFont">
+    <div>
 
         <p style="margin-left: 6em;"> <b> 大豆：</b> 滋養世界的黃金穀物 <br>
         <p style="margin-left: 8em;">大豆，原產於亞洲的黃金穀物，已成為主要產品之一
@@ -97,6 +97,11 @@
             透過投資於永續發展、技術創新和社會責任，我們可以確保大豆生產繼續成為國家成長的引擎，同時不損害環境和人民福祉。
             <br>
             <br>
-            <hr class="rounded">
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="footer navbar-fixed-bottom">
+            </footer>
     </div>
 </div>

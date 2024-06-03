@@ -1,97 +1,102 @@
-<div id="pagHome" class="content">
-<h1 id="h1Home">礦物</h1>
-<div id="divCarousel">
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <figure>
-                <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
-                    <img src="{{ slide.img }}" alt="" class="img-style">
-                </a>
-                <figcaption>
-                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
-                </figcaption>
-            </figure>
-        </div>
-    </ngx-slick-carousel>
-    <br>
-    <br>
-</div>
-<div class="textFont">
-    <p style="margin-left: 6em;"> <b> 礦物質：</b> 地球上隱藏的寶藏<br>
-
-    <p style="margin-left: 8em;">
-        礦物質、具有明確晶體結構的固體天然和無機元素，對於
-        地球上的生命。 <br>
-        它們存在於地殼中，為了各種目的而被探索和加工，例如：
-
-    <p style="margin-left: 10em;">
-        <b> 土木建築：</b> 混凝土、水泥、石膏、黏土、沙子和裝飾石頭的骨材。 <br>
-        <b>冶金：</b>鐵、鋁、銅、鋅、鎳、鉛、金、銀等金屬。 <br>
-        <b>消費品生產：</b>玻璃、陶瓷、家用電器、電子產品、車輛等
-        產品。 <br>
-        <b>農業：</b>植物生長必需的肥料、農藥和微量營養素。
-        <br>
-        <b>發電：</b>發電廠使用的煤、鈾和其他礦物。
-
-    <p style="margin-left: 6em;"> <b> 礦物種類：</b>
-
-    <p style="margin-left: 8em;">
-        礦物質可分為兩大類：
-
-    <p style="margin-left: 10em;">
-        <b>金屬礦物：</b>其成分含有金屬，如鐵、鋁、銅、鋅、鎳、
-        帶領，
-        黃金和白銀。 <br>
-        <b>非金屬礦物：</b>它們的成分不含金屬，例如石英、石灰石、石膏、岩鹽、
-        粘土和沙。
-
-    <p style="margin-left: 6em;"> <b>巴西礦產探勘：</b>
-
-    <p style="margin-left: 8em;">
-        巴西境內蘊藏著巨大的礦產潛力，蘊藏著不同種類的礦產。 <br>
-        礦產勘探是巴西經濟的重要活動，可以創造收入、就業機會和
-        投資
-        在國內。 <br>
-        然而，礦產勘探也會產生環境和社會影響，例如：
-
-    <p style="margin-left: 10em;">
-        <b>森林砍伐：</b>開闢新的礦產勘探領域可能會導致森林砍伐和資源損失
-        生物多樣性。 <br>
-        <b>污染：</b>礦物的勘探和加工會產生空氣、水和土壤污染。
-        <br>
-        <b> 土壤退化：</b> 採礦活動會導致土壤退化，使其喪失生產力
-        用於農業。 <br>
-        <b>社會衝突：</b>礦產勘探可能會在礦業公司和礦業公司之間產生社會衝突。
-        當地社區。 <br>
-
-    <p style="margin-left: 6em;"> <b> 永續採礦：</b>
-
-    <p style="margin-left: 8em;">
-        必須尋求永續採礦實踐，盡量減少採礦對環境和社會的影響
-        活動。 <br>
-
-        包括了：
-
-    <p style="margin-left: 10em;">
-        <b>嚴格的環境規劃：</b>進行環境影響研究並採取措施
-        緩解
-        採礦的影響。 <br>
-        <b>恢復退化地區：</b>恢復因採礦活動而退化的地區
-        終止
-        的探索。 <br>
-        <b>與當地社區對話：</b>與當地社區建立透明的對話
-        為了
-        保障他們的權利，盡量減少採礦對他們生活的影響。 <br>
-        <b>技術投資：</b>投資於盡量減少對環境影響的技術
-        礦業，
-        例如水的再利用和污染物排放的控制。 <br>
-
-    <p style="margin-left: 6em;">
-        礦物是有限的自然資源，因此負責任和永續地使用它們至關重要。 <br>
-        透過投資永續採礦實踐，我們可以確保這些資源繼續受益
-        當代和子孫後代，而不損害環境和社區的福祉。 
+<div id="pagHome">
+    <h1 id="h1Home">礦物</h1>
+    <div id="divHome">
+        <ngx-slick-carousel class="carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <figure>
+                    <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
+                        <img src="{{ slide.img }}" alt="" class="img-style">
+                    </a>
+                    <figcaption class="img-label">
+                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </ngx-slick-carousel>
         <br>
         <br>
-        <hr class="rounded">
+    </div>
+    <div>
+        <p style="margin-left: 6em;"> <b> 礦物質：</b> 地球上隱藏的寶藏<br>
+
+        <p style="margin-left: 8em;">
+            礦物質、具有明確晶體結構的固體天然和無機元素，對於
+            地球上的生命。 <br>
+            它們存在於地殼中，為了各種目的而被探索和加工，例如：
+
+        <p style="margin-left: 10em;">
+            <b> 土木建築：</b> 混凝土、水泥、石膏、黏土、沙子和裝飾石頭的骨材。 <br>
+            <b>冶金：</b>鐵、鋁、銅、鋅、鎳、鉛、金、銀等金屬。 <br>
+            <b>消費品生產：</b>玻璃、陶瓷、家用電器、電子產品、車輛等
+            產品。 <br>
+            <b>農業：</b>植物生長必需的肥料、農藥和微量營養素。
+            <br>
+            <b>發電：</b>發電廠使用的煤、鈾和其他礦物。
+
+        <p style="margin-left: 6em;"> <b> 礦物種類：</b>
+
+        <p style="margin-left: 8em;">
+            礦物質可分為兩大類：
+
+        <p style="margin-left: 10em;">
+            <b>金屬礦物：</b>其成分含有金屬，如鐵、鋁、銅、鋅、鎳、
+            帶領，
+            黃金和白銀。 <br>
+            <b>非金屬礦物：</b>它們的成分不含金屬，例如石英、石灰石、石膏、岩鹽、
+            粘土和沙。
+
+        <p style="margin-left: 6em;"> <b>巴西礦產探勘：</b>
+
+        <p style="margin-left: 8em;">
+            巴西境內蘊藏著巨大的礦產潛力，蘊藏著不同種類的礦產。 <br>
+            礦產勘探是巴西經濟的重要活動，可以創造收入、就業機會和
+            投資
+            在國內。 <br>
+            然而，礦產勘探也會產生環境和社會影響，例如：
+
+        <p style="margin-left: 10em;">
+            <b>森林砍伐：</b>開闢新的礦產勘探領域可能會導致森林砍伐和資源損失
+            生物多樣性。 <br>
+            <b>污染：</b>礦物的勘探和加工會產生空氣、水和土壤污染。
+            <br>
+            <b> 土壤退化：</b> 採礦活動會導致土壤退化，使其喪失生產力
+            用於農業。 <br>
+            <b>社會衝突：</b>礦產勘探可能會在礦業公司和礦業公司之間產生社會衝突。
+            當地社區。 <br>
+
+        <p style="margin-left: 6em;"> <b> 永續採礦：</b>
+
+        <p style="margin-left: 8em;">
+            必須尋求永續採礦實踐，盡量減少採礦對環境和社會的影響
+            活動。 <br>
+
+            包括了：
+
+        <p style="margin-left: 10em;">
+            <b>嚴格的環境規劃：</b>進行環境影響研究並採取措施
+            緩解
+            採礦的影響。 <br>
+            <b>恢復退化地區：</b>恢復因採礦活動而退化的地區
+            終止
+            的探索。 <br>
+            <b>與當地社區對話：</b>與當地社區建立透明的對話
+            為了
+            保障他們的權利，盡量減少採礦對他們生活的影響。 <br>
+            <b>技術投資：</b>投資於盡量減少對環境影響的技術
+            礦業，
+            例如水的再利用和污染物排放的控制。 <br>
+
+        <p style="margin-left: 6em;">
+            礦物是有限的自然資源，因此負責任和永續地使用它們至關重要。 <br>
+            透過投資永續採礦實踐，我們可以確保這些資源繼續受益
+            當代和子孫後代，而不損害環境和社區的福祉。
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <footer class="footer navbar-fixed-bottom">
+        </footer>
     </div>
 </div>

@@ -1,13 +1,9 @@
-.carousel {
-    display: block;
-    width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #dff7df;
-}
-
-p {
-    display: block;
-    margin-left: 2em;
-    margin-right: 0;
+#pagHome {
+    overflow-y: scroll;    /* COM SCROLL VERTICAL */
+    height: 90%;
+    width: 100%;
+    border-bottom: 5px solid #719c71;
+    /* border-right: 5px solid #719c71;
+    border-left: 5px solid #719c71;
+    */
   }

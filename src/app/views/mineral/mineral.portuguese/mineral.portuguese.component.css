@@ -1,0 +1,103 @@
+
+.img-label {
+    text-align: center;
+}
+
+
+
+@media screen and ((min-width: 1700px) and (max-width: 1920px)) {
+
+    .carousel {
+        display: block;
+        width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 220px;
+        height: 220px;
+    }
+
+
+}
+
+@media screen and ((min-width: 1350px) and (max-width: 1699px)) {
+
+    .carousel {
+        display: block;
+        width: 880px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 180px;
+        height: 180px;
+    }
+
+
+}
+
+
+@media screen and ((min-width: 1160px) and (max-width: 1349px)) {
+
+    .carousel {
+        display: block;
+        width: 860px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 120px;
+        height: 120px;
+
+    }
+
+}
+
+@media screen and ((min-width: 930px) and (max-width: 1159px)) {
+    .carousel {
+        display: block;
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 100px;
+        height: 100px;
+
+    }
+}
+
+@media screen and ((min-width: 760px) and (max-width: 929px)) {
+    .carousel {
+        display: block;
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+@media screen and ((min-width: 300px) and (max-width: 759px)) {
+    .carousel {
+        display: block;
+        width: 120px;
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 50px;
+        height: 50px;
+        align-items: center;
+    }
+
+}

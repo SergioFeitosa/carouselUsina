@@ -1,13 +1,13 @@
-<div id="pagHome" class="content">
+<div id="pagHome">
     <h1 id="h1Home">Agronegocio</h1>
-    <div id="divCarousel">
+    <div id="divHome">
         <ngx-slick-carousel class="carousel" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                 <figure>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
                         <img src="{{ slide.img }}" alt="" class="img-style">
                     </a>
-                    <figcaption>
+                    <figcaption class="img-label">
                         <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                     </figcaption>
                 </figure>
@@ -17,7 +17,7 @@
         <br>
     </div>
 
-    <div class="textFont">
+    <div>
         <p style="margin-left: 6em;"><b>¿Qué es la agroindustria?</b>
 
         <p style="margin-left: 8em;">La agroindustria es un sector crucial de la economía global, que abarca todas las
@@ -90,6 +90,11 @@
             información específica sobre su negocio, región o área de interés.
             <br>
             <br>
-            <hr class="rounded">
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="footer navbar-fixed-bottom">
+            </footer>
     </div>
 </div>

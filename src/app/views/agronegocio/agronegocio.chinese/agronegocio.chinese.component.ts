@@ -79,16 +79,16 @@ export class AgronegocioChineseComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/acucar2.jpg",title: "糖",routeUrl: "acucar/english"},
-    {img: "/carousel/browser/assets/images/algodao.jpg",title: "棉布",routeUrl: "algodao/english"},
-    {img: "/carousel/browser/assets/images/cafe.jpg",title: "咖啡",routeUrl: "cafe/english"},
-    {img: "/carousel/browser/assets/images/canadeacucar.jpg",title: "甘蔗",routeUrl: "canadeacucar"},
-    {img: "/carousel/browser/assets/images/etanol.jpg",title: "乙醇",routeUrl: "etanol"},
-    {img: "/carousel/browser/assets/images/feijaopreto.jpg",title: "黑豆",routeUrl: "feijaopreto"},
-    {img: "/carousel/browser/assets/images/milho.jpg",title: "玉米",routeUrl: "milho"},
-    {img: "/carousel/browser/assets/images/soja.jpg",title: "大豆",routeUrl: "soja"},
-    {img: "/carousel/browser/assets/images/sorgo.jpg",title: "高粱",routeUrl: "sorgo"},
-    {img: "/carousel/browser/assets/images/trigo.jpg",title: "小麥",routeUrl: "trigo"},
+    {img: "/carousel/browser/assets/images/acucar2.jpg",title: "糖",routeUrl: "acucar/chinese"},
+    {img: "/carousel/browser/assets/images/algodao.jpg",title: "棉布",routeUrl: "algodao/chinese"},
+    {img: "/carousel/browser/assets/images/cafe.jpg",title: "咖啡",routeUrl: "cafe/chinese"},
+    {img: "/carousel/browser/assets/images/canadeacucar.jpg",title: "甘蔗",routeUrl: "canadeacucar/chinese"},
+    {img: "/carousel/browser/assets/images/etanol.jpg",title: "乙醇",routeUrl: "etanol/chinese"},
+    {img: "/carousel/browser/assets/images/feijaopreto.jpg",title: "黑豆",routeUrl: "feijaopreto/chinese"},
+    {img: "/carousel/browser/assets/images/milho.jpg",title: "玉米",routeUrl: "milho/chinese"},
+    {img: "/carousel/browser/assets/images/soja.jpg",title: "大豆",routeUrl: "soja/chinese"},
+    {img: "/carousel/browser/assets/images/sorgo.jpg",title: "高粱",routeUrl: "sorgo/chinese"},
+    {img: "/carousel/browser/assets/images/trigo.jpg",title: "小麥",routeUrl: "trigo/chinese"},
     
   ]
 

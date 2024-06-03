@@ -1,13 +1,13 @@
-<div id="pagHome" class="content">
-    <h1 id="h1Home">雞</h1>
-    <div id="divCarousel">
+<div id="pagHome">
+    <h1 id="h1Home"> 雞 </h1>
+    <div id="divHome">
         <ngx-slick-carousel class="carousel" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                 <figure>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
                         <img src="{{ slide.img }}" alt="" class="img-style">
                     </a>
-                    <figcaption>
+                    <figcaption  class="img-label">
                         <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                     </figcaption>
                 </figure>
@@ -16,7 +16,7 @@
         <br>
         <br>
     </div>
-    <div class="textFont">
+    <div>
         <p style="margin-left: 6em;"> <b> 雞肉介紹：</b>
         <p style="margin-left: 8em;">
             餐桌上的多功能性和風味
@@ -68,6 +68,11 @@
             農業、畜牧業和供應部 (MAPA)：https://www.gov.br/agricultura/pt-br
             <br>
             <br>
-            <hr class="rounded">
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="footer navbar-fixed-bottom">
+            </footer>
     </div>
 </div>

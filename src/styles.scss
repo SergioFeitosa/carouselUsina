@@ -1,10 +1,3 @@
-@media (max-width: 992) {
-    .img-style {
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-    }
-
-}
 
 #divCarousel {
     margin-left: 3%;
@@ -35,9 +28,16 @@
 }
 
 #pagHome {
+    overflow-y: scroll;    /* COM SCROLL VERTICAL */
+    height: 90%;
+    width: 100%;
+    border-bottom: 5px solid #719c71;
     background-color: rgb(213, 250, 213);
-}
+    /* border-right: 5px solid #719c71;
+    border-left: 5px solid #719c71;
+    */
 
+  }
 
 .container {
     background-color: rgb(213, 250, 213);
@@ -62,7 +62,7 @@
     position: fixed;
     bottom: 1.5%;
     left: 0;
-    border-top: 8px solid #719c71;
+    border-top: 6px solid #719c71;
     width: 99%;
     margin-left: 0.4%;
 }
@@ -94,10 +94,105 @@ hr.rounded {
     font-size: medium;
 }
 
-.carousel {
-    display: block;
-    width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(213, 250, 213);
+
+.img-label {
+    text-align: center;
+}
+
+
+@media screen and ((min-width: 1700px) and (max-width: 1920px)) {
+
+    .carousel {
+        display: block;
+        width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 220px;
+        height: 220px;
+    }
+
+
+}
+
+@media screen and ((min-width: 1350px) and (max-width: 1699px)) {
+
+    .carousel {
+        display: block;
+        width: 880px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 180px;
+        height: 180px;
+    }
+
+
+}
+
+
+@media screen and ((min-width: 1160px) and (max-width: 1349px)) {
+
+    .carousel {
+        display: block;
+        width: 860px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 120px;
+        height: 120px;
+
+    }
+
+}
+
+@media screen and ((min-width: 930px) and (max-width: 1159px)) {
+    .carousel {
+        display: block;
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 100px;
+        height: 100px;
+
+    }
+}
+
+@media screen and ((min-width: 760px) and (max-width: 929px)) {
+    .carousel {
+        display: block;
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+@media screen and ((min-width: 300px) and (max-width: 759px)) {
+    .carousel {
+        display: block;
+        width: 120px;
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    .img-style {
+        width: 50px;
+        height: 50px;
+        align-items: center;
+    }
+
 }

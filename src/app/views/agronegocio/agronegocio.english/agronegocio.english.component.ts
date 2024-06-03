@@ -81,14 +81,14 @@ export class AgronegocioEnglishComponent implements OnInit {
   slides = [
     {img: "/carousel/browser/assets/images/acucar2.jpg",title: "Sugar",routeUrl: "acucar/english"},
     {img: "/carousel/browser/assets/images/algodao.jpg",title: "Cotton",routeUrl: "algodao/english"},
-    {img: "/carousel/browser/assets/images/cafe.jpg",title: "Coffee",routeUrl: "cafe"},
-    {img: "/carousel/browser/assets/images/canadeacucar.jpg",title: "Sugar cane",routeUrl: "canadeacucar"},
-    {img: "/carousel/browser/assets/images/etanol.jpg",title: "ethanol",routeUrl: "etanol"},
-    {img: "/carousel/browser/assets/images/feijaopreto.jpg",title: "Black Bean",routeUrl: "feijaopreto"},
-    {img: "/carousel/browser/assets/images/milho.jpg",title: "Corn",routeUrl: "milho"},
-    {img: "/carousel/browser/assets/images/soja.jpg",title: "Soy",routeUrl: "soja"},
-    {img: "/carousel/browser/assets/images/sorgo.jpg",title: "Sorghum",routeUrl: "sorgo"},
-    {img: "/carousel/browser/assets/images/trigo.jpg",title: "Wheat",routeUrl: "trigo"},
+    {img: "/carousel/browser/assets/images/cafe.jpg",title: "Coffee",routeUrl: "cafe/english"},
+    {img: "/carousel/browser/assets/images/canadeacucar.jpg",title: "Sugar cane",routeUrl: "canadeacucar/english"},
+    {img: "/carousel/browser/assets/images/etanol.jpg",title: "ethanol",routeUrl: "etanol/english"},
+    {img: "/carousel/browser/assets/images/feijaopreto.jpg",title: "Black Bean",routeUrl: "feijaopreto/english"},
+    {img: "/carousel/browser/assets/images/milho.jpg",title: "Corn",routeUrl: "milho/english"},
+    {img: "/carousel/browser/assets/images/soja.jpg",title: "Soy",routeUrl: "soja/english"},
+    {img: "/carousel/browser/assets/images/sorgo.jpg",title: "Sorghum",routeUrl: "sorgo/english"},
+    {img: "/carousel/browser/assets/images/trigo.jpg",title: "Wheat",routeUrl: "trigo/english"},
 
   ]
 

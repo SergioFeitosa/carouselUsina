@@ -1,14 +1,14 @@
-<div id="pagHome" class="content">
+<div id="pagHome">
     <h1 id="h1Home">Agronegócio</h1>
-    <div id="divCarousel">
+    <div id="divHome">
         <ngx-slick-carousel class="carousel" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                 <figure>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
                         <img src="{{ slide.img }}" alt="" class="img-style">
                     </a>
-                    <figcaption>
-                        <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
+                    <figcaption class="img-label">
+                        <a  routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }} </a>
                     </figcaption>
                 </figure>
             </div>
@@ -16,7 +16,7 @@
         <br>
         <br>
     </div>
-    <div class="textFont">
+    <div>
         <p style="margin-left: 6em;"><b>O que é o Agronegócio? </b>
 
         <p style="margin-left: 8em;">O agronegócio é um setor crucial da economia global, abrangendo todas as atividades
@@ -29,7 +29,7 @@
 
         <p style="margin-left: 6em;"><b>Importância do Agronegócio no Brasil: </b>
         <ul>
-            <p style="margin-left: 8em;">
+            <p style="margin-left: 6em;">
                 <li><b>Sustento da Nação:</b> O Brasil é um dos maiores produtores e exportadores de alimentos do mundo,
                     alimentando milhões de pessoas em todo o planeta. O agronegócio brasileiro é responsável por cerca
                     de
@@ -50,7 +50,7 @@
         <p style="margin-left: 6em;"><b>Desafios e Oportunidades: </b>
 
         <ul>
-            <p style="margin-left: 8em;">
+            <p style="margin-left: 6em;">
                 <li><b>Sustentabilidade Ambiental: </b> O agronegócio enfrenta o desafio de conciliar o aumento da
                     produção
                     com a preservação ambiental, buscando práticas agrícolas sustentáveis que minimizem o impacto
@@ -68,7 +68,8 @@
 
         <p style="margin-left: 6em;"><b>O Futuro do Agronegócio: </b>
 
-            O futuro do agronegócio é promissor, com perspectivas de crescimento contínuo. A demanda global por
+            <p style="margin-left: 8em;">
+                O futuro do agronegócio é promissor, com perspectivas de crescimento contínuo. A demanda global por
             alimentos
             deve aumentar significativamente nas próximas décadas, impulsionando a necessidade de um agronegócio ainda
             mais
@@ -76,7 +77,8 @@
 
         <p style="margin-left: 6em;"><b>Investindo no Futuro: </b>
 
-            Investir no agronegócio significa investir no futuro da humanidade. Ao apoiar o desenvolvimento de um
+            <p style="margin-left: 8em;">
+                Investir no agronegócio significa investir no futuro da humanidade. Ao apoiar o desenvolvimento de um
             agronegócio sustentável e inovador, contribuímos para a segurança alimentar global, a geração de empregos e
             a
             preservação ambiental.
@@ -85,10 +87,13 @@
 
             Este texto serve como um ponto de partida para sua apresentação. Você pode adaptá-lo e complementá-lo com
             informações específicas sobre o seu negócio, região ou área de interesse.
-
-
             <br>
             <br>
-            <hr class="rounded">
-    </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="footer navbar-fixed-bottom">
+            </footer>
+        </div>
 </div>

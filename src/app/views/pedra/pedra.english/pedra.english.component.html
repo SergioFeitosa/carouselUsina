@@ -1,13 +1,13 @@
-<div id="pagHome" class="content">
+<div id="pagHome">
     <h1 id="h1Home">Stones</h1>
-    <div id="divCarousel">
+    <div id="divHome">
         <ngx-slick-carousel class="carousel" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                 <figure>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
                         <img src="{{ slide.img }}" alt="" class="img-style">
                     </a>
-                    <figcaption>
+                    <figcaption class="img-label">
                         <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                     </figcaption>
                 </figure>
@@ -16,7 +16,7 @@
         <br>
         <br>
     </div>
-    <div class="textFont">
+    <div>
         <p style="margin-left: 6em;"> <b> Precious Stones: </b> Jewels of Nature that Enchant and Fascinate <br>
         <p style="margin-left: 8em;">
             Precious stones, true works of art from nature, have been appreciated since ancient times for their beauty,
@@ -94,8 +94,14 @@
             humanity for centuries. <br>
             Their beauty, rarity, symbolism and value make them objects of desire and admiration,
             immortalizing special moments and
-            complementing our history with a touch of shine and sophistication. <br>
+            complementing our history with a touch of shine and sophistication. 
             <br>
-            <hr class="rounded">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="footer navbar-fixed-bottom">
+            </footer>
     </div>
 </div>

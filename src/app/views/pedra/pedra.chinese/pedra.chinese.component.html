@@ -1,13 +1,13 @@
-<div id="pagHome" class="content">
+<div id="pagHome">
     <h1 id="h1Home">石頭</h1>
-    <div id="divCarousel">
+    <div id="divHome">
         <ngx-slick-carousel class="carousel" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                 <figure>
                     <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">
                         <img src="{{ slide.img }}" alt="" class="img-style">
                     </a>
-                    <figcaption>
+                    <figcaption  class="img-label">
                         <a routerLink="/{{ slide.routeUrl }}" routerLinkActive="active">{{ slide.title }}</a>
                     </figcaption>
                 </figure>
@@ -16,7 +16,7 @@
         <br>
         <br>
     </div>
-    <div class="textFont">
+    <div>
         <p style="margin-left: 6em;"> <b> 寶石：</b> 令人著迷的自然珠寶<br>
         <p style="margin-left: 8em;">
             寶石，真正的大自然藝術品，自古以來就因其美麗而受到讚賞，
@@ -91,8 +91,14 @@
             人類幾個世紀以來。 <br>
             它們的美麗、稀有、象徵意義和價值使它們成為人們渴望和欽佩的對象，
             永垂不朽的特殊時刻和
-            為我們的歷史增添一絲光彩和精緻。 <br>
+            為我們的歷史增添一絲光彩和精緻。 
             <br>
-            <hr class="rounded">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="footer navbar-fixed-bottom">
+            </footer>
     </div>
 </div>
