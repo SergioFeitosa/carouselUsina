@@ -232,6 +232,12 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['esmeralda/chinese']);
       } else if (this.urlRaiz == 'servico') {
         this.router.navigate(['servico/chinese']);
+      } else if (this.urlRaiz == 'compra') {
+        this.router.navigate(['compra/chinese']);
+      } else if (this.urlRaiz == 'venda') {
+        this.router.navigate(['venda/chinese']);
+      } else if (this.urlRaiz == 'transporte') {
+        this.router.navigate(['transporte/chinese']);
       } else if (this.urlRaiz == 'contato') {
         this.router.navigate(['contato/chinese']);
       } else if (this.urlRaiz == 'quemsomos') {
@@ -381,7 +387,13 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['esmeralda/english']);
       } else if (this.urlRaiz == 'servico') {
         this.router.navigate(['servico/english']);
-      } else if (this.urlRaiz == 'contato') {
+      } else if (this.urlRaiz == 'compra') {
+        this.router.navigate(['compra/english']);
+      } else if (this.urlRaiz == 'venda') {
+        this.router.navigate(['venda/english']);
+      } else if (this.urlRaiz == 'transporte') {
+        this.router.navigate(['transporte/english']);
+    } else if (this.urlRaiz == 'contato') {
         this.router.navigate(['contato/english']);
       } else if (this.urlRaiz == 'quemsomos') {
         this.router.navigate(['quemsomos/english']);
@@ -536,6 +548,12 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['esmeralda/portuguese']);
         } else if (this.urlRaiz == 'servico') {
           this.router.navigate(['servico/portuguese']);
+        } else if (this.urlRaiz == 'compra') {
+          this.router.navigate(['compra/portuguese']);
+        } else if (this.urlRaiz == 'venda') {
+          this.router.navigate(['venda/portuguese']);
+        } else if (this.urlRaiz == 'transporte') {
+          this.router.navigate(['transporte/portuguese']);
         } else if (this.urlRaiz == 'contato') {
           this.router.navigate(['contato/portuguese']);
         } else if (this.urlRaiz == 'quemsomos') {
@@ -690,6 +708,12 @@ export class HeaderComponent implements OnInit {
           this.router.navigate(['esmeralda/spanish']);
         } else if (this.urlRaiz == 'servico') {
           this.router.navigate(['servico/spanish']);
+        } else if (this.urlRaiz == 'compra') {
+          this.router.navigate(['compra/spanish']);
+        } else if (this.urlRaiz == 'venda') {
+          this.router.navigate(['venda/spanish']);
+        } else if (this.urlRaiz == 'transporte') {
+          this.router.navigate(['transporte/spanish']);
         } else if (this.urlRaiz == 'contato') {
           this.router.navigate(['contato/spanish']);
         } else if (this.urlRaiz == 'quemsomos') {

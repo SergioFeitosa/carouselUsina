@@ -43,7 +43,7 @@ import { SidebarComponent } from './template/sidebar/sidebar.component';
 })
 
 export class AppComponent {
-  title = 'carousel';
+  title = 'AgroKelvy';
   idiomaActive = 'english';
 
   data: any = ''

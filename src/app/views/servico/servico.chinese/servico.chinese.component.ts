@@ -33,9 +33,9 @@ export class ServicoChineseComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/compra.png",title: "購物",routeUrl: "compra"},
-    {img: "/carousel/browser/assets/images/venda.jpg",title: "銷售量",routeUrl: "venda"},
-    {img: "/carousel/browser/assets/images/transporte.jpg",title: "運輸",routeUrl: "transporte"},
+    {img: "/carousel/browser/assets/images/compra.png",title: "購買商品",routeUrl: "compra/chinese"},
+    {img: "/carousel/browser/assets/images/venda.jpg",title: "商品銷售",routeUrl: "venda/chinese"},
+    {img: "/carousel/browser/assets/images/transporte.jpg",title: "商品運輸",routeUrl: "transporte/chinese"},
   ]
 
   slideConfig = {

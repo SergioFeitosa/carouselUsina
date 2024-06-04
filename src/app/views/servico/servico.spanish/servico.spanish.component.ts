@@ -24,7 +24,7 @@ export class ServicoSpanishComponent implements OnInit{
   
   constructor(private headerService: HeaderService) { 
     this.headerService.headerData = {
-      title: 'Pedra',
+      title: 'Servicios',
       icon: 'landslide',
       routeUrl: '',
     }    
@@ -33,9 +33,9 @@ export class ServicoSpanishComponent implements OnInit{
   }
   
   slides = [
-    {img: "/carousel/browser/assets/images/compra.png",title: "Compras",routeUrl: "compra"},
-    {img: "/carousel/browser/assets/images/venda.jpg",title: "Ventas",routeUrl: "venda"},
-    {img: "/carousel/browser/assets/images/transporte.jpg",title: "Transporte",routeUrl: "transporte"},
+    {img: "/carousel/browser/assets/images/compra.png",title: "Compra de materias primas",routeUrl: "compra/spanish"},
+    {img: "/carousel/browser/assets/images/venda.jpg",title: "Ventas de materias primas",routeUrl: "venda/spanish"},
+    {img: "/carousel/browser/assets/images/transporte.jpg",title: "Transporte de materias primas",routeUrl: "transporte/spanish"},
   ]
 
   slideConfig = {
